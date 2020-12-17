@@ -1,0 +1,28 @@
+site_name: RT Corporation e-manual
+theme: material
+nav:
+  - Home: index.md
+  - CRANE-X7:
+    - 製品について: crane-x7/products.md
+    - ROSパッケージの使い方: crane-x7/ros.md
+    - ハードウェアデータ: crane-x7/hardware.md
+    - サンプルコード集: crane-x7/samples.md
+    - 質問集: crane-x7/qa.md
+  - Sciurus17:
+    - 製品について: sciurus17/products.md
+    - ROSパッケージの使い方: sciurus17/ros.md
+    - ハードウェアデータ: sciurus17/hardware.md
+    - サンプルコード集: sciurus17/samples.md
+    - 質問集: sciurus17/qa.md
+  - RaspberryPiMouse:
+    - 製品について: raspimouse/products.md
+    - ROSパッケージの使い方: raspimouse/ros.md
+    - ROS2パッケージの使い方: raspimouse/ros2.md
+    - ハードウェアデータ: raspimouse/hardware.md
+    - 質問集: raspimouse/qa.md
+  - JetsonNanoMouse:
+    - 製品について: jnmouse/products.md
+    - ROSパッケージの使い方: jnmouse/ros.md
+    - Jupyter Notebookの使い方: jnmouse/jupyter-notebook.md
+    - ハードウェアデータ: jnmouse/hardware.md
+    - 質問集: jnmouse/qa.md
