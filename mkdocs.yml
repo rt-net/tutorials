@@ -1,5 +1,22 @@
 site_name: RT Corporation e-manual
-theme: material
+theme: 
+  name: material
+  logo: img/rt-logo-32x32.png
+  favicon: img/rt-logo-32x32.png
+  font: Incosolata
+  palette:
+    scheme: default
+    primary: pink
+  features:
+    - navigation.expand
+
+repo_url: https://github.com/rt-net/test-emanual
+edit_uri: edit/main/docs/
+
+plugins:
+  - search
+use_directory_urls: false
+
 nav:
   - Home: index.md
   - CRANE-X7:
