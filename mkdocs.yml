@@ -37,6 +37,7 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
+site_url: https://rt-net.github.io/test-emanual/
 
 nav:
   - Home: index.md
