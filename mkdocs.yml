@@ -17,29 +17,50 @@ plugins:
   - search
 use_directory_urls: false
 
+extra:
+  social:
+     - icon: fontawesome/brands/twitter
+       link: https://twitter.com/rt_corp
+       name: 株式会社アールティTwitterアカウント
+     - icon: fontawesome/brands/github
+       link: https://github.com/rt-net
+       name: 株式会社アールティGitHubページ
+copyright: Copyright &copy; 2020 RT Corporation
+
+markdown_extensions:
+  - attr_list  # 画像のalignを設定できる
+  - pymdownx.tabbed  # タブで文章を切り替えられる
+  - admonition  # Warningとかの飾り付けができる
+  - pymdownx.highlight  # コードブロック用
+  - pymdownx.superfences  # コードブロック用
+  - pymdownx.emoji:  # アイコンが使える
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+
 nav:
   - Home: index.md
   - CRANE-X7:
     - 製品について: crane-x7/products.md
-    - ROSパッケージの使い方: crane-x7/ros.md
-    - ハードウェアデータ: crane-x7/hardware.md
-    - サンプルコード集: crane-x7/samples.md
+    - ROSパッケージのインストール: crane-x7/ros_install.md
+    - ROSサンプルの実行: crane-x7/ros_samples.md
+    - その他のコンテンツ: crane-x7/others.md
     - 質問集: crane-x7/qa.md
   - Sciurus17:
     - 製品について: sciurus17/products.md
-    - ROSパッケージの使い方: sciurus17/ros.md
-    - ハードウェアデータ: sciurus17/hardware.md
-    - サンプルコード集: sciurus17/samples.md
-    - 質問集: sciurus17/qa.md
+    # - ROSパッケージの使い方: sciurus17/ros.md
+    # - ハードウェアデータ: sciurus17/hardware.md
+    # - サンプルコード集: sciurus17/samples.md
+    # - 質問集: sciurus17/qa.md
   - RaspberryPiMouse:
     - 製品について: raspimouse/products.md
-    - ROSパッケージの使い方: raspimouse/ros.md
-    - ROS2パッケージの使い方: raspimouse/ros2.md
-    - ハードウェアデータ: raspimouse/hardware.md
-    - 質問集: raspimouse/qa.md
+    # - ROSパッケージの使い方: raspimouse/ros.md
+    # - ROS2パッケージの使い方: raspimouse/ros2.md
+    # - ハードウェアデータ: raspimouse/hardware.md
+    # - 質問集: raspimouse/qa.md
   - JetsonNanoMouse:
     - 製品について: jnmouse/products.md
-    - ROSパッケージの使い方: jnmouse/ros.md
-    - Jupyter Notebookの使い方: jnmouse/jupyter-notebook.md
-    - ハードウェアデータ: jnmouse/hardware.md
-    - 質問集: jnmouse/qa.md
+    # - ROSパッケージの使い方: jnmouse/ros.md
+    # - Jupyter Notebookの使い方: jnmouse/jupyter-notebook.md
+    # - ハードウェアデータ: jnmouse/hardware.md
+    # - 質問集: jnmouse/qa.md
