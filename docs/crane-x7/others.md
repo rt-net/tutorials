@@ -24,5 +24,5 @@
 :octicons-mark-github-16: 
 [rt-net/crane_x7_js](https://github.com/rt-net/robotics_from_scratch)
 
-![](/img/rt-logo-32x32.png)
+![](img/rt-logo-32x32.png)
 [ブログ記事一覧](https://rt-net.jp/humanoid/archives/category/developer/robotics-from-scratch)

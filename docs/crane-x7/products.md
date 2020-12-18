@@ -1,6 +1,6 @@
 # CRANE-X7 実機で動力学が学べるアームロボット
 
-![CRANE-X7](/img/CRANE-X7.png)
+![CRANE-X7](img/CRANE-X7.png)
 
 ## CRANE-X7とは
 
