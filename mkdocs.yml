@@ -1,6 +1,7 @@
 site_name: RT Corporation e-manual
 theme: 
   name: material
+  custom_dir: overrides
   logo: img/rt-logo-32x32.png
   favicon: img/rt-logo-32x32.png
   font: Incosolata
@@ -28,9 +29,11 @@ extra:
        name: 株式会社アールティGitHubページ
 extra_css:
   - css/colors.css
+  - css/style.css
 
 plugins:
   - search
+  - git-revision-date-localized
 markdown_extensions:
   - attr_list  # 画像のalignを設定できる
   - pymdownx.tabbed  # タブで文章を切り替えられる
@@ -55,13 +58,13 @@ nav:
     # - ハードウェアデータ: sciurus17/hardware.md
     # - サンプルコード集: sciurus17/samples.md
     # - 質問集: sciurus17/qa.md
-  - RaspberryPiMouse:
+  - Raspberry Pi Mouse:
     - 製品について: raspimouse/products.md
     # - ROSパッケージの使い方: raspimouse/ros.md
     # - ROS2パッケージの使い方: raspimouse/ros2.md
     # - ハードウェアデータ: raspimouse/hardware.md
     # - 質問集: raspimouse/qa.md
-  - JetsonNanoMouse:
+  - Jetson Nano Mouse:
     - 製品について: jnmouse/products.md
     # - ROSパッケージの使い方: jnmouse/ros.md
     # - Jupyter Notebookの使い方: jnmouse/jupyter-notebook.md
