@@ -5,17 +5,18 @@ theme:
   favicon: img/rt-logo-32x32.png
   font: Incosolata
   palette:
-    scheme: default
-    primary: pink
+    scheme: rt-red
   features:
     - navigation.expand
 
 repo_url: https://github.com/rt-net/test-emanual
 edit_uri: edit/main/docs/
 
-plugins:
-  - search
-use_directory_urls: false
+site_url: https://rt-net.github.io/test-emanual/
+copyright: Copyright &copy; 2020 RT Corporation
+use_directory_urls: false # ディレクトリ名/index.htmlを開く
+
+### 拡張設定 ###
 
 extra:
   social:
@@ -25,8 +26,11 @@ extra:
      - icon: fontawesome/brands/github
        link: https://github.com/rt-net
        name: 株式会社アールティGitHubページ
-copyright: Copyright &copy; 2020 RT Corporation
+extra_css:
+  - css/colors.css
 
+plugins:
+  - search
 markdown_extensions:
   - attr_list  # 画像のalignを設定できる
   - pymdownx.tabbed  # タブで文章を切り替えられる
@@ -36,8 +40,6 @@ markdown_extensions:
   - pymdownx.emoji:  # アイコンが使える
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-
-site_url: https://rt-net.github.io/test-emanual/
 
 nav:
   - Home: index.md
