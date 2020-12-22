@@ -66,6 +66,10 @@ nav:
     # - 質問集: raspimouse/qa.md
   - Jetson Nano Mouse:
     - 製品について: jnmouse/products.md
+    - AIサンプル:
+      - Jupyter Notebookのインストール: jnmouse/jupyter-notebook/install.md
+      - Jupyter Notebookの実行: jnmouse/jupyter-notebook/example.md
+    - その他のコンテンツ: jnmouse/others.md
     # - ROSパッケージの使い方: jnmouse/ros.md
     # - Jupyter Notebookの使い方: jnmouse/jupyter-notebook.md
     # - ハードウェアデータ: jnmouse/hardware.md
