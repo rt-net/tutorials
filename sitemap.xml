@@ -35,5 +35,17 @@
      <loc>https://rt-net.github.io/test-emanual/jnmouse/products.html</loc>
      <lastmod>2020-12-22</lastmod>
      <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://rt-net.github.io/test-emanual/jnmouse/jupyter-notebook/install.html</loc>
+     <lastmod>2020-12-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://rt-net.github.io/test-emanual/jnmouse/jupyter-notebook/example.html</loc>
+     <lastmod>2020-12-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://rt-net.github.io/test-emanual/jnmouse/others.html</loc>
+     <lastmod>2020-12-22</lastmod>
+     <changefreq>daily</changefreq>
     </url>
 </urlset>
