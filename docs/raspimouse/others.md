@@ -26,6 +26,8 @@ ROSサンプル集
 Gazeboシミュレーションパッケージ
 [rt-net/raspimouse_sim](https://github.com/rt-net/raspimouse_sim)
 
+![raspimouse_sim](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_samplemaze_animation.gif)
+
 - :octicons-mark-github-16: 
 URDFパッケージ
 [rt-net/raspimouse_description](https://github.com/rt-net/raspimouse_description)
