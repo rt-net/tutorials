@@ -51,10 +51,7 @@ nav:
     - その他のコンテンツ: crane-x7/others.md
   - Sciurus17:
     - 製品について: sciurus17/products.md
-    # - ROSパッケージの使い方: sciurus17/ros.md
-    # - ハードウェアデータ: sciurus17/hardware.md
-    # - サンプルコード集: sciurus17/samples.md
-    # - 質問集: sciurus17/qa.md
+    - その他のコンテンツ: sciurus17/others.md
   - Raspberry Pi Mouse:
     - 製品について: raspimouse/products.md
     - その他のコンテンツ: raspimouse/others.md
