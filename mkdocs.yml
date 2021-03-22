@@ -68,3 +68,10 @@ nav:
     # - Jupyter Notebookの使い方: jnmouse/jupyter-notebook.md
     # - ハードウェアデータ: jnmouse/hardware.md
     # - 質問集: jnmouse/qa.md
+  - トレーニングトレーサー:
+    - 製品について: rt-tracer/products.md
+    - その他のコンテンツ: rt-tracer/others.md
+  - USB出力9軸IMUセンサモジュール: 
+    - 製品について: usb9imu/products.md
+    - その他のコンテンツ: usb9imu/others.md
+
