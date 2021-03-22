@@ -60,10 +60,7 @@ nav:
     # - 質問集: sciurus17/qa.md
   - Raspberry Pi Mouse:
     - 製品について: raspimouse/products.md
-    # - ROSパッケージの使い方: raspimouse/ros.md
-    # - ROS2パッケージの使い方: raspimouse/ros2.md
-    # - ハードウェアデータ: raspimouse/hardware.md
-    # - 質問集: raspimouse/qa.md
+    - その他のコンテンツ: raspimouse/others.md
   - Jetson Nano Mouse:
     - 製品について: jnmouse/products.md
     - AIサンプル:
