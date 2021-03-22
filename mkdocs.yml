@@ -48,10 +48,7 @@ nav:
   - Home: index.md
   - CRANE-X7:
     - 製品について: crane-x7/products.md
-    - ROSパッケージのインストール: crane-x7/ros_install.md
-    - ROSサンプルの実行: crane-x7/ros_samples.md
     - その他のコンテンツ: crane-x7/others.md
-    - 質問集: crane-x7/qa.md
   - Sciurus17:
     - 製品について: sciurus17/products.md
     # - ROSパッケージの使い方: sciurus17/ros.md
