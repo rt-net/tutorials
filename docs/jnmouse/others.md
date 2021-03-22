@@ -1,29 +1,40 @@
-## 関連ページ
+# その他のコンテンツ
 
-<img src='../img/rt-logo-32x32.png' alt='RT' width='18px'>
-[Jetson Nano Mouse使用方法紹介ブログ「Jetson Nano Mouseを動かしてみよう」](https://rt-net.jp/mobility/archives/category/developer/lets-try-jetson-nano-mouse)
+## ハードウェア
 
-## Jetson Nano Mouse用GitHubリポジトリ
+- :octicons-mark-github-16: 
+ハードウェア資料集
+[rt-net/JetsonNanoMouse_Hardware](https://github.com/rt-net/JetsonNanoMouse_Hardware)
 
-### Jetson Nano Mouse用デバイスドライバ
+![](https://rt-net.github.io/images/jetson-nano-mouse/jnmouse_step_cad.png)
 
-:octicons-mark-github-16: 
+## ソフトウェア
+
+### デバイスドライバ
+
+- :octicons-mark-github-16: 
+デバイスドライバ
 [rt-net/JetsonNanoMouse](https://github.com/rt-net/JetsonNanoMouse)
 
-### Jetson Nano Mouse用Pythonパッケージ+機械学習サンプル（Jupyter Notebook）
+### ROS
 
-:octicons-mark-github-16: 
-[rt-net/jnm_jupternotebook](https://github.com/rt-net/jnm_jupyternotebook)
-
-### Jetson Nano MouseシミュレータROSパッケージ
-
-:octicons-mark-github-16: 
+- :octicons-mark-github-16: 
+Gazeboシミュレーションパッケージ
 [rt-net/jnmouse_sim](https://github.com/rt-net/jnmouse_sim)
 
-:octicons-mark-github-16: 
+- :octicons-mark-github-16: 
+URDFパッケージ
 [rt-net/jnmouse_description](https://github.com/rt-net/jnmouse_description)
 
-### Jetson Nano Mouseハードウェア情報リポジトリ
+### Python (Jupyter Notebook)
 
-:octicons-mark-github-16: 
-[rt-net/JetsonNanoMouse_Hardware](https://github.com/rt-net/JetsonNanoMouse_Hardware)
+- :octicons-mark-github-16: 
+機械学習サンプル
+[rt-net/jnm_jupternotebook](https://github.com/rt-net/jnm_jupyternotebook)
+
+## ブログ
+
+- <img src='../img/rt-logo-32x32.png' alt='RT' width='18px'>
+Jetson Nano Mouseを動かしてみよう
+[ブログ記事一覧](https://rt-net.jp/mobility/archives/category/developer/lets-try-jetson-nano-mouse)
+
