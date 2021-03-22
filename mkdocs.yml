@@ -46,6 +46,9 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - CRANE+V2:
+    - 製品について: cranev2/products.md
+    - その他のコンテンツ: cranev2/others.md
   - CRANE-X7:
     - 製品について: crane-x7/products.md
     - その他のコンテンツ: crane-x7/others.md
