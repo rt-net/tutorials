@@ -15,10 +15,14 @@ Raspberry Pi Mouse（ラズベリーパイマウス）は
 
 ## 製品ページ
 
+製品マニュアルはこちらからダウンロードできます。
+
 <img src='../img/rt-logo-32x32.png' alt='RT' width='18px'>
 [Raspberry Pi Mouse 製品ページ](https://rt-net.jp/products/raspberrypimousev3/)
 
 ## ショップページ
+
+製品はこちらから購入できます。
 
 <img src='../img/rt-logo-32x32.png' alt='RT' width='18px'>
 [Raspberry Pi Mouse V3 フルキット - RT ROBOT SHOP](https://www.rt-shop.jp/index.php?main_page=product_info&cPath=1430&products_id=3774)

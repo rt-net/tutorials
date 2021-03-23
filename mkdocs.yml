@@ -58,7 +58,8 @@ nav:
   - Raspberry Pi Mouse:
     - 1. 製品について: raspimouse/products.md
     - 2. デバイスドライバ:
-      - デバイスドライバのインストール: raspimouse/driver/install.md
+      - 1. インストール: raspimouse/driver/install.md
+      - 2. サンプルを動かす: raspimouse/driver/samples.md
     - 3. ROS:
       - 1. ROSパッケージのインストール: raspimouse/ros/install.md
       - 2. ROSサンプルの実行: raspimouse/ros/samples.md

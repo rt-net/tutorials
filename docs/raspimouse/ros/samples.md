@@ -1,6 +1,6 @@
 # ROS サンプル集の実行
 
-このページでは、
+このページでは
 [rt-net/raspimouse_ros_examples](https://github.com/rt-net/raspimouse_ros_examples)
 のサンプル実行方法を説明します。
 
@@ -8,11 +8,24 @@
 
 1. Raspberry Piにキーボードを接続します
 1. コマンドを実行してノードを起動します
+```sh
+$ roslaunch raspimouse_ros_examples teleop.launch key:=true
+```
+
+1. ノードが起動したら`/motor_on`サービスをコールします。
+```sh
+$ rosservice call /motor_on
+```
 
 ## ジョイスティックコントローラで操縦
 
 1. Raspberry Piにコントローラを接続します
+    - [Logicool Wireless Gamepad F710](https://gaming.logicool.co.jp/ja-jp/products/gamepads/f710-wireless-gamepad.html#940-0001440)
+    - [SONY DUALSHOCK 3](https://www.jp.playstation.com/ps3/peripheral/cechzc2j.html)
 1. コマンドを実行してノードを起動します
+```sh
+
+```
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GswxdB8Ia0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
