@@ -4,57 +4,74 @@
 [rt-net/raspimouse_ros_examples](https://github.com/rt-net/raspimouse_ros_examples)
 のサンプル実行方法を説明します。
 
-## キーボードで操縦
+サンプルを実行する場合は下記コマンドを実行し、
+ROSとパッケージを読み込んでください。
 
-1. Raspberry Piにキーボードを接続します
-1. コマンドを実行してノードを起動します
 ```sh
-$ roslaunch raspimouse_ros_examples teleop.launch key:=true
+$ source /opt/ros/$ROS_DISTRO/setup.bash
+$ source ~/catkin_ws/devel/setup.bash
 ```
 
-1. ノードが起動したら`/motor_on`サービスをコールします。
+## Raspberry PiとPC間のROSネットワークを接続する
+
+環境変数`ROS_IP`、`ROS_MASTER_URI`を設定することで、
+PCからネットワークを介してRaspberry Pi側のトピックやサービスにアクセスできます。
+
+Raspberry PiのIPアドレスが`192.168.11.89`、
+PCのIPアドレスが`192.168.11.100`のとき、
+下記コマンドで環境変数を設定します。
+
 ```sh
-$ rosservice call /motor_on
+# Raspberry Pi側
+$ export ROS_IP=192.168.11.89
+$ export ROS_MASTER_URI=http://192.168.11.89:11311/
+
+# PC側
+# ROS_MASTER_URIにはRaspberry PiのIPアドレスを入力する
+$ export ROS_IP=192.168.11.100
+$ export ROS_MASTER_URI=http://192.168.11.89:11311/
 ```
 
-## ジョイスティックコントローラで操縦
+ネットワーク接続を切る場合は、
+`ROS_MASTER_URI`をデフォルトの`http://localhost:11311/`に戻します。
 
-1. Raspberry Piにコントローラを接続します
-    - [Logicool Wireless Gamepad F710](https://gaming.logicool.co.jp/ja-jp/products/gamepads/f710-wireless-gamepad.html#940-0001440)
-    - [SONY DUALSHOCK 3](https://www.jp.playstation.com/ps3/peripheral/cechzc2j.html)
-1. コマンドを実行してノードを起動します
-```sh
+## キーボードで操縦する
 
-```
+実行手順は[こちら](https://github.com/rt-net/raspimouse_ros_examples#keyboard_control)です。
+PCから操縦する場合はネットワークと環境変数を設定してください。
+
+## ジョイスティックコントローラで操縦する
+
+実行手順は[こちら](https://github.com/rt-net/raspimouse_ros_examples#joystick_control)です。
+PCから操縦する場合はネットワークと環境変数を設定してください。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GswxdB8Ia0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## カメラで物体追跡
+## カメラで物体追跡する
 
-1. ネットワークを設定します
-1. Raspberry PiにUSBカメラを接続します
-1. コマンドを実行してノードを起動します
+実行手順は[こちら](https://github.com/rt-net/raspimouse_ros_examples#object_tracking)です。
+物体検出画像をPCで表示する場合はネットワークと環境変数を設定してください。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U6_BuvrjyFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## ライントレース
 
-1. オプションキットを取り付けます
-1. コマンドを実行してノードを起動します
+実行手順は[こちら](https://github.com/rt-net/raspimouse_ros_examples#line_follower)です。
+PCから操縦する場合はネットワークと環境変数を設定してください。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oPm0sW2V_tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## LiDARでSLAM
 
-1. ネットワークを設定します
-1. オプションキットを取り付けます
-1. コマンドを実行してノードを起動します
+実行手順は[こちら](https://github.com/rt-net/raspimouse_ros_examples#slam)です。
+SLAMパッケージをPCで起動する場合はネットワークと環境変数を設定してください。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gWozU47UqVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hV68UqAntfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## IMUで角度制御
 
-1. オプションキットを取り付けます
-1. コマンドを実行してノードを起動します
+実行手順は[こちら](https://github.com/rt-net/raspimouse_ros_examples#direction_control)です。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LDpC2wqIoU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
