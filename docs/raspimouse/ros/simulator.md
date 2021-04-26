@@ -28,4 +28,21 @@ $ source ~/catkin_ws/devel/setup.bash
 $ rosrun raspimouse_gazebo download_gazebo_models.sh
 ```
 
+## キーボードで操縦する
 
+[rt-net/raspimouse_ros_examples](https://github.com/rt-net/raspimouse_ros_examples)
+を使用します。
+[ROS パッケージのインストール](./install.md)を参考に、パッケージを**PCにインストール**してください。
+
+次のコマンドを実行します。
+
+```sh
+# シミュレータの起動
+$ roslaunch raspimouse_gazebo raspimouse_with_samplemaze.launch
+
+# 別のターミナルでコマンドを実行
+$ roslaunch raspimouse_ros_examples teleop.launch key:=true mouse:=false
+```
+
+
+![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_samplemaze_animation.gif)
