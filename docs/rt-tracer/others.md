@@ -4,7 +4,7 @@
 
 - :octicons-mark-github-16: 
 ハードウェア資料集
-[rt-net/sciurus17_Hardware](https://github.com/rt-net/TrainingTracer_Hardware)
+[rt-net/TrainingTracer_Hardware](https://github.com/rt-net/TrainingTracer_Hardware)
     
 
 ## ソフトウェア

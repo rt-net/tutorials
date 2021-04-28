@@ -1,4 +1,4 @@
-site_name: RT Corporation e-manual
+site_name: RT Corporation software e-manual
 theme: 
   name: material
   custom_dir: overrides
@@ -14,7 +14,7 @@ repo_url: https://github.com/rt-net/test-emanual
 edit_uri: edit/main/docs/
 
 site_url: https://rt-net.github.io/test-emanual/
-copyright: Copyright &copy; 2020 RT Corporation
+copyright: Copyright &copy; 2021 RT Corporation
 use_directory_urls: false # ディレクトリ名/index.htmlを開く
 
 ### 拡張設定 ###
