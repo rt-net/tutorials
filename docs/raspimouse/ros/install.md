@@ -5,7 +5,7 @@
 ## Raspberry PiにインストールするOSについて
 
 Raspberry Pi OSでのROSの動作は確認していません。
-**Ubuntu Serverのインストールを推奨します**。
+**Ubuntu Server 20.04のインストールを推奨します**。
 
 ## ROSのインストール
 
@@ -22,7 +22,7 @@ Ubuntu ServerではGUIを使用しないため、`ROS-Base`パッケージをイ
 をダウンロードしてインストールします。
 
 ```sh
-$ source /opt/ros/$ROS_DISTRO/setup.bash
+$ source /opt/ros/noetic/setup.bash
 $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws/src
 # Clone ROS packages
