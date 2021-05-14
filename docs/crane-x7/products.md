@@ -1,5 +1,6 @@
 ---
 title: CRANE-X7
+robot: CRANE-X7
 ---
 
 # CRANE-X7

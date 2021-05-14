@@ -1,5 +1,6 @@
 ---
 title: CRANE+V2
+robot: CRANE+V2
 ---
 
 # CRANE+V2
