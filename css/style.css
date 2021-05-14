@@ -11,5 +11,5 @@
     padding-left: 0px;
     font-size: .64rem;
     color: var(--md-footer-fg-color);
-    background-color: var(--md-footer-bg-color);
+    background-color: var(--md-footer-bg-color-dark);
 }
