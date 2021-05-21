@@ -1,3 +1,8 @@
+---
+title: シミュレータの実行
+robot: Raspberry Pi Mouse
+---
+
 # シミュレータの実行
 
 このページでは、

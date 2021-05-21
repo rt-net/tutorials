@@ -1,5 +1,6 @@
 ---
 title: デバイスドライバのサンプルを動かす
+robot: Raspberry Pi Mouse
 ---
 
 # サンプルプログラムの実行

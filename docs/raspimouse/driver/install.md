@@ -1,5 +1,6 @@
 ---
 title: デバイスドライバのインストール
+robot: Raspberry Pi Mouse
 ---
 
 # デバイスドライバのインストール

@@ -1,5 +1,6 @@
 ---
 title: Sciurus17
+robot: Sciurus17
 ---
 
 # Sciurus17

@@ -1,5 +1,6 @@
 ---
 title: Raspberry Pi Mouse
+robot: Raspberry Pi Mouse
 ---
 
 # Raspberry Pi Mouse

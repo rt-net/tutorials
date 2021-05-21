@@ -1,3 +1,7 @@
+---
+title: その他のコンテンツ (Jetson Nano Mouse)
+robot: Jetson Nano Mouse
+---
 # その他のコンテンツ
 
 ## ハードウェア

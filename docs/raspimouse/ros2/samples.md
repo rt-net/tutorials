@@ -1,3 +1,8 @@
+---
+title: ROS サンプル集の実行
+robot: Raspberry Pi Mouse
+---
+
 # ROS サンプル集の実行
 
 このページでは

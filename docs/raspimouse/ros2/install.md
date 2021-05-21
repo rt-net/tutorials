@@ -1,3 +1,8 @@
+---
+title: ROS 2パッケージのインストール
+robot: Raspberry Pi Mouse
+---
+
 # ROS 2パッケージのインストール
 
 このページでは、Raspberry Pi MouseのROS 2サンプル集のインストール方法を説明します。

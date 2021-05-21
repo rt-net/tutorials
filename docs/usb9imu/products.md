@@ -1,5 +1,6 @@
 ---
 title: USB出力9軸IMUセンサモジュール
+robot: usb9imu
 ---
 
 # USB出力9軸IMUセンサモジュール

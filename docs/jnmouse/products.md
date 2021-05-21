@@ -1,5 +1,6 @@
 ---
 title: Jetson Nano Mouse
+robot: Jetson Nano Mouse
 ---
 
 # Jetson Nano Mouse
