@@ -34,6 +34,15 @@ extra_css:
 plugins:
   - search
   - git-revision-date-localized
+  - redirects:  # リダイレクト用
+      redirect_maps:
+        cranev2/index.md: cranev2/products.md
+        crane-x7/index.md: crane-x7/products.md
+        sciurus17/index.md: sciurus17/products.md
+        raspimouse/index.md: raspimouse/products.md
+        jnmouse/index.md: jnmouse/products.md
+        usb9imu/index.md: usb9imu/products.md
+
 markdown_extensions:
   - attr_list  # 画像のalignを設定できる
   - pymdownx.tabbed  # タブで文章を切り替えられる
