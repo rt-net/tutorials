@@ -57,7 +57,6 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-    - 本サイト内のコンテンツについて: about.md
   - CRANE+V2:
     - 1. 製品について: cranev2/products.md
     - 2. 参考リンク集: cranev2/others.md
