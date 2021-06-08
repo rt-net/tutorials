@@ -57,13 +57,13 @@ nav:
   - Home: index.md
   - CRANE+V2:
     - 1. 製品について: cranev2/products.md
-    - 2. その他のコンテンツ: cranev2/others.md
+    - 2. 参考リンク集: cranev2/others.md
   - CRANE-X7:
     - 1. 製品について: crane-x7/products.md
-    - 2. その他のコンテンツ: crane-x7/others.md
+    - 2. 参考リンク集: crane-x7/others.md
   - Sciurus17:
     - 1. 製品について: sciurus17/products.md
-    - 2. その他のコンテンツ: sciurus17/others.md
+    - 2. 参考リンク集: sciurus17/others.md
   - Raspberry Pi Mouse:
     - 1. 製品について: raspimouse/products.md
     - 2. デバイスドライバ:
@@ -76,17 +76,17 @@ nav:
     - 4. ROS 2:
       - 1. ROS 2パッケージのインストール: raspimouse/ros2/install.md
       - 2. ROS 2サンプルの実行: raspimouse/ros2/samples.md
-    - 5. その他のコンテンツ: raspimouse/others.md
+    - 5. 参考リンク集: raspimouse/others.md
   - Jetson Nano Mouse:
     - 1. 製品について: jnmouse/products.md
     # - AIサンプル:
     #   - Jupyter Notebookのインストール: jnmouse/jupyter-notebook/install.md
     #   - Jupyter Notebookの実行: jnmouse/jupyter-notebook/example.md
-    - 2. その他のコンテンツ: jnmouse/others.md
+    - 2. 参考リンク集: jnmouse/others.md
   - トレーニングトレーサー:
     - 1. 製品について: rt-tracer/products.md
-    - 2. その他のコンテンツ: rt-tracer/others.md
+    - 2. 参考リンク集: rt-tracer/others.md
   - USB出力9軸IMUセンサモジュール: 
     - 1. 製品について: usb9imu/products.md
-    - 2. その他のコンテンツ: usb9imu/others.md
+    - 2. 参考リンク集: usb9imu/others.md
 

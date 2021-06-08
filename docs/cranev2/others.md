@@ -1,8 +1,8 @@
 ---
-title: その他のコンテンツ (CRANE+V2)
+title: 参考リンク集 (CRANE+V2)
 robot: CRANE+V2
 ---
-# その他のコンテンツ
+# 参考リンク集
 
 ## ソフトウェア
 
