@@ -24,7 +24,7 @@ ROSパッケージ
 
 - :octicons-mark-github-16: 
 Cで実装する「実践ロボット制御」
-[rt-net/crane_x7_js](https://github.com/rt-net/robotics_from_scratch)
+[rt-net/robotics_from_scratch](https://github.com/rt-net/robotics_from_scratch)
 ### C++
 
 - :octicons-mark-github-16: 
