@@ -9,6 +9,8 @@ theme:
     scheme: rt-red
   features:
     - navigation.expand
+    - navigation.tabs
+    - navigation.top
 
 repo_url: https://github.com/rt-net/test-emanual
 edit_uri: edit/main/docs/
