@@ -13,3 +13,22 @@
     color: var(--md-footer-fg-color);
     background-color: var(--md-footer-bg-color-dark);
 }
+
+.md-footer {
+    background-color: var(--md-default-bg-color); 
+}
+
+.md-footer-nav a {
+    color: var(--md-typeset-color);
+}
+
+.md-typeset table:not([class]) tr:hover {
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+}
+
+.md-typeset table:not([class]) td:hover {
+    transition: background-color 125ms ease 0s;
+    background-color: rgba(0,0,0,.035);
+    box-shadow: 0 .05rem 0 var(--md-default-bg-color) inset;
+}

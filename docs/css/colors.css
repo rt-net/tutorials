@@ -6,10 +6,3 @@
     --md-footer-bg-color: hsla(0, 0%, 0%, 0.32);
     --md-footer-bg-color--dark: hsla(0, 0%, 0%, 0.87);
 }
-
-.md-footer {
-    background-color: var(--md-default-bg-color); 
-}
-.md-footer-nav a {
-    color: var(--md-typeset-color);
-}
