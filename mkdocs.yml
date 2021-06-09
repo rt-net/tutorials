@@ -19,6 +19,10 @@ site_url: https://rt-net.github.io/test-emanual/
 copyright: Copyright &copy; 2021 RT Corporation
 use_directory_urls: false # ディレクトリ名/index.htmlを開く
 
+google_analytics:
+  - UA-
+  - auto
+
 ### 拡張設定 ###
 
 extra:
@@ -35,7 +39,8 @@ extra_css:
 
 plugins:
   - search
-  - git-revision-date-localized
+  # - git-revision-date-localized
+  - git-latest-release
   - redirects:  # リダイレクト用
       redirect_maps:
         cranev2/index.md: cranev2/products.md
@@ -56,7 +61,9 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 nav:
-  - Home: index.md
+  - Home: 
+    - トップページ: index.md
+    - 本サイト内のコンテンツについて: about.md
   - CRANE+V2:
     - 1. 製品について: cranev2/products.md
     - 2. 参考リンク集: cranev2/others.md
