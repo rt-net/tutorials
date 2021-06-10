@@ -18,7 +18,7 @@
     background-color: var(--md-default-bg-color); 
 }
 
-.md-footer-nav a {
+.md-footer__inner a {
     color: var(--md-typeset-color);
 }
 
