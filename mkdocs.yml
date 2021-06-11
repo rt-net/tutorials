@@ -38,7 +38,10 @@ extra_css:
   - css/style.css
 
 plugins:
-  - search
+  - search:
+      lang:
+        - en
+        - ja
   - redirects:  # リダイレクト用
       redirect_maps:
         cranev2/index.md: cranev2/products.md
