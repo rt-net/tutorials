@@ -1,10 +1,10 @@
 # RT Corporation e-manual 
 
-このサイトには[株式会社アールティ](https://rt-net.jp/)
+このサイトには[株式会社アールティ](https://rt-net.jp/){target=_blank rel=noopener}
 が公開する**ソフトウェア**のマニュアルを公開しています。
 
 ハードウェアに関する情報については、
-[コーポレートサイトの各製品ページ](https://rt-net.jp/works_category/allproducts/)
+[コーポレートサイトの各製品ページ](https://rt-net.jp/works_category/allproducts/){target=_blank rel=noopener}
 に公開しているマニュアルや、製品に付属しているマニュアルを参照してください。
 
 | [CRANE+V2][CRV2DOC] | [CRANE-X7][CRX7DOC] | [Sciurus17][SC17DOC] |
