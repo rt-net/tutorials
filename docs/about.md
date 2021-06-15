@@ -15,11 +15,3 @@
 当該製品および当ソフトウェアの使用中に生じたいかなる損害も株式会社アールティでは一切の責任を負いかねます。  
 ユーザー自身で作成されたプログラムに適切な制限動作が備わっていない場合、本体の損傷や、本体が周囲や作業者に接触、あるいは衝突し、思わぬ重大事故が発生する危険があります。  
 ユーザーの責任において十分に安全に注意した上でご使用ください。
-
-本サイトでは、利用者の利用状況を把握するために、Googleによるアクセス解析ツール「Google Analytics」を利用しています。  
-Google Analyticsはトラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。  
-この機能はCookieを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。  
-Google Analyticsの利用に関して、詳しくはこちら（[https://marketingplatform.google.com/about/analytics/terms/jp/](https://marketingplatform.google.com/about/analytics/terms/jp/){target=_blank rel=noopener}）をご覧ください。
-
-Google Analyticsにより収集された利用者の情報は、Google社のプライバシーポリシーに基づいて管理されます。  
-Google社のプライバシーポリシーは、こちら（[https://policies.google.com/privacy?hl=ja](https://policies.google.com/privacy?hl=ja){target=_blank rel=noopener}）をご覧ください。
