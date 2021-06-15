@@ -17,3 +17,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
+          user_name: 'RT Corporation[bot]'
+          user_email: 'shop@rt-net.jp'
