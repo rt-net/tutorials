@@ -17,25 +17,25 @@ robot: Raspberry Pi Mouse
 ## ROS / ROS 2のインストール
 
 === "ROS"
-    [http://wiki.ros.org/noetic/Installation/Ubuntu](http://wiki.ros.org/noetic/Installation/Ubuntu)
+    [https://wiki.ros.org/noetic/Installation/Ubuntu](https://wiki.ros.org/noetic/Installation/Ubuntu){target=_blank rel=noopener}
     を参考に、`ROS Noetic`をインストールします。
     Ubuntu ServerではGUIを使用しないため、`ROS-Base`パッケージをインストールします。
 
 === "ROS 2"
-    [https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
+    [https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html){target=_blank rel=noopener}
     を参考に、`ROS 2 Foxy`をインストールします。
     Ubuntu ServerではGUIを使用しないため、`ROS-Base`パッケージをインストールします。
 
-    [https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html](https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html)
+    [https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html](https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html){target=_blank rel=noopener}
     を参考に、パッケージビルドツールの`colcon`をインストールします。
 
 ## ROS / ROS 2パッケージのインストール
 
 === "ROS"
     制御用のパッケージである
-    [ryuichiueda/raspimouse_ros_2](https://github.com/ryuichiueda/raspimouse_ros_2)
+    [ryuichiueda/raspimouse_ros_2](https://github.com/ryuichiueda/raspimouse_ros_2){target=_blank rel=noopener}
     と、サンプル集パッケージ
-    [rt-net/raspimouse_ros_examples](https://github.com/rt-net/raspimouse_ros_examples)
+    [rt-net/raspimouse_ros_examples](https://github.com/rt-net/raspimouse_ros_examples){target=_blank rel=noopener}
     をダウンロードしてインストールします。
 
     ```sh
@@ -58,7 +58,7 @@ robot: Raspberry Pi Mouse
 
 === "ROS 2"
     サンプル集パッケージ
-    [rt-net/raspimouse_ros2_examples](https://github.com/rt-net/raspimouse_ros2_examples)
+    [rt-net/raspimouse_ros2_examples](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
     をダウンロードしてインストールします。
 
     ```sh

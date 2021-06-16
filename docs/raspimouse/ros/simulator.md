@@ -7,7 +7,7 @@ robot: Raspberry Pi Mouse
 
 === "ROS"
     このページでは、
-    [rt-net/raspimouse_sim](https://github.com/rt-net/raspimouse_sim)
+    [rt-net/raspimouse_sim](https://github.com/rt-net/raspimouse_sim){target=_blank rel=noopener}
     パッケージを用いたシミュレーションの実行方法を説明します。
 
     シミュレーション環境はUbuntu PC上に構築します。
@@ -38,7 +38,7 @@ robot: Raspberry Pi Mouse
 ## キーボードで操縦する
 
 === "ROS"
-    [rt-net/raspimouse_ros_examples](https://github.com/rt-net/raspimouse_ros_examples)
+    [rt-net/raspimouse_ros_examples](https://github.com/rt-net/raspimouse_ros_examples){target=_blank rel=noopener}
     を使用します。
     [ROS パッケージのインストール](./install.md)を参考に、パッケージを**PCにインストール**してください。
 

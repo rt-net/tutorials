@@ -8,7 +8,7 @@ robot: Raspberry Pi Mouse
 
 === "ROS"
     このページでは
-    [ROSサンプル集(rt-net/raspimouse_ros_examples)](https://github.com/rt-net/raspimouse_ros_examples)
+    [ROSサンプル集(rt-net/raspimouse_ros_examples)](https://github.com/rt-net/raspimouse_ros_examples){target=_blank rel=noopener}
     のサンプル実行方法を説明します。
 
     サンプルを実行する場合は下記コマンドを実行し、
@@ -22,7 +22,7 @@ robot: Raspberry Pi Mouse
 
 === "ROS 2"
     このページでは
-    [ROS 2サンプル集(rt-net/raspimouse_ros2_examples)](https://github.com/rt-net/raspimouse_ros2_examples)
+    [ROS 2サンプル集(rt-net/raspimouse_ros2_examples)](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
     のサンプル実行方法を説明します。
 
     サンプルを実行する場合は下記コマンドを実行し、
@@ -81,19 +81,19 @@ robot: Raspberry Pi Mouse
 ## キーボードで操縦する
 
 === "ROS"
-    実行手順は[ROS サンプル集のkeyboard_control](https://github.com/rt-net/raspimouse_ros_examples#keyboard_control)
+    実行手順は[ROS サンプル集のkeyboard_control](https://github.com/rt-net/raspimouse_ros_examples#keyboard_control){target=_blank rel=noopener}
     を参照してください。
     PCから操縦する場合はネットワークと環境変数を設定してください。
 
 ## ジョイスティックコントローラで操縦する
 
 === "ROS"
-    実行手順は[ROS サンプル集のjoystick_control](https://github.com/rt-net/raspimouse_ros_examples#joystick_control)
+    実行手順は[ROS サンプル集のjoystick_control](https://github.com/rt-net/raspimouse_ros_examples#joystick_control){target=_blank rel=noopener}
     を参照してください。
     PCから操縦する場合はネットワークと環境変数を設定してください。
 
 === "ROS 2"
-    実行手順は[ROS 2サンプル集のjoystick_control](https://github.com/rt-net/raspimouse_ros2_examples#joystick_control)
+    実行手順は[ROS 2サンプル集のjoystick_control](https://github.com/rt-net/raspimouse_ros2_examples#joystick_control){target=_blank rel=noopener}
     を参照してください。
     PCから操縦する場合はネットワークと環境変数を設定してください。
 
@@ -102,12 +102,12 @@ robot: Raspberry Pi Mouse
 ## カメラで物体追跡する
 
 === "ROS"
-    実行手順は[ROS サンプル集のobject_tracking](https://github.com/rt-net/raspimouse_ros_examples#object_tracking)
+    実行手順は[ROS サンプル集のobject_tracking](https://github.com/rt-net/raspimouse_ros_examples#object_tracking){target=_blank rel=noopener}
     を参照してください。
     物体検出画像をPCで表示する場合はネットワークと環境変数を設定してください。
 
 === "ROS 2"
-    実行手順は[ROS 2サンプル集のobject_tracking](https://github.com/rt-net/raspimouse_ros2_examples#object_tracking)
+    実行手順は[ROS 2サンプル集のobject_tracking](https://github.com/rt-net/raspimouse_ros2_examples#object_tracking){target=_blank rel=noopener}
     を参照してください。
     物体検出画像をPCで表示する場合はネットワークと環境変数を設定してください。
 
@@ -116,12 +116,12 @@ robot: Raspberry Pi Mouse
 ## ライントレース
 
 === "ROS"
-    実行手順は[ROS サンプル集のline_follower](https://github.com/rt-net/raspimouse_ros_examples#line_follower)
+    実行手順は[ROS サンプル集のline_follower](https://github.com/rt-net/raspimouse_ros_examples#line_follower){target=_blank rel=noopener}
     を参照してください。
     PCから操縦する場合はネットワークと環境変数を設定してください。
 
 === "ROS 2"
-    実行手順は[ROS 2サンプル集のline_follower](https://github.com/rt-net/raspimouse_ros2_examples#line_follower)
+    実行手順は[ROS 2サンプル集のline_follower](https://github.com/rt-net/raspimouse_ros2_examples#line_follower){target=_blank rel=noopener}
     を参照してください。
     PCから操縦する場合はネットワークと環境変数を設定してください。
 
@@ -130,12 +130,12 @@ robot: Raspberry Pi Mouse
 ## LiDARでSLAM
 
 === "ROS"
-    実行手順は[ROS サンプル集のSLAM](https://github.com/rt-net/raspimouse_ros_examples#slam)
+    実行手順は[ROS サンプル集のSLAM](https://github.com/rt-net/raspimouse_ros_examples#slam){target=_blank rel=noopener}
     を参照してください。
     SLAMパッケージをPCで起動する場合はネットワークと環境変数を設定してください。
 
 === "ROS 2"
-    実行手順は[ROS 2サンプル集のSLAM](https://github.com/rt-net/raspimouse_ros2_examples#slam)
+    実行手順は[ROS 2サンプル集のSLAM](https://github.com/rt-net/raspimouse_ros2_examples#slam){target=_blank rel=noopener}
     を参照してください。
     SLAMパッケージをPCで起動する場合はネットワークと環境変数を設定してください。
 
@@ -146,11 +146,11 @@ robot: Raspberry Pi Mouse
 ## IMUで角度制御
 
 === "ROS"
-    実行手順は[ROS サンプル集のdirection_control](https://github.com/rt-net/raspimouse_ros_examples#direction_control)
+    実行手順は[ROS サンプル集のdirection_control](https://github.com/rt-net/raspimouse_ros_examples#direction_control){target=_blank rel=noopener}
     を参照してください。
 
 === "ROS 2"
-    実行手順は[ROS 2サンプル集のdirection_controller](https://github.com/rt-net/raspimouse_ros2_examples#direction_controller)
+    実行手順は[ROS 2サンプル集のdirection_controller](https://github.com/rt-net/raspimouse_ros2_examples#direction_controller){target=_blank rel=noopener}
     を参照してください。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LDpC2wqIoU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

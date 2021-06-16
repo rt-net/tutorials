@@ -26,7 +26,7 @@ Raspberry Pi Mouseのデバイスドライバは`Ubuntu`と`Raspberry Pi OS (旧
     詳細はRaspberry Pi Mouseの**製品マニュアルを参照してください**。
 
 === "Ubuntu Server 20.04"
-    1. [https://www.raspberrypi.org/software/](https://www.raspberrypi.org/software/) にアクセスします
+    1. [https://www.raspberrypi.org/software/](https://www.raspberrypi.org/software/){target=_blank rel=noopener} にアクセスします
     1. Raspberry Pi Imagerをダウンロードします
     ![](../../img/raspimouse/driver/download_raspberry_pi_imager.png)
     1. SDカードをPCに接続します
@@ -38,7 +38,7 @@ Raspberry Pi Mouseのデバイスドライバは`Ubuntu`と`Raspberry Pi OS (旧
     1. `$sudo apt update && sudo apt upgrade`を実行します
 
 === "Raspberry Pi OS"
-    1. [https://www.raspberrypi.org/software/](https://www.raspberrypi.org/software/) にアクセスします
+    1. [https://www.raspberrypi.org/software/](https://www.raspberrypi.org/software/){target=_blank rel=noopener} にアクセスします
     1. Raspberry Pi Imagerをダウンロードします
     ![](../../img/raspimouse/driver/download_raspberry_pi_imager.png)
     1. SDカードをPCに接続します
