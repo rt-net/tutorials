@@ -24,5 +24,5 @@
 
 本サイトの文章に説明不足や誤記などがあれば、
 お困りの内容を
-[本サイトのGitHubリポジトリのissue](https://github.com/rt-net/test-emanual/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request_ja.md&title=)
+[本サイトのGitHubリポジトリのissue](https://github.com/rt-net/e-manual/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request_ja.md&title=)
 へ投稿してください。

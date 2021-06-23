@@ -12,10 +12,10 @@ theme:
     - navigation.tabs
     - navigation.top
 
-repo_url: https://github.com/rt-net/test-emanual
+repo_url: https://github.com/rt-net/e-manual
 edit_uri: edit/main/docs/
 
-site_url: https://rt-net.github.io/test-emanual/
+site_url: https://rt-net.github.io/e-manual/
 copyright: Copyright &copy; 2021 RT Corporation
 use_directory_urls: false # ディレクトリ名/index.htmlを開く
 

@@ -2,7 +2,7 @@
 
 本リポジトリでは株式会社アールティの製品のオンライン**ソフトウェアマニュアル**を管理します。
 
-マニュアルは[こちら](https://rt-net.github.io/test-emanual/index.html)から閲覧できます。
+マニュアルは[こちら](https://rt-net.github.io/e-manual/index.html)から閲覧できます。
 
 ## License
 
@@ -25,7 +25,7 @@
 ローカルで編集したマニュアルを閲覧できます。
 
 ```sh
-$ https://github.com/rt-net/test-emanual.git
-$ cd test-emanual
+$ https://github.com/rt-net/e-manual.git
+$ cd e-manual
 $ ./preview.sh
 ```
