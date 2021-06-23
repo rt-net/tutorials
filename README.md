@@ -2,11 +2,13 @@
 
 本リポジトリでは株式会社アールティの製品のオンライン**ソフトウェアマニュアル**を管理します。
 
-マニュアルは[こちら](https://rt-net.github.io/e-manual/index.html)から閲覧できます。
+マニュアルは
+[https://rt-net.github.io/e-manual/index.html](https://rt-net.github.io/e-manual/index.html)
+から閲覧できます。
 
 ## License
 
-(C) 2021 RT Coporation
+(C) 2021 RT Corporation
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />
 本リポジトリ内のコンテンツは 
@@ -25,7 +27,7 @@
 ローカルで編集したマニュアルを閲覧できます。
 
 ```sh
-$ https://github.com/rt-net/e-manual.git
+$ git clone https://github.com/rt-net/e-manual.git
 $ cd e-manual
 $ ./preview.sh
 ```
