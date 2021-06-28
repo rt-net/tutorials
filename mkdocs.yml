@@ -18,6 +18,7 @@ edit_uri: edit/main/docs/
 site_url: https://rt-net.github.io/e-manual/
 copyright: Copyright &copy; 2021 RT Corporation
 use_directory_urls: false # ディレクトリ名/index.htmlを開く
+site_description: 株式会社アールティのオンラインソフトウェアマニュアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。
 
 ### 拡張設定 ###
 
