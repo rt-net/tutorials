@@ -1,3 +1,22 @@
+<!--
+  Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
 
 <!doctype html>
 <html lang="en" class="no-js">
@@ -5,6 +24,8 @@
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="株式会社アールティのオンラインソフトウェアマニュアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。">
       
       
       
@@ -59,6 +80,40 @@
 
     
     
+
+  <!-- Determine title -->
+  
+  
+    
+  
+
+  <!-- The image needs to have an absolute URL -->
+  
+
+  <!-- Open graph meta tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="RT Corporation software e-manual - 本サイト内のコンテンツについて" />
+  <meta property="og:description" content="株式会社アールティのオンラインソフトウェアマニュアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。" />
+  <meta property="og:url" content="https://rt-net.github.io/e-manual/about.html" />
+  <meta property="og:image" content="https://rt-net.github.io/e-manual/img/rt-logo-270x270.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="270" />
+  <meta property="og:image:height" content="270" />
+
+  <!-- Twitter meta tags -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@rt_corp" />
+  <meta name="twitter:creator" content="@rt_corp" />
+  <meta name="twitter:title" content="RT Corporation software e-manual - 本サイト内のコンテンツについて" />
+  <meta name="twitter:description" content="株式会社アールティのオンラインソフトウェアマニュアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。" />
+  <meta name="twitter:image" content="https://rt-net.github.io/e-manual/img/rt-logo-270x270.png" />
+
+  <!-- Extra stylesheets -->
+  <link
+    rel="stylesheet"
+    href="overrides/assets/stylesheets/main.css"
+  />
+
   </head>
   
   
@@ -1161,8 +1216,24 @@ Google社のプライバシーポリシーは、こちら（<a href="https://pol
     <script id="__config" type="application/json">{"base": ".", "features": ["navigation.expand", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
     
     
+  
       <script src="assets/javascripts/bundle.76f349be.min.js"></script>
       
     
+
+  <!-- Extra JavaScript -->
+  <script src="overrides/assets/javascripts/bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tiny-segmenter@0.2.0/dist/tiny-segmenter-0.2.0.min.js"></script>
+  <script>
+  var __search = {
+      transform: function(query) {
+          var segmenter = new TinySegmenter();
+          var segs = segmenter.segment(query);
+          var newQuery = segs.join(" ");
+          return newQuery;
+      }
+  }
+  </script>
+
   </body>
 </html>
