@@ -19,10 +19,6 @@ site_url: https://rt-net.github.io/e-manual/
 copyright: Copyright &copy; 2021 RT Corporation
 use_directory_urls: false # ディレクトリ名/index.htmlを開く
 
-google_analytics:
-  - UA-
-  - auto
-
 ### 拡張設定 ###
 
 extra:
@@ -33,6 +29,10 @@ extra:
      - icon: fontawesome/brands/github
        link: https://github.com/rt-net
        name: 株式会社アールティGitHubページ
+  analytics:
+    provider: google
+    property: UA-69742588-2
+
 extra_css:
   - css/colors.css
   - css/style.css

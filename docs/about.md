@@ -26,3 +26,13 @@
 お困りの内容を
 [本サイトのGitHubリポジトリのissue](https://github.com/rt-net/e-manual/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request_ja.md&title=)
 へ投稿してください。
+
+## アナリティクスについて
+
+本サイトでは、利用者の利用状況を把握するために、Googleによるアクセス解析ツール「Google Analytics」を利用しています。  
+Google Analyticsはトラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。  
+この機能はCookieを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。  
+Google Analyticsの利用に関して、詳しくはこちら（[https://marketingplatform.google.com/about/analytics/terms/jp/](https://marketingplatform.google.com/about/analytics/terms/jp/){target=_blank rel=noopener}）をご覧ください。
+
+Google Analyticsにより収集された利用者の情報は、Google社のプライバシーポリシーに基づいて管理されます。  
+Google社のプライバシーポリシーは、こちら（[https://policies.google.com/privacy?hl=ja](https://policies.google.com/privacy?hl=ja){target=_blank rel=noopener}）をご覧ください。
