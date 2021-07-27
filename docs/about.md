@@ -1,24 +1,12 @@
-# 本サイトについて
+# 問い合わせ・サポートについて
 
 ## 免責事項
 
-本サイト内のコンテンツはすべて「AS IS」（現状有姿のまま）で提供しています。本サイト内のコンテンツに関する無償サポートはありません。
+本サイト内のコンテンツはすべて「AS IS」（現状有姿のまま）で提供しています。
 
 当該製品および当ソフトウェアの使用中に生じたいかなる損害も株式会社アールティでは一切の責任を負いかねます。  
 ユーザー自身で作成されたプログラムに適切な制限動作が備わっていない場合、本体の損傷や、本体が周囲や作業者に接触、あるいは衝突し、思わぬ重大事故が発生する危険があります。  
 ユーザーの責任において十分に安全に注意した上でご使用ください。
-
-## サポートについて
-
-「Linuxの使い方を知りたい」「ROSの使い方を知りたい」等、
-詳しいサポートを希望する場合は有償にて承ります。下記ページからお申し込みください。
-
-[株式会社アールティ | お問合わせ](https://rt-net.jp/company/inquiries/){target=_blank rel=noopener}
-
-「ROSパッケージがインストールできない」「サンプルプログラムが動作しない」等、
-ソフトウェアについてのお問い合わせは**GitHubのissue**として投稿をお願いします。
-
-[GitHub | RT Corporation](https://github.com/rt-net){target=_blank rel=noopener}
 
 ## 本サイトへの問い合わせについて
 
@@ -26,6 +14,22 @@
 お困りの内容を
 [本サイトのGitHubリポジトリのissue](https://github.com/rt-net/e-manual/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request_ja.md&title=)
 へ投稿してください。
+
+## アールティ製品に関する問い合わせについて
+
+### 製品ソフトウェア
+
+[各ソフトウェアGitHubリポジトリ](https://github.com/rt-net){target=_blank rel=noopener}
+のissueへ投稿してください。
+
+### 製品ハードウェア
+
+[ :e-mail: support@rt-net.jp](mailto:support@rt-net) へお問い合わせください。
+
+## アールティに関する問い合わせについて
+
+[株式会社アールティ | お問合わせページ](https://rt-net.jp/company/inquiries/){target=_blank rel=noopener}
+からお問い合わせください。
 
 ## アナリティクスについて
 
