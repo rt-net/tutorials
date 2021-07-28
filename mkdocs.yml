@@ -1,4 +1,4 @@
-site_name: RT Corporation software e-manual
+site_name: RT Corporation software tutorials
 theme: 
   name: material
   custom_dir: overrides
