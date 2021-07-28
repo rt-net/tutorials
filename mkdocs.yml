@@ -65,7 +65,7 @@ markdown_extensions:
 nav:
   - Home: 
     - トップページ: index.md
-    - 問い合わせ・サポートについて: about.md
+    - 免責事項・問い合わせについて: about.md
   - CRANE+V2:
     - 1. 製品について: cranev2/products.md
     - 2. 参考リンク集: cranev2/others.md
