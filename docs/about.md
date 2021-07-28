@@ -48,6 +48,7 @@ Google社のプライバシーポリシーは、こちら（[https://policies.go
 
 - Arduino、およびそのロゴは、Arduino SA の登録商標または商標です
 - GitHub、およびそのロゴは、GitHub, Inc. の登録商標または商標です
+- Google、YouTubeならびにすべてのGoogleの商標およびロゴは、Google LLCの米国およびその他の国における商標または登録商標です
 - InvenSense、 MPU9250、およびそれらのロゴは、InvenSense, Inc. の登録商標または商標です
 - Jetson Nano、およびそのロゴは、米国およびその他の国におけるNVIDIA Corporation の登録商標または商標です
 - Linuxは、米国およびその他の国におけるLinus Torvaldsの登録商標です
