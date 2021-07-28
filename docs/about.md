@@ -40,3 +40,20 @@ Google Analyticsの利用に関して、詳しくはこちら（[https://marketi
 
 Google Analyticsにより収集された利用者の情報は、Google社のプライバシーポリシーに基づいて管理されます。  
 Google社のプライバシーポリシーは、こちら（[https://policies.google.com/privacy?hl=ja](https://policies.google.com/privacy?hl=ja){target=_blank rel=noopener}）をご覧ください。
+
+## 商標について
+
+本サイトに記載されている会社名や製品名、サービス名は、各社の登録商標または商標です。
+
+- Arduino、およびそのロゴは、Arduino SA の登録商標または商標です
+- GitHub、およびそのロゴは、GitHub, Inc. の登録商標または商標です
+- InvenSense、 MPU9250、およびそれらのロゴは、InvenSense, Inc. の登録商標または商標です
+- Jetson Nano、およびそのロゴは、米国およびその他の国におけるNVIDIA Corporation の登録商標または商標です
+- Linuxは、米国およびその他の国におけるLinus Torvaldsの登録商標です
+- Mbed、およびそのロゴは、Arm Ltd. の登録商標または商標です
+- Raspberry Pi、およびそのロゴは、Raspberry Pi Foundation の登録商標または商標です
+- ROBOTIS、およびそのロゴは、ROBOTIS Co.,Ltd. の登録商標または商標です
+- ROS、ROS 2、Gazebo、およびそれらロゴは、Open Source Robotics Foundation, Inc. の登録商標または商標です
+- STM32、およびそのロゴは、EUおよびその他の国におけるSTMicroelectronics International NV またはその関連会社の登録商標または商標です
+- Ubuntu、およびそのロゴは、Canonical Ltd. の登録商標または商標です
+- Wi-Fi、およびそのロゴは、Wi-Fi Allianceの登録商標です
