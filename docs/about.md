@@ -24,7 +24,8 @@
 
 ### 製品ハードウェア
 
-[ :e-mail: support@rt-net.jp](mailto:support@rt-net) へお問い合わせください。
+:e-mail: support@rt-net.jp へお問い合わせください。  
+（このメールアドレスへの特定電子メールの送信を拒否いたします）
 
 ## アールティに関する問い合わせについて
 
