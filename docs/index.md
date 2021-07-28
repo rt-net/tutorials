@@ -1,7 +1,7 @@
-# RT Corporation e-manual 
+# RT Corporation software tutorials
 
 このサイトには[株式会社アールティ](https://rt-net.jp/){target=_blank rel=noopener}
-が公開する**ソフトウェア**のマニュアルを公開しています。
+が公開する**ソフトウェア**のチュートリアルを記載しています。
 
 ハードウェアに関する情報については、
 [コーポレートサイトの各製品ページ](https://rt-net.jp/works_category/allproducts/){target=_blank rel=noopener}

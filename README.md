@@ -1,9 +1,9 @@
-# RT Corporation Software e-Manual
+# RT Corporation Software tutorials
 
-本リポジトリでは株式会社アールティの製品のオンライン**ソフトウェアマニュアル**を管理します。
+本リポジトリでは株式会社アールティの製品のオンライン**ソフトウェアチュートリアル**を管理します。
 
-マニュアルは
-[https://rt-net.github.io/e-manual/index.html](https://rt-net.github.io/e-manual/index.html)
+チュートリアルは
+[https://rt-net.github.io/tutorials/index.html](https://rt-net.github.io/tutorials/index.html)
 から閲覧できます。
 
 ## License
@@ -21,13 +21,13 @@
 誤植や不具合の修正は常時受け付けています。
 詳しくは[コントリビューションガイドライン](https://github.com/rt-net/.github/blob/master/CONTRIBUTING.md)に従ってください。
 
-### Build and browse e-manual
+### Build and browse tutorials
 
 `preview.sh`実行後にwebブラウザで`http://0.0.0.0:8000/`へアクセスすると
 ローカルで編集したマニュアルを閲覧できます。
 
 ```sh
-$ git clone https://github.com/rt-net/e-manual.git
-$ cd e-manual
+$ git clone https://github.com/rt-net/tutorials.git
+$ cd tutorials
 $ ./preview.sh
 ```

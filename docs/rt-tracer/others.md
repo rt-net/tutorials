@@ -13,7 +13,7 @@ robot: rt-tracer
 
 ## ソフトウェア
 
-### Arduino / mbed / STM32
+### Arduino / Mbed / STM32
 
 - :octicons-mark-github-16: 
 サンプルプログラム集
