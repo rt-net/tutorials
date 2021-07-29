@@ -1,4 +1,4 @@
-# RT Corporation Software tutorials
+# RT Corporation Software Tutorials
 
 本リポジトリでは株式会社アールティの製品のオンライン**ソフトウェアチュートリアル**を管理します。
 
