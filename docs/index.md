@@ -1,4 +1,4 @@
-# RT Corporation software tutorials
+# RT Corporation Software Tutorials
 
 このサイトには[株式会社アールティ](https://rt-net.jp/){target=_blank rel=noopener}
 が公開する**ソフトウェア**のチュートリアルを記載しています。
