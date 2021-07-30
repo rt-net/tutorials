@@ -28,7 +28,7 @@
 
 ## アールティに関する問い合わせについて
 
-[株式会社アールティ | お問合わせページ](https://rt-net.jp/company/inquiries/){target=_blank rel=noopener}
+[株式会社アールティ | お問い合わせページ](https://rt-net.jp/company/inquiries/){target=_blank rel=noopener}
 からお問い合わせください。
 
 ## アナリティクスについて
