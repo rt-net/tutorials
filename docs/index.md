@@ -7,6 +7,9 @@
 [コーポレートサイトの各製品ページ](https://rt-net.jp/works_category/allproducts/){target=_blank rel=noopener}
 に公開しているマニュアルや、製品に付属しているマニュアルを参照してください。
 
+現時点ではRaspberry Pi Mouseのチュートリアルのみを掲載しています。
+**その他の製品については準備中です**。
+
 | [CRANE+V2][CRV2DOC] | [CRANE-X7][CRX7DOC] | [Sciurus17][SC17DOC] |
 | :---: | :---: | :---: |
 | [![img][CRV2IMG]][CRV2DOC] | [![img][CRX7IMG]][CRX7DOC] | [![img][SC17IMG]][SC17DOC] |
