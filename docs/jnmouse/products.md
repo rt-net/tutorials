@@ -5,7 +5,9 @@ robot: Jetson Nano Mouse
 
 # Jetson Nano Mouse
 
-ROSやAIの学習に最適なステレオカメラ搭載の車輪型ロボット
+ROSやAIの学習に最適なステレオカメラ搭載の車輪型ロボットです。
+
+**本製品のチュートリアルページは準備中です。**
 
 ![](https://rt-net.github.io/images/jetson-nano-mouse/Jetson-Nano-Mouse-500x500.png)
 

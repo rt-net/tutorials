@@ -9,6 +9,8 @@ robot: usb9imu
 USB出力9軸IMUセンサモジュールはInvenSense社(インベンセンス)の
 9軸センサ(3軸加速度，3軸ジャイロ，3軸コンパス)MPU9250を使用したセンサモジュールです。
 
+**本製品のチュートリアルページは準備中です。**
+
 ![usb9imu](https://rt-net.github.io/images/usb-9axisimu/usb-9axisimu.png)
 
 ## 紹介動画

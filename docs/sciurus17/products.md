@@ -9,6 +9,8 @@ robot: Sciurus17
 Sciurus17(シューラスセブンティーン)は頭部に3次元距離カメラを搭載した、
 17軸構成（各軸位置・速度・電流制御が選択可能）の上半身人型ロボットです。
 
+**本製品のチュートリアルページは準備中です。**
+
 ![Sciurus17](https://rt-net.github.io/images/sciurus17/Sciurus17.png)
 
 ## 紹介動画

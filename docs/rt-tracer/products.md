@@ -9,6 +9,8 @@ robot: rt-tracer
 プロジェクトマネジメント研修にも最適なライントレースロボットキット
 です。
 
+**本製品のチュートリアルページは準備中です。**
+
 ![rt-tracer](https://rt-net.github.io/images/training-tracer/RT-Tracer.png)
 
 ## 紹介動画
