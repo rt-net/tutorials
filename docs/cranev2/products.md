@@ -7,7 +7,10 @@ robot: CRANE+V2
 
 CRANE+ V2（クラインプラスブイツー）は、ROBOTISのサーボモータを利用した教材用アームロボットです。
 
-**本製品のチュートリアルページは準備中です。**
+!!! info
+    本製品のソフトウェアチュートリアルは準備中です。更新時はTwitterにてお知らせします。  
+    <a href="https://twitter.com/rt_corp?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @rt_corp</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ![CRANE+V2](https://rt-net.github.io/images/crane-plus/CRANEV2.png)
 

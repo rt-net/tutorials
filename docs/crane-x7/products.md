@@ -7,7 +7,10 @@ robot: CRANE-X7
 
 CRANE-X7（クラインエックスセブン）はCRANE+V2の上位機種であり、ROSに標準対応した研究・開発用ロボットです。
 
-**本製品のチュートリアルページは準備中です。**
+!!! info
+    本製品のソフトウェアチュートリアルは準備中です。更新時はTwitterにてお知らせします。  
+    <a href="https://twitter.com/rt_corp?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @rt_corp</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ![CRANE-X7](https://rt-net.github.io/images/crane-x7/CRANE-X7.png)
 

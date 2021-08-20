@@ -9,7 +9,10 @@ robot: rt-tracer
 プロジェクトマネジメント研修にも最適なライントレースロボットキット
 です。
 
-**本製品のチュートリアルページは準備中です。**
+!!! info
+    本製品のソフトウェアチュートリアルは準備中です。更新時はTwitterにてお知らせします。  
+    <a href="https://twitter.com/rt_corp?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @rt_corp</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ![rt-tracer](https://rt-net.github.io/images/training-tracer/RT-Tracer.png)
 
