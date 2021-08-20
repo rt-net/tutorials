@@ -87,10 +87,13 @@ nav:
     - 4. 参考リンク集: raspimouse/others.md
   - Jetson Nano Mouse:
     - 1. 製品について: jnmouse/products.md
+    - 2. デバイスドライバ:
+      - 1. インストール: jnmouse/driver/install.md
+      - 2. サンプルを動かす: jnmouse/driver/samples.md
     # - AIサンプル:
     #   - Jupyter Notebookのインストール: jnmouse/jupyter-notebook/install.md
     #   - Jupyter Notebookの実行: jnmouse/jupyter-notebook/example.md
-    - 2. 参考リンク集: jnmouse/others.md
+    - 3. 参考リンク集: jnmouse/others.md
   - トレーニングトレーサー:
     - 1. 製品について: rt-tracer/products.md
     - 2. 参考リンク集: rt-tracer/others.md
