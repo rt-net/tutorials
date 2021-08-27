@@ -25,7 +25,7 @@ $ cd ~/RaspberryPiMouse/SampleProgram
 
 === "C"
     ```sh
-    $ gcc step1.c -p step1
+    $ gcc step1.c -o step1
     $ ./step1
     ```
 
@@ -45,7 +45,7 @@ $ cd ~/RaspberryPiMouse/SampleProgram
 
 === "C"
     ```sh
-    $ gcc step2.c -p step2
+    $ gcc step2.c -o step2
     $ ./step2
     ```
 
@@ -65,7 +65,7 @@ $ cd ~/RaspberryPiMouse/SampleProgram
 
 === "C"
     ```sh
-    $ gcc step3.c -p step3
+    $ gcc step3.c -o step3
     $ ./step3
     ```
 
@@ -85,7 +85,7 @@ $ cd ~/RaspberryPiMouse/SampleProgram
 
 === "C"
     ```sh
-    $ gcc step4.c -p step4
+    $ gcc step4.c -o step4
     $ ./step4
     ```
 
@@ -105,7 +105,7 @@ $ cd ~/RaspberryPiMouse/SampleProgram
 
 === "C"
     ```sh
-    $ gcc step5.c -p step5
+    $ gcc step5.c -o step5
     $ ./step5
     ```
 
@@ -125,7 +125,7 @@ $ cd ~/RaspberryPiMouse/SampleProgram
 
 === "C"
     ```sh
-    $ gcc step6.c -p step6
+    $ gcc step6.c -o step6
     $ ./step6
     ```
 
