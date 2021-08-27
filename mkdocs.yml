@@ -55,13 +55,13 @@ plugins:
 markdown_extensions:
   - attr_list  # 画像のalignを設定できる
   - pymdownx.tabbed  # タブで文章を切り替えられる
+  - pymdownx.keys
   - admonition  # Warningとかの飾り付けができる
   - pymdownx.highlight  # コードブロック用
   - pymdownx.superfences  # コードブロック用
   - pymdownx.emoji:  # アイコンが使える
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-
 nav:
   - Home: 
     - トップページ: index.md
