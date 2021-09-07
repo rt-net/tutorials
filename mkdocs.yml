@@ -88,7 +88,7 @@ nav:
   - Jetson Nano Mouse:
     - 1. 製品について: jnmouse/products.md
     - 2. デバイスドライバ:
-      - 1. インストール: jnmouse/driver/install.md
+      - 1. イメージファイルの書き込み: jnmouse/driver/install.md
       - 2. サンプルを動かす: jnmouse/driver/samples.md
     - 3. ROS:
       - 1. ROSパッケージのインストール: jnmouse/ros/install.md

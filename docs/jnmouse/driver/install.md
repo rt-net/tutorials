@@ -1,26 +1,21 @@
 ---
-title: デバイスドライバのインストール
+title: イメージファイルの書き込み
 robot: Jeton Nano Mouse
 ---
 
-# デバイスドライバのインストール
+# イメージファイルの書き込み
 
-このページでは
-[Jetson Nano Mouseのデバイスドライバ](https://github.com/rt-net/JetsonNanoMouse)
-のインストール方法を説明します。
+このページでは、Jetson Nano Mouse用のイメージファイル
+の書き込み方法と初期設定について説明します。
 
-Jetson Nano MouseのLEDやモータを駆動するためには、
-デバイスドライバが必要です。
+このイメージファイルには、
+Jetson Nano MouseのLEDやモータを駆動するために必要な
+[デバイスドライバ](https://github.com/rt-net/JetsonNanoMouse)
+があらかじめインストールされています。
 
-## OSのインストール
+## イメージファイルのダウンロードと書き込み
 
-Jetson Nano Mouseのデバイスドライバは
-NVIDIA社が公開している
-[JetBot](https://www.nvidia.com/ja-jp/autonomous-machines/embedded-systems/jetbot-ai-robot-kit/)
-用のイメージファイル（Jetson Nano開発キットがインストールされたUbuntu）に対応しています。
-
-そのため、以下の手順は[JetBotのソフトウェアセットアップ方法](https://github.com/NVIDIA-AI-IOT/jetbot/wiki/software-setup)
-を参考にしています。
+イメージファイルをダウンロードし、micro SDカードに書き込みます。
 
 !!! warning
     micro SDカードの取り付けやJetson Nanoの電源操作時に、
@@ -29,21 +24,37 @@ NVIDIA社が公開している
 
 1. micro SDカードにイメージファイルを書き込むためのアプリケーションを用意します。
 ここでは[balena Etcher](https://www.balena.io/etcher/)を使用します。
-1. 下記のリンクをクリックして、イメージファイル(`jetbot_image_v0p4p0.zip`)をダウンロードします
-    - [https://drive.google.com/open?id=1G5nw0o3Q6E08xZM99ZfzQAe7-qAXxzHN](https://drive.google.com/open?id=1G5nw0o3Q6E08xZM99ZfzQAe7-qAXxzHN)
-1. micro SDカードをPCに接続します
-    - **micro SDカードの容量は32GB以上必要です**
-1. Etcherを起動し、イメージファイルをmicro SDカードに書き込みます
-    - ![Jetson Nanoのイメージをダウンロード&書き込み](https://rt-net.jp/mobility/wp-content/uploads/2020/09/75cb799bd850f71d34f4f877c16c990e.gif)
-1. micro SDカードをJetson Nanoに取り付け、Jetson Nano Mouseの電源を入れます
+1. 下記のリンクをクリックして、イメージファイル(`jnmouse_jp451_v1.zip`)をダウンロードします
+    - [https://drive.google.com/open?id=1txWe7OSPzoAymprqKH0puZkG0RpUIWVL](https://drive.google.com/open?id=1txWe7OSPzoAymprqKH0puZkG0RpUIWVL)
+    - zipファイルのサイズは約9GBですが、展開後は30GBに増えます。
+2. micro SDカードをPCに接続します
+    - **micro SDカードの容量は64GB以上を推奨します**
+3. Etcherを起動し、イメージファイルをmicro SDカードに書き込みます
+    - ![Jetson Nanoのイメージをダウンロード&書き込み](../../img/jnmouse/driver/etcher.gif)
+4. micro SDカードをJetson Nanoに取り付け、Jetson Nano Mouseの電源を入れます
+
 
 ## 初期設定
+
+Jetson Nano Mouseの電源投入後の初期設定について説明します。
+
+### ネットワーク設定
+
+無線LANを使用する場合は、画面上のメニューから接続先を設定します。
+
+![無線LANの接続先設定](../../img/jnmouse/driver/network_settings.png)
+
+ネットワーク接続が完了すると、`Connection Information`からIPアドレスを確認できます。
+
+![IPアドレスの確認](../../img/jnmouse/driver/ip_address.png)
+
+
 
 Jetson Nano Mouse後の初期設定を行います。
 ログインユーザ名とパスワードは両方`jetbot`です。
 
 1. ++ctrl+alt+t++を入力してターミナルを起動します
-1. 次のコマンドを入力し、[rt-net/jnmouse_utils@GitHub](https://github.com/rt-net/jnmouse_utils)
+2. 次のコマンドを入力し、[rt-net/jnmouse_utils@GitHub](https://github.com/rt-net/jnmouse_utils)
 をダウンロードします。その後、自動ソフトウェアアップデートを停止するスクリプトを実行します
 ```sh
 $ git clone https://github.com/rt-net/jnmouse_utils.git
@@ -88,51 +99,18 @@ $ echo 400 > /dev/rtbuzzer0 && sleep 2 && echo 0 > /dev/rtbuzzer0
 
 ## その他
 
-### Jetson IOの起動エラー対処方法
+### イメージファイルについて
 
-[NVIDIA Jetson Linux Developer Guide](https://docs.nvidia.com/jetson/l4t/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fhw_setup_jetson_io.html)に記載されている説エラー対処方法を抜粋し加筆したものです。
+Jetson Nano Mouseのイメージファイルは、
+Jetson Nano用のOSである[JetPack](https://developer.nvidia.com/embedded/jetpack)をベースに作成しています。
+このイメージファイルには、
+[Jetson Nano Mouseのデバイスドライバ](https://github.com/rt-net/JetsonNanoMouse)や
+機械学習ライブラリの[PyTorch](https://pytorch.org/)と
+[Tensorflow](https://www.tensorflow.org/?hl=ja)、
+プログラム実行環境である[Jupyter Lab](https://jupyter.org/)等が
+あらかじめインストールされています。
 
-エラーごとに対処方法を説明します
-
----
-
-`ImportError: cannot import name 'board'`
-
-```sh
-ubuntu@JETBOT:~$ sudo /opt/nvidia/jetson-io/jetson-io.py
-Traceback (most recent call last):
-File "/opt/nvidia/jetson-io/jetson-io.py", line 25, in <module>
-from Jetson import board
-ImportError: cannot import name 'board'
-```
-
-上記のエラーは以下のコマンドで修正できます。
-
-```sh
-sudo find /opt/nvidia/jetson-io/ -mindepth 1 -maxdepth 1 -type d -exec touch {}/__init__.py \;
-```
-
----
-
-`RuntimeError: No DTB found for NVIDIA Jetson Nano Developer Kit!`
-
-```sh
-ubuntu@JETBOT:~$ sudo /opt/nvidia/jetson-io/config-by-pin.py -p 5
-Traceback (most recent call last):
-  File "/opt/nvidia/jetson-io/config-by-pin.py", line 51, in <module>
-    main()
-  File "/opt/nvidia/jetson-io/config-by-pin.py", line 34, in main
-    jetson = board.Board()
-  File "/opt/nvidia/jetson-io/Jetson/board.py", line 149, in __init__
-    self.dtb = _board_get_dtb(self.compat, self.model, dtbdir)
-  File "/opt/nvidia/jetson-io/Jetson/board.py", line 88, in _board_get_dtb
-    raise RuntimeError("No DTB found for %s!" % model)
-RuntimeError: No DTB found for NVIDIA Jetson Nano Developer Kit!
-```
-
-上記のエラーは以下のコマンドで修正できます。
-
-```sh
-sudo mkdir -p /boot/dtb
-ls /boot/*.dtb | xargs -I{} sudo ln -s {} /boot/dtb/
-```
+イメージファイルの詳細や最新の情報について知りたい場合はGitHubリポジトリを参照してくださ
+い。
+- セットアップ方法：[https://github.com/rt-net/jnmouse_utils/tree/release/jetpack-4.5.1/setup-scripts](https://github.com/rt-net/jnmouse_utils/tree/release/jetpack-4.5.1/setup-scripts)
+- イメージファイル作成用スクリプト：[jnmouse-setup-jetpack-4-5-1.sh](https://github.com/rt-net/jnmouse_utils/blob/release/jetpack-4.5.1/setup-scripts/jnmouse-setup-jetpack-4-5-1.sh)
