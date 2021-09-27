@@ -27,6 +27,7 @@ Jetson Nano MouseのLEDやモータを駆動するために必要な
 1. 下記のリンクをクリックして、イメージファイル(`jnmouse_jp451_v1.zip`)をダウンロードします
     - [https://drive.google.com/open?id=1txWe7OSPzoAymprqKH0puZkG0RpUIWVL](https://drive.google.com/open?id=1txWe7OSPzoAymprqKH0puZkG0RpUIWVL)
     - zipファイルのサイズは約9GBですが、展開後は30GBに増えます。
+    - イメージファイルの詳細は[「イメージファイルについて」](#about-image-file)を参照してください
 2. micro SDカードをPCに接続します
     - **micro SDカードの容量は64GB以上を推奨します**
 3. Etcherを起動し、イメージファイルをmicro SDカードに書き込みます
@@ -37,6 +38,10 @@ Jetson Nano MouseのLEDやモータを駆動するために必要な
 ## 初期設定
 
 Jetson Nano Mouseの電源投入後の初期設定について説明します。
+
+### ログインユーザ名とパスワード
+
+ログインユーザ名とパスワードはどちらも`jetson`です。
 
 ### ネットワーク設定
 
@@ -49,24 +54,32 @@ Jetson Nano Mouseの電源投入後の初期設定について説明します。
 ![IPアドレスの確認](../../img/jnmouse/driver/ip_address.png)
 
 
-
-Jetson Nano Mouse後の初期設定を行います。
-ログインユーザ名とパスワードは両方`jetbot`です。
+### Jetson Nanoのパフォーマンス設定とブートローダ更新
 
 1. ++ctrl+alt+t++を入力してターミナルを起動します
-2. 次のコマンドを入力し、[rt-net/jnmouse_utils@GitHub](https://github.com/rt-net/jnmouse_utils)
-をダウンロードします。その後、自動ソフトウェアアップデートを停止するスクリプトを実行します
+1. 次のコマンドを実行し、Jetsonのパフォーマンス設定を行います
 ```sh
-$ git clone https://github.com/rt-net/jnmouse_utils.git
-$ ~/jnmouse_utils/scripts/disable-auto-apt-upgrade.sh
+$ cd ~/jnmouse_utils/scripts
+$ ./configure-jetson.sh
 ```
-    - 意図しないアップデートにより、ソフトウェアが動作しなくなることを防ぐためです
-    - 手動によるソフトアップデート(`apt update`や`apt upgrade`)はスクリプト実行後も動作します
+1. 次のコマンドを実行し、ブートローダを更新します
+```sh
+$ cd ~/jnmouse_utils/scripts
+$ ./update-qspi.sh
+```
+    - [「ブートローダについて」](#about-bootloader)に書かれている注意事項も確認してください
+
+### SPI通信の有効化
+
+Jetson NanoのGPIOを設定するためのツールである`Jetson-IO`を使って、`SPI1`を有効にし、
+Jetson NanoとJetson Nano Mouseの基板が通信できるようにします。
+これによりJetson Nano Mouse前方の距離センサが使えるようになります。
+
 1. 次のコマンドを実行し、Jetson-IOを起動します
 ```sh
 $ sudo /opt/nvidia/jetson-io/jetson-io.py
 ```
-    - Jetson-IOが起動できない場合は、次のコマンドを入力し、修正スクリプトを実行して下さい
+    - Jetson-IOが起動できない場合は、次のコマンドを入力し、修正スクリプトを実行してください
     ```sh
     $ ~/jnmouse_utils/scripts/fix-jetsonio-r3231.sh
     ```
@@ -78,28 +91,24 @@ function選択後は<code>Back</code>を選び、メニューに戻ります。
 <code>Select one of the following options:</code>と言われるので、<code>Save and reboot to reconfigure pins</code>を選択して再起動します。
 <img src="https://rt-net.jp/mobility/wp-content/uploads/2020/09/68747470733a2f2f692e6779617a6f2e636f6d2f36333861653834336531336533306231306164373130616462303162363830312e706e67.png" alt="Save and reboot to reconfigure pins" width="914" height="776" class="alignnone size-full wp-image-14991" />
 
-## ソースファイルのダウンロードとインストール
+## デバイスドライバの更新
 
-[rt-net/JetsonNanoMouse@GitHub](https://github.com/rt-net/JetsonNanoMouse)
-からJetson Nano Mouseのデバイスドライバのソースファイルをダウンロードし、
-インストールします。
+Jetson Nano Mouseのデバイスドライバを更新する場合は次のコマンドを実行します
 
-1. ++ctrl+alt+t++を入力してターミナルを起動します
-1. 次のコマンドを実行し、デバイスドライバをインストールします
 ```sh
-$ git clone https://github.com/rt-net/JetsonNanoMouse.git
-$ cd JetsonNanoMouse
-$ make
+$ cd ~/JetsonNanoMouse
+$ git pull origin master
+# デバイスドライバのアンインストール
+$ sudo make uninstall
+# デバイスドライバのビルド
+$ make build
+# デバイスドライバのインストール
 $ sudo make install
-```
-1. 以下のコマンドを実行し、ブザーが2秒間鳴ればデバイスドライバは正常にインストールされています。
-```sh
-$ echo 400 > /dev/rtbuzzer0 && sleep 2 && echo 0 > /dev/rtbuzzer0
 ```
 
 ## その他
 
-### イメージファイルについて
+### イメージファイルについて {: #about-image-file}
 
 Jetson Nano Mouseのイメージファイルは、
 Jetson Nano用のOSである[JetPack](https://developer.nvidia.com/embedded/jetpack)をベースに作成しています。
@@ -114,3 +123,20 @@ Jetson Nano用のOSである[JetPack](https://developer.nvidia.com/embedded/jetp
 い。
 - セットアップ方法：[https://github.com/rt-net/jnmouse_utils/tree/release/jetpack-4.5.1/setup-scripts](https://github.com/rt-net/jnmouse_utils/tree/release/jetpack-4.5.1/setup-scripts)
 - イメージファイル作成用スクリプト：[jnmouse-setup-jetpack-4-5-1.sh](https://github.com/rt-net/jnmouse_utils/blob/release/jetpack-4.5.1/setup-scripts/jnmouse-setup-jetpack-4-5-1.sh)
+
+### ブートローダについて {: #about-bootloader}
+
+ブートローダを更新すると、JetPack 4.5から導入されたQSPI-NORと呼ばれる新しいバージョンのものに置き換わります。
+
+ブートローダを更新すると以下の2つの影響があります。
+
+1. 対象のSDカードのイメージは、JetPack 4.4以前の旧ブートローダを搭載したJetson
+Nano開発キットでは動作しなくなります
+1. 対象のJetson Nano開発キットは、以前のブートローダを使用したイメージでは動作しなくなります
+
+なお、SDK Managerを使ってJetPack 4.4以前のバージョンを書き込むことでブートローダは元に戻せます。
+更新しないで古いバージョンのブートローダを使用することもできますが、その場合は**SPI通信機能が使用できません**。
+
+ブートローダの詳細はNVIDIA社の公開する情報
+（[https://developer.nvidia.com/embedded/linux-tegra-r325](https://developer.nvidia.com/embedded/linux-tegra-r325)）
+をご確認ください。
