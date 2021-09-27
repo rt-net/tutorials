@@ -5,7 +5,7 @@ robot: Jetson Nano Mouse
 
 # サンプルプログラムの実行
 
-デバイスドライバをインストールしたら、
+イメージファイルをインストールしたら、
 サンプルプログラムを実行しましょう。
 
 サンプルプログラムのディレクトリに移動します。
@@ -34,7 +34,7 @@ $ cd ~/JetsonNanoMouse/samples
     $ python3 step1.py
     ```
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/eNyp5zA0Its" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EigulXN9eUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## ブザー
 
@@ -54,7 +54,7 @@ $ cd ~/JetsonNanoMouse/samples
     $ python3 step2.py
     ```
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Lr-1AvuMcMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MvXJ0mwaBns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## スイッチ
 
@@ -74,7 +74,7 @@ $ cd ~/JetsonNanoMouse/samples
     $ python3 step3.py
     ```
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZqimPlsPeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hkoaJzoj0T8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## モータ
 
@@ -94,7 +94,7 @@ $ cd ~/JetsonNanoMouse/samples
     $ python3 step4.py
     ```
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/l5ZhUfYPVGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_22Q1neOgGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## ライトセンサ
 
@@ -114,7 +114,7 @@ $ cd ~/JetsonNanoMouse/samples
     $ python3 step5.py
     ```
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/tk-mRriwi9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WAlHY-Faz7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## パルスカウンタ
 
@@ -134,4 +134,4 @@ $ cd ~/JetsonNanoMouse/samples
     $ python3 step6.py
     ```
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ECoc8aU3A94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y_ajx3LgKiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

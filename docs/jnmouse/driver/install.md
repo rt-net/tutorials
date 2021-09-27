@@ -99,11 +99,11 @@ Jetson Nano Mouseのデバイスドライバを更新する場合は次のコマ
 $ cd ~/JetsonNanoMouse
 $ git pull origin master
 # デバイスドライバのアンインストール
-$ sudo make uninstall
+$ sudo make rmmod
 # デバイスドライバのビルド
 $ make build
 # デバイスドライバのインストール
-$ sudo make install
+$ sudo make insmod
 ```
 
 ## その他
