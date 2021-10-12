@@ -1100,6 +1100,8 @@ Ubuntu ServerではGUIを使用しないため、<code>ROS-Base</code>パッケ�
 <a href="https://github.com/ryuichiueda/raspimouse_ros_2" rel="noopener" target="_blank">ryuichiueda/raspimouse_ros_2</a>
 と、サンプル集パッケージ
 <a href="https://github.com/rt-net/raspimouse_ros_examples" rel="noopener" target="_blank">rt-net/raspimouse_ros_examples</a>
+および、ナビゲーション用のパッケージ
+<a href="https://github.com/rt-net/raspimouse_slam_navigation_ros" rel="noopener" target="_blank">rt-net/raspimouse_slam_navigation_ros</a>
 をダウンロードしてインストールします。</p>
 <div class="highlight"><pre><span></span><code>$ <span class="nb">source</span> /opt/ros/noetic/setup.bash
 $ mkdir -p ~/catkin_ws/src
@@ -1107,6 +1109,7 @@ $ <span class="nb">cd</span> ~/catkin_ws/src
 <span class="c1"># Clone ROS packages</span>
 $ git clone https://github.com/ryuichiueda/raspimouse_ros_2
 $ git clone -b <span class="nv">$ROS_DISTRO</span>-devel https://github.com/rt-net/raspimouse_ros_examples 
+$ git clone -b <span class="nv">$ROS_DISTRO</span>-devel https://github.com/rt-net/raspimouse_slam_navigation_ros 
 <span class="c1"># For direction control example</span>
 $ git clone https://github.com/rt-net/rt_usb_9axisimu_driver
 
