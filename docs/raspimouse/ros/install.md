@@ -36,6 +36,8 @@ robot: Raspberry Pi Mouse
     [ryuichiueda/raspimouse_ros_2](https://github.com/ryuichiueda/raspimouse_ros_2){target=_blank rel=noopener}
     と、サンプル集パッケージ
     [rt-net/raspimouse_ros_examples](https://github.com/rt-net/raspimouse_ros_examples){target=_blank rel=noopener}
+    および、ナビゲーション用のパッケージ
+    [rt-net/raspimouse_slam_navigation_ros](https://github.com/rt-net/raspimouse_slam_navigation_ros){target=_blank rel=noopener}
     をダウンロードしてインストールします。
 
     ```sh
@@ -45,6 +47,7 @@ robot: Raspberry Pi Mouse
     # Clone ROS packages
     $ git clone https://github.com/ryuichiueda/raspimouse_ros_2
     $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspimouse_ros_examples 
+    $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspimouse_slam_navigation_ros 
     # For direction control example
     $ git clone https://github.com/rt-net/rt_usb_9axisimu_driver
 
