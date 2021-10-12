@@ -143,6 +143,15 @@ robot: Raspberry Pi Mouse
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hV68UqAntfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## LiDARでナビゲーション
+
+=== "ROS"
+    実行手順は[ナビゲーションパッケージ](https://github.com/rt-net/raspimouse_slam_navigation_ros#quickstart){target=_blank rel=noopener}
+    を参照してください。
+    ナビゲーションパッケージをPCで起動する場合はネットワークと環境変数を設定してください。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xSMtBZYmhFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## IMUで角度制御
 
 === "ROS"
