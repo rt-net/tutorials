@@ -55,7 +55,7 @@ plugins:
 markdown_extensions:
   - attr_list  # 画像のalignを設定できる
   - pymdownx.tabbed  # タブで文章を切り替えられる
-  - pymdownx.keys
+  - pymdownx.keys  # キーボード操作説明時のキーを装飾
   - admonition  # Warningとかの飾り付けができる
   - pymdownx.highlight  # コードブロック用
   - pymdownx.superfences  # コードブロック用
