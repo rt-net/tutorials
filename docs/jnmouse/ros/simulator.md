@@ -8,7 +8,7 @@ robot: Jetson Nano Mouse
 === "ROS"
     このページでは、
     [rt-net/jnmouse_sim](https://github.com/rt-net/jnmouse_sim){target=_blank rel=noopener}
-    パッケージを用いたシミュレーションの実行方法を説明します。
+    パッケージを用いたシミュレーションのセットアップ方法と実行方法を説明します。
 
     シミュレーション環境はUbuntu PC上に構築します。
 
