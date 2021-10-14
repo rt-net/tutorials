@@ -26,7 +26,7 @@ Jetson Nano MouseのLEDやモータを駆動するために必要な
 ここでは[balena Etcher](https://www.balena.io/etcher/)を使用します。
 1. 下記のリンクをクリックして、イメージファイル(`jnmouse_jp451_v1.zip`)をダウンロードします
     - [https://drive.google.com/open?id=1txWe7OSPzoAymprqKH0puZkG0RpUIWVL](https://drive.google.com/open?id=1txWe7OSPzoAymprqKH0puZkG0RpUIWVL)
-    - zipファイルのサイズは約9GBですが、展開後は30GBに増えます。
+    - zipファイルのサイズは約9GBですが、展開後は約30GBに増えます。
     - イメージファイルの詳細は[「イメージファイルについて」](#about-image-file)を参照してください
 2. micro SDカードをPCに接続します
     - **micro SDカードの容量は64GB以上を推奨します**
