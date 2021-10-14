@@ -119,8 +119,8 @@ Jetson Nano用のOSである[JetPack](https://developer.nvidia.com/embedded/jetp
 プログラム実行環境である[Jupyter Lab](https://jupyter.org/)等が
 あらかじめインストールされています。
 
-イメージファイルの詳細や最新の情報について知りたい場合はGitHubリポジトリを参照してくださ
-い。
+イメージファイルの詳細や最新の情報について知りたい場合はGitHubリポジトリを参照してください。
+
 - セットアップ方法：[https://github.com/rt-net/jnmouse_utils/tree/release/jetpack-4.5.1/setup-scripts](https://github.com/rt-net/jnmouse_utils/tree/release/jetpack-4.5.1/setup-scripts)
 - イメージファイル作成用スクリプト：[jnmouse-setup-jetpack-4-5-1.sh](https://github.com/rt-net/jnmouse_utils/blob/release/jetpack-4.5.1/setup-scripts/jnmouse-setup-jetpack-4-5-1.sh)
 
