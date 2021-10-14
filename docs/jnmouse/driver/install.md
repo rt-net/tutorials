@@ -116,7 +116,7 @@ Jetson Nano用のOSである[JetPack](https://developer.nvidia.com/embedded/jetp
 [Jetson Nano Mouseのデバイスドライバ](https://github.com/rt-net/JetsonNanoMouse)や
 機械学習ライブラリの[PyTorch](https://pytorch.org/)と
 [Tensorflow](https://www.tensorflow.org/?hl=ja)、
-プログラム実行環境である[Jupyter Lab](https://jupyter.org/)等が
+プログラム実行環境である[JupyterLab](https://jupyter.org/)等が
 あらかじめインストールされています。
 
 イメージファイルの詳細や最新の情報について知りたい場合はGitHubリポジトリを参照してください。
