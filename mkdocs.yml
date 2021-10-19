@@ -55,13 +55,13 @@ plugins:
 markdown_extensions:
   - attr_list  # 画像のalignを設定できる
   - pymdownx.tabbed  # タブで文章を切り替えられる
+  - pymdownx.keys  # キーボード操作説明時のキーを装飾
   - admonition  # Warningとかの飾り付けができる
   - pymdownx.highlight  # コードブロック用
   - pymdownx.superfences  # コードブロック用
   - pymdownx.emoji:  # アイコンが使える
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-
 nav:
   - Home: 
     - トップページ: index.md
@@ -87,10 +87,17 @@ nav:
     - 4. 参考リンク集: raspimouse/others.md
   - Jetson Nano Mouse:
     - 1. 製品について: jnmouse/products.md
+    - 2. デバイスドライバ:
+      - 1. イメージファイルの書き込み: jnmouse/driver/install.md
+      - 2. サンプルを動かす: jnmouse/driver/samples.md
+    - 3. ROS:
+      - 1. ROSパッケージのインストール: jnmouse/ros/install.md
+      - 2. ROSサンプルの実行: jnmouse/ros/samples.md
+      - 3. シミュレータの実行: jnmouse/ros/simulator.md
     # - AIサンプル:
     #   - Jupyter Notebookのインストール: jnmouse/jupyter-notebook/install.md
     #   - Jupyter Notebookの実行: jnmouse/jupyter-notebook/example.md
-    - 2. 参考リンク集: jnmouse/others.md
+    - 4. 参考リンク集: jnmouse/others.md
   - トレーニングトレーサー:
     - 1. 製品について: rt-tracer/products.md
     - 2. 参考リンク集: rt-tracer/others.md
