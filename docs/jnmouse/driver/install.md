@@ -28,11 +28,11 @@ Jetson Nano MouseのLEDやモータを駆動するために必要な
     - [https://drive.google.com/open?id=1eyRdJdVfh4DCkAF1h6J93id33Hyb0Blf](https://drive.google.com/open?id=1eyRdJdVfh4DCkAF1h6J93id33Hyb0Blf)
     - zipファイルのサイズは約9GBですが、展開後は約30GBに増えます。
     - イメージファイルの詳細は[「イメージファイルについて」](#about-image-file)を参照してください
-2. micro SDカードをPCに接続します
-    - **micro SDカードの容量は64GB以上を推奨します**
-3. Etcherを起動し、イメージファイルをmicro SDカードに書き込みます
+2. microSDカードをPCに接続します
+    - **microSDカードの容量は64GB以上を推奨します**
+3. Etcherを起動し、イメージファイルをmicroSDカードに書き込みます
     - ![Jetson Nanoのイメージをダウンロード&書き込み](../../img/jnmouse/driver/etcher.gif)
-4. micro SDカードをJetson Nanoに取り付け、Jetson Nano Mouseの電源を入れます
+4. microSDカードをJetson Nanoに取り付け、Jetson Nano Mouseの電源を入れます
 
 
 ## 初期設定
