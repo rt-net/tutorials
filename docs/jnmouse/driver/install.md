@@ -18,7 +18,7 @@ Jetson Nano MouseのLEDやモータを駆動するために必要な
 イメージファイルをダウンロードし、microSDカードに書き込みます。
 
 !!! warning
-    micro SDカードの取り付けやJetson Nanoの電源操作時に、
+    microSDカードの取り付けやJetson Nanoの電源操作時に、
     Jetson NanoやJetson Nano Mouse本体を**故障させないように**注意してください。
     詳細はJetson Nano Mouseの**[製品マニュアル](https://rt-net.jp/products/jetson-nano-mouse/#downloads)を参照してください**。
 
