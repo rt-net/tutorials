@@ -24,8 +24,8 @@ Jetson Nano MouseのLEDやモータを駆動するために必要な
 
 1. micro SDカードにイメージファイルを書き込むためのアプリケーションを用意します。
 ここでは[balenaEtcher](https://www.balena.io/etcher/)を使用します。
-1. 下記のリンクをクリックして、イメージファイル(`jnmouse_jp451_v1.zip`)をダウンロードします
-    - [https://drive.google.com/open?id=1txWe7OSPzoAymprqKH0puZkG0RpUIWVL](https://drive.google.com/open?id=1txWe7OSPzoAymprqKH0puZkG0RpUIWVL)
+1. 下記のリンクをクリックして、イメージファイル(`jnmouse_jp451_v2.zip`)をダウンロードします
+    - [https://drive.google.com/open?id=1eyRdJdVfh4DCkAF1h6J93id33Hyb0Blf](https://drive.google.com/open?id=1eyRdJdVfh4DCkAF1h6J93id33Hyb0Blf)
     - zipファイルのサイズは約9GBですが、展開後は約30GBに増えます。
     - イメージファイルの詳細は[「イメージファイルについて」](#about-image-file)を参照してください
 2. micro SDカードをPCに接続します
@@ -121,8 +121,8 @@ Jetson Nano用のOSである[JetPack](https://developer.nvidia.com/embedded/jetp
 
 イメージファイルの詳細や最新の情報について知りたい場合はGitHubリポジトリを参照してください。
 
-- セットアップ方法：[https://github.com/rt-net/jnmouse_utils/tree/release/jetpack-4.5.1/setup-scripts](https://github.com/rt-net/jnmouse_utils/tree/release/jetpack-4.5.1/setup-scripts)
-- イメージファイル作成用スクリプト：[jnmouse-setup-jetpack-4-5-1.sh](https://github.com/rt-net/jnmouse_utils/blob/release/jetpack-4.5.1/setup-scripts/jnmouse-setup-jetpack-4-5-1.sh)
+- セットアップ方法：[https://github.com/rt-net/jnmouse_utils/tree/master/setup-scripts](https://github.com/rt-net/jnmouse_utils/tree/master/setup-scripts)
+- イメージファイル作成用スクリプト：[jnmouse-setup-jetpack-4-5-1.sh](https://github.com/rt-net/jnmouse_utils/blob/master/setup-scripts/jnmouse-setup-jetpack-4-5-1.sh)
 
 ### ブートローダについて {: #about-bootloader}
 
