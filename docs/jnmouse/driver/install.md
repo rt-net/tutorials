@@ -20,7 +20,7 @@ Jetson Nano MouseのLEDやモータを駆動するために必要な
 !!! warning
     micro SDカードの取り付けやJetson Nanoの電源操作時に、
     Jetson NanoやJetson Nano Mouse本体を**故障させないように**注意してください。
-    詳細はJetson Nano Mouseの**製品マニュアルを参照してください**。
+    詳細はJetson Nano Mouseの**[製品マニュアル](https://rt-net.jp/products/jetson-nano-mouse/#downloads)を参照してください**。
 
 1. micro SDカードにイメージファイルを書き込むためのアプリケーションを用意します。
 ここでは[balenaEtcher](https://www.balena.io/etcher/)を使用します。
