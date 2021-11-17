@@ -1,8 +1,8 @@
 ---
-title: 参考リンク集 (CRANE-X7)
+title: 関連リンク集 (CRANE-X7)
 robot: CRANE-X7
 ---
-# 参考リンク集
+# 関連リンク集
 
 ## ハードウェア
 
