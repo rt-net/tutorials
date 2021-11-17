@@ -27,6 +27,9 @@
   {% if page and page.title and not page.is_homepage %}
     {% set title = config.site_name ~ " - " ~ page.title | striptags %}
   {% endif %}
+  {% if page and page.meta.title and not page.is_homepage %}
+    {% set title = config.site_name ~ " - " ~ page.meta.title | striptags %}
+  {% endif %}
 
   <!-- The image needs to have an absolute URL -->
   {% set image = config.site_url ~ 'img/rt-logo-270x270.png' %}
