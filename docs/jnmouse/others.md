@@ -38,6 +38,7 @@ URDFパッケージ
 ROSサンプル集
 [rt-net/jnmouse_ros_examples](https://github.com/rt-net/jnmouse_ros_examples)
     - Jetson Nano Mouse用のサンプルプログラムを集めたROSパッケージです
+        - [ライントレースやステレオカメラ画像からの深度推定など](https://github.com/rt-net/jnmouse_ros_examples#toc)を紹介しています
 
 - :octicons-mark-github-16: 
 CSIカメラROSドライバ
