@@ -28,7 +28,7 @@
     {% set title = config.site_name ~ " - " ~ page.title | striptags %}
   {% endif %}
   {% if page and page.meta.title and not page.is_homepage %}
-    {% set title = config.site_name ~ " - " ~ page.meta.title | striptags %}
+    {% set title = mage.meta.title ~ " - " ~ config.site_name | striptags %}
   {% endif %}
 
   <!-- The image needs to have an absolute URL -->
