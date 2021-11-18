@@ -1,8 +1,8 @@
 ---
-title: 参考リンク集 (Jetson Nano Mouse)
+title: 関連リンク集 (Jetson Nano Mouse)
 robot: Jetson Nano Mouse
 ---
-# 参考リンク集
+# 関連リンク集
 
 ## ハードウェア
 

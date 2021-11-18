@@ -1,8 +1,8 @@
 ---
-title: 参考リンク集（Sciurus17）
+title: 関連リンク集（Sciurus17）
 robot: Sciurus17
 ---
-# 参考リンク集
+# 関連リンク集
 
 ## ハードウェア
 

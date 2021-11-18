@@ -1,9 +1,9 @@
 ---
-title: 参考リンク集 (Raspberry Pi Mouse)
+title: 関連リンク集 (Raspberry Pi Mouse)
 robot: Raspberry Pi Mouse
 ---
 
-# 参考リンク集
+# 関連リンク集
 
 ## ハードウェア
 
