@@ -130,7 +130,7 @@ robot: Raspberry Pi Mouse
 ## LiDARでSLAM
 
 === "ROS"
-    実行手順は[ROS サンプル集のSLAM](https://github.com/rt-net/raspimouse_ros_examples#slam){target=_blank rel=noopener}
+    実行手順は[SLAMパッケージ](https://github.com/rt-net/raspimouse_slam_navigation_ros#raspimouse_slam){target=_blank rel=noopener}
     を参照してください。
     SLAMパッケージをPCで起動する場合はネットワークと環境変数を設定してください。
 
@@ -146,7 +146,7 @@ robot: Raspberry Pi Mouse
 ## LiDARでナビゲーション
 
 === "ROS"
-    実行手順は[ナビゲーションパッケージ](https://github.com/rt-net/raspimouse_slam_navigation_ros#quickstart){target=_blank rel=noopener}
+    実行手順は[ナビゲーションパッケージ](https://github.com/rt-net/raspimouse_slam_navigation_ros#raspimouse_navigation){target=_blank rel=noopener}
     を参照してください。
     ナビゲーションパッケージをPCで起動する場合はネットワークと環境変数を設定してください。
 
