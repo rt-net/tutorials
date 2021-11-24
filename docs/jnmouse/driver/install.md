@@ -12,8 +12,45 @@ robot: Jeton Nano Mouse
 Jetson Nano MouseのLEDやモータを駆動するために必要な
 [デバイスドライバ](https://github.com/rt-net/JetsonNanoMouse)
 があらかじめインストールされています。
+## 使用機材 {: #requirements}
 
-## イメージファイルのダウンロードと書き込み
+
+* Jetson Nano Mouse本体
+* Jetson Nano Mouse用電源（バッテリでも電源変換ケーブルつきACアダプタでも可）
+* NVIDIA Jetson Nano 開発者キット B01 ※1
+* microSDカード ※2
+* HDMI入力付きのモニタ
+* USBキーボードとマウス
+* USB接続の無線LANアダプタ（オプション） ※3
+* 操作用ノートパソコン
+
+
+### ※1 Jetson Nanoについて {: #requirements-jetson-nano}
+
+Jetson Nano開発者キットには以下の2種類が存在します。
+
+* 現行モデルのCSIカメラを2つ搭載できる「NVIDIA Jetson Nano 開発者キット B01」
+* 旧モデルでCSIカメラを1台のみ搭載できる「NVIDIA Jetson Nano 開発者キット A01」
+
+2021年11月現在、新品で販売されているJetson Nanoの大半はCSIカメラを2つ搭載できる「NVIDIA Jetson Nano 開発者キット B01」ですが、予め確認した上でのご購入をおすすめします。
+
+!!! info
+    以前発売されていたモデルの「NVIDIA Jetson Nano 開発者キット A01」および現行モデルのメモリ2GBのJetson Nano 開発者キットでもJetson Nano Mouse自体は制御可能です。  
+    ただし、Jetson Nano Mouseについている2台のカメラのうちの1台のみの接続となります。  
+    カメラが1台のみの接続の場合およびメモリが少ないJetson Nanoの場合は一部のコンテンツを利用できません。
+
+### ※2 microSDカードについて {: #requirements-microsd}
+
+- **microSDカードの容量は64GB以上を推奨します**
+- **microSDカードの転送速度は[UHS-1以上が推奨されています](https://forums.developer.nvidia.com/t/what-size-in-gb-of-sd-card-is-recommended/72161)**
+    - SDカードのスピードクラスについては[SD Association](https://www.sdcard.org/ja/developers-2/sd-standard-overview/speed-class/)の解説を参照してください
+    - 十分な速度が出ないmicroSDカードを使うと正常にOSが起動しない場合があるようです
+
+### ※3 無線LANアダプタについて {: #requirements-wifi}
+
+無線LANアダプタはTP-Link社の<a href="https://www.tp-link.com/jp/home-networking/adapter/tl-wn725n/" rel="noopener" target="_blank">TL-WN725N</a>で動作確認をしています。
+
+## イメージファイルのダウンロードと書き込み {: #preparation}
 
 イメージファイルをダウンロードし、microSDカードに書き込みます。
 
@@ -29,24 +66,20 @@ Jetson Nano MouseのLEDやモータを駆動するために必要な
     - zipファイルのサイズは約9GBですが、展開後は約30GBに増えます。
     - イメージファイルの詳細は[「イメージファイルについて」](#about-image-file)を参照してください
 2. microSDカードをPCに接続します
-    - **microSDカードの容量は64GB以上を推奨します**
-    - **microSDカードの転送速度は[UHS-1以上が推奨されています](https://forums.developer.nvidia.com/t/what-size-in-gb-of-sd-card-is-recommended/72161)**
-        - SDカードのスピードクラスについては[SD Association](https://www.sdcard.org/ja/developers-2/sd-standard-overview/speed-class/)の解説を参照してください
-        - 十分な速度が出ないmicroSDカードを使うと正常にOSが起動しない場合があるようです
 3. Etcherを起動し、イメージファイルをmicroSDカードに書き込みます
     - ![Jetson Nanoのイメージをダウンロード&書き込み](../../img/jnmouse/driver/etcher.gif)
 4. microSDカードをJetson Nanoに取り付け、Jetson Nano Mouseの電源を入れます
 
 
-## 初期設定
+## 初期設定 {: #initialization}
 
 Jetson Nano Mouseの電源投入後の初期設定について説明します。
 
-### ログインユーザ名とパスワード
+### ログインユーザ名とパスワード {: #login}
 
 ログインユーザ名とパスワードはどちらも`jetson`です。
 
-### ネットワーク設定
+### ネットワーク設定 {: #network-configuration}
 
 無線LANを使用する場合は、画面上のメニューから接続先を設定します。
 
@@ -57,7 +90,7 @@ Jetson Nano Mouseの電源投入後の初期設定について説明します。
 ![IPアドレスの確認](../../img/jnmouse/driver/ip_address.png)
 
 
-### Jetson Nanoのパフォーマンス設定とブートローダ更新
+### Jetson Nanoのパフォーマンス設定とブートローダ更新 {: #update-bootloader}
 
 1. ++ctrl+alt+t++を入力してターミナルを起動します
 1. 次のコマンドを実行し、Jetsonのパフォーマンス設定を行います
@@ -72,7 +105,7 @@ $ ./update-qspi.sh
 ```
     - [「ブートローダについて」](#about-bootloader)に書かれている注意事項も確認してください
 
-### SPI通信の有効化
+### SPI通信の有効化 {: #enable-spi}
 
 Jetson NanoのGPIOを設定するためのツールである`Jetson-IO`を使って、`SPI1`を有効にし、
 Jetson NanoとJetson Nano Mouseの基板が通信できるようにします。
@@ -82,10 +115,6 @@ Jetson NanoとJetson Nano Mouseの基板が通信できるようにします。
 ```sh
 $ sudo /opt/nvidia/jetson-io/jetson-io.py
 ```
-    - Jetson-IOが起動できない場合は、次のコマンドを入力し、修正スクリプトを実行してください
-    ```sh
-    $ ~/jnmouse_utils/scripts/fix-jetsonio-r3231.sh
-    ```
 1. `Configure 40-pin expansion header`を選択し、
 <img src="https://rt-net.jp/mobility/wp-content/uploads/2020/09/68747470733a2f2f692e6779617a6f2e636f6d2f65396464623039613863343437343035613563386266653139643939333761632e706e67.png" alt="Configure 40-pin expansion header" width="914" height="776" class="alignnone size-full wp-image-14984" />
 spi1を有効にするfunctionとして選択します。
@@ -94,22 +123,22 @@ function選択後は<code>Back</code>を選び、メニューに戻ります。
 <code>Select one of the following options:</code>と言われるので、<code>Save and reboot to reconfigure pins</code>を選択して再起動します。
 <img src="https://rt-net.jp/mobility/wp-content/uploads/2020/09/68747470733a2f2f692e6779617a6f2e636f6d2f36333861653834336531336533306231306164373130616462303162363830312e706e67.png" alt="Save and reboot to reconfigure pins" width="914" height="776" class="alignnone size-full wp-image-14991" />
 
-## デバイスドライバの更新
+## デバイスドライバの更新 {: #update-driver}
 
-Jetson Nano Mouseのデバイスドライバを更新する場合は次のコマンドを実行します
+[Jetson Nano Mouseのデバイスドライバ](https://github.com/rt-net/JetsonNanoMouse){target=_blank rel=noopener}を更新する場合は次のコマンドを実行します
 
 ```sh
 $ cd ~/JetsonNanoMouse
 $ git pull origin master
 # デバイスドライバのアンインストール
-$ sudo make rmmod
+$ sudo make uninstall
 # デバイスドライバのビルド
 $ make build
 # デバイスドライバのインストール
-$ sudo make insmod
+$ sudo make install
 ```
 
-## その他
+## その他 {: #others}
 
 ### イメージファイルについて {: #about-image-file}
 
