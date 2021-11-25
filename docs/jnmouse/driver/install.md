@@ -75,6 +75,13 @@ Jetson Nano開発者キットには以下の2種類が存在します。
 
 Jetson Nano Mouseの電源投入後の初期設定について説明します。
 
+ここからはJetson Nano Mouseに搭載されたJetson Nanoで操作します。
+SSHやVNCでログインしたり、HDMI接続ができるモニタとキーボードを繋ぐ方法とありますが、今回はモニタとキーボードを繋いで初期設定まで行います。
+
+HDMI接続ができるモニタとUSBキーボード、マウスを接続します。今回は無線でインターネット接続したいのでさらに無線LANアダプタを接続します。
+
+![](https://rt-net.jp/mobility/wp-content/uploads/2020/09/jetson_nano_setup_connect_accessory.png)
+
 ### ログインユーザ名とパスワード {: #login}
 
 ログインユーザ名とパスワードはどちらも`jetson`です。
