@@ -24,7 +24,7 @@ robot: Jetson Nano Mouse
 ![](../../img/jnmouse/jupyter-notebook/jupyter_lab_run_button.png)
 
 最後まで進めていくと`Finished converting... successfully`と表示され、
-`ssd_mobilenet_v2_coco_trt7_t210.engine`という名前のファイルが新しく作成されていることを確認できます。
+`ssd_mobilenet_v2_coco_trt7_t210.engine`という名前のファイルが新しく作成されていることを確認します。
 
 ![](../../img/jnmouse/jupyter-notebook/jupyter_lab_convert_ssd_mobilenet_finished.png)
 
@@ -36,7 +36,9 @@ robot: Jetson Nano Mouse
 
 ## object_followingサンプルの実行 {: #execution}
 
-<code>Notebooks/object_following/live_demo.ipynb</code>を開き、セルを1つずつ実行していきます。
+<code>object_following/live_demo.ipynb</code>を開き、セルを1つずつ実行していきます。
+
+![](../../img/jnmouse/jupyter-notebook/jupyter_lab_object_following_demo.png)
 
 実行例の動画です。学習済みモデルの読み込みには少し時間がかかる場合があります。
 
@@ -44,7 +46,7 @@ robot: Jetson Nano Mouse
 
 うまく実行できない場合はカーネルをリスタートするとよいかもしれません。
 
-<img src="https://rt-net.jp/mobility/wp-content/uploads/2020/09/ccc003207db2da0ded75d3f28059a038-e1599223496848.png" alt="" width="508" height="230" class="alignnone size-full wp-image-14996" />
+![](../../img/jnmouse/jupyter-notebook/jupyter_lab_restart_kernel.png)
 
 
 その他のサンプルについては以下のJetBot公式のページに詳しく説明されていますのでこちらをご覧ください。
