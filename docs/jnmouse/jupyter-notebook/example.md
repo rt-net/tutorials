@@ -5,7 +5,7 @@ robot: Jetson Nano Mouse
 
 このページではobject_followingのサンプルを実行する方法を紹介します。
 [Jetson Nano Mouse用Jupyter Notebookの準備](./install.md)の続きです。
-## Jupyter Notebookの起動
+## JupyterLabの起動 {: #launch-jupyterlab}
 
 ノートパソコン等操作用PCのWebブラウザから操作します。
 
@@ -56,7 +56,7 @@ robot: Jetson Nano Mouse
 * [https://jetbot.org/master/examples/collision_avoidance.html](https://jetbot.org/master/examples/collision_avoidance.html){target=_blank rel=noopener}
 * [https://jetbot.org/master/examples/road_following.html](https://jetbot.org/master/examples/road_following.html){target=_blank rel=noopener}
 
-## どうしてもうまくいかないとき
+## どうしてもうまくいかないとき {: #troubleshooting}
 
 よく起きるトラブル（開発中に頻繁に遭遇したトラブル）についてGitHub上でまとめています。
 
