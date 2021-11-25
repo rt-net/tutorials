@@ -1,77 +1,66 @@
+---
+title: Jetson Nano Mouse用Jupyter Notebookの実行
+robot: Jetson Nano Mouse
+---
 
-<h2>Jupyter Notebookの実行</h2>
-ここからはノートパソコンのWebブラウザから操作します。
-なお、このJupyter NotebookはJetBotのものをベースとしており、<b>JetBotの解説を読みながら</b>理解をすすめることもできます。
+このページではobject_followingのサンプルを実行する方法を紹介します。
+[Jetson Nano Mouse用Jupyter Notebookの準備](./install.md)の続きです。
+## Jupyter Notebookの起動
 
-<code>http://$ROBOTIP:8888</code>にアクセスします。ログイン画面では「jetbot」を入力します。
+ノートパソコン等操作用PCのWebブラウザから操作します。
 
-<img src="https://rt-net.jp/mobility/wp-content/uploads/2020/09/Screenshot-from-2020-09-04-21-20-19.png" alt="http://$ROBOTIP:8888" width="1287" height="789" class="alignnone size-full wp-image-14989" />
+<code>http://jnmouse.local:8888</code>にアクセスします。ログイン画面ではパスワードに"jetson"を入力します。
 
-ログインできると以下のようにJupyter Labの操作画面が表示されます。
+![](../../img/jnmouse/jupyter-notebook/jupyter_lab_login.gif)
 
-<img src="https://rt-net.jp/mobility/wp-content/uploads/2020/09/Screenshot-from-2020-09-04-21-20-34.png" alt="Jupyter Lab" width="1287" height="789" class="alignnone size-full wp-image-14990" />
+## object_followingサンプル実行の準備 {: #preparation}
 
-今回はobject_followingのサンプルを実行します。
+物体検出のための学習済みのモデルを準備します。`object_following/build_engine_from_tensowflow.py`を開きます。
 
-物体検出のための学習済みのモデルをダウンロードします。<a href="https://github.com/NVIDIA-AI-IOT/jetbot/wiki/examples#example-4---object-following" rel="noopener" target="_blank">JetBotのJupyter Notebookの使い方</a>で紹介されているモデルです。
-<a href="https://drive.google.com/open?id=1KjlDMRD8uhgQmQK-nC2CZGHFTbq4qQQH" rel="noopener" target="_blank">ssd_mobilenet_v2_coco.engine</a>
+![](../../img/jnmouse/jupyter-notebook/jupyter_lab_convert_ssd_mobilenet.png)
 
-ダウンロードしたモデルをJupyter Labのアップロードボタンから<code>Notebooks/object_following</code>にアップロートします。
+実行ボタンを押してセルを1つずつ実行していきます。
 
-<img src="https://rt-net.jp/mobility/wp-content/uploads/2020/09/2269c4e596c6d9bf2f1027673fc39bf2.png" alt="Jupyter Lab" width="328" height="237" class="alignnone size-full wp-image-14994" />
+![](../../img/jnmouse/jupyter-notebook/jupyter_lab_run_button.png)
+
+最後まで進めていくと`Finished converting... successfully`と表示され、
+`ssd_mobilenet_v2_coco_trt7_t210.engine`という名前のファイルが新しく作成されていることを確認できます。
+
+![](../../img/jnmouse/jupyter-notebook/jupyter_lab_convert_ssd_mobilenet_finished.png)
 
 以上でobject_followingのJupyter Notebookが実行できるようになりました。
+
+セッションをシャットダウンしてメモリを確保しておきます。
+
+![](../../img/jnmouse/jupyter-notebook/jupyter_lab_shutdown_session.png)
+
+## object_followingサンプルの実行 {: #execution}
 
 <code>Notebooks/object_following/live_demo.ipynb</code>を開き、セルを1つずつ実行していきます。
 
 実行例の動画です。学習済みモデルの読み込みには少し時間がかかる場合があります。
 
-https://www.youtube.com/watch?v=7h1j4Cx99is
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7h1j4Cx99is" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 うまく実行できない場合はカーネルをリスタートするとよいかもしれません。
 
 <img src="https://rt-net.jp/mobility/wp-content/uploads/2020/09/ccc003207db2da0ded75d3f28059a038-e1599223496848.png" alt="" width="508" height="230" class="alignnone size-full wp-image-14996" />
 
 
-その他のサンプルについては以下のページに詳しく説明されていますのでこちらをご覧ください。
+その他のサンプルについては以下のJetBot公式のページに詳しく説明されていますのでこちらをご覧ください。
 
-https://github.com/NVIDIA-AI-IOT/jetbot/wiki/examples
+* [https://jetbot.org/master/examples/basic_motion.html](https://jetbot.org/master/examples/basic_motion.html){target=_blank rel=noopener}
+* [https://jetbot.org/master/examples/teleoperation.html](https://jetbot.org/master/examples/teleoperation.html){target=_blank rel=noopener}
+* [https://jetbot.org/master/examples/collision_avoidance.html](https://jetbot.org/master/examples/collision_avoidance.html){target=_blank rel=noopener}
+* [https://jetbot.org/master/examples/road_following.html](https://jetbot.org/master/examples/road_following.html){target=_blank rel=noopener}
 
+## どうしてもうまくいかないとき
 
-<h2>どうしてもうまくいかないとき</h2>
+よく起きるトラブル（開発中に頻繁に遭遇したトラブル）についてGitHub上でまとめています。
 
-よく起きるミス（開発中に頻繁に遭遇したミス）や便利スクリプトについてGitHub上でまとめています。
+[https://github.com/rt-net/jnmouse_utils/blob/master/docs/TroubleShooting.md](https://github.com/rt-net/jnmouse_utils/blob/master/docs/TroubleShooting.md){target=_blank rel=noopener}
 
-https://github.com/rt-net/jnmouse_utils
+カメラの映像が映らいないなどJupyter Notebookが思ったように動かない場合、よくある問題であればJupyter Notebookの該当セルのドキュメントまたは上記ページが参考になるかもしれません。
 
-カメラの映像が映らいないなどJupyter Notebookが思ったように動かない場合、よくある問題であれば上記ページを参照すると解決する場合があります。
-この情報が何かの役に立てば幸いです。
-
-<b>※Jetson Nano Mouseのソフトウェアは基本的にオープンソースソフトウェアとして「AS IS」（現状有姿のまま）で提供しています。本ソフトウェアに関する無償サポートはありません。</b>
+※__Jetson Nano Mouseのソフトウェアは基本的にオープンソースソフトウェアとして「AS IS」（現状有姿のまま）で提供しています。本ソフトウェアに関する無償サポートはありません。__
 バグの修正や誤字脱字の修正に関するリクエストは常に受け付けていますが、それ以外の機能追加等のリクエストについては社内のガイドラインを優先します。
-
-<h2>まとめ</h2>
-
-今回は連載の第1回目で連載の概要とJetson Nano Mouseのセットアップ方法をご紹介しました。
-またセットアップ後の動作確認としてJetBotで使用されているものと同等のサンプルをJetson Nano Mouseで実際に動かしてみました。
-Jupyter Notebookのコンテンツについては今後も充実させていく予定です。
-本記事の執筆時点（2020年9月7日）ではまだJupyter Notebookの中に書かれている説明が英語ですが、日本語での解説についても計画しています。
-ぜひご購入をご検討ください！
-
-https://rt-net.jp/products/jetson-nano-mouse
-
-https://www.rt-shop.jp/index.php?main_page=product_info&cPath=1348_1&products_id=3891
-
-<h2>謝辞</h2>
-
-今回紹介したソフトウェアはMITライセンスで公開されているNVIDIAの<a href="https://github.com/NVIDIA-AI-IOT/jetbot" rel="noopener" target="_blank">jetbot</a>をベースとしています。
-
-<pre>
-Copyright (c) 2019, NVIDIA CORPORATION. All rights reserved.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-</pre>
