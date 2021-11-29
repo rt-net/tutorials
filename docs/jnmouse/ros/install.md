@@ -47,17 +47,17 @@ robot: Jetson Nano Mouse
 公式の方法ではありませんが、インストールスクリプトを使うことで簡単にインストールを済ませることもできます。
 
 === "ROS"
-    今回使用するROSのインストーラは`curl`を使用するので以下のコマンドでインストールします。
+    今回使用するROSのインストーラは`curl`を使用します。以下のコマンドでインストールします。
     
     ```sh
-    sudo apt install -y curl
+    $ sudo apt install -y curl
     ```
     
     以下のコマンドを実行してインストーラでROSをインストールします。  
     環境にもよりますが完了までは10分以上かかる場合があります。
     
     ```sh
-    bash -c "$(curl -SsfL u.ty0.jp/ros-melodic-desktop)"
+    $ bash -c "$(curl -SsfL u.ty0.jp/ros-melodic-desktop)"
     ```
     
     インストーラが問題なく実行できれば以下のメッセージが表示されます。
@@ -73,5 +73,5 @@ robot: Jetson Nano Mouse
     以下のコマンドでインストールした設定を読み込みます。
     
     ```sh
-    source ~/.bashrc
+    $ source ~/.bashrc
     ```
