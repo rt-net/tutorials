@@ -1,81 +1,165 @@
 ---
-title: ROS / ROS 2パッケージのインストール
+title: ROS / ROS 2のインストール
 robot: Raspberry Pi Mouse
 ---
 
-# ROS / ROS 2パッケージのインストール
+# ROS / ROS 2のインストール
 
-このページでは、Raspberry Pi MouseのROSサンプル集のインストール方法を説明します。
+このページでは、以下の2つのデバイスへのROSのインストール方法を説明します。
 
-## 前提条件
+* Ubuntuインストール済みのノートパソコン等PC
+* Ubuntuインストール済みのRaspberry Pi
 
-- OS（**Ubuntu Server 20.04**）がインストール済みであること
-    - Raspberry Pi OSでのROSの動作は確認していません。
-- **デバイスドライバ**がインストール済みであること
-    - [デバイスドライバのインストール手順](../driver/install.md)を参照してください
+なお、ROSをすでにインストール済みの場合はこのページの手順は不要です。
 
-## ROS / ROS 2のインストール
+## 前提条件 {: #requirements}
+
+* ノートパソコン等PC
+    * OS（**Ubuntu Desktop 20.04**）がインストール済みであること
+
+* Raspberry Pi
+    * OS（**Ubuntu Server 20.04**）がインストール済みであること
+        * Raspberry Pi OSでのROSの動作は確認していません。
+
+## ROS / ROS 2のインストール（公式のドキュメントに沿って進める場合） {: #official-document}
 
 === "ROS"
     [https://wiki.ros.org/noetic/Installation/Ubuntu](https://wiki.ros.org/noetic/Installation/Ubuntu){target=_blank rel=noopener}
     を参考に、`ROS Noetic`をインストールします。
-    Ubuntu ServerではGUIを使用しないため、`ROS-Base`パッケージをインストールします。
+
+    GUIを使用する場合は`Desktop-Full`を、 使用しない場合は`ROS-Base`パッケージをインストールします。
 
 === "ROS 2"
     [https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html){target=_blank rel=noopener}
     を参考に、`ROS 2 Foxy`をインストールします。
-    Ubuntu ServerではGUIを使用しないため、`ROS-Base`パッケージをインストールします。
+
+    GUIを使用する場合は`Desktop`を、 使用しない場合は`ROS-Base`パッケージをインストールします。
 
     [https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html](https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html){target=_blank rel=noopener}
     を参考に、パッケージビルドツールの`colcon`をインストールします。
 
-## ROS / ROS 2パッケージのインストール
+## ROS / ROS 2のインストール（インストールスクリプトを使う場合） {: #install-script}
+
+### ノートパソコン等PC
+
+公式の方法ではありませんが、インストールスクリプトを使うことで簡単にインストールを済ませることもできます。
 
 === "ROS"
-    制御用のパッケージである
-    [ryuichiueda/raspimouse_ros_2](https://github.com/ryuichiueda/raspimouse_ros_2){target=_blank rel=noopener}
-    と、サンプル集パッケージ
-    [rt-net/raspimouse_ros_examples](https://github.com/rt-net/raspimouse_ros_examples){target=_blank rel=noopener}
-    および、ナビゲーション用のパッケージ
-    [rt-net/raspimouse_slam_navigation_ros](https://github.com/rt-net/raspimouse_slam_navigation_ros){target=_blank rel=noopener}
-    をダウンロードしてインストールします。
-
+    今回使用するROSのインストーラは`curl`を使用します。以下のコマンドでインストールします。
+    
     ```sh
-    $ source /opt/ros/noetic/setup.bash
-    $ mkdir -p ~/catkin_ws/src
-    $ cd ~/catkin_ws/src
-    # Clone ROS packages
-    $ git clone https://github.com/ryuichiueda/raspimouse_ros_2
-    $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspimouse_ros_examples 
-    $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspimouse_slam_navigation_ros 
-    # For direction control example
-    $ git clone https://github.com/rt-net/rt_usb_9axisimu_driver
-
-    # Install dependencies
-    $ rosdep install -r -y --from-paths . --ignore-src      
-
-    # make & install
-    $ cd ~/catkin_ws && catkin_make
-    $ source ~/catkin_ws/devel/setup.bash
+    $ sudo apt install -y curl
+    ```
+    
+    以下のコマンドを実行してインストーラでROSをインストールします。  
+    環境にもよりますが完了までは10分以上かかる場合があります。
+    
+    ```sh
+    $ bash -c "$(curl -SsfL u.ty0.jp/ros-noetic-desktop)"
+    ```
+    
+    インストーラが問題なく実行できれば以下のメッセージが表示されます。
+    
+    ```txt
+    Success installing ROS noetic
+    Run 'source ~/.bashrc'
+    
+    If any error occurs, please refer to the following URL.
+    https://github.com/Tiryoh/ros_setup_scripts_ubuntu/
+    ```
+    
+    以下のコマンドでインストールした設定を読み込みます。
+    
+    ```sh
+    $ source ~/.bashrc
+    ```
+=== "ROS 2"
+    今回使用するROS 2のインストーラは`curl`と`git`を使用します。以下のコマンドでインストールします。
+    
+    ```sh
+    $ sudo apt install -y curl git
+    ```
+    
+    以下のコマンドを実行してインストーラでROS 2をインストールします。  
+    環境にもよりますが完了までは10分以上かかる場合があります。
+    
+    ```sh
+    $ git clone https://github.com/Tiryoh/ros2_setup_scripts_ubuntu.git
+    $ cd ros2_setup_scripts_ubuntu
+    $ ./ros2-foxy-desktop-main.sh
+    ```
+    
+    インストーラが問題なく実行できれば以下のメッセージが表示されます。
+    
+    ```txt
+    Success installing ROS foxy
+    Run 'source ~/.bashrc'
+    ```
+    
+    以下のコマンドでインストールした設定を読み込みます。
+    
+    ```sh
+    $ source ~/.bashrc
     ```
 
-=== "ROS 2"
-    サンプル集パッケージ
-    [rt-net/raspimouse_ros2_examples](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
-    をダウンロードしてインストールします。
+### Raspberry Pi
 
+公式の方法ではありませんが、インストールスクリプトを使うことで簡単にインストールを済ませることもできます。
+
+=== "ROS"
+    今回使用するROSのインストーラは`curl`を使用します。以下のコマンドでインストールします。
+    
     ```sh
-    $ source /opt/ros/foxy/setup.bash
-    $ mkdir -p ~/ros2_ws/src
-    $ cd ~/ros2_ws/src
-    # Clone packages
-    $ git clone https://github.com/rt-net/raspimouse_ros2_examples
-
-    # Install dependencies
-    $ rosdep install -r -y --from-paths . --ignore-src
-
-    # make & install
-    $ cd ~/ros2_ws
-    $ colcon build --symlink-install
-    $ source ~/ros2_ws/install/setup.bash
+    $ sudo apt install -y curl
+    ```
+    
+    以下のコマンドを実行してインストーラでROSをインストールします。  
+    環境にもよりますが完了までは10分以上かかる場合があります。
+    
+    ```sh
+    $ bash -c "$(curl -SsfL u.ty0.jp/ros-noetic-ros-base)"
+    ```
+    
+    インストーラが問題なく実行できれば以下のメッセージが表示されます。
+    
+    ```txt
+    Success installing ROS melodic
+    Run 'source ~/.bashrc'
+    
+    If any error occurs, please refer to the following URL.
+    https://github.com/Tiryoh/ros_setup_scripts_ubuntu/
+    ```
+    
+    以下のコマンドでインストールした設定を読み込みます。
+    
+    ```sh
+    $ source ~/.bashrc
+    ```
+=== "ROS 2"
+    今回使用するROS 2のインストーラは`curl`と`git`を使用します。以下のコマンドでインストールします。
+    
+    ```sh
+    $ sudo apt install -y curl git
+    ```
+    
+    以下のコマンドを実行してインストーラでROS 2をインストールします。  
+    環境にもよりますが完了までは10分以上かかる場合があります。
+    
+    ```sh
+    $ git clone https://github.com/Tiryoh/ros2_setup_scripts_ubuntu.git
+    $ cd ros2_setup_scripts_ubuntu
+    $ ./ros2-foxy-ros-base.sh
+    ```
+    
+    インストーラが問題なく実行できれば以下のメッセージが表示されます。
+    
+    ```txt
+    Success installing ROS foxy
+    Run 'source ~/.bashrc'
+    ```
+    
+    以下のコマンドでインストールした設定を読み込みます。
+    
+    ```sh
+    $ source ~/.bashrc
     ```

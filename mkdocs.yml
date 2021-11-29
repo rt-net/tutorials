@@ -81,9 +81,10 @@ nav:
       - 1. インストール: raspimouse/driver/install.md
       - 2. サンプルを動かす: raspimouse/driver/samples.md
     - 3. ROS / ROS 2:
-      - 1. ROS / ROS 2パッケージのインストール: raspimouse/ros/install.md
-      - 2. ROS / ROS 2サンプルの実行: raspimouse/ros/samples.md
-      - 3. シミュレータの実行: raspimouse/ros/simulator.md
+      - 1. ROS / ROS 2のインストール: raspimouse/ros/install.md
+      - 2. ROS / ROS 2パッケージのインストール: raspimouse/ros/package-install.md
+      - 3. ROS / ROS 2サンプルの実行: raspimouse/ros/samples.md
+      - 4. シミュレータの実行: raspimouse/ros/simulator.md
     - 4. 関連リンク集: raspimouse/others.md
   - Jetson Nano Mouse:
     - 1. 製品について: jnmouse/products.md
