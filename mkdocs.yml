@@ -90,15 +90,15 @@ nav:
     - 2. デバイスドライバ:
       - 1. イメージファイルの書き込み: jnmouse/driver/install.md
       - 2. サンプルを動かす: jnmouse/driver/samples.md
-    # - 3. AI教材:
-    #   - Jupyter Notebookの準備: jnmouse/jupyter-notebook/install.md
-    #   - Jupyter Notebookの実行: jnmouse/jupyter-notebook/example.md
-    - 3. ROS:
+    - 3. AI教材:
+      - Jupyter Notebookの準備: jnmouse/jupyter-notebook/install.md
+      - Jupyter Notebookの実行: jnmouse/jupyter-notebook/example.md
+    - 4. ROS:
       - 1. ROSのインストール方法: jnmouse/ros/install.md
       - 2. ROSパッケージのインストール: jnmouse/ros/package-install.md
       - 3. ROSサンプルの実行: jnmouse/ros/samples.md
       - 4. シミュレータの実行: jnmouse/ros/simulator.md
-    - 4. 関連リンク集: jnmouse/others.md
+    - 5. 関連リンク集: jnmouse/others.md
   - トレーニングトレーサー:
     - 1. 製品について: rt-tracer/products.md
     - 2. 関連リンク集: rt-tracer/others.md
