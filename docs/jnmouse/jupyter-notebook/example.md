@@ -62,7 +62,7 @@ robot: Jetson Nano Mouse
 
 [https://github.com/rt-net/jnmouse_utils/blob/master/docs/TroubleShooting.md](https://github.com/rt-net/jnmouse_utils/blob/master/docs/TroubleShooting.md){target=_blank rel=noopener}
 
-カメラの映像が映らいないなどJupyter Notebookが思ったように動かない場合、よくある問題であればJupyter Notebookの該当セルのドキュメントまたは上記ページが参考になるかもしれません。
+カメラの映像が映らないなどJupyter Notebookが思ったように動かない場合、よくある問題であればJupyter Notebookの該当セルのドキュメントまたは上記ページが参考になるかもしれません。
 
 ※__Jetson Nano Mouseのソフトウェアは基本的にオープンソースソフトウェアとして「AS IS」（現状有姿のまま）で提供しています。本ソフトウェアに関する無償サポートはありません。__
 バグの修正や誤字脱字の修正に関するリクエストは常に受け付けていますが、それ以外の機能追加等のリクエストについては社内のガイドラインを優先します。
