@@ -30,14 +30,14 @@
       
       
       
-        <link rel="canonical" href="https://rt-net.github.io/tutorials/jnmouse/driver/install.html">
+        <link rel="canonical" href="https://rt-net.github.io/tutorials/jnmouse/ros/package-install.html">
       
       <link rel="icon" href="../../img/rt-logo-32x32.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.3">
     
     
       
-        <title>イメージファイルの書き込み - RT Corporation Software Tutorials</title>
+        <title>ROS パッケージのインストール - RT Corporation Software Tutorials</title>
       
     
     
@@ -95,9 +95,9 @@
 
   <!-- Open graph meta tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="イメージファイルの書き込み - RT Corporation Software Tutorials" />
+  <meta property="og:title" content="ROS パッケージのインストール - RT Corporation Software Tutorials" />
   <meta property="og:description" content="株式会社アールティのオンラインソフトウェアチュートリアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。" />
-  <meta property="og:url" content="https://rt-net.github.io/tutorials/jnmouse/driver/install.html" />
+  <meta property="og:url" content="https://rt-net.github.io/tutorials/jnmouse/ros/package-install.html" />
   <meta property="og:image" content="https://rt-net.github.io/tutorials/img/rt-logo-270x270.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="270" />
@@ -107,7 +107,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@rt_corp" />
   <meta name="twitter:creator" content="@rt_corp" />
-  <meta name="twitter:title" content="イメージファイルの書き込み - RT Corporation Software Tutorials" />
+  <meta name="twitter:title" content="ROS パッケージのインストール - RT Corporation Software Tutorials" />
   <meta name="twitter:description" content="株式会社アールティのオンラインソフトウェアチュートリアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。" />
   <meta name="twitter:image" content="https://rt-net.github.io/tutorials/img/rt-logo-270x270.png" />
 
@@ -136,7 +136,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#ros" class="md-skip">
           Skip to content
         </a>
       
@@ -167,7 +167,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              イメージファイルの書き込み
+              ROS パッケージのインストール
             
           </span>
         </div>
@@ -906,14 +906,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" data-md-state="indeterminate" type="checkbox" id="__nav_6_2" checked>
       
       
       
@@ -934,160 +932,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          1. イメージファイルの書き込み
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="install.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../driver/install.html" class="md-nav__link">
         1. イメージファイルの書き込み
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
-    使用機材
-  </a>
-  
-    <nav class="md-nav" aria-label="使用機材">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#requirements-jetson-nano" class="md-nav__link">
-    ※1 Jetson Nanoについて
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#requirements-microsd" class="md-nav__link">
-    ※2 microSDカードについて
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#requirements-wifi" class="md-nav__link">
-    ※3 無線LANアダプタについて
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preparation" class="md-nav__link">
-    イメージファイルのダウンロードと書き込み
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#initialization" class="md-nav__link">
-    初期設定
-  </a>
-  
-    <nav class="md-nav" aria-label="初期設定">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#login" class="md-nav__link">
-    ログインユーザ名とパスワード
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#network-configuration" class="md-nav__link">
-    ネットワーク設定
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#update-bootloader" class="md-nav__link">
-    Jetson Nanoのパフォーマンス設定とブートローダ更新
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enable-spi" class="md-nav__link">
-    SPI通信の有効化
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#update-driver" class="md-nav__link">
-    デバイスドライバの更新
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#others" class="md-nav__link">
-    その他
-  </a>
-  
-    <nav class="md-nav" aria-label="その他">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#about-image-file" class="md-nav__link">
-    イメージファイルについて
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#about-bootloader" class="md-nav__link">
-    ブートローダについて
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1099,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="samples.html" class="md-nav__link">
+      <a href="../driver/samples.html" class="md-nav__link">
         2. サンプルを動かす
       </a>
     </li>
@@ -1118,12 +967,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" data-md-state="indeterminate" type="checkbox" id="__nav_6_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" checked>
       
       
       
@@ -1146,7 +997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ros/install.html" class="md-nav__link">
+      <a href="install.html" class="md-nav__link">
         1. ROSのインストール方法
       </a>
     </li>
@@ -1158,11 +1009,58 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../ros/package-install.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          2. ROSパッケージのインストール
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="package-install.html" class="md-nav__link md-nav__link--active">
         2. ROSパッケージのインストール
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    前提条件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ros-pkg-installation" class="md-nav__link">
+    ROSパッケージのインストール
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1174,7 +1072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ros/samples.html" class="md-nav__link">
+      <a href="samples.html" class="md-nav__link">
         3. ROSサンプルの実行
       </a>
     </li>
@@ -1188,7 +1086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ros/simulator.html" class="md-nav__link">
+      <a href="simulator.html" class="md-nav__link">
         4. シミュレータの実行
       </a>
     </li>
@@ -1374,117 +1272,15 @@
       
         <li class="md-nav__item">
   <a href="#requirements" class="md-nav__link">
-    使用機材
-  </a>
-  
-    <nav class="md-nav" aria-label="使用機材">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#requirements-jetson-nano" class="md-nav__link">
-    ※1 Jetson Nanoについて
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#requirements-microsd" class="md-nav__link">
-    ※2 microSDカードについて
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#requirements-wifi" class="md-nav__link">
-    ※3 無線LANアダプタについて
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preparation" class="md-nav__link">
-    イメージファイルのダウンロードと書き込み
+    前提条件
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#initialization" class="md-nav__link">
-    初期設定
+  <a href="#ros-pkg-installation" class="md-nav__link">
+    ROSパッケージのインストール
   </a>
-  
-    <nav class="md-nav" aria-label="初期設定">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#login" class="md-nav__link">
-    ログインユーザ名とパスワード
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#network-configuration" class="md-nav__link">
-    ネットワーク設定
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#update-bootloader" class="md-nav__link">
-    Jetson Nanoのパフォーマンス設定とブートローダ更新
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enable-spi" class="md-nav__link">
-    SPI通信の有効化
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#update-driver" class="md-nav__link">
-    デバイスドライバの更新
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#others" class="md-nav__link">
-    その他
-  </a>
-  
-    <nav class="md-nav" aria-label="その他">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#about-image-file" class="md-nav__link">
-    イメージファイルについて
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#about-bootloader" class="md-nav__link">
-    ブートローダについて
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1500,160 +1296,49 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/rt-net/tutorials/edit/main/docs/jnmouse/driver/install.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/rt-net/tutorials/edit/main/docs/jnmouse/ros/package-install.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="_1">イメージファイルの書き込み</h1>
-<p>このページでは、Jetson Nano Mouse用のイメージファイル
-の書き込み方法と初期設定について説明します。</p>
-<p>このイメージファイルには、
-Jetson Nano MouseのLEDやモータを駆動するために必要な
-<a href="https://github.com/rt-net/JetsonNanoMouse">デバイスドライバ</a>
-があらかじめインストールされています。</p>
-<h2 id="requirements">使用機材</h2>
+                <h1 id="ros">ROSパッケージのインストール</h1>
+<p>このページでは、Jetson Nano MouseのROSサンプル集のインストール方法を説明します。</p>
+<h2 id="requirements">前提条件</h2>
 <ul>
-<li>Jetson Nano Mouse本体</li>
-<li>Jetson Nano Mouse用電源（バッテリでも電源変換ケーブルつきACアダプタでも可）</li>
-<li>NVIDIA Jetson Nano 開発者キット B01 ※1</li>
-<li>microSDカード ※2</li>
-<li>HDMI入力付きのモニタ</li>
-<li>USBキーボードとマウス</li>
-<li>USB接続の無線LANアダプタ（オプション） ※3</li>
-<li>操作用ノートパソコン</li>
+<li><a href="install.html">ROSのインストール方法</a>に沿ってROSをインストール済みであること</li>
 </ul>
-<h3 id="requirements-jetson-nano">※1 Jetson Nanoについて</h3>
-<p>Jetson Nano開発者キットには以下の2種類が存在します。</p>
+<h2 id="ros-pkg-installation">ROSパッケージのインストール</h2>
+<p>Jetson Nano Mouseを動かすためのROSパッケージ（制御用のパッケージ）はRaspberry Pi Mouseと同じものを使用します。</p>
+<p>Jetson Nano Mouseへのインストールは必須です。ノートパソコン等PCとJetson Nano Mouseで処理を分散する場合（<a href="samples.html">ROSサンプル</a>で扱います）はPCへのインストールも必要です。</p>
+<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">ROS</label><div class="tabbed-content">
 <ul>
-<li>現行モデルのCSIカメラを2つ搭載できる「NVIDIA Jetson Nano 開発者キット B01」</li>
-<li>旧モデルでCSIカメラを1台のみ搭載できる「NVIDIA Jetson Nano 開発者キット A01」</li>
-</ul>
-<p>2021年11月現在、新品で販売されているJetson Nanoの大半はCSIカメラを2つ搭載できる「NVIDIA Jetson Nano 開発者キット B01」ですが、予め確認した上でのご購入をおすすめします。</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>以前発売されていたモデルの「NVIDIA Jetson Nano 開発者キット A01」および現行モデルのメモリ2GBのJetson Nano 開発者キットでもJetson Nano Mouse自体は制御可能です。<br />
-ただし、Jetson Nano Mouseについている2台のカメラのうちの1台のみの接続となります。<br />
-カメラが1台のみの接続の場合およびメモリが少ないJetson Nanoの場合は一部のコンテンツを利用できません。</p>
-</div>
-<h3 id="requirements-microsd">※2 microSDカードについて</h3>
-<ul>
-<li><strong>microSDカードの容量は64GB以上を推奨します</strong></li>
-<li><strong>microSDカードの転送速度は<a href="https://forums.developer.nvidia.com/t/what-size-in-gb-of-sd-card-is-recommended/72161">UHS-1以上が推奨されています</a></strong><ul>
-<li>SDカードのスピードクラスについては<a href="https://www.sdcard.org/ja/developers-2/sd-standard-overview/speed-class/">SD Association</a>の解説を参照してください</li>
-<li>十分な速度が出ないmicroSDカードを使うと正常にOSが起動しない場合があるようです</li>
+<li>制御用のパッケージ（<a href="https://github.com/ryuichiueda/raspimouse_ros_2" rel="noopener" target="_blank">ryuichiueda/raspimouse_ros_2</a>）</li>
+<li>サンプル集パッケージ<ul>
+<li>Raspberry Pi Mouseと共通のもの（<a href="https://github.com/rt-net/raspimouse_ros_examples" rel="noopener" target="_blank">rt-net/raspimouse_ros_examples</a>）</li>
+<li>Jetson Nano Mouse用のもの（<a href="https://github.com/rt-net/jnmouse_ros_examples" rel="noopener" target="_blank">rt-net/jnmouse_ros_examples</a>）</li>
 </ul>
 </li>
+<li>ナビゲーション用のパッケージ（<a href="https://github.com/rt-net/raspimouse_slam_navigation_ros" rel="noopener" target="_blank">rt-net/raspimouse_slam_navigation_ros</a>）</li>
 </ul>
-<h3 id="requirements-wifi">※3 無線LANアダプタについて</h3>
-<p>無線LANアダプタはTP-Link社の<a href="https://www.tp-link.com/jp/home-networking/adapter/tl-wn725n/" rel="noopener" target="_blank">TL-WN725N</a>で動作確認をしています。</p>
-<h2 id="preparation">イメージファイルのダウンロードと書き込み</h2>
-<p>イメージファイルをダウンロードし、microSDカードに書き込みます。</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>microSDカードの取り付けやJetson Nanoの電源操作時に、
-Jetson NanoやJetson Nano Mouse本体を<strong>故障させないように</strong>注意してください。
-詳細はJetson Nano Mouseの<strong><a href="https://rt-net.jp/products/jetson-nano-mouse/#downloads">製品マニュアル</a>を参照してください</strong>。</p>
-</div>
-<ol>
-<li>microSDカードにイメージファイルを書き込むためのアプリケーションを用意します。
-ここでは<a href="https://www.balena.io/etcher/">balenaEtcher</a>を使用します。</li>
-<li>下記のリンクをクリックして、イメージファイル(<code>jnmouse_jp451_v3.zip</code>)をダウンロードします<ul>
-<li><a href="https://drive.google.com/open?id=1-eIXdtrHD8VY3M7C0sCRKE9LNfNPd97h">https://drive.google.com/open?id=1-eIXdtrHD8VY3M7C0sCRKE9LNfNPd97h</a></li>
-<li>zipファイルのサイズは約9GBですが、展開後は約30GBに増えます。</li>
-<li>イメージファイルの詳細は<a href="#about-image-file">「イメージファイルについて」</a>を参照してください</li>
-</ul>
-</li>
-<li>microSDカードをPCに接続します</li>
-<li>Etcherを起動し、イメージファイルをmicroSDカードに書き込みます<ul>
-<li><img alt="Jetson Nanoのイメージをダウンロード&amp;書き込み" src="../../img/jnmouse/driver/etcher.gif" /></li>
-</ul>
-</li>
-<li>microSDカードをJetson Nanoに取り付け、Jetson Nano Mouseの電源を入れます</li>
-</ol>
-<h2 id="initialization">初期設定</h2>
-<p>Jetson Nano Mouseの電源投入後の初期設定について説明します。</p>
-<p>ここからはJetson Nano Mouseに搭載されたJetson Nanoで操作します。
-SSHやVNCでログインしたり、HDMI接続ができるモニタとキーボードを繋ぐ方法とありますが、今回はモニタとキーボードを繋いで初期設定まで行います。</p>
-<p>HDMI接続ができるモニタとUSBキーボード、マウスを接続します。今回は無線でインターネット接続したいのでさらに無線LANアダプタを接続します。</p>
-<p><img alt="" src="https://rt-net.jp/mobility/wp-content/uploads/2020/09/jetson_nano_setup_connect_accessory.png" /></p>
-<h3 id="login">ログインユーザ名とパスワード</h3>
-<p>ログインユーザ名とパスワードはどちらも<code>jetson</code>です。</p>
-<h3 id="network-configuration">ネットワーク設定</h3>
-<p>無線LANを使用する場合は、画面上のメニューから接続先を設定します。</p>
-<p><img alt="無線LANの接続先設定" src="../../img/jnmouse/driver/network_settings.png" /></p>
-<p>ネットワーク接続が完了すると、<code>Connection Information</code>からIPアドレスを確認できます。</p>
-<p><img alt="IPアドレスの確認" src="../../img/jnmouse/driver/ip_address.png" /></p>
-<h3 id="update-bootloader">Jetson Nanoのパフォーマンス設定とブートローダ更新</h3>
-<ol>
-<li><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-t">T</kbd></span>を入力してターミナルを起動します</li>
-<li>次のコマンドを実行し、Jetsonのパフォーマンス設定を行います
-<div class="highlight"><pre><span></span><code>$ <span class="nb">cd</span> ~/jnmouse_utils/scripts
-$ ./configure-jetson.sh
-</code></pre></div></li>
-<li>次のコマンドを実行し、ブートローダを更新します
-<div class="highlight"><pre><span></span><code>$ <span class="nb">cd</span> ~/jnmouse_utils/scripts
-$ ./update-qspi.sh
-</code></pre></div><ul>
-<li><a href="#about-bootloader">「ブートローダについて」</a>に書かれている注意事項も確認してください</li>
-</ul>
-</li>
-</ol>
-<h3 id="enable-spi">SPI通信の有効化</h3>
-<p>Jetson NanoのGPIOを設定するためのツールである<code>Jetson-IO</code>を使って、<code>SPI1</code>を有効にし、
-Jetson NanoとJetson Nano Mouseの基板が通信できるようにします。
-これによりJetson Nano Mouse前方の距離センサが使えるようになります。</p>
-<ol>
-<li>次のコマンドを実行し、Jetson-IOを起動します
-<div class="highlight"><pre><span></span><code>$ sudo /opt/nvidia/jetson-io/jetson-io.py
-</code></pre></div></li>
-<li><code>Configure 40-pin expansion header</code>を選択し、
-<img src="https://rt-net.jp/mobility/wp-content/uploads/2020/09/68747470733a2f2f692e6779617a6f2e636f6d2f65396464623039613863343437343035613563386266653139643939333761632e706e67.png" alt="Configure 40-pin expansion header" width="914" height="776" class="alignnone size-full wp-image-14984" />
-spi1を有効にするfunctionとして選択します。
-<img src="https://rt-net.jp/mobility/wp-content/uploads/2020/09/68747470733a2f2f692e6779617a6f2e636f6d2f35666330393961306633656438653065346361626564656432623264656536382e706e67.png" alt="Configure 40-pin expansion header" width="914" height="776" class="alignnone size-full wp-image-14985" />
-function選択後は<code>Back</code>を選び、メニューに戻ります。
-<code>Select one of the following options:</code>と言われるので、<code>Save and reboot to reconfigure pins</code>を選択して再起動します。
-<img src="https://rt-net.jp/mobility/wp-content/uploads/2020/09/68747470733a2f2f692e6779617a6f2e636f6d2f36333861653834336531336533306231306164373130616462303162363830312e706e67.png" alt="Save and reboot to reconfigure pins" width="914" height="776" class="alignnone size-full wp-image-14991" /></li>
-</ol>
-<h2 id="update-driver">デバイスドライバの更新</h2>
-<p><a href="https://github.com/rt-net/JetsonNanoMouse" rel="noopener" target="_blank">Jetson Nano Mouseのデバイスドライバ</a>を更新する場合は次のコマンドを実行します</p>
-<div class="highlight"><pre><span></span><code>$ <span class="nb">cd</span> ~/JetsonNanoMouse
-$ git pull origin master
-<span class="c1"># デバイスドライバのアンインストール</span>
-$ sudo make uninstall
-<span class="c1"># デバイスドライバのビルド</span>
-$ make build
-<span class="c1"># デバイスドライバのインストール</span>
-$ sudo make install
+<p>上記をダウンロードしてインストールします。</p>
+<div class="highlight"><pre><span></span><code>$ <span class="nb">source</span> /opt/ros/melodic/setup.bash
+$ mkdir -p ~/catkin_ws/src
+$ <span class="nb">cd</span> ~/catkin_ws/src
+<span class="c1"># Clone ROS packages</span>
+$ git clone https://github.com/ryuichiueda/raspimouse_ros_2
+$ git clone -b <span class="nv">$ROS_DISTRO</span>-devel https://github.com/rt-net/raspimouse_ros_examples 
+$ git clone -b <span class="nv">$ROS_DISTRO</span>-devel https://github.com/jnmouse_ros_examples
+$ git clone -b <span class="nv">$ROS_DISTRO</span>-devel https://github.com/rt-net/raspimouse_slam_navigation_ros 
+
+<span class="c1"># Install dependencies</span>
+$ rosdep install -r -y --from-paths . --ignore-src      
+
+<span class="c1"># make &amp; install</span>
+$ <span class="nb">cd</span> ~/catkin_ws <span class="o">&amp;&amp;</span> catkin_make
+$ <span class="nb">source</span> ~/catkin_ws/devel/setup.bash
 </code></pre></div>
-<h2 id="others">その他</h2>
-<h3 id="about-image-file">イメージファイルについて</h3>
-<p>Jetson Nano Mouseのイメージファイルは、
-Jetson Nano用のOSである<a href="https://developer.nvidia.com/embedded/jetpack">JetPack</a>をベースに作成しています。
-このイメージファイルには、
-<a href="https://github.com/rt-net/JetsonNanoMouse">Jetson Nano Mouseのデバイスドライバ</a>や
-機械学習ライブラリの<a href="https://pytorch.org/">PyTorch</a>と
-<a href="https://www.tensorflow.org/?hl=ja">Tensorflow</a>、
-プログラム実行環境である<a href="https://jupyter.org/">JupyterLab</a>等が
-あらかじめインストールされています。</p>
-<p>イメージファイルの詳細や最新の情報について知りたい場合はGitHubリポジトリを参照してください。</p>
-<ul>
-<li>セットアップ方法：<a href="https://github.com/rt-net/jnmouse_utils/tree/master/setup-scripts">https://github.com/rt-net/jnmouse_utils/tree/master/setup-scripts</a></li>
-<li>イメージファイル作成用スクリプト：<a href="https://github.com/rt-net/jnmouse_utils/blob/master/setup-scripts/jnmouse-setup-jetpack-4-5-1.sh">jnmouse-setup-jetpack-4-5-1.sh</a></li>
-</ul>
-<h3 id="about-bootloader">ブートローダについて</h3>
-<p>ブートローダを更新すると、JetPack 4.5から導入されたQSPI-NORと呼ばれる新しいバージョンのものに置き換わります。</p>
-<p>ブートローダを更新すると以下の2つの影響があります。</p>
-<ol>
-<li>対象のSDカードのイメージは、JetPack 4.4以前の旧ブートローダを搭載したJetson
-Nano開発キットでは動作しなくなります</li>
-<li>対象のJetson Nano開発キットは、以前のブートローダを使用したイメージでは動作しなくなります</li>
-</ol>
-<p>なお、SDK Managerを使ってJetPack 4.4以前のバージョンを書き込むことでブートローダは元に戻せます。
-更新しないで古いバージョンのブートローダを使用することもできますが、その場合は<strong>SPI通信機能が使用できません</strong>。</p>
-<p>ブートローダの詳細はNVIDIA社の公開する情報
-（<a href="https://developer.nvidia.com/embedded/linux-tegra-r325">https://developer.nvidia.com/embedded/linux-tegra-r325</a>）
-をご確認ください。</p>
+</div>
+</div>
                 
                   
                 
@@ -1707,8 +1392,48 @@ Nano開発キットでは動作しなくなります</li>
 
       <!-- Link to previous page -->
       
+        
+        <a
+          href="install.html"
+          class="md-footer__link md-footer__link--prev"
+          aria-label="Previous: 1. ROSのインストール方法"
+          rel="prev"
+        >
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              1. ROSのインストール方法
+            </div>
+          </div>
+        </a>
+      
 
       <!-- Link to next page -->
+      
+        
+        <a
+          href="samples.html"
+          class="md-footer__link md-footer__link--next"
+          aria-label="Next: 3. ROSサンプルの実行"
+          rel="next"
+        >
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              3. ROSサンプルの実行
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
