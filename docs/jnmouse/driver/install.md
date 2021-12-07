@@ -1,6 +1,6 @@
 ---
 title: イメージファイルの書き込み
-robot: Jeton Nano Mouse
+robot: Jetson Nano Mouse
 ---
 
 # イメージファイルの書き込み
