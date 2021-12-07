@@ -165,7 +165,9 @@ Jetson Nano用のOSである[JetPack](https://developer.nvidia.com/embedded/jetp
 
 ### ブートローダについて {: #about-bootloader}
 
-ブートローダを更新すると、JetPack 4.5から導入されたQSPI-NORと呼ばれる新しいバージョンのものに置き換わります。
+Jetson NanoにはSDカードとは別にブートローダが書き込まれたQSPI-NOR Flashメモリが存在します [^1] [^2]。
+
+ブートローダを更新すると、JetPack 4.5から導入されたMaxSPIと呼ばれる新しいバージョンのものに置き換わります [^3]。
 
 ブートローダを更新すると以下の2つの影響があります。
 
@@ -179,3 +181,13 @@ Nano開発キットでは動作しなくなります
 ブートローダの詳細はNVIDIA社の公開する情報
 （[https://developer.nvidia.com/embedded/linux-tegra-r325](https://developer.nvidia.com/embedded/linux-tegra-r325)）
 をご確認ください。
+
+[^1]: What is QSPI-NOR - Jetson & Embedded Systems / Jetson Nano - NVIDIA Developer Forums  
+[https://forums.developer.nvidia.com/t/what-is-qspi-nor/145758](https://forums.developer.nvidia.com/t/what-is-qspi-nor/145758)
+
+[^2]: QSPI-NOR BOM addition for Jeton Nano developer kit modules - Jetson & Embedded Systems / Jetson Nano - NVIDIA Developer Forums  
+[https://forums.developer.nvidia.com/t/qspi-nor-bom-addition-for-jeton-nano-developer-kit-modules/173477](https://forums.developer.nvidia.com/t/qspi-nor-bom-addition-for-jeton-nano-developer-kit-modules/173477)
+
+[^3]: JetPackインストール中に表示されるメッセージから名称を確認できます。  
+![](https://i.gyazo.com/fd02a275db876a3773f92f847e8dbeac.jpg)  
+さらに[https://developer.nvidia.com/embedded/linux-tegra-r3251](https://developer.nvidia.com/embedded/linux-tegra-r3251)より"L4T Driver Package (BSP)"をダウンロードすると詳細を確認できます。
