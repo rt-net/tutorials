@@ -62,6 +62,7 @@ markdown_extensions:
   - pymdownx.emoji:  # アイコンが使える
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - footnotes  # 注釈用
 nav:
   - Home: 
     - トップページ: index.md
