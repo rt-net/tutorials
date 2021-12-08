@@ -1703,8 +1703,8 @@ Jetson Nano用のOSである<a href="https://developer.nvidia.com/embedded/jetpa
 <li>イメージファイル作成用スクリプト：<a href="https://github.com/rt-net/jnmouse_utils/blob/master/setup-scripts/jnmouse-setup-jetpack-4-5-1.sh">jnmouse-setup-jetpack-4-5-1.sh</a></li>
 </ul>
 <h3 id="about-bootloader">ブートローダについて</h3>
-<p>Jetson NanoにはSDカードとは別にブートローダが書き込まれたQSPI-NOR Flashメモリが存在します [^1] [^2]。</p>
-<p>ブートローダを更新すると、JetPack 4.5から導入されたMaxSPIと呼ばれる新しいバージョンのものに置き換わります <a href="JetPackインストール中に表示されるメッセージから名称を確認できます。">^3</a>。</p>
+<p>Jetson NanoにはSDカードとは別にブートローダが書き込まれたQSPI-NOR Flashメモリが存在します <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>。</p>
+<p>ブートローダを更新すると、JetPack 4.5から導入されたMaxSPIと呼ばれる新しいバージョンのものに置き換わります <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>。</p>
 <p>ブートローダを更新すると以下の2つの影響があります。</p>
 <ol>
 <li>対象のSDカードのイメージは、JetPack 4.4以前の旧ブートローダを搭載したJetson
@@ -1716,12 +1716,24 @@ Nano開発キットでは動作しなくなります</li>
 <p>ブートローダの詳細はNVIDIA社の公開する情報
 （<a href="https://developer.nvidia.com/embedded/linux-tegra-r325">https://developer.nvidia.com/embedded/linux-tegra-r325</a>）
 をご確認ください。</p>
-<p>[^1]: What is QSPI-NOR - Jetson &amp; Embedded Systems / Jetson Nano - NVIDIA Developer Forums<br />
-<a href="https://forums.developer.nvidia.com/t/what-is-qspi-nor/145758">https://forums.developer.nvidia.com/t/what-is-qspi-nor/145758</a></p>
-<p>[^2]: QSPI-NOR BOM addition for Jeton Nano developer kit modules - Jetson &amp; Embedded Systems / Jetson Nano - NVIDIA Developer Forums<br />
-<a href="https://forums.developer.nvidia.com/t/qspi-nor-bom-addition-for-jeton-nano-developer-kit-modules/173477">https://forums.developer.nvidia.com/t/qspi-nor-bom-addition-for-jeton-nano-developer-kit-modules/173477</a></p>
-<p><img alt="" src="https://i.gyazo.com/fd02a275db876a3773f92f847e8dbeac.jpg" /><br />
-さらに<a href="https://developer.nvidia.com/embedded/linux-tegra-r3251">https://developer.nvidia.com/embedded/linux-tegra-r3251</a>より"L4T Driver Package (BSP)"をダウンロードすると詳細を確認できます。</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>What is QSPI-NOR - Jetson &amp; Embedded Systems / Jetson Nano - NVIDIA Developer Forums<br />
+<a href="https://forums.developer.nvidia.com/t/what-is-qspi-nor/145758">https://forums.developer.nvidia.com/t/what-is-qspi-nor/145758</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>QSPI-NOR BOM addition for Jeton Nano developer kit modules - Jetson &amp; Embedded Systems / Jetson Nano - NVIDIA Developer Forums<br />
+<a href="https://forums.developer.nvidia.com/t/qspi-nor-bom-addition-for-jeton-nano-developer-kit-modules/173477">https://forums.developer.nvidia.com/t/qspi-nor-bom-addition-for-jeton-nano-developer-kit-modules/173477</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>JetPackインストール中に表示されるメッセージから名称を確認できます。<br />
+<img alt="" src="https://i.gyazo.com/fd02a275db876a3773f92f847e8dbeac.jpg" /><br />
+さらに<a href="https://developer.nvidia.com/embedded/linux-tegra-r3251">https://developer.nvidia.com/embedded/linux-tegra-r3251</a>より"L4T Driver Package (BSP)"をダウンロードすると詳細を確認できます。&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
                   
                 
