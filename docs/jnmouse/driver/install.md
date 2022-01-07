@@ -1,15 +1,18 @@
 ---
-title: イメージファイルの書き込み
+title: イメージファイルの書き込みと初期設定
 robot: Jetson Nano Mouse
 ---
 
-# イメージファイルの書き込み
+# イメージファイルの書き込みと初期設定
 
 このページでは、Jetson Nano Mouse用のイメージファイル
 の書き込み方法と初期設定について説明します。
 
-このイメージファイルには、
-Jetson Nano MouseのLEDやモータを駆動するために必要な
+このイメージファイルはカスタム版[JetPack](https://developer.nvidia.com/embedded/jetpack)です。  
+JetPackはJetson Nano用のLinuxである[L4T](https://developer.nvidia.com/embedded/linux-tegra)をベースとしてCUDAドライバなどのソフトウェアをまとめたものです。
+カスタム版JetPackは公式のJetPackのイメージファイルをベースとしてJetson Nano Mouse向けに機械学習ライブラリの[PyTorch](https://pytorch.org/)や[Tensorflow](https://www.tensorflow.org/?hl=ja)、
+プログラム実行環境である[JupyterLab](https://jupyter.org/)等があらかじめインストールされています。
+その他、Jetson Nano MouseのLEDやモータを駆動するために必要な
 [デバイスドライバ](https://github.com/rt-net/JetsonNanoMouse)
 があらかじめインストールされています。
 ## 使用機材 {: #requirements}
@@ -68,7 +71,16 @@ Jetson Nano開発者キットには以下の2種類が存在します。
 2. microSDカードをPCに接続します
 3. Etcherを起動し、イメージファイルをmicroSDカードに書き込みます
     - ![Jetson Nanoのイメージをダウンロード&書き込み](../../img/jnmouse/driver/etcher.gif)
-4. microSDカードをJetson Nanoに取り付け、Jetson Nano Mouseの電源を入れます
+
+## 起動 {: #boot}
+
+Jetson Nano Mouseの電源投入までの手順を説明します。より詳しい手順については[取扱説明書](https://rt-net.jp/products/jetson-nano-mouse/#downloads){target=_blank rel=noopener}を参照してください。
+
+1. 電源がOFFになっていることを確認し、microSDカードをJetson Nanoに取り付けます。
+2. コネクタ基板の向きを確認します。
+    * ![](../../img/jnmouse/jupyter-notebook/connector_board.png){: style="width:400px"}
+3. Jetson Nano Mouseの電源を入れます。Motor SWをOFFにし、Main SWをONにします。
+    * ![](../../img/jnmouse/jupyter-notebook/power_switch_main_on_motor_off.png){: style="width:400px"}
 
 
 ## 初期設定 {: #initialization}
