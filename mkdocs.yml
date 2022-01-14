@@ -3,7 +3,7 @@ theme:
   name: material
   custom_dir: overrides
   logo: img/rt-logo-32x32.png
-  favicon: img/rt-logo-32x32.png
+  favicon: https://rt-net.github.io/tutorials/img/rt-logo-32x32.png
   font: Incosolata
   palette:
     scheme: rt-red
@@ -100,9 +100,6 @@ nav:
       - 3. ROSサンプルの実行: jnmouse/ros/samples.md
       - 4. シミュレータの実行: jnmouse/ros/simulator.md
     - 5. 関連リンク集: jnmouse/others.md
-  - トレーニングトレーサー:
-    - 1. 製品について: rt-tracer/products.md
-    - 2. 関連リンク集: rt-tracer/others.md
   - USB出力9軸IMUセンサモジュール: 
     - 1. 製品について: usb9imu/products.md
     - 2. 関連リンク集: usb9imu/others.md
