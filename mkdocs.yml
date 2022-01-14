@@ -16,7 +16,7 @@ repo_url: https://github.com/rt-net/tutorials
 edit_uri: edit/main/docs/
 
 site_url: https://rt-net.github.io/tutorials/
-copyright: Copyright &copy; 2021 RT Corporation
+copyright: Copyright &copy; 2021-2022 RT Corporation
 use_directory_urls: false # ディレクトリ名/index.htmlを開く
 site_description: 株式会社アールティのオンラインソフトウェアチュートリアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。
 
