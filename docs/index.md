@@ -15,7 +15,7 @@
 | [![img][CRV2IMG]][CRV2DOC] | [![img][CRX7IMG]][CRX7DOC] | [![img][SC17IMG]][SC17DOC] |
 
 | [Raspberry Pi Mouse][RPMSDOC] | [Jetson Nano Mouse][JNMSDOC] | [USB出力9軸IMUセンサモジュール][USB9DOC] |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: |
 | [![img][RPMSIMG]][RPMSDOC] | [![img][JNMSIMG]][JNMSDOC] | [![img][USB9IMG]][USB9DOC] |
 
 [CRV2IMG]:https://rt-net.github.io/images/crane-plus/CRANEV2-500x500.png
