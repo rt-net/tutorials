@@ -77,10 +77,14 @@ Jetson Nano開発者キットには以下の2種類が存在します。
 Jetson Nano Mouseの電源投入までの手順を説明します。より詳しい手順については[取扱説明書](https://rt-net.jp/products/jetson-nano-mouse/#downloads){target=_blank rel=noopener}を参照してください。
 
 1. 電源がOFFになっていることを確認し、microSDカードをJetson Nanoに取り付けます。
+    * カチッと音がするまで差し込みます。
+        * 下図左側の写真の状態ではまだ装着できていません。
+        * 下図右側の写真のようにmicroSDカードとヒートシンクの縁が揃えば装着できています。
+    * ![](../../img/jnmouse/setup/sdcard_insert.png){: style="width:400px"}
 2. コネクタ基板の向きを確認します。
-    * ![](../../img/jnmouse/jupyter-notebook/connector_board.png){: style="width:400px"}
+    * ![](../../img/jnmouse/setup/connector_board.png){: style="width:400px"}
 3. Jetson Nano Mouseの電源を入れます。Motor SWをOFFにし、Main SWをONにします。
-    * ![](../../img/jnmouse/jupyter-notebook/power_switch_main_on_motor_off.png){: style="width:400px"}
+    * ![](../../img/jnmouse/setup/power_switch_main_on_motor_off.png){: style="width:400px"}
 
 
 ## 初期設定 {: #initialization}

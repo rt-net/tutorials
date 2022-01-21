@@ -41,9 +41,9 @@ Jupyter Notebookを活用した教材もあり、たとえば、千葉工業大�
 
 コネクタ基板の向きを確認します。Motor SWをOFFにし、Main SWをONにしておきます。
 
-![](../../img/jnmouse/jupyter-notebook/connector_board.png){: style="width:400px"}
+![](../../img/jnmouse/setup/connector_board.png){: style="width:400px"}
 
-![](../../img/jnmouse/jupyter-notebook/power_switch_main_on_motor_off.png){: style="width:400px"}
+![](../../img/jnmouse/setup/power_switch_main_on_motor_off.png){: style="width:400px"}
 
 ## JupyterLabへのログイン {: #jupyterlab-login}
 
