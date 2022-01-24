@@ -80,7 +80,7 @@ robot: Raspberry Pi Mouse
     $ sudo apt install -y curl git
     ```
     
-    以下のコマンドを実行してインストーラでROS 2をインストールします。  
+    以下のコマンドでROS 2インストールスクリプトを実行します。  
     環境にもよりますが完了までは10分以上かかる場合があります。
     
     ```sh
