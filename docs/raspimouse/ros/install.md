@@ -120,7 +120,7 @@ robot: Raspberry Pi Mouse
     $ bash -c "$(curl -SsfL u.ty0.jp/ros-noetic-ros-base)"
     ```
     
-    インストーラが問題なく実行できれば以下のメッセージが表示されます。
+    スクリプトが問題なく実行できれば以下のメッセージが表示されます。
     
     ```txt
     Success installing ROS melodic
