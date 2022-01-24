@@ -123,7 +123,7 @@ robot: Raspberry Pi Mouse
     スクリプトが問題なく実行できれば以下のメッセージが表示されます。
     
     ```txt
-    Success installing ROS melodic
+    Success installing ROS noetic
     Run 'source ~/.bashrc'
     
     If any error occurs, please refer to the following URL.
