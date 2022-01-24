@@ -10,9 +10,10 @@ robot: Jetson Nano Mouse
     [rt-net/jnmouse_sim](https://github.com/rt-net/jnmouse_sim){target=_blank rel=noopener}
     パッケージを用いたシミュレーションのセットアップ方法と実行方法を説明します。
 
-    シミュレーション環境はUbuntu PC上に構築します。
+    シミュレーション環境はROSインストール済みのUbuntu PC上に構築します。
+    手順については[ROSのインストール方法](./install.md)を参照してください。
 
-## パッケージのダウンロードとインストール
+## パッケージのダウンロードとインストール {: #installation}
 
 === "ROS"
     次のコマンドを実行します。パッケージのダウンロードとインストールの手順は初回のみ実行が必要です。
@@ -37,7 +38,7 @@ robot: Jetson Nano Mouse
 
     ```
 
-## キーボードで操縦する
+## キーボードで操縦する {: #teleop-keyboard}
 
 === "ROS"
     次のコマンドを実行します。
