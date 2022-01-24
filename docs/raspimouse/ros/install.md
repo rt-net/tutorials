@@ -45,7 +45,7 @@ robot: Raspberry Pi Mouse
 非公式のインストールスクリプトを使うことで簡単にROS / ROS 2をインストールできます。
 
 === "ROS"
-    今回使用するROSのインストーラは`curl`を使用します。以下のコマンドでインストールします。
+    このROSインストールスクリプトは`curl`を使用します。以下のコマンドでインストールします。
     
     ```sh
     $ sudo apt install -y curl
