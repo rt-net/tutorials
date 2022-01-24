@@ -136,7 +136,7 @@ robot: Raspberry Pi Mouse
     $ source ~/.bashrc
     ```
 === "ROS 2"
-    今回使用するROS 2のインストーラは`curl`と`git`を使用します。以下のコマンドでインストールします。
+    このROS 2インストールスクリプトは`curl`と`git`を使用します。以下のコマンドでインストールします。
     
     ```sh
     $ sudo apt install -y curl git
