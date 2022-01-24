@@ -1281,7 +1281,9 @@
 
 
 <h1 id="_1">シミュレータの実行</h1>
-<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>このページでは、
 <a href="https://github.com/rt-net/jnmouse_sim" rel="noopener" target="_blank">rt-net/jnmouse_sim</a>
 パッケージを用いたシミュレーションのセットアップ方法と実行方法を説明します。</p>
@@ -1289,8 +1291,11 @@
 手順については<a href="install.html">ROSのインストール方法</a>を参照してください。</p>
 </div>
 </div>
+</div>
 <h2 id="installation">パッケージのダウンロードとインストール</h2>
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>次のコマンドを実行します。パッケージのダウンロードとインストールの手順は初回のみ実行が必要です。</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># パッケージのダウンロード</span>
 $ <span class="nb">cd</span> ~/catkin_ws/src
@@ -1311,8 +1316,11 @@ $ rosrun jnmouse_gazebo download_gazebo_models.sh
 </code></pre></div>
 </div>
 </div>
+</div>
 <h2 id="teleop-keyboard">キーボードで操縦する</h2>
-<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>次のコマンドを実行します。</p>
 <p><div class="highlight"><pre><span></span><code><span class="c1"># シミュレータの起動</span>
 $ roslaunch jnmouse_gazebo jnmouse_with_table.launch
@@ -1322,6 +1330,7 @@ $ roslaunch jnmouse_gazebo keyboard_teleop.launch rviz:<span class="o">=</span><
 </code></pre></div>
 <img alt="" src="https://rt-net.github.io/images/jetson-nano-mouse/jnmouse_gazebo_3.gif" /></p>
 <p><img alt="" src="https://rt-net.github.io/images/jetson-nano-mouse/jnmouse_gazebo_1.gif" /></p>
+</div>
 </div>
 </div>
 

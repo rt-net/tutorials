@@ -1308,12 +1308,14 @@
 </li>
 </ul>
 <h2 id="ros-ros-2_1">ROS / ROS 2のインストール</h2>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS</label><label for="__tabbed_1_2">ROS 2</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p><a href="https://wiki.ros.org/noetic/Installation/Ubuntu" rel="noopener" target="_blank">https://wiki.ros.org/noetic/Installation/Ubuntu</a>
 を参考に、<code>ROS Noetic</code>をインストールします。
 Ubuntu ServerではGUIを使用しないため、<code>ROS-Base</code>パッケージをインストールします。</p>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">ROS 2</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p><a href="https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html" rel="noopener" target="_blank">https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html</a>
 を参考に、<code>ROS 2 Foxy</code>をインストールします。
 Ubuntu ServerではGUIを使用しないため、<code>ROS-Base</code>パッケージをインストールします。</p>
@@ -1321,8 +1323,11 @@ Ubuntu ServerではGUIを使用しないため、<code>ROS-Base</code>パッケ�
 を参考に、パッケージビルドツールの<code>colcon</code>をインストールします。</p>
 </div>
 </div>
+</div>
 <h2 id="ros-ros-2_2">ROS / ROS 2パッケージのインストール</h2>
-<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ROS</label><label for="__tabbed_2_2">ROS 2</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>制御用のパッケージである
 <a href="https://github.com/ryuichiueda/raspimouse_ros_2" rel="noopener" target="_blank">ryuichiueda/raspimouse_ros_2</a>
 と、サンプル集パッケージ
@@ -1348,7 +1353,7 @@ $ <span class="nb">cd</span> ~/catkin_ws <span class="o">&amp;&amp;</span> catki
 $ <span class="nb">source</span> ~/catkin_ws/devel/setup.bash
 </code></pre></div>
 </div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">ROS 2</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>サンプル集パッケージ
 <a href="https://github.com/rt-net/raspimouse_ros2_examples" rel="noopener" target="_blank">rt-net/raspimouse_ros2_examples</a>
 をダウンロードしてインストールします。</p>
@@ -1366,6 +1371,7 @@ $ <span class="nb">cd</span> ~/ros2_ws
 $ colcon build --symlink-install
 $ <span class="nb">source</span> ~/ros2_ws/install/setup.bash
 </code></pre></div>
+</div>
 </div>
 </div>
 

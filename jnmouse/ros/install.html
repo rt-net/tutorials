@@ -1360,7 +1360,9 @@
 </li>
 </ul>
 <h2 id="jetson-nano">Jetson Nano</h2>
-<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p><a href="../driver/install.html">本サイトで紹介しているイメージファイルの書き込み手順</a>でセットアップした場合は<strong><code>ROS Melodic</code>がインストール済みです</strong>。</p>
 <p>手動でインストールする場合は、
 <a href="https://wiki.ros.org/melodic/Installation/Ubuntu" rel="noopener" target="_blank">https://wiki.ros.org/melodic/Installation/Ubuntu</a>
@@ -1369,17 +1371,23 @@ GUIを使用する場合は<code>Desktop-Full</code>を、
 使用しない場合は<code>ROS-Base</code>パッケージをインストールします。</p>
 </div>
 </div>
+</div>
 <h2 id="pc">ノートパソコン等PC</h2>
 <h3 id="official-document">ROSのインストール（公式のドキュメントに沿って進める場合）</h3>
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p><a href="https://wiki.ros.org/melodic/Installation/Ubuntu" rel="noopener" target="_blank">https://wiki.ros.org/melodic/Installation/Ubuntu</a>
 を参考に、<code>ROS Melodic</code>をインストールします。</p>
 <p>GUIを使用する場合は<code>Desktop-Full</code>を、 使用しない場合は<code>ROS-Base</code>パッケージをインストールします。</p>
 </div>
 </div>
+</div>
 <h3 id="install-script">ROS / ROS 2のインストール（インストールスクリプトを使う場合）</h3>
 <p>公式の方法ではありませんが、インストールスクリプトを使うことで簡単にインストールを済ませることもできます。</p>
-<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>今回使用するROSのインストーラは<code>curl</code>を使用します。以下のコマンドでインストールします。</p>
 <div class="highlight"><pre><span></span><code>$ sudo apt install -y curl
 </code></pre></div>
@@ -1397,6 +1405,7 @@ https://github.com/Tiryoh/ros_setup_scripts_ubuntu/
 <p>以下のコマンドでインストールした設定を読み込みます。</p>
 <div class="highlight"><pre><span></span><code>$ <span class="nb">source</span> ~/.bashrc
 </code></pre></div>
+</div>
 </div>
 </div>
 

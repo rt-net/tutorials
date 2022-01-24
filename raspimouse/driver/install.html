@@ -1336,7 +1336,9 @@
 Raspberry PiやRaspberry Pi Mouse本体を<strong>故障させないように</strong>注意してください。
 詳細はRaspberry Pi Mouseの<strong>製品マニュアルを参照してください</strong>。</p>
 </div>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Ubuntu Server 20.04</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Ubuntu Server 20.04</label><label for="__tabbed_1_2">Raspberry Pi OS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ol>
 <li><a href="https://www.raspberrypi.org/software/" rel="noopener" target="_blank">https://www.raspberrypi.org/software/</a> にアクセスします</li>
 <li>Raspberry Pi Imagerをダウンロードします
@@ -1350,7 +1352,7 @@ Raspberry PiやRaspberry Pi Mouse本体を<strong>故障させないように</s
 <li><code>$sudo apt update &amp;&amp; sudo apt upgrade</code>を実行します</li>
 </ol>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Raspberry Pi OS</label><div class="tabbed-content">
+<div class="tabbed-block">
 <ol>
 <li><a href="https://www.raspberrypi.org/software/" rel="noopener" target="_blank">https://www.raspberrypi.org/software/</a> にアクセスします</li>
 <li>Raspberry Pi Imagerをダウンロードします
@@ -1365,11 +1367,14 @@ Raspberry PiやRaspberry Pi Mouse本体を<strong>故障させないように</s
 </ol>
 </div>
 </div>
+</div>
 <h2 id="_2">ソースファイルのダウンロードとインストール</h2>
 <p>Raspberry Pi Mouseのデバイスドライバのソースファイルは
 <a href="https://github.com/rt-net/RaspberryPiMouse">GitHub</a>
 に公開されています。</p>
-<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Ubuntu Server</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Ubuntu Server</label><label for="__tabbed_2_2">Raspberry Pi OS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ol>
 <li>次のコマンドを実行し、デバイスドライバをインストールします
 <div class="highlight"><pre><span></span><code>$ git clone https://github.com/rt-net/RaspberryPiMouse.git
@@ -1386,7 +1391,7 @@ $ ./build_install.bash
 </li>
 </ol>
 </div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Raspberry Pi OS</label><div class="tabbed-content">
+<div class="tabbed-block">
 <ol>
 <li><code>Raspberry Piの設定</code>を開きます
 <img alt="" src="../../img/raspimouse/driver/raspi_os_settings2.png" /></li>
@@ -1408,6 +1413,7 @@ $ ./build_install.bash
 </ol>
 </li>
 </ol>
+</div>
 </div>
 </div>
 <p><strong>デバイスドライバはOSを起動するたびにインストールしてください。</strong></p>

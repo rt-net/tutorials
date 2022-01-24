@@ -1289,7 +1289,9 @@
 <h2 id="ros-pkg-installation">ROSパッケージのインストール</h2>
 <p>Jetson Nano Mouseを動かすためのROSパッケージ（制御用のパッケージ）はRaspberry Pi Mouseと同じものを使用します。</p>
 <p>Jetson Nano Mouseへのインストールは必須です。ノートパソコン等PCとJetson Nano Mouseで処理を分散する場合（<a href="samples.html">ROSサンプル</a>で扱います）はPCへのインストールも必要です。</p>
-<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ul>
 <li>制御用のパッケージ（<a href="https://github.com/ryuichiueda/raspimouse_ros_2" rel="noopener" target="_blank">ryuichiueda/raspimouse_ros_2</a>）</li>
 <li>サンプル集パッケージ<ul>
@@ -1316,6 +1318,7 @@ $ rosdep install -r -y --from-paths . --ignore-src
 $ <span class="nb">cd</span> ~/catkin_ws <span class="o">&amp;&amp;</span> catkin_make
 $ <span class="nb">source</span> ~/catkin_ws/devel/setup.bash
 </code></pre></div>
+</div>
 </div>
 </div>
 

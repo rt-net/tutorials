@@ -1471,7 +1471,9 @@
 
 
 <h1 id="ros">ROSサンプル集の実行</h1>
-<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>このページでは以下の3つのサンプル実行方法を説明します。</p>
 <ul>
 <li>Raspberry Pi Mouseと共通のROSサンプル集（<a href="https://github.com/rt-net/raspimouse_ros_examples/tree/melodic-devel" rel="noopener" target="_blank">rt-net/raspimouse_ros_examples</a>）</li>
@@ -1485,8 +1487,11 @@ $ <span class="nb">source</span> ~/catkin_ws/devel/setup.bash
 </code></pre></div>
 </div>
 </div>
+</div>
 <h2 id="robot-and-pc-ros-network">Jetson NanoとPC間のROSネットワークを接続する</h2>
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>環境変数<code>ROS_IP</code>、<code>ROS_MASTER_URI</code>を設定することで、
 PCからネットワークを介してJetson Nano側のトピックやサービスにアクセスできます。</p>
 <p>Jetson NanoのIPアドレスが<code>192.168.11.89</code>、
@@ -1505,30 +1510,40 @@ $ <span class="nb">export</span> <span class="nv">ROS_MASTER_URI</span><span cla
 <code>ROS_MASTER_URI</code>をデフォルトの<code>http://localhost:11311/</code>に戻します。</p>
 </div>
 </div>
+</div>
 <h2 id="raspimouse-ros-examples">raspimouse_ros_examples</h2>
 <h3 id="teleop-keyboard">キーボードで操縦する</h3>
-<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>実行手順は<a href="https://github.com/rt-net/raspimouse_ros_examples/tree/melodic-devel#keyboard_control" rel="noopener" target="_blank">ROS サンプル集のkeyboard_control</a>
 を参照してください。
 PCから操縦する場合はネットワークと環境変数を設定してください。</p>
 </div>
 </div>
+</div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Obc3jPLZqv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h3 id="teleop-joystick">ジョイスティックコントローラで操縦する</h3>
-<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>実行手順は<a href="https://github.com/rt-net/raspimouse_ros_examples/tree/melodic-devel#joystick_control" rel="noopener" target="_blank">ROS サンプル集のjoystick_control</a>
 を参照してください。
 PCから操縦する場合はネットワークと環境変数を設定してください。</p>
+</div>
 </div>
 </div>
 <p>※動画はRaspberry Pi MouseですがJetson Nano Mouseでも同様です。</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GswxdB8Ia0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h3 id="imu-direction-control">IMUで角度制御</h3>
-<div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>実行手順は<a href="https://github.com/rt-net/raspimouse_ros_examples/tree/melodic-devel#direction_control" rel="noopener" target="_blank">ROS サンプル集のdirection_control</a>
 を参照してください。</p>
+</div>
 </div>
 </div>
 <p>※動画はRaspberry Pi MouseですがJetson Nano Mouseでも同様です。<br />
@@ -1537,43 +1552,58 @@ PCから操縦する場合はネットワークと環境変数を設定してく
 
 <h2 id="jnmouse-ros-examples">jnmouse_ros_examples</h2>
 <h3 id="line-following">ライントレース</h3>
-<div class="tabbed-set" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>実行手順は<a href="https://github.com/rt-net/jnmouse_ros_examples#line_following" rel="noopener" target="_blank">サンプル集パッケージ</a>を参照してください。<br />
 詳細は<a href="https://rt-net.jp/mobility/archives/15597">ブログ（https://rt-net.jp/mobility/archives/15597）</a>に記載しています。</p>
+</div>
 </div>
 </div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sNLJu0p-CBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h3 id="teleop-vr">スマホVRでJetson Nano Mouseを操作</h3>
-<div class="tabbed-set" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>実行手順は<a href="https://github.com/rt-net/jnmouse_ros_examples#teleop_vr" rel="noopener" target="_blank">サンプル集パッケージ</a>を参照してください。<br />
 詳細は<a href="https://rt-net.jp/mobility/archives/16161">ブログ（https://rt-net.jp/mobility/archives/16161）</a>に記載しています。</p>
 </div>
 </div>
+</div>
 <p><img src="https://rt-net.github.io/images/jetson-nano-mouse/jnmouse_vr.jpg" width="560"></p>
 <h3 id="image-undistortion">ステレオカメラ画像の歪み補正とステレオ平行化</h3>
-<div class="tabbed-set" data-tabs="8:1"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><label for="__tabbed_8_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="8:1"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>実行手順は<a href="https://github.com/rt-net/jnmouse_ros_examples#image_undistortion" rel="noopener" target="_blank">サンプル集パッケージ</a>を参照してください。<br />
 詳細は<a href="https://rt-net.jp/mobility/archives/17588">ブログ（https://rt-net.jp/mobility/archives/17588）</a>に記載しています。</p>
+</div>
 </div>
 </div>
 <p><img src="https://rt-net.github.io/images/jetson-nano-mouse/jnmouse_ros_examples_image_undistortion_screenshot.png" width="560"></p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UCUh3qVYNZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h3 id="stereo-depth-estimation">ステレオカメラ画像からの深度推定</h3>
-<div class="tabbed-set" data-tabs="9:1"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="9:1"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>実行手順は<a href="https://github.com/rt-net/jnmouse_ros_examples#stereo_depth_estimation" rel="noopener" target="_blank">サンプル集パッケージ</a>を参照してください。<br />
 詳細は<a href="https://rt-net.jp/mobility/archives/18036">ブログ（https://rt-net.jp/mobility/archives/18036）</a>に記載しています。</p>
+</div>
 </div>
 </div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gMpKKTsPKec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h2 id="raspimouse-slam-navigation">raspimouse_slam_navigation_ros</h2>
 <h3 id="lidar-slam">LiDARでSLAM</h3>
-<div class="tabbed-set" data-tabs="10:1"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><label for="__tabbed_10_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="10:1"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>実行手順は<a href="https://github.com/rt-net/raspimouse_slam_navigation_ros#raspimouse_slam" rel="noopener" target="_blank">SLAMパッケージ</a>
 を参照してください。
 SLAMパッケージをPCで起動する場合はネットワークと環境変数を設定してください。</p>
+</div>
 </div>
 </div>
 <p>※動画はRaspberry Pi MouseですがJetson Nano Mouseでも同様です。<br />
@@ -1583,10 +1613,13 @@ SLAMパッケージをPCで起動する場合はネットワークと環境変�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hV68UqAntfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h3 id="lidar-navigation">LiDARでナビゲーション</h3>
-<div class="tabbed-set" data-tabs="11:1"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><label for="__tabbed_11_1">ROS</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="11:1"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">ROS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>実行手順は<a href="https://github.com/rt-net/raspimouse_slam_navigation_ros#raspimouse_navigation" rel="noopener" target="_blank">ナビゲーションパッケージ</a>
 を参照してください。
 ナビゲーションパッケージをPCで起動する場合はネットワークと環境変数を設定してください。</p>
+</div>
 </div>
 </div>
 <p>※動画はRaspberry Pi MouseですがJetson Nano Mouseでも同様です。<br />
