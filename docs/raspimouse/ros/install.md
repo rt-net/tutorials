@@ -7,14 +7,14 @@ robot: Raspberry Pi Mouse
 
 このページでは、以下の2つのデバイスへのROSのインストール方法を説明します。
 
-* Ubuntuインストール済みのノートパソコン等PC
+* Ubuntuインストール済みのノートパソコン等のPC
 * Ubuntuインストール済みのRaspberry Pi
 
 なお、ROSをすでにインストール済みの場合はこのページの手順は不要です。
 
 ## 前提条件 {: #requirements}
 
-* ノートパソコン等PC
+* ノートパソコン等のPC
     * OS（**Ubuntu Desktop 20.04**）がインストール済みであること
 
 * Raspberry Pi
@@ -40,7 +40,7 @@ robot: Raspberry Pi Mouse
 
 ## ROS / ROS 2のインストール（インストールスクリプトを使う場合） {: #install-script}
 
-### ノートパソコン等PC
+### ノートパソコン等のPC
 
 非公式のインストールスクリプトを使うことで簡単にROS / ROS 2をインストールできます。
 
