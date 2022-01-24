@@ -778,7 +778,21 @@
   
     <li class="md-nav__item">
       <a href="install.html" class="md-nav__link">
-        1. ROS / ROS 2パッケージのインストール
+        1. ROS / ROS 2のインストール
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="package-install.html" class="md-nav__link">
+        2. ROS / ROS 2パッケージのインストール
       </a>
     </li>
   
@@ -792,7 +806,7 @@
   
     <li class="md-nav__item">
       <a href="samples.html" class="md-nav__link">
-        2. ROS / ROS 2サンプルの実行
+        3. ROS / ROS 2サンプルの実行
       </a>
     </li>
   
@@ -815,12 +829,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          3. シミュレータの実行
+          4. シミュレータの実行
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="simulator.html" class="md-nav__link md-nav__link--active">
-        3. シミュレータの実行
+        4. シミュレータの実行
       </a>
       
         
@@ -1286,8 +1300,9 @@
 <div class="tabbed-block">
 <p>このページでは、
 <a href="https://github.com/rt-net/raspimouse_sim" rel="noopener" target="_blank">rt-net/raspimouse_sim</a>
-パッケージを用いたシミュレーションの実行方法を説明します。</p>
-<p>シミュレーション環境はUbuntu PC上に構築します。</p>
+パッケージを用いたシミュレーションのセットアップ方法と実行方法を説明します。</p>
+<p>シミュレーション環境はROSインストール済みのUbuntu PC上に構築します。<br />
+インストール方法については<a href="install.html">ROS/ROS 2のインストール</a>を参照してください。</p>
 </div>
 </div>
 </div>
@@ -1321,7 +1336,7 @@ $ rosrun raspimouse_gazebo download_gazebo_models.sh
 <div class="tabbed-block">
 <p><a href="https://github.com/rt-net/raspimouse_ros_examples" rel="noopener" target="_blank">rt-net/raspimouse_ros_examples</a>
 を使用します。
-<a href="install.html">ROS パッケージのインストール</a>を参考に、パッケージを<strong>PCにインストール</strong>してください。</p>
+<a href="package-install.html">ROS パッケージのインストール</a>を参考に、パッケージを<strong>PCにインストール</strong>してください。</p>
 <p>次のコマンドを実行します。</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># シミュレータの起動</span>
 $ roslaunch raspimouse_gazebo raspimouse_with_samplemaze.launch
@@ -1380,7 +1395,7 @@ $ roslaunch raspimouse_ros_examples teleop.launch key:<span class="o">=</span><s
           <a
             href="samples.html"
             class="md-footer__link md-footer__link--prev"
-            aria-label="Previous: 2. ROS / ROS 2サンプルの実行"
+            aria-label="Previous: 3. ROS / ROS 2サンプルの実行"
             rel="prev"
           >
             <div class="md-footer__button md-icon">
@@ -1391,7 +1406,7 @@ $ roslaunch raspimouse_ros_examples teleop.launch key:<span class="o">=</span><s
                 <span class="md-footer__direction">
                   Previous
                 </span>
-                2. ROS / ROS 2サンプルの実行
+                3. ROS / ROS 2サンプルの実行
               </div>
             </div>
           </a>

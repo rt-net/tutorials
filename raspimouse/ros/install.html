@@ -36,7 +36,7 @@
     
     
       
-        <title>ROS / ROS 2パッケージのインストール - RT Corporation Software Tutorials</title>
+        <title>ROS / ROS 2のインストール - RT Corporation Software Tutorials</title>
       
     
     
@@ -92,7 +92,7 @@
 
   <!-- Open graph meta tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="ROS / ROS 2パッケージのインストール - RT Corporation Software Tutorials" />
+  <meta property="og:title" content="ROS / ROS 2のインストール - RT Corporation Software Tutorials" />
   <meta property="og:description" content="株式会社アールティのオンラインソフトウェアチュートリアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。" />
   <meta property="og:url" content="https://rt-net.github.io/tutorials/raspimouse/ros/install.html" />
   <meta property="og:image" content="https://rt-net.github.io/tutorials/img/rt-logo-270x270.png" />
@@ -104,7 +104,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@rt_corp" />
   <meta name="twitter:creator" content="@rt_corp" />
-  <meta name="twitter:title" content="ROS / ROS 2パッケージのインストール - RT Corporation Software Tutorials" />
+  <meta name="twitter:title" content="ROS / ROS 2のインストール - RT Corporation Software Tutorials" />
   <meta name="twitter:description" content="株式会社アールティのオンラインソフトウェアチュートリアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。" />
   <meta name="twitter:image" content="https://rt-net.github.io/tutorials/img/rt-logo-270x270.png" />
 
@@ -164,7 +164,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ROS / ROS 2パッケージのインストール
+              ROS / ROS 2のインストール
             
           </span>
         </div>
@@ -787,12 +787,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          1. ROS / ROS 2パッケージのインストール
+          1. ROS / ROS 2のインストール
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="install.html" class="md-nav__link md-nav__link--active">
-        1. ROS / ROS 2パッケージのインストール
+        1. ROS / ROS 2のインストール
       </a>
       
         
@@ -811,23 +811,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
     前提条件
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ros-ros-2_1" class="md-nav__link">
-    ROS / ROS 2のインストール
+  <a href="#official-document" class="md-nav__link">
+    ROS / ROS 2のインストール（公式のドキュメントに沿って進める場合）
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ros-ros-2_2" class="md-nav__link">
-    ROS / ROS 2パッケージのインストール
+  <a href="#install-script" class="md-nav__link">
+    ROS / ROS 2のインストール（インストールスクリプトを使う場合）
   </a>
+  
+    <nav class="md-nav" aria-label="ROS / ROS 2のインストール（インストールスクリプトを使う場合）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pc" class="md-nav__link">
+    ノートパソコン等のPC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi" class="md-nav__link">
+    Raspberry Pi
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -846,8 +866,22 @@
   
   
     <li class="md-nav__item">
+      <a href="package-install.html" class="md-nav__link">
+        2. ROS / ROS 2パッケージのインストール
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="samples.html" class="md-nav__link">
-        2. ROS / ROS 2サンプルの実行
+        3. ROS / ROS 2サンプルの実行
       </a>
     </li>
   
@@ -861,7 +895,7 @@
   
     <li class="md-nav__item">
       <a href="simulator.html" class="md-nav__link">
-        3. シミュレータの実行
+        4. シミュレータの実行
       </a>
     </li>
   
@@ -1257,23 +1291,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
     前提条件
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ros-ros-2_1" class="md-nav__link">
-    ROS / ROS 2のインストール
+  <a href="#official-document" class="md-nav__link">
+    ROS / ROS 2のインストール（公式のドキュメントに沿って進める場合）
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ros-ros-2_2" class="md-nav__link">
-    ROS / ROS 2パッケージのインストール
+  <a href="#install-script" class="md-nav__link">
+    ROS / ROS 2のインストール（インストールスクリプトを使う場合）
   </a>
+  
+    <nav class="md-nav" aria-label="ROS / ROS 2のインストール（インストールスクリプトを使う場合）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pc" class="md-nav__link">
+    ノートパソコン等のPC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi" class="md-nav__link">
+    Raspberry Pi
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1294,82 +1348,131 @@
 </a>
 
 
-<h1 id="ros-ros-2">ROS / ROS 2パッケージのインストール</h1>
-<p>このページでは、Raspberry Pi MouseのROSサンプル集のインストール方法を説明します。</p>
-<h2 id="_1">前提条件</h2>
+<h1 id="ros-ros-2">ROS / ROS 2のインストール</h1>
+<p>このページでは、以下の2つのデバイスへのROSのインストール方法を説明します。</p>
+<ul>
+<li>Ubuntuインストール済みのノートパソコン等のPC</li>
+<li>Ubuntuインストール済みのRaspberry Pi</li>
+</ul>
+<p>なお、ROSをすでにインストール済みの場合はこのページの手順は不要です。</p>
+<h2 id="requirements">前提条件</h2>
+<ul>
+<li>
+<p>ノートパソコン等のPC</p>
+<ul>
+<li>OS（<strong>Ubuntu Desktop 20.04</strong>）がインストール済みであること</li>
+</ul>
+</li>
+<li>
+<p>Raspberry Pi</p>
 <ul>
 <li>OS（<strong>Ubuntu Server 20.04</strong>）がインストール済みであること<ul>
 <li>Raspberry Pi OSでのROSの動作は確認していません。</li>
 </ul>
 </li>
-<li><strong>デバイスドライバ</strong>がインストール済みであること<ul>
-<li><a href="../driver/install.html">デバイスドライバのインストール手順</a>を参照してください</li>
 </ul>
 </li>
 </ul>
-<h2 id="ros-ros-2_1">ROS / ROS 2のインストール</h2>
+<h2 id="official-document">ROS / ROS 2のインストール（公式のドキュメントに沿って進める場合）</h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS</label><label for="__tabbed_1_2">ROS 2</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><a href="https://wiki.ros.org/noetic/Installation/Ubuntu" rel="noopener" target="_blank">https://wiki.ros.org/noetic/Installation/Ubuntu</a>
-を参考に、<code>ROS Noetic</code>をインストールします。
-Ubuntu ServerではGUIを使用しないため、<code>ROS-Base</code>パッケージをインストールします。</p>
+を参考に、<code>ROS Noetic</code>をインストールします。</p>
+<p>GUIを使用する場合は<code>Desktop-Full</code>を、 使用しない場合は<code>ROS-Base</code>パッケージをインストールします。</p>
 </div>
 <div class="tabbed-block">
 <p><a href="https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html" rel="noopener" target="_blank">https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html</a>
-を参考に、<code>ROS 2 Foxy</code>をインストールします。
-Ubuntu ServerではGUIを使用しないため、<code>ROS-Base</code>パッケージをインストールします。</p>
+を参考に、<code>ROS 2 Foxy</code>をインストールします。</p>
+<p>GUIを使用する場合は<code>Desktop</code>を、 使用しない場合は<code>ROS-Base</code>パッケージをインストールします。</p>
 <p><a href="https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html" rel="noopener" target="_blank">https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html</a>
 を参考に、パッケージビルドツールの<code>colcon</code>をインストールします。</p>
 </div>
 </div>
 </div>
-<h2 id="ros-ros-2_2">ROS / ROS 2パッケージのインストール</h2>
+<h2 id="install-script">ROS / ROS 2のインストール（インストールスクリプトを使う場合）</h2>
+<h3 id="pc">ノートパソコン等のPC</h3>
+<p>非公式のインストールスクリプトを使うことで簡単にROS / ROS 2をインストールできます。</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ROS</label><label for="__tabbed_2_2">ROS 2</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>制御用のパッケージである
-<a href="https://github.com/ryuichiueda/raspimouse_ros_2" rel="noopener" target="_blank">ryuichiueda/raspimouse_ros_2</a>
-と、サンプル集パッケージ
-<a href="https://github.com/rt-net/raspimouse_ros_examples" rel="noopener" target="_blank">rt-net/raspimouse_ros_examples</a>
-および、ナビゲーション用のパッケージ
-<a href="https://github.com/rt-net/raspimouse_slam_navigation_ros" rel="noopener" target="_blank">rt-net/raspimouse_slam_navigation_ros</a>
-をダウンロードしてインストールします。</p>
-<div class="highlight"><pre><span></span><code>$ <span class="nb">source</span> /opt/ros/noetic/setup.bash
-$ mkdir -p ~/catkin_ws/src
-$ <span class="nb">cd</span> ~/catkin_ws/src
-<span class="c1"># Clone ROS packages</span>
-$ git clone https://github.com/ryuichiueda/raspimouse_ros_2
-$ git clone -b <span class="nv">$ROS_DISTRO</span>-devel https://github.com/rt-net/raspimouse_ros_examples 
-$ git clone -b <span class="nv">$ROS_DISTRO</span>-devel https://github.com/rt-net/raspimouse_slam_navigation_ros 
-<span class="c1"># For direction control example</span>
-$ git clone https://github.com/rt-net/rt_usb_9axisimu_driver
+<p>このROSインストールスクリプトは<code>curl</code>を使用します。以下のコマンドでインストールします。</p>
+<div class="highlight"><pre><span></span><code>$ sudo apt install -y curl
+</code></pre></div>
+<p>以下のコマンドでROSインストールスクリプトを実行します。<br />
+環境にもよりますが完了までは10分以上かかる場合があります。</p>
+<div class="highlight"><pre><span></span><code>$ bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -SsfL u.ty0.jp/ros-noetic-desktop<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>スクリプトが問題なく実行できれば以下のメッセージが表示されます。</p>
+<div class="highlight"><pre><span></span><code>Success installing ROS noetic
+Run &#39;source ~/.bashrc&#39;
 
-<span class="c1"># Install dependencies</span>
-$ rosdep install -r -y --from-paths . --ignore-src      
-
-<span class="c1"># make &amp; install</span>
-$ <span class="nb">cd</span> ~/catkin_ws <span class="o">&amp;&amp;</span> catkin_make
-$ <span class="nb">source</span> ~/catkin_ws/devel/setup.bash
+If any error occurs, please refer to the following URL.
+https://github.com/Tiryoh/ros_setup_scripts_ubuntu/
+</code></pre></div>
+<p>以下のコマンドでインストールした設定を読み込みます。</p>
+<div class="highlight"><pre><span></span><code>$ <span class="nb">source</span> ~/.bashrc
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>サンプル集パッケージ
-<a href="https://github.com/rt-net/raspimouse_ros2_examples" rel="noopener" target="_blank">rt-net/raspimouse_ros2_examples</a>
-をダウンロードしてインストールします。</p>
-<div class="highlight"><pre><span></span><code>$ <span class="nb">source</span> /opt/ros/foxy/setup.bash
-$ mkdir -p ~/ros2_ws/src
-$ <span class="nb">cd</span> ~/ros2_ws/src
-<span class="c1"># Clone packages</span>
-$ git clone https://github.com/rt-net/raspimouse_ros2_examples
+<p>このROS 2インストールスクリプトは<code>curl</code>と<code>git</code>を使用します。以下のコマンドでインストールします。</p>
+<div class="highlight"><pre><span></span><code>$ sudo apt install -y curl git
+</code></pre></div>
+<p>以下のコマンドでROS 2インストールスクリプトを実行します。<br />
+環境にもよりますが完了までは10分以上かかる場合があります。</p>
+<div class="highlight"><pre><span></span><code>$ git clone https://github.com/Tiryoh/ros2_setup_scripts_ubuntu.git
+$ <span class="nb">cd</span> ros2_setup_scripts_ubuntu
+$ ./ros2-foxy-desktop-main.sh
+</code></pre></div>
+<p>スクリプトが問題なく実行できれば以下のメッセージが表示されます。</p>
+<div class="highlight"><pre><span></span><code>Success installing ROS foxy
+Run &#39;source ~/.bashrc&#39;
+</code></pre></div>
+<p>以下のコマンドでインストールした設定を読み込みます。</p>
+<div class="highlight"><pre><span></span><code>$ <span class="nb">source</span> ~/.bashrc
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="raspberry-pi">Raspberry Pi</h3>
+<p>非公式のインストールスクリプトを使うことで簡単にROS / ROS 2をインストールできます。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">ROS</label><label for="__tabbed_3_2">ROS 2</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>このROSインストールスクリプトは<code>curl</code>を使用します。以下のコマンドでインストールします。</p>
+<div class="highlight"><pre><span></span><code>$ sudo apt install -y curl
+</code></pre></div>
+<p>以下のコマンドでROSインストールスクリプトを実行します。<br />
+環境にもよりますが完了までは10分以上かかる場合があります。</p>
+<div class="highlight"><pre><span></span><code>$ bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -SsfL u.ty0.jp/ros-noetic-ros-base<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>スクリプトが問題なく実行できれば以下のメッセージが表示されます。</p>
+<div class="highlight"><pre><span></span><code>Success installing ROS noetic
+Run &#39;source ~/.bashrc&#39;
 
-<span class="c1"># Install dependencies</span>
-$ rosdep install -r -y --from-paths . --ignore-src
-
-<span class="c1"># make &amp; install</span>
-$ <span class="nb">cd</span> ~/ros2_ws
-$ colcon build --symlink-install
-$ <span class="nb">source</span> ~/ros2_ws/install/setup.bash
+If any error occurs, please refer to the following URL.
+https://github.com/Tiryoh/ros_setup_scripts_ubuntu/
+</code></pre></div>
+<p>以下のコマンドでインストールした設定を読み込みます。</p>
+<div class="highlight"><pre><span></span><code>$ <span class="nb">source</span> ~/.bashrc
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>このROS 2インストールスクリプトは<code>curl</code>と<code>git</code>を使用します。以下のコマンドでインストールします。</p>
+<div class="highlight"><pre><span></span><code>$ sudo apt install -y curl git
+</code></pre></div>
+<p>以下のコマンドでROS 2インストールスクリプトを実行します。<br />
+環境にもよりますが完了までは10分以上かかる場合があります。</p>
+<div class="highlight"><pre><span></span><code>$ git clone https://github.com/Tiryoh/ros2_setup_scripts_ubuntu.git
+$ <span class="nb">cd</span> ros2_setup_scripts_ubuntu
+$ ./ros2-foxy-ros-base.sh
+</code></pre></div>
+<p>スクリプトが問題なく実行できれば以下のメッセージが表示されます。</p>
+<div class="highlight"><pre><span></span><code>Success installing ROS foxy
+Run &#39;source ~/.bashrc&#39;
+</code></pre></div>
+<p>以下のコマンドでインストールした設定を読み込みます。</p>
+<div class="highlight"><pre><span></span><code>$ <span class="nb">source</span> ~/.bashrc
 </code></pre></div>
 </div>
 </div>
@@ -1443,9 +1546,9 @@ $ <span class="nb">source</span> ~/ros2_ws/install/setup.bash
         
           
           <a
-            href="samples.html"
+            href="package-install.html"
             class="md-footer__link md-footer__link--next"
-            aria-label="Next: 2. ROS / ROS 2サンプルの実行"
+            aria-label="Next: 2. ROS / ROS 2パッケージのインストール"
             rel="next"
           >
             <div class="md-footer__title">
@@ -1453,7 +1556,7 @@ $ <span class="nb">source</span> ~/ros2_ws/install/setup.bash
                 <span class="md-footer__direction">
                   Next
                 </span>
-                2. ROS / ROS 2サンプルの実行
+                2. ROS / ROS 2パッケージのインストール
               </div>
             </div>
             <div class="md-footer__button md-icon">

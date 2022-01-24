@@ -29,14 +29,14 @@
       
       
       
-        <link rel="canonical" href="https://rt-net.github.io/tutorials/raspimouse/ros/samples.html">
+        <link rel="canonical" href="https://rt-net.github.io/tutorials/raspimouse/ros/package-install.html">
       
       <link rel="icon" href="https://rt-net.github.io/tutorials/img/rt-logo-32x32.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
     
     
       
-        <title>ROS / ROS 2サンプル集の実行 - RT Corporation Software Tutorials</title>
+        <title>ROS / ROS 2パッケージのインストール - RT Corporation Software Tutorials</title>
       
     
     
@@ -92,9 +92,9 @@
 
   <!-- Open graph meta tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="ROS / ROS 2サンプル集の実行 - RT Corporation Software Tutorials" />
+  <meta property="og:title" content="ROS / ROS 2パッケージのインストール - RT Corporation Software Tutorials" />
   <meta property="og:description" content="株式会社アールティのオンラインソフトウェアチュートリアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。" />
-  <meta property="og:url" content="https://rt-net.github.io/tutorials/raspimouse/ros/samples.html" />
+  <meta property="og:url" content="https://rt-net.github.io/tutorials/raspimouse/ros/package-install.html" />
   <meta property="og:image" content="https://rt-net.github.io/tutorials/img/rt-logo-270x270.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="270" />
@@ -104,7 +104,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@rt_corp" />
   <meta name="twitter:creator" content="@rt_corp" />
-  <meta name="twitter:title" content="ROS / ROS 2サンプル集の実行 - RT Corporation Software Tutorials" />
+  <meta name="twitter:title" content="ROS / ROS 2パッケージのインストール - RT Corporation Software Tutorials" />
   <meta name="twitter:description" content="株式会社アールティのオンラインソフトウェアチュートリアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。" />
   <meta name="twitter:image" content="https://rt-net.github.io/tutorials/img/rt-logo-270x270.png" />
 
@@ -164,7 +164,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ROS / ROS 2サンプル集の実行
+              ROS / ROS 2パッケージのインストール
             
           </span>
         </div>
@@ -789,20 +789,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="package-install.html" class="md-nav__link">
-        2. ROS / ROS 2パッケージのインストール
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -815,12 +801,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          3. ROS / ROS 2サンプルの実行
+          2. ROS / ROS 2パッケージのインストール
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="samples.html" class="md-nav__link md-nav__link--active">
-        3. ROS / ROS 2サンプルの実行
+      <a href="package-install.html" class="md-nav__link md-nav__link--active">
+        2. ROS / ROS 2パッケージのインストール
       </a>
       
         
@@ -839,57 +825,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#raspberry-pipcros" class="md-nav__link">
-    Raspberry PiとPC間のROSネットワークを接続する
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    キーボードで操縦する
+    前提条件
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    ジョイスティックコントローラで操縦する
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    カメラで物体追跡する
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    ライントレース
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lidarslam" class="md-nav__link">
-    LiDARでSLAM
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lidar" class="md-nav__link">
-    LiDARでナビゲーション
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#imu" class="md-nav__link">
-    IMUで角度制御
+  <a href="#ros-ros-2_1" class="md-nav__link">
+    ROS / ROS 2パッケージのインストール
   </a>
   
 </li>
@@ -898,6 +842,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="samples.html" class="md-nav__link">
+        3. ROS / ROS 2サンプルの実行
+      </a>
     </li>
   
 
@@ -1306,57 +1264,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#raspberry-pipcros" class="md-nav__link">
-    Raspberry PiとPC間のROSネットワークを接続する
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    キーボードで操縦する
+    前提条件
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    ジョイスティックコントローラで操縦する
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    カメラで物体追跡する
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    ライントレース
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lidarslam" class="md-nav__link">
-    LiDARでSLAM
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lidar" class="md-nav__link">
-    LiDARでナビゲーション
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#imu" class="md-nav__link">
-    IMUで角度制御
+  <a href="#ros-ros-2_1" class="md-nav__link">
+    ROS / ROS 2パッケージのインストール
   </a>
   
 </li>
@@ -1373,180 +1289,78 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/rt-net/tutorials/edit/main/docs/raspimouse/ros/samples.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/rt-net/tutorials/edit/main/docs/raspimouse/ros/package-install.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-<h1 id="ros-ros-2">ROS / ROS 2サンプル集の実行</h1>
+<h1 id="ros-ros-2">ROS / ROS 2パッケージのインストール</h1>
+<p>このページでは、Raspberry Pi MouseへのROSサンプル集のインストール方法を説明します。</p>
+<h2 id="_1">前提条件</h2>
+<ul>
+<li>Raspberry PiにOS（<strong>Ubuntu Server 20.04</strong>）がインストール済みであること<ul>
+<li>Raspberry Pi OSでのROSの動作は確認していません。</li>
+</ul>
+</li>
+<li><strong>デバイスドライバ</strong>がインストール済みであること<ul>
+<li><a href="../driver/install.html">デバイスドライバのインストール手順</a>を参照してください</li>
+</ul>
+</li>
+<li>ROSまたはROS 2がインストール済みであること<ul>
+<li><a href="install.html">ROS/ROS 2のインストール手順</a>を参照してください</li>
+</ul>
+</li>
+</ul>
+<h2 id="ros-ros-2_1">ROS / ROS 2パッケージのインストール</h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS</label><label for="__tabbed_1_2">ROS 2</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>このページでは
-<a href="https://github.com/rt-net/raspimouse_ros_examples" rel="noopener" target="_blank">ROSサンプル集(rt-net/raspimouse_ros_examples)</a>
-のサンプル実行方法を説明します。</p>
-<p>サンプルを実行する場合は下記コマンドを実行し、
-ROSとパッケージを読み込んでください。</p>
+<p>制御用のパッケージである
+<a href="https://github.com/ryuichiueda/raspimouse_ros_2" rel="noopener" target="_blank">ryuichiueda/raspimouse_ros_2</a>
+と、サンプル集パッケージ
+<a href="https://github.com/rt-net/raspimouse_ros_examples" rel="noopener" target="_blank">rt-net/raspimouse_ros_examples</a>
+および、ナビゲーション用のパッケージ
+<a href="https://github.com/rt-net/raspimouse_slam_navigation_ros" rel="noopener" target="_blank">rt-net/raspimouse_slam_navigation_ros</a>
+をダウンロードしてインストールします。</p>
 <div class="highlight"><pre><span></span><code>$ <span class="nb">source</span> /opt/ros/noetic/setup.bash
+$ mkdir -p ~/catkin_ws/src
+$ <span class="nb">cd</span> ~/catkin_ws/src
+<span class="c1"># Clone ROS packages</span>
+$ git clone https://github.com/ryuichiueda/raspimouse_ros_2
+$ git clone -b <span class="nv">$ROS_DISTRO</span>-devel https://github.com/rt-net/raspimouse_ros_examples 
+$ git clone -b <span class="nv">$ROS_DISTRO</span>-devel https://github.com/rt-net/raspimouse_slam_navigation_ros 
+<span class="c1"># For direction control example</span>
+$ git clone https://github.com/rt-net/rt_usb_9axisimu_driver
+
+<span class="c1"># Install dependencies</span>
+$ rosdep install -r -y --from-paths . --ignore-src      
+
+<span class="c1"># make &amp; install</span>
+$ <span class="nb">cd</span> ~/catkin_ws <span class="o">&amp;&amp;</span> catkin_make
 $ <span class="nb">source</span> ~/catkin_ws/devel/setup.bash
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>このページでは
-<a href="https://github.com/rt-net/raspimouse_ros2_examples" rel="noopener" target="_blank">ROS 2サンプル集(rt-net/raspimouse_ros2_examples)</a>
-のサンプル実行方法を説明します。</p>
-<p>サンプルを実行する場合は下記コマンドを実行し、
-ROS 2とパッケージを読み込んでください。</p>
+<p>サンプル集パッケージ
+<a href="https://github.com/rt-net/raspimouse_ros2_examples" rel="noopener" target="_blank">rt-net/raspimouse_ros2_examples</a>
+をダウンロードしてインストールします。</p>
 <div class="highlight"><pre><span></span><code>$ <span class="nb">source</span> /opt/ros/foxy/setup.bash
+$ mkdir -p ~/ros2_ws/src
+$ <span class="nb">cd</span> ~/ros2_ws/src
+<span class="c1"># Clone packages</span>
+$ git clone https://github.com/rt-net/raspimouse_ros2_examples
+
+<span class="c1"># Install dependencies</span>
+$ rosdep install -r -y --from-paths . --ignore-src
+
+<span class="c1"># make &amp; install</span>
+$ <span class="nb">cd</span> ~/ros2_ws
+$ colcon build --symlink-install
 $ <span class="nb">source</span> ~/ros2_ws/install/setup.bash
 </code></pre></div>
 </div>
 </div>
 </div>
-<h2 id="raspberry-pipcros">Raspberry PiとPC間のROSネットワークを接続する</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ROS</label><label for="__tabbed_2_2">ROS 2</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>環境変数<code>ROS_IP</code>、<code>ROS_MASTER_URI</code>を設定することで、
-PCからネットワークを介してRaspberry Pi側のトピックやサービスにアクセスできます。</p>
-<p>Raspberry PiのIPアドレスが<code>192.168.11.89</code>、
-PCのIPアドレスが<code>192.168.11.100</code>のとき、
-下記コマンドで環境変数を設定します。</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Raspberry Pi側</span>
-$ <span class="nb">export</span> <span class="nv">ROS_IP</span><span class="o">=</span><span class="m">192</span>.168.11.89
-$ <span class="nb">export</span> <span class="nv">ROS_MASTER_URI</span><span class="o">=</span>http://192.168.11.89:11311/
-
-<span class="c1"># PC側</span>
-<span class="c1"># ROS_MASTER_URIにはRaspberry PiのIPアドレスを入力する</span>
-$ <span class="nb">export</span> <span class="nv">ROS_IP</span><span class="o">=</span><span class="m">192</span>.168.11.100
-$ <span class="nb">export</span> <span class="nv">ROS_MASTER_URI</span><span class="o">=</span>http://192.168.11.89:11311/
-</code></pre></div>
-<p>ネットワーク接続を切る場合は、
-<code>ROS_MASTER_URI</code>をデフォルトの<code>http://localhost:11311/</code>に戻します。</p>
-</div>
-<div class="tabbed-block">
-<p>PCとRaspberry Piに同じ環境変数<code>ROS_DOMAIN_ID</code>を設定することで、
-PCからネットワークを介してRaspberry Pi側のトピックやサービスにアクセスできます。</p>
-<p>下記コマンドでは、PCとRaspberry Piにそれぞれ<code>ROS_DOMAIN_ID=22</code>を設定します。</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Raspberry Pi側</span>
-$ <span class="nb">export</span> <span class="nv">ROS_DOMAIN_ID</span><span class="o">=</span><span class="m">22</span>
-
-<span class="c1"># PC側</span>
-$ <span class="nb">export</span> <span class="nv">ROS_DOMAIN_ID</span><span class="o">=</span><span class="m">22</span>
-</code></pre></div>
-<p>ネットワーク接続を切る場合は、
-<code>ROS_DOMAIN_ID</code>を削除します。</p>
-<div class="highlight"><pre><span></span><code>$ <span class="nb">unset</span> ROS_DOMAIN_ID
-</code></pre></div>
-</div>
-</div>
-</div>
-<h2 id="_1">キーボードで操縦する</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">ROS</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>実行手順は<a href="https://github.com/rt-net/raspimouse_ros_examples#keyboard_control" rel="noopener" target="_blank">ROS サンプル集のkeyboard_control</a>
-を参照してください。
-PCから操縦する場合はネットワークと環境変数を設定してください。</p>
-</div>
-</div>
-</div>
-<h2 id="_2">ジョイスティックコントローラで操縦する</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">ROS</label><label for="__tabbed_4_2">ROS 2</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>実行手順は<a href="https://github.com/rt-net/raspimouse_ros_examples#joystick_control" rel="noopener" target="_blank">ROS サンプル集のjoystick_control</a>
-を参照してください。
-PCから操縦する場合はネットワークと環境変数を設定してください。</p>
-</div>
-<div class="tabbed-block">
-<p>実行手順は<a href="https://github.com/rt-net/raspimouse_ros2_examples#joystick_control" rel="noopener" target="_blank">ROS 2サンプル集のjoystick_control</a>
-を参照してください。
-PCから操縦する場合はネットワークと環境変数を設定してください。</p>
-</div>
-</div>
-</div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GswxdB8Ia0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h2 id="_3">カメラで物体追跡する</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">ROS</label><label for="__tabbed_5_2">ROS 2</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>実行手順は<a href="https://github.com/rt-net/raspimouse_ros_examples#object_tracking" rel="noopener" target="_blank">ROS サンプル集のobject_tracking</a>
-を参照してください。
-物体検出画像をPCで表示する場合はネットワークと環境変数を設定してください。</p>
-</div>
-<div class="tabbed-block">
-<p>実行手順は<a href="https://github.com/rt-net/raspimouse_ros2_examples#object_tracking" rel="noopener" target="_blank">ROS 2サンプル集のobject_tracking</a>
-を参照してください。
-物体検出画像をPCで表示する場合はネットワークと環境変数を設定してください。</p>
-</div>
-</div>
-</div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/U6_BuvrjyFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h2 id="_4">ライントレース</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">ROS</label><label for="__tabbed_6_2">ROS 2</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>実行手順は<a href="https://github.com/rt-net/raspimouse_ros_examples#line_follower" rel="noopener" target="_blank">ROS サンプル集のline_follower</a>
-を参照してください。
-PCから操縦する場合はネットワークと環境変数を設定してください。</p>
-</div>
-<div class="tabbed-block">
-<p>実行手順は<a href="https://github.com/rt-net/raspimouse_ros2_examples#line_follower" rel="noopener" target="_blank">ROS 2サンプル集のline_follower</a>
-を参照してください。
-PCから操縦する場合はネットワークと環境変数を設定してください。</p>
-</div>
-</div>
-</div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oPm0sW2V_tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h2 id="lidarslam">LiDARでSLAM</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">ROS</label><label for="__tabbed_7_2">ROS 2</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>実行手順は<a href="https://github.com/rt-net/raspimouse_slam_navigation_ros#raspimouse_slam" rel="noopener" target="_blank">SLAMパッケージ</a>
-を参照してください。
-SLAMパッケージをPCで起動する場合はネットワークと環境変数を設定してください。</p>
-</div>
-<div class="tabbed-block">
-<p>実行手順は<a href="https://github.com/rt-net/raspimouse_ros2_examples#slam" rel="noopener" target="_blank">ROS 2サンプル集のSLAM</a>
-を参照してください。
-SLAMパッケージをPCで起動する場合はネットワークと環境変数を設定してください。</p>
-</div>
-</div>
-</div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gWozU47UqVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hV68UqAntfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h2 id="lidar">LiDARでナビゲーション</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="8:1"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">ROS</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>実行手順は<a href="https://github.com/rt-net/raspimouse_slam_navigation_ros#raspimouse_navigation" rel="noopener" target="_blank">ナビゲーションパッケージ</a>
-を参照してください。
-ナビゲーションパッケージをPCで起動する場合はネットワークと環境変数を設定してください。</p>
-</div>
-</div>
-</div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xSMtBZYmhFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h2 id="imu">IMUで角度制御</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">ROS</label><label for="__tabbed_9_2">ROS 2</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>実行手順は<a href="https://github.com/rt-net/raspimouse_ros_examples#direction_control" rel="noopener" target="_blank">ROS サンプル集のdirection_control</a>
-を参照してください。</p>
-</div>
-<div class="tabbed-block">
-<p>実行手順は<a href="https://github.com/rt-net/raspimouse_ros2_examples#direction_controller" rel="noopener" target="_blank">ROS 2サンプル集のdirection_controller</a>
-を参照してください。</p>
-</div>
-</div>
-</div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LDpC2wqIoU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
               
             </article>
@@ -1592,9 +1406,9 @@ SLAMパッケージをPCで起動する場合はネットワークと環境変�
         
           
           <a
-            href="package-install.html"
+            href="install.html"
             class="md-footer__link md-footer__link--prev"
-            aria-label="Previous: 2. ROS / ROS 2パッケージのインストール"
+            aria-label="Previous: 1. ROS / ROS 2のインストール"
             rel="prev"
           >
             <div class="md-footer__button md-icon">
@@ -1605,7 +1419,7 @@ SLAMパッケージをPCで起動する場合はネットワークと環境変�
                 <span class="md-footer__direction">
                   Previous
                 </span>
-                2. ROS / ROS 2パッケージのインストール
+                1. ROS / ROS 2のインストール
               </div>
             </div>
           </a>
@@ -1616,9 +1430,9 @@ SLAMパッケージをPCで起動する場合はネットワークと環境変�
         
           
           <a
-            href="simulator.html"
+            href="samples.html"
             class="md-footer__link md-footer__link--next"
-            aria-label="Next: 4. シミュレータの実行"
+            aria-label="Next: 3. ROS / ROS 2サンプルの実行"
             rel="next"
           >
             <div class="md-footer__title">
@@ -1626,7 +1440,7 @@ SLAMパッケージをPCで起動する場合はネットワークと環境変�
                 <span class="md-footer__direction">
                   Next
                 </span>
-                4. シミュレータの実行
+                3. ROS / ROS 2サンプルの実行
               </div>
             </div>
             <div class="md-footer__button md-icon">
