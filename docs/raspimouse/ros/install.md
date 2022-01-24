@@ -89,7 +89,7 @@ robot: Raspberry Pi Mouse
     $ ./ros2-foxy-desktop-main.sh
     ```
     
-    インストーラが問題なく実行できれば以下のメッセージが表示されます。
+    スクリプトが問題なく実行できれば以下のメッセージが表示されます。
     
     ```txt
     Success installing ROS foxy
