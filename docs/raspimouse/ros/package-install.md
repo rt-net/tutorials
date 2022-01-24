@@ -13,21 +13,9 @@ robot: Raspberry Pi Mouse
     - Raspberry Pi OSでのROSの動作は確認していません。
 - **デバイスドライバ**がインストール済みであること
     - [デバイスドライバのインストール手順](../driver/install.md)を参照してください
+- ROSまたはROS 2がインストール済みであること
+    - [ROS/ROS 2のインストール手順](./install.md)を参照してください
 
-## ROS / ROS 2のインストール
-
-=== "ROS"
-    [https://wiki.ros.org/noetic/Installation/Ubuntu](https://wiki.ros.org/noetic/Installation/Ubuntu){target=_blank rel=noopener}
-    を参考に、`ROS Noetic`をインストールします。
-    Ubuntu ServerではGUIを使用しないため、`ROS-Base`パッケージをインストールします。
-
-=== "ROS 2"
-    [https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html){target=_blank rel=noopener}
-    を参考に、`ROS 2 Foxy`をインストールします。
-    Ubuntu ServerではGUIを使用しないため、`ROS-Base`パッケージをインストールします。
-
-    [https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html](https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html){target=_blank rel=noopener}
-    を参考に、パッケージビルドツールの`colcon`をインストールします。
 
 ## ROS / ROS 2パッケージのインストール
 
