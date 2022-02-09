@@ -32,7 +32,7 @@
         <link rel="canonical" href="https://rt-net.github.io/tutorials/jnmouse/ros/install.html">
       
       <link rel="icon" href="https://rt-net.github.io/tutorials/img/rt-logo-32x32.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.8">
     
     
       
@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.bb3983ee.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6e60f8b8.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -1099,10 +1099,10 @@
       
         <li class="md-nav__item">
   <a href="#pc" class="md-nav__link">
-    ノートパソコン等PC
+    ノートパソコン等のPC
   </a>
   
-    <nav class="md-nav" aria-label="ノートパソコン等PC">
+    <nav class="md-nav" aria-label="ノートパソコン等のPC">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1306,10 +1306,10 @@
       
         <li class="md-nav__item">
   <a href="#pc" class="md-nav__link">
-    ノートパソコン等PC
+    ノートパソコン等のPC
   </a>
   
-    <nav class="md-nav" aria-label="ノートパソコン等PC">
+    <nav class="md-nav" aria-label="ノートパソコン等のPC">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1351,14 +1351,18 @@
 <h1 id="ros">ROSのインストール</h1>
 <p>このページでは、以下の2つのデバイスへのROSのインストール方法を説明します。</p>
 <ul>
-<li>Ubuntuインストール済みのノートパソコン等PC</li>
+<li>Ubuntuインストール済みのノートパソコン等のPC</li>
 <li>JetPackインストール済みのJetson Nano</li>
 </ul>
-<p>なお、ノートパソコン等PCへROSをすでにインストール済みの場合はこのページの手順は不要です。</p>
+<p>なお、以下の場合はこのページの手順は不要です。</p>
+<ul>
+<li>ノートパソコン等のPCへROSをすでにインストール済みの場合</li>
+<li>Jetson Nanoに<a href="../driver/install.html">本チュートリアルで紹介しているJetPackイメージ</a>を書き込んだ場合</li>
+</ul>
 <h2 id="requirements">前提条件</h2>
 <ul>
 <li>
-<p>ノートパソコン等PC</p>
+<p>ノートパソコン等のPC</p>
 <ul>
 <li>OS（<strong>Ubuntu Desktop 18.04</strong>）がインストール済みであること</li>
 </ul>
@@ -1386,7 +1390,7 @@ GUIを使用する場合は<code>Desktop-Full</code>を、
 </div>
 </div>
 </div>
-<h2 id="pc">ノートパソコン等PC</h2>
+<h2 id="pc">ノートパソコン等のPC</h2>
 <h3 id="official-document">ROSのインストール（公式のドキュメントに沿って進める場合）</h3>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ROS</label></div>
 <div class="tabbed-content">
@@ -1398,18 +1402,18 @@ GUIを使用する場合は<code>Desktop-Full</code>を、
 </div>
 </div>
 <h3 id="install-script">ROS / ROS 2のインストール（インストールスクリプトを使う場合）</h3>
-<p>公式の方法ではありませんが、インストールスクリプトを使うことで簡単にインストールを済ませることもできます。</p>
+<p>非公式のインストールスクリプトを使うことで簡単にROS / ROS 2をインストールできます。</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">ROS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>今回使用するROSのインストーラは<code>curl</code>を使用します。以下のコマンドでインストールします。</p>
 <div class="highlight"><pre><span></span><code>$ sudo apt install -y curl
 </code></pre></div>
-<p>以下のコマンドを実行してインストーラでROSをインストールします。<br />
+<p>以下のコマンドを実行してインストールスクリプトでROSをインストールします。<br />
 環境にもよりますが完了までは10分以上かかる場合があります。</p>
 <div class="highlight"><pre><span></span><code>$ bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -SsfL u.ty0.jp/ros-melodic-desktop<span class="k">)</span><span class="s2">&quot;</span>
 </code></pre></div>
-<p>インストーラが問題なく実行できれば以下のメッセージが表示されます。</p>
+<p>スクリプトが問題なく実行できれば以下のメッセージが表示されます。</p>
 <div class="highlight"><pre><span></span><code>Success installing ROS melodic
 Run &#39;source ~/.bashrc&#39;
 
@@ -1561,11 +1565,11 @@ https://github.com/Tiryoh/ros_setup_scripts_ubuntu/
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.361d90f1.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
     
     
   
-      <script src="../../assets/javascripts/bundle.289a2a4b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.960e086b.min.js"></script>
       
     
 
