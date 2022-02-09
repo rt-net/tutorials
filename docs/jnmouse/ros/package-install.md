@@ -15,7 +15,7 @@ robot: Jetson Nano Mouse
 
 Jetson Nano Mouseを動かすためのROSパッケージ（制御用のパッケージ）はRaspberry Pi Mouseと同じものを使用します。
 
-Jetson Nano Mouseへのインストールは必須です。ノートパソコン等PCとJetson Nano Mouseで処理を分散する場合（[ROSサンプル](./samples.md)で扱います）はPCへのインストールも必要です。
+Jetson Nano Mouseへのインストールは必須です。ノートパソコン等のPCとJetson Nano Mouseで処理を分散する場合（[ROSサンプル](./samples.md)で扱います）はPCへのインストールも必要です。
 
 === "ROS"
     * 制御用のパッケージ（[ryuichiueda/raspimouse_ros_2](https://github.com/ryuichiueda/raspimouse_ros_2){target=_blank rel=noopener}）

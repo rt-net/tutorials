@@ -7,14 +7,17 @@ robot: Jetson Nano Mouse
 
 このページでは、以下の2つのデバイスへのROSのインストール方法を説明します。
 
-* Ubuntuインストール済みのノートパソコン等PC
+* Ubuntuインストール済みのノートパソコン等のPC
 * JetPackインストール済みのJetson Nano
 
-なお、ノートパソコン等PCへROSをすでにインストール済みの場合はこのページの手順は不要です。
+なお、以下の場合はこのページの手順は不要です。
+
+* ノートパソコン等のPCへROSをすでにインストール済みの場合
+* Jetson Nanoに[本チュートリアルで紹介しているJetPackイメージ](../driver/install.md)を書き込んだ場合
 
 ## 前提条件 {: #requirements}
 
-* ノートパソコン等PC
+* ノートパソコン等のPC
     * OS（**Ubuntu Desktop 18.04**）がインストール済みであること
 
 * Jetson Nano
@@ -33,7 +36,7 @@ robot: Jetson Nano Mouse
     GUIを使用する場合は`Desktop-Full`を、
     使用しない場合は`ROS-Base`パッケージをインストールします。
 
-## ノートパソコン等PC
+## ノートパソコン等のPC
 
 ### ROSのインストール（公式のドキュメントに沿って進める場合） {: #official-document}
 
@@ -44,7 +47,7 @@ robot: Jetson Nano Mouse
     GUIを使用する場合は`Desktop-Full`を、 使用しない場合は`ROS-Base`パッケージをインストールします。
 ### ROS / ROS 2のインストール（インストールスクリプトを使う場合） {: #install-script}
 
-公式の方法ではありませんが、インストールスクリプトを使うことで簡単にインストールを済ませることもできます。
+非公式のインストールスクリプトを使うことで簡単にROS / ROS 2をインストールできます。
 
 === "ROS"
     今回使用するROSのインストーラは`curl`を使用します。以下のコマンドでインストールします。
@@ -53,14 +56,14 @@ robot: Jetson Nano Mouse
     $ sudo apt install -y curl
     ```
     
-    以下のコマンドを実行してインストーラでROSをインストールします。  
+    以下のコマンドを実行してインストールスクリプトでROSをインストールします。  
     環境にもよりますが完了までは10分以上かかる場合があります。
     
     ```sh
     $ bash -c "$(curl -SsfL u.ty0.jp/ros-melodic-desktop)"
     ```
     
-    インストーラが問題なく実行できれば以下のメッセージが表示されます。
+    スクリプトが問題なく実行できれば以下のメッセージが表示されます。
     
     ```txt
     Success installing ROS melodic
