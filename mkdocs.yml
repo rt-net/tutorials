@@ -91,7 +91,7 @@ nav:
   - Jetson Nano Mouse:
     - 1. 製品について: jnmouse/products.md
     - 2. デバイスドライバ:
-      - 1. イメージファイルの書き込みと初期設定: jnmouse/driver/install.md
+      - 1. Jetson Nano用OSの書き込みと初期設定: jnmouse/driver/install.md
       - 2. サンプルを動かす: jnmouse/driver/samples.md
     - 3. AI教材:
       - Jupyter Notebookの準備: jnmouse/jupyter-notebook/install.md

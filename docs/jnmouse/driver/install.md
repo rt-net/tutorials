@@ -1,12 +1,12 @@
 ---
-title: イメージファイルの書き込みと初期設定
+title: Jetson Nano用OSの書き込みと初期設定
 robot: Jetson Nano Mouse
 ---
 
-# イメージファイルの書き込みと初期設定
+# Jetson Nano用OSの書き込みと初期設定
 
-このページでは、Jetson Nano Mouse用のイメージファイル
-の書き込み方法と初期設定について説明します。
+このページでは、Jetson Nano用のOSの書き込み方法と初期設定について説明します。  
+Jetson Nano用のOSをJetson Nano Mouse用にセットアップしたものをイメージファイルにアーカイブして公開しています。このイメージファイルをmicroSDカードに書き込むことで、複雑なセットアップ手順を簡略化することができます。
 
 このイメージファイルはカスタム版[JetPack](https://developer.nvidia.com/embedded/jetpack)です。  
 JetPackはJetson Nano用のLinuxである[L4T](https://developer.nvidia.com/embedded/linux-tegra)をベースとしてCUDAドライバなどのソフトウェアをまとめたものです。
@@ -187,9 +187,9 @@ Jetson NanoにはSDカードとは別にブートローダが書き込まれたQ
 
 ブートローダを更新すると以下の2つの影響があります。
 
-1. 対象のSDカードのイメージは、JetPack 4.4以前の旧ブートローダを搭載したJetson
+1. 対象のSDカードにインストールされたOSは、JetPack 4.4以前の旧ブートローダを搭載したJetson
 Nano開発キットでは動作しなくなります
-1. 対象のJetson Nano開発キットは、以前のブートローダを使用したイメージでは動作しなくなります
+1. 対象のJetson Nano開発キットは、以前のブートローダを使用したOSでは動作しなくなります
 
 なお、SDK Managerを使ってJetPack 4.4以前のバージョンを書き込むことでブートローダは元に戻せます。
 更新しないで古いバージョンのブートローダを使用することもできますが、その場合は**SPI通信機能が使用できません**。
