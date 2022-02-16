@@ -36,7 +36,7 @@
     
     
       
-        <title>イメージファイルの書き込みと初期設定 - RT Corporation Software Tutorials</title>
+        <title>Jetson Nano用OSの書き込みと初期設定 - RT Corporation Software Tutorials</title>
       
     
     
@@ -92,7 +92,7 @@
 
   <!-- Open graph meta tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="イメージファイルの書き込みと初期設定 - RT Corporation Software Tutorials" />
+  <meta property="og:title" content="Jetson Nano用OSの書き込みと初期設定 - RT Corporation Software Tutorials" />
   <meta property="og:description" content="株式会社アールティのオンラインソフトウェアチュートリアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。" />
   <meta property="og:url" content="https://rt-net.github.io/tutorials/jnmouse/driver/install.html" />
   <meta property="og:image" content="https://rt-net.github.io/tutorials/img/rt-logo-270x270.png" />
@@ -104,7 +104,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@rt_corp" />
   <meta name="twitter:creator" content="@rt_corp" />
-  <meta name="twitter:title" content="イメージファイルの書き込みと初期設定 - RT Corporation Software Tutorials" />
+  <meta name="twitter:title" content="Jetson Nano用OSの書き込みと初期設定 - RT Corporation Software Tutorials" />
   <meta name="twitter:description" content="株式会社アールティのオンラインソフトウェアチュートリアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。" />
   <meta name="twitter:image" content="https://rt-net.github.io/tutorials/img/rt-logo-270x270.png" />
 
@@ -132,7 +132,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#jetson-nanoos" class="md-skip">
           Skip to content
         </a>
       
@@ -164,7 +164,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              イメージファイルの書き込みと初期設定
+              Jetson Nano用OSの書き込みと初期設定
             
           </span>
         </div>
@@ -938,12 +938,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          1. イメージファイルの書き込みと初期設定
+          1. Jetson Nano用OSの書き込みと初期設定
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="install.html" class="md-nav__link md-nav__link--active">
-        1. イメージファイルの書き込みと初期設定
+        1. Jetson Nano用OSの書き込みと初期設定
       </a>
       
         
@@ -1512,9 +1512,9 @@
 </a>
 
 
-<h1 id="_1">イメージファイルの書き込みと初期設定</h1>
-<p>このページでは、Jetson Nano Mouse用のイメージファイル
-の書き込み方法と初期設定について説明します。</p>
+<h1 id="jetson-nanoos">Jetson Nano用OSの書き込みと初期設定</h1>
+<p>このページでは、Jetson Nano用のOSの書き込み方法と初期設定について説明します。<br />
+Jetson Nano用のOSをJetson Nano Mouse用にセットアップしたものをイメージファイルにアーカイブして公開しています。このイメージファイルをmicroSDカードに書き込むことで、複雑なセットアップ手順を簡略化することができます。</p>
 <p>このイメージファイルはカスタム版<a href="https://developer.nvidia.com/embedded/jetpack">JetPack</a>です。<br />
 JetPackはJetson Nano用のLinuxである<a href="https://developer.nvidia.com/embedded/linux-tegra">L4T</a>をベースとしてCUDAドライバなどのソフトウェアをまとめたものです。
 カスタム版JetPackは公式のJetPackのイメージファイルをベースとしてJetson Nano Mouse向けに機械学習ライブラリの<a href="https://pytorch.org/">PyTorch</a>や<a href="https://www.tensorflow.org/?hl=ja">Tensorflow</a>、
@@ -1676,9 +1676,9 @@ Jetson Nano用のOSである<a href="https://developer.nvidia.com/embedded/jetpa
 <p>ブートローダを更新すると、JetPack 4.5から導入されたMaxSPIと呼ばれる新しいバージョンのものに置き換わります <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>。</p>
 <p>ブートローダを更新すると以下の2つの影響があります。</p>
 <ol>
-<li>対象のSDカードのイメージは、JetPack 4.4以前の旧ブートローダを搭載したJetson
+<li>対象のSDカードにインストールされたOSは、JetPack 4.4以前の旧ブートローダを搭載したJetson
 Nano開発キットでは動作しなくなります</li>
-<li>対象のJetson Nano開発キットは、以前のブートローダを使用したイメージでは動作しなくなります</li>
+<li>対象のJetson Nano開発キットは、以前のブートローダを使用したOSでは動作しなくなります</li>
 </ol>
 <p>なお、SDK Managerを使ってJetPack 4.4以前のバージョンを書き込むことでブートローダは元に戻せます。
 更新しないで古いバージョンのブートローダを使用することもできますが、その場合は<strong>SPI通信機能が使用できません</strong>。</p>
