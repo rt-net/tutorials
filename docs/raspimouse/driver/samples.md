@@ -16,7 +16,12 @@ $ cd ~/RaspberryPiMouse/SampleProgram
 
 ディレクトリにあるプログラムを実行すると、LEDやブザーを動かせます。
 
-## LED
+このサンプルプログラムは[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)でオープンソースソフトウェアとして公開しています。  
+[https://github.com/rt-net/RaspberryPiMouse/tree/master/SampleProgram](https://github.com/rt-net/RaspberryPiMouse/tree/master/SampleProgram){target=_blank rel=noopener}
+
+## LED {: #step1}
+
+LED0〜LED3が点滅します。
 
 === "Shell Script"
     ```sh
@@ -36,7 +41,11 @@ $ cd ~/RaspberryPiMouse/SampleProgram
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eNyp5zA0Its" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## ブザー
+## ブザー {: #step2}
+
+キーボード入力でブザーを鳴らします。 入力キーと音階のペアは[SCALE](https://github.com/rt-net/RaspberryPiMouse/blob/master/SampleProgram/SCALE)を参照してください。
+
+++0++を入力するとブザーが止まります。 ++c++を入力するとプログラムが終了します。（Shell Scriptでは++ctrl+c++で終了します。）
 
 === "Shell Script"
     ```sh
@@ -56,7 +65,13 @@ $ cd ~/RaspberryPiMouse/SampleProgram
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Lr-1AvuMcMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## スイッチ
+## スイッチ {: #step3}
+
+スイッチを押してLEDを点消灯します。 組み合わせは次のとおりです。
+
+* SW0 : LED3
+* SW1 : LED1 & LED2
+* SW2 : LED0
 
 === "Shell Script"
     ```sh
@@ -76,7 +91,9 @@ $ cd ~/RaspberryPiMouse/SampleProgram
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZqimPlsPeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## モータ
+## モータ {: #step4}
+
+モータを回して右旋回、左旋回します。
 
 === "Shell Script"
     ```sh
@@ -96,7 +113,9 @@ $ cd ~/RaspberryPiMouse/SampleProgram
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l5ZhUfYPVGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## ライトセンサ
+## ライトセンサ {: #step5}
+
+ライトセンサの値を読み込みます。
 
 === "Shell Script"
     ```sh
@@ -116,7 +135,9 @@ $ cd ~/RaspberryPiMouse/SampleProgram
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tk-mRriwi9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## パルスカウンタ
+## パルスカウンタ {: #step6}
+
+モータを回して、パルスカウンタの値を読み込みます。
 
 === "Shell Script"
     ```sh
