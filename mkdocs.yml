@@ -102,6 +102,8 @@ nav:
       - 3. ROSサンプルの実行: jnmouse/ros/samples.md
       - 4. シミュレータの実行: jnmouse/ros/simulator.md
     - 5. 関連リンク集: jnmouse/others.md
+  - Raspberry Pi Cat:
+    - 1. 製品について: raspicat/products.md
   - USB出力9軸IMUセンサモジュール: 
     - 1. 製品について: usb9imu/products.md
     - 2. 関連リンク集: usb9imu/others.md

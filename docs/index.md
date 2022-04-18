@@ -14,9 +14,9 @@
 | :---: | :---: | :---: |
 | [![img][CRV2IMG]][CRV2DOC] | [![img][CRX7IMG]][CRX7DOC] | [![img][SC17IMG]][SC17DOC] |
 
-| [Raspberry Pi Mouse][RPMSDOC] | [Jetson Nano Mouse][JNMSDOC] | [USB出力9軸IMUセンサモジュール][USB9DOC] |
-| :---: | :---: | :---: |
-| [![img][RPMSIMG]][RPMSDOC] | [![img][JNMSIMG]][JNMSDOC] | [![img][USB9IMG]][USB9DOC] |
+| [Raspberry Pi Mouse][RPMSDOC] | [Jetson Nano Mouse][JNMSDOC] | [Raspberry Pi Cat][RPCATDOC] | [USB出力9軸IMUセンサモジュール][USB9DOC] |
+| :---: | :---: | :---: | :---: |
+| [![img][RPMSIMG]][RPMSDOC] | [![img][JNMSIMG]][JNMSDOC] | [![img][RPCATIMG]][RPCATDOC] | [![img][USB9IMG]][USB9DOC] |
 
 [CRV2IMG]:https://rt-net.github.io/images/crane-plus/CRANEV2-500x500.png
 [CRV2DOC]:./cranev2/products.md
@@ -28,5 +28,7 @@
 [RPMSDOC]:./raspimouse/products.md
 [JNMSIMG]:https://rt-net.github.io/images/jetson-nano-mouse/Jetson-Nano-Mouse-500x500.png
 [JNMSDOC]:./jnmouse/products.md
+[RPCATIMG]:https://rt-net.github.io/images/raspberry-pi-cat/Raspberry-Pi-Cat-500x500.jpg
+[RPCATDOC]:./raspicat/products.md
 [USB9IMG]:https://rt-net.github.io/images/usb-9axisimu/usb-9axisimu.png
 [USB9DOC]:./usb9imu/products.md
