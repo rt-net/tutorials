@@ -50,6 +50,7 @@ plugins:
         sciurus17/index.md: sciurus17/products.md
         raspimouse/index.md: raspimouse/products.md
         jnmouse/index.md: jnmouse/products.md
+        raspicat/index.md: raspicat/products.md
         usb9imu/index.md: usb9imu/products.md
 
 markdown_extensions:
