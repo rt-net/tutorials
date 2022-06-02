@@ -148,7 +148,7 @@ robot: Raspberry Pi Mouse
     ```sh
     $ git clone https://github.com/Tiryoh/ros2_setup_scripts_ubuntu.git
     $ cd ros2_setup_scripts_ubuntu
-    $ ./ros2-foxy-ros-base.sh
+    $ ./ros2-foxy-ros-base-main.sh
     ```
     
     スクリプトが問題なく実行できれば以下のメッセージが表示されます。
