@@ -20,18 +20,21 @@ robot: Raspberry Pi Cat
 ## ROSパッケージのインストール
 
 制御用のパッケージである
-[ryuichiueda/raspimouse_ros_2](https://github.com/ryuichiueda/raspimouse_ros_2){target=_blank rel=noopener}
-と、サンプル集パッケージ
-[rt-net/raspimouse_ros_examples](https://github.com/rt-net/raspimouse_ros_examples){target=_blank rel=noopener}
-および、ナビゲーション用のパッケージ
-[rt-net/raspimouse_slam_navigation_ros](https://github.com/rt-net/raspimouse_slam_navigation_ros){target=_blank rel=noopener}
+[rt-net/raspimouse](https://github.com/rt-net/raspimouse){target=_blank rel=noopener}、[rt-net/raspicat_ros](https://github.com/rt-net/raspicat_ros){target=_blank rel=noopener}  
+SLAM/ナビゲーション用のパッケージである
+[rt-net/raspicat_slam_navigation](https://github.com/rt-net/raspicat_slam_navigation){target=_blank rel=noopener}  
+シミュレータ用のパッケージである
+[rt-net/raspicat_sim](https://github.com/rt-net/raspicat_sim.git){target=_blank rel=noopener}  
+RaspberryPiCat用のURDF記述マクロを含んだパッケージである
+[rt-net/raspicat_description](https://github.com/rt-net/raspicat_description){target=_blank rel=noopener}  
 をダウンロードしてインストールします。
 
 ```sh
-$ source /opt/ros/noetic/setup.bash
+$ source /opt/ros/melodic/setup.bash
 $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws/src
 # Clone ROS packages
+
 $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspimouse.git
 $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspicat_ros.git
 $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspicat_slam_navigation.git
