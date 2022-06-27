@@ -5,7 +5,7 @@ robot: Raspberry Pi Cat
 
 # ROSパッケージのインストール
 
-このページでは、Raspberry Pi CatへのROSサンプル集のインストール方法を説明します。
+このページでは、Raspberry Pi/Ubuntu PCへのROSパッケージのインストール方法を説明します。
 
 ## 前提条件
 
@@ -23,22 +23,20 @@ robot: Raspberry Pi Cat
 [rt-net/raspimouse](https://github.com/rt-net/raspimouse){target=_blank rel=noopener}、[rt-net/raspicat_ros](https://github.com/rt-net/raspicat_ros){target=_blank rel=noopener}  
 SLAM/ナビゲーション用のパッケージである
 [rt-net/raspicat_slam_navigation](https://github.com/rt-net/raspicat_slam_navigation){target=_blank rel=noopener}  
-シミュレータ用のパッケージである
-[rt-net/raspicat_sim](https://github.com/rt-net/raspicat_sim.git){target=_blank rel=noopener}  
 RaspberryPiCat用のURDF記述マクロを含んだパッケージである
 [rt-net/raspicat_description](https://github.com/rt-net/raspicat_description){target=_blank rel=noopener}  
 をダウンロードしてインストールします。
 
 ```sh
+# Create workspace
 $ source /opt/ros/melodic/setup.bash
 $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws/src
-# Clone ROS packages
 
+# Clone ROS packages
 $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspimouse.git
 $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspicat_ros.git
 $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspicat_slam_navigation.git
-$ git clone https://github.com/rt-net/raspicat_sim.git
 $ git clone https://github.com/rt-net/raspicat_description.git
 
 # Install dependencies
