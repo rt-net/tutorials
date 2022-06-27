@@ -67,7 +67,7 @@ $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
 $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
 
 # キーボード操縦用ノードの立ち上げ（別のターミナルでコマンドを実行）
-$ roslaunch raspicat_bringup teleop.launch joy:=true
+$ roslaunch raspicat_bringup teleop.launch joy:=false
 ```
 
 ## ジョイスティックコントローラで操縦する
@@ -86,7 +86,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 === "gmapping"
     ```sh
     # シミュレータの起動
-    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
+    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # gmappingの実行
     $ roslaunch raspicat_slam raspicat_gmapping.launch joy:=false
@@ -94,7 +94,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 === "cartographer"
     ```sh
     # シミュレータの起動
-    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
+    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # cartographerの実行
     $ roslaunch raspicat_slam raspicat_cartographer.launch joy:=false
@@ -102,7 +102,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 === "slam_toolbox"
     ```sh
     # シミュレータの起動
-    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
+    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # slam_toolboxの実行
     $ roslaunch raspicat_slam raspicat_slam_toolbox.launch joy:=false
@@ -112,7 +112,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 === "gmapping"
     ```sh
     # シミュレータの起動
-    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
+    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # gmappingの実行
     $ roslaunch raspicat_slam raspicat_gmapping.launch joy:=true
@@ -120,7 +120,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 === "cartographer"
     ```sh
     # シミュレータの起動
-    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
+    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # cartographerの実行
     $ roslaunch raspicat_slam raspicat_cartographer.launch joy:=true
@@ -128,7 +128,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 === "slam_toolbox"
     ```sh
     # シミュレータの起動
-    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
+    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # slam_toolboxの実行
     $ roslaunch raspicat_slam raspicat_slam_toolbox.launch joy:=true
@@ -139,7 +139,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 === "move_base"
     ```sh
     # シミュレータの起動
-    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
+    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # move_baseの実行
     $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="move_base"
@@ -147,7 +147,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 === "neonavigation"
     ```sh
     # シミュレータの起動
-    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
+    $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # neonavigationの実行
     $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="neonav"
