@@ -6,12 +6,34 @@ robot: Raspberry Pi Mouse
 # ROS / ROS 2サンプル集の実行
 
 
-=== "ROS"
-    このページでは
-    [ROSサンプル集(rt-net/raspimouse_ros_examples)](https://github.com/rt-net/raspimouse_ros_examples){target=_blank rel=noopener}
-    のサンプル実行方法を説明します。
+このページでは
+[ROSサンプル集(rt-net/raspimouse_ros_examples)](https://github.com/rt-net/raspimouse_ros_examples){target=_blank rel=noopener} /
+[ROS 2サンプル集(rt-net/raspimouse_ros2_examples)](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
+のサンプル実行方法を説明します。
+## 使用機材 {: #requirements}
 
-    サンプルを実行する場合は下記コマンドを実行し、
+* 組み立て済みRaspberry Pi Mouse本体
+    * [製品マニュアル](https://rt-net.jp/products/raspberrypimousev3/#downloads)を読んで組み立て済みの状態を前提としています
+    * OS（**Ubuntu Server 20.04**）がインストール済みであることを前提としています
+        * Raspberry Pi OSでのROSの動作は確認していません
+    * **デバイスドライバ**がインストール済みであることを前提としています
+        * [デバイスドライバのインストール手順](../driver/install.md)を参照してください
+    * ROSまたはROS 2がインストール済みであることを前提としています
+        * [ROS/ROS 2のインストール手順](./install.md)を参照してください
+    * ROSまたはROS 2用のROSパッケージがインストール済みであることを前提としています
+        * [ROS/ROS 2パッケージのインストール手順](./package-install.md)を参照してください
+* Raspberry Pi Mouse用電源
+    * バッテリでも電源変換ケーブルつきACアダプタでも可
+* ノートパソコン等のPC
+    * OS（**Ubuntu Desktop 20.04**）がインストール済みであることを前提としています
+
+## ROSパッケージ情報の読み込み
+
+
+=== "ROS"
+
+    [ROSサンプル集(rt-net/raspimouse_ros_examples)](https://github.com/rt-net/raspimouse_ros_examples){target=_blank rel=noopener}
+    のサンプルを実行する場合は下記コマンドを実行し、
     ROSとパッケージを読み込んでください。
 
     ```sh
@@ -21,11 +43,8 @@ robot: Raspberry Pi Mouse
 
 
 === "ROS 2"
-    このページでは
     [ROS 2サンプル集(rt-net/raspimouse_ros2_examples)](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
-    のサンプル実行方法を説明します。
-
-    サンプルを実行する場合は下記コマンドを実行し、
+    のサンプルを実行する場合は下記コマンドを実行し、
     ROS 2とパッケージを読み込んでください。
 
     ```sh
@@ -41,7 +60,7 @@ robot: Raspberry Pi Mouse
 
     Raspberry PiのIPアドレスが`192.168.11.89`、
     PCのIPアドレスが`192.168.11.100`のとき、
-    下記コマンドで環境変数を設定します。
+    下記コマンドで環境変数を設定します。__この設定値は環境によって変わりますのでご注意ください__。
 
     ```sh
     # Raspberry Pi側

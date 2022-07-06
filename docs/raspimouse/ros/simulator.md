@@ -5,13 +5,15 @@ robot: Raspberry Pi Mouse
 
 # シミュレータの実行
 
-=== "ROS"
-    このページでは、
-    [rt-net/raspimouse_sim](https://github.com/rt-net/raspimouse_sim){target=_blank rel=noopener}
-    パッケージを用いたシミュレーションのセットアップ方法と実行方法を説明します。
+このページでは、
+[rt-net/raspimouse_sim](https://github.com/rt-net/raspimouse_sim){target=_blank rel=noopener}
+パッケージを用いたシミュレーションのセットアップ方法と実行方法を説明します。
 
-    シミュレーション環境はROSインストール済みのUbuntu PC上に構築します。  
-    インストール方法については[ROS/ROS 2のインストール](./install.md)を参照してください。
+## 使用機材 {: #requirements}
+
+* ノートパソコン等のPC
+    * OS（**Ubuntu Desktop 20.04**）およびROS/ROS 2がインストール済みであることを前提としています
+        * インストール方法については[ROS/ROS 2のインストール](./install.md)を参照してください。
 
 ## パッケージのダウンロードとインストール
 
