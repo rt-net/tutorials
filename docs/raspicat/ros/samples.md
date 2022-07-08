@@ -6,7 +6,7 @@ robot: Raspberry Pi Cat
 # ROSを使用してRaspberry Pi Catの制御
 
 このページでは
-SLAMからナビゲーションまでの実行方法を説明します。
+実機を使用した、SLAMからナビゲーションまでの実行方法を説明します。
 
 サンプルを実行する場合は下記コマンドを実行し、
 ROSとパッケージを読み込んでください。
@@ -39,9 +39,8 @@ $ export ROS_MASTER_URI=http://192.168.11.89:11311/
 ネットワーク接続を切る場合は、
 `ROS_MASTER_URI`をデフォルトの`http://localhost:11311/`に戻します。
 
-##　注意事項
-
-PCから操縦する場合はネットワークと環境変数を設定してください。
+!!! Warning
+    PCから操縦する場合はネットワークと環境変数を設定してください。
 
 ## キーボードで操縦する
 
@@ -51,7 +50,7 @@ PCから操縦する場合はネットワークと環境変数を設定してく
 $ roslaunch raspicat_bringup raspicat_bringup.launch
 ```
 
-#### Remote PC
+#### PC
 ```sh
 $ roslaunch raspicat_bringup teleop.launch joy:=false
 ```
@@ -61,12 +60,12 @@ $ roslaunch raspicat_bringup teleop.launch joy:=false
 操作方法は[こちら](https://github.com/rt-net/raspicat_ros/blob/main/raspicat_gamepad_controller/README.ja.md)のパッケージを参照してください。
 を参照してください。
 
-=== "ジョイスティックコントローラをRemote PCに接続した場合"
+=== "ジョイスティックコントローラをPCに接続した場合"
     #### Raspberry Pi
     ```sh
     $ roslaunch raspicat_bringup raspicat_bringup.launch
     ```
-    #### Remote PC
+    #### PC
     ```sh
     $ roslaunch raspicat_bringup teleop.launch joy:=true
     ```
@@ -79,10 +78,15 @@ $ roslaunch raspicat_bringup teleop.launch joy:=false
 ## LiDARでSLAM
 
 ジョイスティックコントローラおよびキーボードにてRaspberry Pi Catを操作出来る状態でSLAMを実行します。
-`SLAM`は`Remote PC`上で実行するとします。
-[raspicat_slam](https://github.com/rt-net/raspicat_slam_navigation/tree/main/raspicat_slam)パッケージにて実行が
+ここでは、`PC`上にて`SLAM`を実行する方法を紹介します。  
+[raspicat_slam](https://github.com/rt-net/raspicat_slam_navigation/tree/main/raspicat_slam)
+パッケージで実行が
 可能なSLAMは、[gmapping](http://wiki.ros.org/gmapping)、[cartographer](http://wiki.ros.org/cartographer)、[slam_toolbox](http://wiki.ros.org/slam_toolbox)の3種類です。
-rosbagを使用した場合はオフラインでSLAMを行うことができます。
+`rosbag`を使用する場合はオフラインでSLAMを行うことができます。
+
+!!! Warning
+    `Raspberry Pi`と`PC`間で通信を行い、`PC`上で`SLAM`を実行する場合は、時刻の同期が必要です。  
+    これは、`tf`関連のエラーを防ぐためです。
 
 ### gmapping
 
@@ -91,17 +95,17 @@ rosbagを使用した場合はオフラインでSLAMを行うことができま�
     ```sh
     $ roslaunch raspicat_bringup raspicat_bringup.launch
     ```
-    #### Remote PC
+    #### PC
     ```sh
     $ roslaunch raspicat_slam raspicat_gmapping.launch joy:=true
-    $ roslaunch raspicat_slam map_save.launch map_file:=your map
+    $ roslaunch raspicat_slam map_save.launch map_file:=map path
     ```
 
 === "Offline SLAM"
-    #### Remote PC
+    #### PC
     ```sh
-    $ roslaunch raspicat_slam raspicat_gmapping.launch rosbag:=true rosbag_rate:=1 rosbag_topics:="/odom /scan /tf /tf_static" rosbag_filename:=your rosbag
-    $ roslaunch raspicat_slam map_save.launch map_file:=your map
+    $ roslaunch raspicat_slam raspicat_gmapping.launch rosbag:=true rosbag_rate:=1 rosbag_topics:="/odom /scan /tf /tf_static" rosbag_filename:=rosbag path
+    $ roslaunch raspicat_slam map_save.launch map_file:=map path
     ```
 
 ### cartographer
@@ -110,17 +114,17 @@ rosbagを使用した場合はオフラインでSLAMを行うことができま�
     ```sh
     $ roslaunch raspicat_bringup raspicat_bringup.launch
     ```
-    #### Remote PC
+    #### PC
     ```sh
     $ roslaunch raspicat_slam raspicat_cartographer.launch joy:=true
-    $ roslaunch raspicat_slam map_save.launch map_file:=your map
+    $ roslaunch raspicat_slam map_save.launch map_file:=map path
     ```
 
 === "Offline SLAM"
-    #### Remote PC
+    #### PC
     ```sh
-    $ roslaunch raspicat_slam raspicat_cartographer.launch rosbag:=true rosbag_rate:=1 rosbag_topics:="/odom /scan /tf /tf_static" rosbag_filename:=your rosbag
-    $ roslaunch raspicat_slam map_save.launch map_file:=your map
+    $ roslaunch raspicat_slam raspicat_cartographer.launch rosbag:=true rosbag_rate:=1 rosbag_topics:="/odom /scan /tf /tf_static" rosbag_filename:=rosbag path
+    $ roslaunch raspicat_slam map_save.launch map_file:=map path
     ```
 
 ### slam_toolbox
@@ -129,28 +133,32 @@ rosbagを使用した場合はオフラインでSLAMを行うことができま�
     ```sh
     $ roslaunch raspicat_bringup raspicat_bringup.launch
     ```
-    #### Remote PC
+    #### PC
     ```sh
     $ roslaunch raspicat_slam raspicat_slam_toolbox.launch joy:=true
-    $ roslaunch raspicat_slam map_save.launch map_file:=your map
+    $ roslaunch raspicat_slam map_save.launch map_file:=map path
     ```
 
 === "Offline SLAM"
-    #### Remote PC
+    #### PC
     ```sh
-    $ roslaunch raspicat_slam raspicat_slam_toolbox.launch rosbag:=true rosbag_rate:=1 rosbag_topics:="/odom /scan /tf /tf_static" rosbag_filename:=your rosbag
-    $ roslaunch raspicat_slam map_save.launch map_file:=your map
+    $ roslaunch raspicat_slam raspicat_slam_toolbox.launch rosbag:=true rosbag_rate:=1 rosbag_topics:="/odom /scan /tf /tf_static" rosbag_filename:=rosbag path
+    $ roslaunch raspicat_slam map_save.launch map_file:=map path
     ```
 
 ## LiDARでナビゲーション
+
+!!! Warning
+    `Raspberry Pi`と`PC`間で通信を行い、`PC`上で`Navigation`を実行する場合は、時刻の同期が必要です。  
+    これは、`tf`関連のエラーを防ぐためです。
 
 ### move_base
 #### Raspberry Pi
 ```sh
 $ roscore
-$ roslaunch raspicat_bringup raspicat_bringup.launvch lidar_ether:=false lidar_usb:=true joy:=false
+$ roslaunch raspicat_bringup raspicat_bringup.launch lidar_ether:=false lidar_usb:=true joy:=false
 ```
-#### Remote PC
+#### PC
 ```sh
 $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="move_base"
 ```
@@ -159,9 +167,9 @@ $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="move_bas
 #### Raspberry Pi
 ```sh
 $ roscore
-$ roslaunch raspicat_bringup raspicat_bringup.launvch lidar_ether:=false lidar_usb:=true joy:=false
+$ roslaunch raspicat_bringup raspicat_bringup.launch lidar_ether:=false lidar_usb:=true joy:=false
 ```
-#### Remote PC
+#### PC
 ```sh
 $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="neonav"
 ```

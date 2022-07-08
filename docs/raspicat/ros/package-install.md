@@ -27,6 +27,9 @@ RaspberryPiCat用のURDF記述マクロを含んだパッケージである
 [rt-net/raspicat_description](https://github.com/rt-net/raspicat_description){target=_blank rel=noopener}  
 をダウンロードしてインストールします。
 
+!!! Tip
+    Raspberry PiとPCの両方にダウンロードおよびインストールを行います。
+
 ```sh
 # Create workspace
 $ source /opt/ros/melodic/setup.bash
