@@ -40,7 +40,7 @@ Raspberry Pi Catのデバイスドライバのソースファイルは
     $ sudo apt install linux-headers-$(uname -r) build-essential
     $ ./build_install.bash
     ```
-    1. コマンド実行後にブザーが鳴ればインストール完了です。
+    1. コマンド実行後にブザーが鳴ればインストール完了です
     1. パルスカウンタの動作を安定させるためI2Cのボーレートを変更します
         1. `/boot/firmware/config.txt`を編集し、`dtparam=i2c_baudrate=62500`を追記します
         1. Raspberry Pi を再起動します
@@ -84,8 +84,8 @@ $ make install
 [https://ubuntu.com/server/docs/network-configuration](https://ubuntu.com/server/docs/network-configuration)
 に詳細な説明が書かれています。
 
-1. `$ sudo vim /etc/netplan/99_config.yaml`で設定ファイルを新規作成し、下記のように記述します。
-この例では、IPアドレスを`192.168.11.89`に固定します。
+1. `$ sudo vim /etc/netplan/99_config.yaml`で設定ファイルを新規作成し、下記のように記述します
+この例では、IPアドレスを`192.168.11.89`に固定します
 ```txt
 network:
     ethernets:
@@ -107,9 +107,37 @@ network:
 2. `$ sudo netplan apply`を実行します
 3. `$ ip addr`でWi-Fiに接続できているか確認します
 
-### Ubuntu Serverで有線LANを使用して、ノートPCのネットワークを利用する
+### 有線LANを使用し、PCのネットワークを利用する
 
-Wi-Fiに接続する以外にノートPCのネットワークを利用する方法があります。
-また、Raspberry Pi CatでROSを使用する場合はノートPCと有線LANで接続して通信を行う必要があるため手順を説明します。
+`Raspberry Pi`と`PC`間で有線LAN接続を行い、PCのネットワークを利用する手順について説明します。
 
-1. ノートPC側でEthernetの接続プロファイルを作成します
+!!! Warning
+    `PC`は`Wi-Fi`に接続している必要があります。
+
+1. PC側でEthernetの接続プロファイルを作成します  
+`PROFILE-NAME`は任意の名前、`NIC-NAME`は`ip addr`コマンド等で調べたEthernetのインターフェイス名です。
+```sh
+$ sudo apt install net-tools
+$ nmcli connection add type ethernet con-name PROFILE-NAME ifname NIC-NAME ipv4.method shared
+```
+2. プロファイルを作成後、プロファイルの適用を行います  
+`PROFILE-NAME`には、作成したプロファイル名を入れます。
+```sh
+$ nmcli con up PROFILE-NAME ifname NIC-NAME
+```
+3. `$ ip addr`で有線LAN接続ができているか確認します  
+4. Raspberry Piにssh接続  
+Raspberry PiのIPアドレスを調べるために`arp-scan`コマンドを使用します。
+```sh
+$ sudo apt install arp-scan
+$ sudo arp-scan -l -I NIC-NAME
+```
+Raspberry PiのIPアドレスが出てきたら、そのIPを使用しssh接続を行います。  
+`Raspberry-Pi-IP`には、調べたIPアドレスを入れます。
+```sh
+$ ssh ubuntu@Raspberry-Pi-IP
+```
+5. ssh接続ができたら、Raspberry PiがPCのネットワークを利用できているか確認します  
+```sh
+$ ping '8.8.8.8'
+```
