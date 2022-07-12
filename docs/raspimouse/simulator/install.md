@@ -1,13 +1,17 @@
 ---
-title: シミュレータの実行
+title: シミュレータのインストール
 robot: Raspberry Pi Mouse
 ---
 
-# シミュレータの実行
+# シミュレータのインストール
+
+Raspberry Pi Mouse SimulatorはメインボードにRaspberry Piを使った左右独立二輪方式の小型移動プラットフォームロボット、Raspberry Pi Mouseのシミュレータです。
+
+Gazebo上で動きます。ROSとGazeboがインストールされた環境で使用することができます。
 
 このページでは、
 [rt-net/raspimouse_sim](https://github.com/rt-net/raspimouse_sim){target=_blank rel=noopener}
-パッケージを用いたシミュレーションのセットアップ方法と実行方法を説明します。
+パッケージを用いたシミュレーションのセットアップ方法と動作確認方法を説明します。
 
 ## 使用機材 {: #requirements}
 
@@ -15,18 +19,18 @@ robot: Raspberry Pi Mouse
     * OS（**Ubuntu Desktop 20.04**）およびROS/ROS 2がインストール済みであることを前提としています
         * インストール方法については[ROS/ROS 2のインストール](./install.md)を参照してください。
 
-## パッケージのダウンロードとインストール
+## パッケージのダウンロードとインストール {: #install}
 
 === "ROS"
     次のコマンドを実行します。
 
     ```sh
-    # パッケージのダウンロード
+    # シミュレータパッケージのダウンロード
     $ cd ~/catkin_ws/src
     $ git clone https://github.com/rt-net/raspimouse_sim.git
 
     # 依存パッケージをインストール
-    $ git clone https://github.com/ryuichiueda/raspimouse_ros_2.git
+    $ git clone https://github.com/rt-net/raspimouse.git
     $ git clone https://github.com/rt-net/raspimouse_description.git
     $ rosdep install -r -y -i --from-paths raspimouse*
 
@@ -38,13 +42,9 @@ robot: Raspberry Pi Mouse
     $ rosrun raspimouse_gazebo download_gazebo_models.sh
     ```
 
-## キーボードで操縦する
+## 動作確認（キーボードで操縦） {: #teleop}
 
 === "ROS"
-    [rt-net/raspimouse_ros_examples](https://github.com/rt-net/raspimouse_ros_examples){target=_blank rel=noopener}
-    を使用します。
-    [ROS パッケージのインストール](./package-install.md)を参考に、パッケージを**PCにインストール**してください。
-
     次のコマンドを実行します。
 
     ```sh
@@ -52,7 +52,7 @@ robot: Raspberry Pi Mouse
     $ roslaunch raspimouse_gazebo raspimouse_with_samplemaze.launch
 
     # 別のターミナルでコマンドを実行
-    $ roslaunch raspimouse_ros_examples teleop.launch key:=true mouse:=false
+    $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py _speed:=0.1 _turn:=1.57
     ```
 
 
