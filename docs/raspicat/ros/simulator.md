@@ -51,12 +51,17 @@ $ rosrun raspicat_gazebo download_gazebo_models.sh
 ```
 
 ## シミュレータ環境を立ち上げる
+
+!!! Tip
+    初回起動時において、Gazeboはモデルをインターネットからダウンロードするため、シミュレータ環境の立ち上げに時間が掛かります。
 #### Gazeboのみ立ち上げ
 ```sh
+#シミュレータの起動
 $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 ```
 #### GazeboとRVizの立ち上げ
 ```sh
+#シミュレータおよびRVizの起動
 $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
 ```
 
@@ -90,6 +95,9 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 
     # gmappingの実行
     $ roslaunch raspicat_slam raspicat_gmapping.launch joy:=false
+    
+    # 地図の保存
+    $ roslaunch raspicat_slam map_save.launch map_file:=map-path
     ```
 === "cartographer"
     ```sh
@@ -98,6 +106,9 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 
     # cartographerの実行
     $ roslaunch raspicat_slam raspicat_cartographer.launch joy:=false
+    
+    # 地図の保存
+    $ roslaunch raspicat_slam map_save.launch map_file:=map-path
     ```
 === "slam_toolbox"
     ```sh
@@ -106,6 +117,9 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 
     # slam_toolboxの実行
     $ roslaunch raspicat_slam raspicat_slam_toolbox.launch joy:=false
+    
+    # 地図の保存
+    $ roslaunch raspicat_slam map_save.launch map_file:=map-path
     ```
 
 #### ジョイスティックコントローラで操縦
@@ -116,6 +130,9 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 
     # gmappingの実行
     $ roslaunch raspicat_slam raspicat_gmapping.launch joy:=true
+    
+    # 地図の保存
+    $ roslaunch raspicat_slam map_save.launch map_file:=map-path
     ```
 === "cartographer"
     ```sh
@@ -124,6 +141,9 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 
     # cartographerの実行
     $ roslaunch raspicat_slam raspicat_cartographer.launch joy:=true
+    
+    # 地図の保存
+    $ roslaunch raspicat_slam map_save.launch map_file:=map-path
     ```
 === "slam_toolbox"
     ```sh
@@ -132,6 +152,9 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 
     # slam_toolboxの実行
     $ roslaunch raspicat_slam raspicat_slam_toolbox.launch joy:=true
+
+    # 地図の保存
+    $ roslaunch raspicat_slam map_save.launch map_file:=map-path
     ```
 
 ## シミュレータ環境でナビゲーション
@@ -142,7 +165,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # move_baseの実行
-    $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="move_base"
+    $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="move_base" mcl_map_file:=map-path navigation_map_file:=map-path
     ```
 === "neonavigation"
     ```sh
@@ -150,5 +173,5 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # neonavigationの実行
-    $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="neonav"
+    $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="neonav" mcl_map_file:=map-path navigation_map_file:=map-path
     ```
