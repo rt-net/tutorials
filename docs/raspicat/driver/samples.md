@@ -134,10 +134,31 @@ LED0〜LED3が点滅します。
     $ bash step6.sh
     ```
 
+    次のようにstep6.shを編集することで、符号付きのカウント値を読み取ることができます。
+
+    ```sh
+    # step6.sh
+    MOTOR_R=/dev/rtmotor_raw_r0
+    MOTOR_L=/dev/rtmotor_raw_l0
+    COUNTER_R=/dev/rtcounter_r1  # r0からr1に書き換え
+    COUNTER_L=/dev/rtcounter_l1  # l0からl1に書き換え
+    ```
+
 === "C"
     ```sh
     $ gcc step6.c -o step6
     $ ./step6
+    ```
+
+    次のようにstep6.cを編集することで、符号付きのカウント値を読み取ることができます。  
+    C言語の場合は、書き換えたあとに`gcc`コマンドでコンパイルを行う必要があります。
+
+    ```sh
+    // step6.c
+    #define FILE_MOTOR_L "/dev/rtmotor_raw_l0"
+    #define FILE_MOTOR_R "/dev/rtmotor_raw_r0"
+    #define FILE_COUNT_L "/dev/rtcounter_l1"  # r0からr1に書き換え
+    #define FILE_COUNT_R "/dev/rtcounter_r1"  # l0からl1に書き換え
     ```
 
 === "Python"
@@ -145,16 +166,12 @@ LED0〜LED3が点滅します。
     $ python3 step6.py
     ```
 
-次のようにstep6.shを編集することで、符号付きのカウント値を読み取ることができます。
+    次のようにstep6.pyを編集することで、符号付きのカウント値を読み取ることができます。
 
-```sh
-# step6.sh
-MOTOR_R=/dev/rtmotor_raw_r0
-MOTOR_L=/dev/rtmotor_raw_l0
-COUNTER_R=/dev/rtcounter_r1  # r0からr1に書き換え
-COUNTER_L=/dev/rtcounter_l1  # l0からl1に書き換え
-```
-
-```sh
-$ bash step6.sh
-```
+    ```sh
+    # step6.py
+    filename_motor_r = "/dev/rtmotor_raw_r0"
+    filename_motor_l = "/dev/rtmotor_raw_l0"
+    filename_count_r = "/dev/rtcounter_r1"  # r0からr1に書き換え
+    filename_count_l = "/dev/rtcounter_l1"  # l0からl1に書き換え
+    ```
