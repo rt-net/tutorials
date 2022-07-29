@@ -60,7 +60,6 @@ $ roslaunch raspicat_bringup teleop.launch joy:=false
 ## ジョイスティックコントローラで操縦する
 
 操作方法は[こちら](https://github.com/rt-net/raspicat_ros/blob/main/raspicat_gamepad_controller/README.ja.md)のパッケージを参照してください。
-を参照してください。
 
 === "ジョイスティックコントローラをPCに接続した場合"
     #### Raspberry Pi
@@ -83,15 +82,14 @@ $ roslaunch raspicat_bringup teleop.launch joy:=false
 ## LiDARでSLAM
 
 ジョイスティックコントローラおよびキーボードにてRaspberry Pi Catを操作出来る状態でSLAMを実行します。
-ここでは、`PC`上にて`SLAM`を実行する方法を紹介します。  
+ここでは、**PC**上にて**SLAM**を実行する方法を紹介します。  
 [raspicat_slam](https://github.com/rt-net/raspicat_slam_navigation/tree/main/raspicat_slam)
-パッケージで実行が
-可能なSLAMは、[gmapping](http://wiki.ros.org/gmapping)、[cartographer](http://wiki.ros.org/cartographer)、[slam_toolbox](http://wiki.ros.org/slam_toolbox)の3種類です。
-`rosbag`を使用する場合はオフラインでSLAMを行うことができます。
+パッケージで実行が可能なSLAMは、[gmapping](http://wiki.ros.org/gmapping)、[cartographer](http://wiki.ros.org/cartographer)、[slam_toolbox](http://wiki.ros.org/slam_toolbox)の3種類です。
+**rosbag**を使用する場合はオフラインでSLAMを行うことができます。
 
 !!! Warning
-    `Raspberry Pi`と`PC`間で通信を行い、`PC`上で`SLAM`を実行する場合は、時刻の同期が必要です。  
-    これは、`tf`関連のエラーを防ぐためです。
+    **Raspberry Pi**と**PC**間で通信を行い、**PC**上で**SLAM**を実行する場合は、時刻の同期が必要です。  
+    これは、**tf**関連のエラーを防ぐためです。
 
 ### gmapping
 
@@ -176,12 +174,11 @@ $ roslaunch raspicat_bringup teleop.launch joy:=false
 
 SLAMによって作成した地図を使用し、Navigationを行います。  
 [raspicat_navigation](https://github.com/rt-net/raspicat_slam_navigation/tree/main/raspicat_navigation)
-パッケージで実行が
-可能なNavigationは、[move_base](http://wiki.ros.org/move_base)、[neonavigation](https://github.com/at-wat/neonavigation)の2種類です。
+パッケージで実行が可能なNavigationは、[move_base](http://wiki.ros.org/move_base)、[neonavigation](https://github.com/at-wat/neonavigation)の2種類です。
 
 !!! Warning
-    `Raspberry Pi`と`PC`間で通信を行い、`PC`上で`Navigation`を実行する場合は、時刻の同期が必要です。  
-    これは、`tf`関連のエラーを防ぐためです。
+    **Raspberry Pi**と**PC**間で通信を行い、**PC**上で**SLAM**を実行する場合は、時刻の同期が必要です。  
+    これは、**tf**関連のエラーを防ぐためです。
 
 === "move_base"
     #### Raspberry Pi

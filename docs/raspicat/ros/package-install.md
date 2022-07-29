@@ -28,7 +28,7 @@ RaspberryPiCat用のURDF記述マクロを含んだパッケージである
 をダウンロードしてインストールします。
 
 !!! Tip
-    Raspberry PiとPCの両方にダウンロードおよびインストールを行います。
+    **Raspberry Pi**と**PC**の両方にダウンロードおよびインストールを行います。
 
 ```sh
 # Create workspace

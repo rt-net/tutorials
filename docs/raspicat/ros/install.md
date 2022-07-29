@@ -25,9 +25,9 @@ robot: Raspberry Pi Cat
 
 
 [https://wiki.ros.org/melodic/Installation/Ubuntu](https://wiki.ros.org/melodic/Installation/Ubuntu){target=_blank rel=noopener}
-を参考に、`ROS Melodic`をインストールします。
+を参考に、**ROS Melodic**をインストールします。
 
-GUIを使用する場合は`Desktop-Full`を、 使用しない場合は`ROS-Base`パッケージをインストールします。
+GUIを使用する場合は**Desktop-Full**を、 使用しない場合は**ROS-Base**パッケージをインストールします。
 
 ## ROSのインストール（インストールスクリプトを使う場合） {: #install-script}
 

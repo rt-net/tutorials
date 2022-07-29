@@ -14,12 +14,12 @@ Raspberry Pi CatのLEDやモータを駆動するためには、
 
 ## OSのインストール
 
-Raspberry Pi Catのデバイスドライバは`Ubuntu`と`Raspberry Pi OS (旧称Raspbian)`に対応しています。
+Raspberry Pi Catのデバイスドライバは**Ubuntu**と**Raspberry Pi OS (旧称Raspbian)**に対応しています。
 
 後ほどRaspberry Pi Catで**ROSを扱う場合はUbuntu Serverのインストールを推奨します**。
 
 === "Ubuntu Server 18.04"
-    [こちらのリンク](http://cdimage.ubuntu.com/ubuntu/releases/18.04/release/)から`Ubuntu 18.04 server`のイメージをダウンロードします。
+    [こちらのリンク](http://cdimage.ubuntu.com/ubuntu/releases/18.04/release/)から**Ubuntu 18.04 server**のイメージをダウンロードします。
 
     ダウンロードしたイメージは[rpi-imager](https://www.raspberrypi.com/software/)等でSDカードに書き込みます。
 
@@ -47,11 +47,11 @@ Raspberry Pi Catのデバイスドライバのソースファイルは
         1. `$ printf "%d\n" 0x$(xxd -ps /sys/class/i2c-adapter/i2c-1/of_node/clock-frequency)`を実行し、`62500`と表示されたら設定完了です。
 
 === "Raspberry Pi OS"
-    1. `Raspberry Piの設定`を開きます
+    1. **Raspberry Piの設定**を開きます
     ![](../../img/raspimouse/driver/raspi_os_settings2.png)
-    1. `インターフェイス`に進み、`SPI`と`I2C`の機能を有効にします
+    1. **インターフェイス**に進み、**SPI**と**I2C**の機能を有効にします
     ![](../../img/raspimouse/driver/raspi_os_settings3.png)
-    1. ターミナル(`LXTerminal`)を起動します
+    1. ターミナル(**LXTerminal**)を起動します
     ![](../../img/raspimouse/driver/open_terminal.png)
     1. 次のコマンドを実行し、デバイスドライバをインストールします
     ```sh
@@ -109,10 +109,10 @@ network:
 
 ### 有線LANを使用し、PCのネットワークを利用する
 
-`Raspberry Pi`と`PC`間で有線LAN接続を行い、PCのネットワークを利用する手順について説明します。
+**Raspberry Pi**と**PC**間で有線LAN接続を行い、PCのネットワークを利用する手順について説明します。
 
 !!! Warning
-    `PC`は`Wi-Fi`に接続している必要があります。
+    **PC**は**Wi-Fi**に接続している必要があります。
 
 1. PC側でEthernetの接続プロファイルを作成します  
 `PROFILE-NAME`は任意の名前、`NIC-NAME`は`ip addr`コマンド等で調べたEthernetのインターフェイス名です。

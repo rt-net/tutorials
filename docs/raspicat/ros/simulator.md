@@ -8,7 +8,7 @@ robot: Raspberry Pi Cat
 
 このページでは、
 [raspicat_sim](https://github.com/rt-net/raspicat_sim){target=_blank rel=noopener}
-パッケージを用いたシミュレーションのセットアップ方法と実行方法を説明します。
+パッケージを用いたシミュレーションのセットアップ方法と実行方法について説明します。
 
 シミュレーション環境はROSインストール済みのUbuntu PC上に構築します。  
 インストール方法については[ROSのインストール](./install.md)を参照してください。
@@ -53,7 +53,8 @@ $ rosrun raspicat_gazebo download_gazebo_models.sh
 ## シミュレータ環境を立ち上げる
 
 !!! Tip
-    初回起動時において、Gazeboはモデルをインターネットからダウンロードするため、シミュレータ環境の立ち上げに時間が掛かります。
+    初回起動時において、Gazeboはモデルをインターネットからダウンロードします。  
+    そのため、シミュレータ環境の立ち上げに時間が掛かります。
 #### Gazeboのみ立ち上げ
 ```sh
 #シミュレータの起動
