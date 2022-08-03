@@ -27,11 +27,11 @@ Raspberry Pi MouseのLEDやモータを駆動するためには、
 
 ## OSのインストール {: #os-installation}
 
-Raspberry Pi Mouseのデバイスドライバは`Ubuntu`と`Raspberry Pi OS (旧称Raspbian)`に対応しています。
+Raspberry Pi Mouseのデバイスドライバは"Ubuntu"と"Raspberry Pi OS"（旧称"Raspbian"）に対応しています。
 
-ここではUbuntu（`Ubuntu Server 20.04`）と、Raspberry Pi OSのインストール手順を紹介します。
+ここではUbuntu（Ubuntu Server 20.04）と、Raspberry Pi OSのインストール手順を紹介します。
 
-後ほどRaspberry Pi Mouseで**ROSを扱う場合はUbuntu Server (64bit版) のインストールを推奨します**。
+後ほどRaspberry Pi Mouseで**ROSを扱う場合はUbuntu Server（64bit版）のインストールを推奨します**。
 
 !!! info
     出荷時に付属しているRaspberry Pi OSインストール済みのmicroSDカードを利用する場合は、OSインストール手順を飛ばしてそのまま[ソースファイルのダウンロードとインストール](#driver-installation)に進むことができます。
@@ -47,11 +47,12 @@ Raspberry Pi Mouseのデバイスドライバは`Ubuntu`と`Raspberry Pi OS (旧
     ![](../../img/raspimouse/driver/download_raspberry_pi_imager.png)
     1. SDカードをPCに接続します
     1. Raspberry Pi Imagerを起動します
-    1. 書き込むOSを`Other general purpose OS -> Ubuntu -> Ubuntu Server 20.04.* LTS`、書き込み先をSDカードに設定し、`WRITE`を押して書き込みを開始します  
-    __ROSを使う場合は64bit版__ を選択します  
+    1. 書き込むOSを"Other general-purpose OS" -> "Ubuntu" -> "Ubuntu Server 20.04.* LTS"、書き込み先をSDカードに設定します __ROSを使う場合は64bit版__ を選択します  
+    ![](../../img/raspimouse/driver/pi_imager_settings_ubuntu_64bit.png)
+    1. "WRITE" を押して書き込みを開始します  
     ![](../../img/raspimouse/driver/pi_imager_settings_ubuntu.png)
     1. SDカードをRaspberry Piに取り付け、Raspberry Piの電源を入れます
-    1. `login:ubuntu`、`password:ubuntu`でログインし、パスワードを変更します
+    1. login:`ubuntu`、password:`ubuntu`でログインし、パスワードを変更します
     1. `$ sudo apt update && sudo apt upgrade`を実行します
 
 
@@ -61,7 +62,7 @@ Raspberry Pi Mouseのデバイスドライバは`Ubuntu`と`Raspberry Pi OS (旧
     ![](../../img/raspimouse/driver/download_raspberry_pi_imager.png)
     1. SDカードをPCに接続します
     1. Raspberry Pi Imagerを起動します
-    1. 書き込むOSを`Raspberry Pi OS (32-bit)`、書き込み先をSDカードに設定し、`WRITE`を押して書き込みを開始します
+    1. 書き込むOSを"Raspberry Pi OS (32-bit)"、書き込み先をSDカードに設定し、"WRITE"を押して書き込みを開始します
     ![](../../img/raspimouse/driver/pi_imager_settings.png)
     1. SDカードをRaspberry Piに取り付け、Raspberry Piの電源を入れます
     ![](../../img/raspimouse/driver/raspi_os_settings.png)

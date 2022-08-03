@@ -77,5 +77,5 @@ robot: Raspberry Pi Mouse
     ```
 
 !!! info
-    ROS/ROS 2を同時にインストールした環境で実行する場合、`/opt/ros/*/setup.bash`を実行したいROSにあわせて都度読み込む必要があります。  
+    ROS/ROS 2を同時にインストールした環境で実行する場合、`/opt/ros/*/setup.bash`を実行したいROSのバージョンにあわせて都度読み込む必要があります。  
     `catkin_make`や`colcon build`でエラーが出た場合はご確認ください。
