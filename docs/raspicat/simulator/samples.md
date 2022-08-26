@@ -1,60 +1,28 @@
 ---
-title: シミュレータの実行
+title: シミュレータでサンプルを動かす
 robot: Raspberry Pi Cat
 ---
 
-# シミュレータの実行
+# シミュレータでサンプルを動かす
 
-
-このページでは、
+このページでは、 
 [raspicat_sim](https://github.com/rt-net/raspicat_sim){target=_blank rel=noopener}
-パッケージを用いたシミュレーションのセットアップ方法と実行方法について説明します。
+パッケージと
+[raspicat_slam_navigation](https://github.com/rt-net/raspicat_slam_navigation){target=_blank rel=noopener}
+パッケージを使ってシミュレータ上でSLAM/Navigationを実施する方法について説明します。
 
-シミュレーション環境はROSインストール済みのUbuntu PC上に構築します。  
-インストール方法については[ROSのインストール](./install.md)を参照してください。
+## 使用機材 {: #requirements}
 
-## パッケージのダウンロードとインストール
+* ノートパソコン等のPC
+    * OS（**Ubuntu Desktop 18.04**）、ROS、シミュレータがインストール済みであることを前提としています
+        * インストール方法については[ROSのインストール](../ros/install.md)と[シミュレータのインストール](./install.md)を参照してください。
 
-制御用のパッケージである
-[rt-net/raspimouse](https://github.com/rt-net/raspimouse){target=_blank rel=noopener}、[rt-net/raspicat_ros](https://github.com/rt-net/raspicat_ros){target=_blank rel=noopener}   
-SLAM/ナビゲーション用のパッケージである
-[rt-net/raspicat_slam_navigation](https://github.com/rt-net/raspicat_slam_navigation){target=_blank rel=noopener}  
-シミュレータ用のパッケージである
-[rt-net/raspicat_sim](https://github.com/rt-net/raspicat_sim.git){target=_blank rel=noopener}  
-RaspberryPiCat用のURDF記述マクロを含んだパッケージである
-[rt-net/raspicat_description](https://github.com/rt-net/raspicat_description){target=_blank rel=noopener}  
-をダウンロードしてインストールします。
-
-```sh
-# Create workspace
-$ source /opt/ros/melodic/setup.bash
-$ mkdir -p ~/catkin_ws/src
-$ cd ~/catkin_ws/src
-
-# Clone ROS packages
-$ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspimouse.git
-$ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspicat_ros.git
-$ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspicat_slam_navigation.git
-$ git clone https://github.com/rt-net/raspicat_sim.git
-$ git clone https://github.com/rt-net/raspicat_description.git
-
-# Install dependencies
-$ rosdep update
-$ rosdep install -r -y -i --from-paths raspicat* raspimouse*
-
-# make & install
-$ cd ~/catkin_ws && catkin_make
-$ source ~/catkin_ws/devel/setup.bash
-
-# Gazeboで使用するハードウェアモデルデータをダウンロード
-$ rosrun raspicat_gazebo download_gazebo_models.sh
-```
-
-## シミュレータ環境を立ち上げる
+## シミュレータ環境を立ち上げる {: #launch}
 
 !!! Tip
     初回起動時において、Gazeboはモデルをインターネットからダウンロードします。  
-    そのため、シミュレータ環境の立ち上げに時間が掛かります。
+    そのため、シミュレータ環境の立ち上げに時間がかかる場合があります。
+
 #### Gazeboのみ立ち上げ
 ```sh
 #シミュレータの起動
@@ -66,7 +34,11 @@ $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
 ```
 
-## キーボードで操縦する
+## 操縦する {: #teleop}
+
+![raspicat_sim](https://rt-net.github.io/images/raspberry-pi-cat/raspicat_gazebo_with_iscas_museum.gif)
+
+### キーボードで操縦する {: #teleop-keyboard}
 
 ```sh
 # シミュレータの起動
@@ -76,7 +48,7 @@ $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
 $ roslaunch raspicat_bringup teleop.launch joy:=false
 ```
 
-## ジョイスティックコントローラで操縦する
+### ジョイスティックコントローラで操縦する {: #teleop-joy}
 
 ```sh
 # シミュレータの起動
@@ -86,9 +58,9 @@ $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
 $ roslaunch raspicat_bringup teleop.launch joy:=true
 ```
 
-## シミュレータ環境でSLAM
+## シミュレータ環境でSLAM {: #slam}
 
-#### キーボードで操縦
+#### キーボードで操縦 {: #slam-teleop-keyboard}
 === "gmapping"
     ```sh
     # シミュレータの起動
@@ -123,7 +95,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     $ roslaunch raspicat_slam map_save.launch map_file:=map-path
     ```
 
-#### ジョイスティックコントローラで操縦
+#### ジョイスティックコントローラで操縦 {: #slam-teleop-joy}
 === "gmapping"
     ```sh
     # シミュレータの起動
@@ -135,6 +107,10 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     # 地図の保存
     $ roslaunch raspicat_slam map_save.launch map_file:=map-path
     ```
+    <video width="100%" controls>
+        <source src="https://user-images.githubusercontent.com/40545422/166213251-22115ecb-11a2-4caa-95c7-c3b8e85db3ad.mp4" type="video/mp4">
+    </video>
+
 === "cartographer"
     ```sh
     # シミュレータの起動
@@ -146,6 +122,10 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     # 地図の保存
     $ roslaunch raspicat_slam map_save.launch map_file:=map-path
     ```
+    <video width="100%" controls>
+        <source src="https://user-images.githubusercontent.com/40545422/166214138-624d3fd0-2bf8-46d7-a722-1602007df086.mp4" type="video/mp4">
+    </video>
+
 === "slam_toolbox"
     ```sh
     # シミュレータの起動
@@ -157,8 +137,11 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     # 地図の保存
     $ roslaunch raspicat_slam map_save.launch map_file:=map-path
     ```
+    <video width="100%" controls>
+        <source src="https://user-images.githubusercontent.com/40545422/166214198-38cf95ee-57ce-45bf-82d4-447f93419560.mp4" type="video/mp4">
+    </video>
 
-## シミュレータ環境でナビゲーション
+## シミュレータ環境でナビゲーション {: #navigation}
 
 === "move_base"
     ```sh
@@ -168,6 +151,11 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     # move_baseの実行
     $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="move_base" mcl_map_file:=map-path navigation_map_file:=map-path
     ```
+
+    <video width="100%" controls>
+        <source src="https://user-images.githubusercontent.com/40545422/166214286-c78d74d1-cab1-489d-85fc-68416d48c655.mp4" type="video/mp4">
+    </video>
+
 === "neonavigation"
     ```sh
     # シミュレータの起動
@@ -176,3 +164,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     # neonavigationの実行
     $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="neonav" mcl_map_file:=map-path navigation_map_file:=map-path
     ```
+
+    <video width="100%" controls>
+        <source src="https://user-images.githubusercontent.com/40545422/166214304-23606730-3d8e-4ed4-9f9d-7834a3788aba.mp4" type="video/mp4">
+    </video>
