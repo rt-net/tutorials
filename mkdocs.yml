@@ -113,6 +113,7 @@ nav:
       - 2. ROSパッケージのインストール: raspicat/ros/package-install.md
       - 3. ROSサンプルの実行: raspicat/ros/samples.md
       - 4. シミュレータの実行: raspicat/ros/simulator.md
+    - 4. 関連リンク集: raspicat/others.md
   - USB出力9軸IMUセンサモジュール: 
     - 1. 製品について: usb9imu/products.md
     - 2. 関連リンク集: usb9imu/others.md
