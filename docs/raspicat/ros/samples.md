@@ -177,7 +177,7 @@ SLAMによって作成した地図を使用し、Navigationを行います。
 パッケージで実行が可能なNavigationは、[move_base](http://wiki.ros.org/move_base)、[neonavigation](https://github.com/at-wat/neonavigation)の2種類です。
 
 !!! Warning
-    **Raspberry Pi**と**PC**間で通信を行い、**PC**上で**SLAM**を実行する場合は、時刻の同期が必要です。  
+    **Raspberry Pi**と**PC**間で通信を行い、**PC**上で**Navigation**を実行する場合は、時刻の同期が必要です。  
     これは、**tf**関連のエラーを防ぐためです。
 
 === "move_base"
