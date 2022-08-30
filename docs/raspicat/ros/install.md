@@ -12,14 +12,21 @@ robot: Raspberry Pi Cat
 
 なお、ROSをすでにインストール済みの場合はこのページの手順は不要です。
 
-## 前提条件 {: #requirements}
+## 使用機材 {: #requirements}
 
+* セットアップ済みRaspberry Pi Cat本体
+    * [製品マニュアル](https://rt-net.jp/products/raspberry-pi-cat/#downloads)を読んで組み立て済みの状態を前提としています
+    * Raspberry PiにOS（**Ubuntu Server 18.04**）がインストール済みであること
+        * Raspberry Pi OSでのROSの動作は確認していません。
+    * **デバイスドライバ**がインストール済みであること
+        * [デバイスドライバのインストール手順](../driver/install.md)を参照してください
+* USB Type-Bケーブル（Raspberry Pi Catに同梱されています）
 * ノートパソコン等のPC
     * OS（**Ubuntu Desktop 18.04**）がインストール済みであること
 
-* Raspberry Pi
-    * OS（**Ubuntu Server 18.04**）がインストール済みであること
-        * Raspberry Pi OSでのROSの動作は確認していません。
+## 事前準備 {: #preparation}
+
+[デバイスドライバのインストール](./install.md)の[Raspberry Piへのログイン](./install.md#raspberry-pi-login)に沿ってRaspberry Piへログインします。
 
 ## ROSのインストール（公式のドキュメントに沿って進める場合） {: #official-document}
 

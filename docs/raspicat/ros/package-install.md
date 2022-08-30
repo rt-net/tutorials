@@ -7,17 +7,25 @@ robot: Raspberry Pi Cat
 
 このページでは、Raspberry Pi/Ubuntu PCへのROSパッケージのインストール方法を説明します。
 
-## 前提条件
+## 使用機材 {: #requirements}
 
-- Raspberry PiにOS（**Ubuntu Server 18.04**）がインストール済みであること
-    - Raspberry Pi OSでのROSの動作は確認していません。
-- **デバイスドライバ**がインストール済みであること
-    - [デバイスドライバのインストール手順](../driver/install.md)を参照してください
-- ROSがインストール済みであること
-    - [ROSのインストール手順](./install.md)を参照してください
+* セットアップ済みRaspberry Pi Cat本体
+    * [製品マニュアル](https://rt-net.jp/products/raspberry-pi-cat/#downloads)を読んで組み立て済みの状態を前提としています
+    * Raspberry PiにOS（**Ubuntu Server 18.04**）がインストール済みであること
+        * Raspberry Pi OSでのROSの動作は確認していません。
+    * **デバイスドライバ**がインストール済みであること
+        * [デバイスドライバのインストール手順](../driver/install.md)を参照してください
+    * ROSがインストール済みであること
+        * [ROSのインストール手順](./install.md)を参照してください
+* USB Type-Bケーブル（Raspberry Pi Catに同梱されています）
+* ノートパソコン等のPC
+    * OS（**Ubuntu Desktop 18.04**）がインストール済みであること
 
+## 事前準備 {: #preparation}
 
-## ROSパッケージのインストール
+[デバイスドライバのインストール](./install.md)の[Raspberry Piへのログイン](./install.md#raspberry-pi-login)に沿ってRaspberry Piへログインします。
+
+## ROSパッケージのインストール {: #install-ros-packages}
 
 制御用のパッケージである
 [rt-net/raspimouse](https://github.com/rt-net/raspimouse){target=_blank rel=noopener}、[rt-net/raspicat_ros](https://github.com/rt-net/raspicat_ros){target=_blank rel=noopener}  

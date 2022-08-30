@@ -8,6 +8,25 @@ robot: Raspberry Pi Cat
 デバイスドライバをインストールしたら、
 サンプルプログラムを実行しましょう。
 
+このサンプルプログラムは[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)でオープンソースソフトウェアとして公開しています。  
+[https://github.com/rt-net/RaspberryPiMouse/tree/master/SampleProgram](https://github.com/rt-net/RaspberryPiMouse/tree/master/SampleProgram){target=_blank rel=noopener}
+
+
+## 使用機材 {: #requirements}
+
+* セットアップ済みRaspberry Pi Cat本体
+    * [製品マニュアル](https://rt-net.jp/products/raspberry-pi-cat/#downloads)を読んで組み立て済みの状態を前提としています
+    * Raspberry PiにOS（**Ubuntu Server 18.04**）がインストール済みであること
+        * Raspberry Pi OSでのROSの動作は確認していません。
+    * **デバイスドライバ**がインストール済みであること
+        * [デバイスドライバのインストール手順](../driver/install.md)を参照してください
+* USB Type-Bケーブル（Raspberry Pi Catに同梱されています）
+* ノートパソコン等のPC
+
+## 事前準備 {: #preparation}
+
+[デバイスドライバのインストール](./install.md)の[Raspberry Piへのログイン](./install.md#raspberry-pi-login)に沿ってRaspberry Piへログインします。
+
 サンプルプログラムのディレクトリに移動します。
 
 ```sh
@@ -15,9 +34,6 @@ $ cd ~/RaspberryPiMouse/SampleProgram
 ```
 
 ディレクトリにあるプログラムを実行すると、LEDやブザーを動かせます。
-
-このサンプルプログラムは[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)でオープンソースソフトウェアとして公開しています。  
-[https://github.com/rt-net/RaspberryPiMouse/tree/master/SampleProgram](https://github.com/rt-net/RaspberryPiMouse/tree/master/SampleProgram){target=_blank rel=noopener}
 
 ## LED {: #step1}
 

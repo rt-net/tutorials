@@ -7,6 +7,25 @@ robot: Raspberry Pi Cat
 
 このページでは
 実機を使用した、SLAMからナビゲーションまでの実行方法を説明します。
+## 使用機材 {: #requirements}
+
+* セットアップ済みRaspberry Pi Cat本体
+    * [製品マニュアル](https://rt-net.jp/products/raspberry-pi-cat/#downloads)を読んで組み立て済みの状態を前提としています
+    * Raspberry PiにOS（**Ubuntu Server 18.04**）がインストール済みであること
+        * Raspberry Pi OSでのROSの動作は確認していません。
+    * **デバイスドライバ**がインストール済みであること
+        * [デバイスドライバのインストール手順](../driver/install.md)を参照してください
+    * ROSがインストール済みであること
+        * [ROSのインストール手順](./install.md)を参照してください
+    * ROSパッケージがインストール済みであること
+        * [ROSパッケージのインストール手順](./package-install.md)を参照してください
+* USB Type-Bケーブル（Raspberry Pi Catに同梱されています）
+* ノートパソコン等のPC
+    * OS（**Ubuntu Desktop 18.04**）がインストール済みであること
+
+## 事前準備 {: #preparation}
+
+### ROSパッケージの読み込み {: #preparation-source-workspace}
 
 サンプルを実行する場合は下記コマンドを実行し、
 ROSとパッケージを読み込んでください。
@@ -16,7 +35,7 @@ $ source /opt/ros/melodic/setup.bash
 $ source ~/catkin_ws/devel/setup.bash
 ```
 
-## Raspberry PiとPC間のROSネットワークを接続する
+### Raspberry PiとPC間のROSネットワークを接続する {: #preparation-ros-master-uri}
 
 環境変数`ROS_IP`、`ROS_MASTER_URI`を設定することで、
 PCからネットワークを介してRaspberry Pi側のトピックやサービスにアクセスできます。
@@ -42,22 +61,22 @@ $ export ROS_MASTER_URI=http://192.168.11.89:11311/
 !!! Warning
     PCから操縦する場合はネットワークと環境変数を設定してください。
 
-## キーボードで操縦する
+## キーボードで操縦する {: #teleop-keyboard}
 
 操作方法はターミナルに出力されます。
-#### Raspberry Pi
+#### Raspberry Pi {: #teleop-keyboard-pi}
 ```sh
 # センサやモータ用のノードの立ち上げ
 $ roslaunch raspicat_bringup raspicat_bringup.launch
 ```
 
-#### PC
+#### PC {: #teleop-keyboard-pc}
 ```sh
 # キーボード用のノードの立ち上げ
 $ roslaunch raspicat_bringup teleop.launch joy:=false
 ```
 
-## ジョイスティックコントローラで操縦する
+## ジョイスティックコントローラで操縦する {: #teleop-joy}
 
 操作方法は[こちら](https://github.com/rt-net/raspicat_ros/blob/main/raspicat_gamepad_controller/README.ja.md)のパッケージを参照してください。
 
@@ -79,7 +98,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=false
     $ roslaunch raspicat_bringup raspicat_bringup.launch joy:=true
     ```
 
-## LiDARでSLAM
+## LiDARでSLAM {: #lidar-slam}
 
 ジョイスティックコントローラおよびキーボードにてRaspberry Pi Catを操作出来る状態でSLAMを実行します。
 ここでは、**PC**上にて**SLAM**を実行する方法を紹介します。  
@@ -91,7 +110,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=false
     **Raspberry Pi**と**PC**間で通信を行い、**PC**上で**SLAM**を実行する場合は、時刻の同期が必要です。  
     これは、**tf**関連のエラーを防ぐためです。
 
-### gmapping
+### gmapping {: #lidar-slam-gmapping}
 
 === "Online SLAM"
     #### Raspberry Pi
@@ -118,7 +137,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=false
     $ roslaunch raspicat_slam map_save.launch map_file:=map-path
     ```
 
-### cartographer
+### cartographer {: #lidar-slam-cartographer}
 === "Online SLAM"
     #### Raspberry Pi
     ```sh
@@ -144,7 +163,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=false
     $ roslaunch raspicat_slam map_save.launch map_file:=map-path
     ```
 
-### slam_toolbox
+### slam_toolbox {: #lidar-slam-toolbox}
 === "Online SLAM"
     #### Raspberry Pi
     ```sh
@@ -170,7 +189,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=false
     $ roslaunch raspicat_slam map_save.launch map_file:=map-path
     ```
 
-## LiDARでナビゲーション
+## LiDARでナビゲーション {: #lidar-navigation}
 
 SLAMによって作成した地図を使用し、Navigationを行います。  
 [raspicat_navigation](https://github.com/rt-net/raspicat_slam_navigation/tree/main/raspicat_navigation)
