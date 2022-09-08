@@ -14,7 +14,7 @@
 * Jetson Nano Mouse
 * Raspberry Pi Cat
 
-| [CRANE+V2][CRV2DOC] | [CRANE-X7][CRX7DOC] | [Sciurus17][SC17DOC] |
+| [CRANE+ V2][CRV2DOC] | [CRANE-X7][CRX7DOC] | [Sciurus17][SC17DOC] |
 | :---: | :---: | :---: |
 | [![img][CRV2IMG]][CRV2DOC] | [![img][CRX7IMG]][CRX7DOC] | [![img][SC17IMG]][SC17DOC] |
 

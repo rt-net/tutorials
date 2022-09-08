@@ -135,7 +135,7 @@ robot: Raspberry Pi Mouse
     SLAMパッケージをPCで起動する場合はネットワークと環境変数を設定してください。
 
 === "ROS 2"
-    実行手順は[ROS 2サンプル集のSLAM](https://github.com/rt-net/raspimouse_ros2_examples#slam){target=_blank rel=noopener}
+    実行手順は[ROS 2 SLAMパッケージ](https://github.com/rt-net/raspimouse_slam_navigation_ros2#raspimouse_slam){target=_blank rel=noopener}
     を参照してください。
     SLAMパッケージをPCで起動する場合はネットワークと環境変数を設定してください。
 
@@ -147,6 +147,11 @@ robot: Raspberry Pi Mouse
 
 === "ROS"
     実行手順は[ナビゲーションパッケージ](https://github.com/rt-net/raspimouse_slam_navigation_ros#raspimouse_navigation){target=_blank rel=noopener}
+    を参照してください。
+    ナビゲーションパッケージをPCで起動する場合はネットワークと環境変数を設定してください。
+
+=== "ROS 2"
+    実行手順は[ROS 2 ナビゲーションパッケージ](https://github.com/rt-net/raspimouse_slam_navigation_ros2#raspimouse_navigation){target=_blank rel=noopener}
     を参照してください。
     ナビゲーションパッケージをPCで起動する場合はネットワークと環境変数を設定してください。
 
