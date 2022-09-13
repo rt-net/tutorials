@@ -842,14 +842,14 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    前提条件
+  <a href="#requirements" class="md-nav__link">
+    使用機材
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ros-ros-2_1" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     ROS / ROS 2パッケージのインストール
   </a>
   
@@ -878,14 +878,47 @@
 
             
           
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" data-md-state="indeterminate" type="checkbox" id="__nav_5_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_4">
+          4. シミュレータの実行
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="4. シミュレータの実行" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          4. シミュレータの実行
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
             
               
   
   
   
     <li class="md-nav__item">
-      <a href="simulator.html" class="md-nav__link">
-        4. シミュレータの実行
+      <a href="../simulator/install.html" class="md-nav__link">
+        1. シミュレータのインストール
       </a>
     </li>
   
@@ -906,7 +939,7 @@
   
     <li class="md-nav__item">
       <a href="../others.html" class="md-nav__link">
-        4. 関連リンク集
+        5. 関連リンク集
       </a>
     </li>
   
@@ -1329,14 +1362,14 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    前提条件
+  <a href="#requirements" class="md-nav__link">
+    使用機材
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ros-ros-2_1" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     ROS / ROS 2パッケージのインストール
   </a>
   
@@ -1362,26 +1395,39 @@
 
 <h1 id="ros-ros-2">ROS / ROS 2パッケージのインストール</h1>
 <p>このページでは、Raspberry Pi MouseへのROSサンプル集のインストール方法を説明します。</p>
-<h2 id="_1">前提条件</h2>
+<h2 id="requirements">使用機材</h2>
 <ul>
-<li>Raspberry PiにOS（<strong>Ubuntu Server 20.04</strong>）がインストール済みであること<ul>
-<li>Raspberry Pi OSでのROSの動作は確認していません。</li>
+<li>組み立て済みRaspberry Pi Mouse本体<ul>
+<li><a href="https://rt-net.jp/products/raspberrypimousev3/#downloads">製品マニュアル</a>を読んで組み立て済みの状態を前提としています</li>
+<li>OS（<strong>Ubuntu Server 20.04</strong>）がインストール済みであることを前提としています<ul>
+<li>Raspberry Pi OSでのROSの動作は確認していません</li>
 </ul>
 </li>
-<li><strong>デバイスドライバ</strong>がインストール済みであること<ul>
+<li><strong>デバイスドライバ</strong>がインストール済みであることを前提としています<ul>
 <li><a href="../driver/install.html">デバイスドライバのインストール手順</a>を参照してください</li>
 </ul>
 </li>
-<li>ROSまたはROS 2がインストール済みであること<ul>
+<li>ROSまたはROS 2がインストール済みであることを前提としています<ul>
 <li><a href="install.html">ROS/ROS 2のインストール手順</a>を参照してください</li>
 </ul>
 </li>
 </ul>
-<h2 id="ros-ros-2_1">ROS / ROS 2パッケージのインストール</h2>
+</li>
+<li>Raspberry Pi Mouse用電源<ul>
+<li>バッテリでも電源変換ケーブルつきACアダプタでも可</li>
+</ul>
+</li>
+<li>ノートパソコン等のPC<ul>
+<li>OS（<strong>Ubuntu Desktop 20.04</strong>）がインストール済みであることを前提としています</li>
+</ul>
+</li>
+</ul>
+<h2 id="installation">ROS / ROS 2パッケージのインストール</h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS</label><label for="__tabbed_1_2">ROS 2</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>制御用のパッケージである
+<p>Raspberry Piとノートパソコン等のPCそれぞれで、
+制御用のパッケージである
 <a href="https://github.com/ryuichiueda/raspimouse_ros_2" rel="noopener" target="_blank">ryuichiueda/raspimouse_ros_2</a>
 と、サンプル集パッケージ
 <a href="https://github.com/rt-net/raspimouse_ros_examples" rel="noopener" target="_blank">rt-net/raspimouse_ros_examples</a>
@@ -1407,7 +1453,8 @@ $ <span class="nb">source</span> ~/catkin_ws/devel/setup.bash
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>サンプル集パッケージ
+<p>Raspberry Piとノートパソコン等のPCそれぞれで、
+サンプル集パッケージ
 <a href="https://github.com/rt-net/raspimouse_ros2_examples" rel="noopener" target="_blank">rt-net/raspimouse_ros2_examples</a>
 をダウンロードしてインストールします。</p>
 <div class="highlight"><pre><span></span><code>$ <span class="nb">source</span> /opt/ros/foxy/setup.bash
@@ -1426,6 +1473,11 @@ $ <span class="nb">source</span> ~/ros2_ws/install/setup.bash
 </code></pre></div>
 </div>
 </div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>ROS/ROS 2を同時にインストールした環境で実行する場合、<code>/opt/ros/*/setup.bash</code>を実行したいROSのバージョンにあわせて都度読み込む必要があります。<br />
+<code>catkin_make</code>や<code>colcon build</code>でエラーが出た場合はご確認ください。</p>
 </div>
 
               

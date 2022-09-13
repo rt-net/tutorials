@@ -829,7 +829,7 @@
       
         <li class="md-nav__item">
   <a href="#requirements" class="md-nav__link">
-    前提条件
+    使用機材
   </a>
   
 </li>
@@ -905,14 +905,47 @@
 
             
           
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" data-md-state="indeterminate" type="checkbox" id="__nav_5_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_4">
+          4. シミュレータの実行
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="4. シミュレータの実行" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          4. シミュレータの実行
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
             
               
   
   
   
     <li class="md-nav__item">
-      <a href="simulator.html" class="md-nav__link">
-        4. シミュレータの実行
+      <a href="../simulator/install.html" class="md-nav__link">
+        1. シミュレータのインストール
       </a>
     </li>
   
@@ -933,7 +966,7 @@
   
     <li class="md-nav__item">
       <a href="../others.html" class="md-nav__link">
-        4. 関連リンク集
+        5. 関連リンク集
       </a>
     </li>
   
@@ -1357,7 +1390,7 @@
       
         <li class="md-nav__item">
   <a href="#requirements" class="md-nav__link">
-    前提条件
+    使用機材
   </a>
   
 </li>
@@ -1421,21 +1454,22 @@
 <li>Ubuntuインストール済みのRaspberry Pi</li>
 </ul>
 <p>なお、ROSをすでにインストール済みの場合はこのページの手順は不要です。</p>
-<h2 id="requirements">前提条件</h2>
+<h2 id="requirements">使用機材</h2>
 <ul>
-<li>
-<p>ノートパソコン等のPC</p>
-<ul>
-<li>OS（<strong>Ubuntu Desktop 20.04</strong>）がインストール済みであること</li>
+<li>組み立て済みRaspberry Pi Mouse本体<ul>
+<li><a href="https://rt-net.jp/products/raspberrypimousev3/#downloads">製品マニュアル</a>を読んで組み立て済みの状態を前提としています</li>
+<li>OS（<strong>Ubuntu Server 20.04</strong>）がインストール済みであることを前提としています<ul>
+<li>Raspberry Pi OSでのROSの動作は確認していません</li>
 </ul>
 </li>
-<li>
-<p>Raspberry Pi</p>
-<ul>
-<li>OS（<strong>Ubuntu Server 20.04</strong>）がインストール済みであること<ul>
-<li>Raspberry Pi OSでのROSの動作は確認していません。</li>
 </ul>
 </li>
+<li>Raspberry Pi Mouse用電源<ul>
+<li>バッテリでも電源変換ケーブルつきACアダプタでも可</li>
+</ul>
+</li>
+<li>ノートパソコン等のPC<ul>
+<li>OS（<strong>Ubuntu Desktop 20.04</strong>）がインストール済みであることを前提としています</li>
 </ul>
 </li>
 </ul>
@@ -1467,7 +1501,9 @@
 </code></pre></div>
 <p>以下のコマンドでROSインストールスクリプトを実行します。<br />
 環境にもよりますが完了までは10分以上かかる場合があります。</p>
-<div class="highlight"><pre><span></span><code>$ bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -SsfL u.ty0.jp/ros-noetic-desktop<span class="k">)</span><span class="s2">&quot;</span>
+<div class="highlight"><pre><span></span><code>$ git clone https://github.com/Tiryoh/ros_setup_scripts_ubuntu.git
+$ <span class="nb">cd</span> ros_setup_scripts_ubuntu
+$ ./ros-noetic-desktop-main.sh
 </code></pre></div>
 <p>スクリプトが問題なく実行できれば以下のメッセージが表示されます。</p>
 <div class="highlight"><pre><span></span><code>Success installing ROS noetic
@@ -1510,7 +1546,9 @@ Run &#39;source ~/.bashrc&#39;
 </code></pre></div>
 <p>以下のコマンドでROSインストールスクリプトを実行します。<br />
 環境にもよりますが完了までは10分以上かかる場合があります。</p>
-<div class="highlight"><pre><span></span><code>$ bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -SsfL u.ty0.jp/ros-noetic-ros-base<span class="k">)</span><span class="s2">&quot;</span>
+<div class="highlight"><pre><span></span><code>$ git clone https://github.com/Tiryoh/ros_setup_scripts_ubuntu.git
+$ <span class="nb">cd</span> ros_setup_scripts_ubuntu
+$ ./ros-noetic-ros-base-main.sh
 </code></pre></div>
 <p>スクリプトが問題なく実行できれば以下のメッセージが表示されます。</p>
 <div class="highlight"><pre><span></span><code>Success installing ROS noetic

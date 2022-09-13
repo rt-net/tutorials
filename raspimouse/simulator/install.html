@@ -29,14 +29,14 @@
       
       
       
-        <link rel="canonical" href="https://rt-net.github.io/tutorials/raspimouse/ros/simulator.html">
+        <link rel="canonical" href="https://rt-net.github.io/tutorials/raspimouse/simulator/install.html">
       
       <link rel="icon" href="https://rt-net.github.io/tutorials/img/rt-logo-32x32.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.2.11">
     
     
       
-        <title>シミュレータの実行 - RT Corporation Software Tutorials</title>
+        <title>シミュレータのインストール - RT Corporation Software Tutorials</title>
       
     
     
@@ -93,9 +93,9 @@
 
   <!-- Open graph meta tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="シミュレータの実行 - RT Corporation Software Tutorials" />
+  <meta property="og:title" content="シミュレータのインストール - RT Corporation Software Tutorials" />
   <meta property="og:description" content="株式会社アールティのオンラインソフトウェアチュートリアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。" />
-  <meta property="og:url" content="https://rt-net.github.io/tutorials/raspimouse/ros/simulator.html" />
+  <meta property="og:url" content="https://rt-net.github.io/tutorials/raspimouse/simulator/install.html" />
   <meta property="og:image" content="https://rt-net.github.io/tutorials/img/rt-logo-270x270.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="270" />
@@ -105,7 +105,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@rt_corp" />
   <meta name="twitter:creator" content="@rt_corp" />
-  <meta name="twitter:title" content="シミュレータの実行 - RT Corporation Software Tutorials" />
+  <meta name="twitter:title" content="シミュレータのインストール - RT Corporation Software Tutorials" />
   <meta name="twitter:description" content="株式会社アールティのオンラインソフトウェアチュートリアルです。製品をより便利に使うためのソフトウェアの使い方を紹介しています。" />
   <meta name="twitter:image" content="https://rt-net.github.io/tutorials/img/rt-logo-270x270.png" />
 
@@ -165,7 +165,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              シミュレータの実行
+              シミュレータのインストール
             
           </span>
         </div>
@@ -764,14 +764,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" data-md-state="indeterminate" type="checkbox" id="__nav_5_3" checked>
       
       
       
@@ -794,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="install.html" class="md-nav__link">
+      <a href="../ros/install.html" class="md-nav__link">
         1. ROS / ROS 2のインストール
       </a>
     </li>
@@ -808,7 +806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="package-install.html" class="md-nav__link">
+      <a href="../ros/package-install.html" class="md-nav__link">
         2. ROS / ROS 2パッケージのインストール
       </a>
     </li>
@@ -822,13 +820,48 @@
   
   
     <li class="md-nav__item">
-      <a href="samples.html" class="md-nav__link">
+      <a href="../ros/samples.html" class="md-nav__link">
         3. ROS / ROS 2サンプルの実行
       </a>
     </li>
   
 
             
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_4">
+          4. シミュレータの実行
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="4. シミュレータの実行" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          4. シミュレータの実行
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
             
               
@@ -846,12 +879,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          4. シミュレータの実行
+          1. シミュレータのインストール
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="simulator.html" class="md-nav__link md-nav__link--active">
-        4. シミュレータの実行
+      <a href="install.html" class="md-nav__link md-nav__link--active">
+        1. シミュレータのインストール
       </a>
       
         
@@ -870,15 +903,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
+    使用機材
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
     パッケージのダウンロードとインストール
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    キーボードで操縦する
+  <a href="#teleop" class="md-nav__link">
+    動作確認（キーボードで操縦）
   </a>
   
 </li>
@@ -906,7 +946,7 @@
   
     <li class="md-nav__item">
       <a href="../others.html" class="md-nav__link">
-        4. 関連リンク集
+        5. 関連リンク集
       </a>
     </li>
   
@@ -1329,15 +1369,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
+    使用機材
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
     パッケージのダウンロードとインストール
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    キーボードで操縦する
+  <a href="#teleop" class="md-nav__link">
+    動作確認（キーボードで操縦）
   </a>
   
 </li>
@@ -1354,35 +1401,39 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/rt-net/tutorials/edit/main/docs/raspimouse/ros/simulator.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/rt-net/tutorials/edit/main/docs/raspimouse/simulator/install.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="_1">シミュレータの実行</h1>
+<h1 id="_1">シミュレータのインストール</h1>
+<p>Raspberry Pi Mouse SimulatorはメインボードにRaspberry Piを使った左右独立二輪方式の小型移動プラットフォームロボット、Raspberry Pi Mouseのシミュレータです。</p>
+<p>Gazebo上で動きます。ROSとGazeboがインストールされた環境で使用することができます。</p>
+<p>このページでは、
+<a href="https://github.com/rt-net/raspimouse_sim" rel="noopener" target="_blank">rt-net/raspimouse_sim</a>
+パッケージを用いたシミュレーションのセットアップ方法と動作確認方法を説明します。</p>
+<h2 id="requirements">使用機材</h2>
+<ul>
+<li>ノートパソコン等のPC<ul>
+<li>OS（<strong>Ubuntu Desktop 20.04</strong>）およびROS/ROS 2がインストール済みであることを前提としています<ul>
+<li>インストール方法については<a href="../ros/install.html">ROS/ROS 2のインストール</a>を参照してください。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="install">パッケージのダウンロードとインストール</h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>このページでは、
-<a href="https://github.com/rt-net/raspimouse_sim" rel="noopener" target="_blank">rt-net/raspimouse_sim</a>
-パッケージを用いたシミュレーションのセットアップ方法と実行方法を説明します。</p>
-<p>シミュレーション環境はROSインストール済みのUbuntu PC上に構築します。<br />
-インストール方法については<a href="install.html">ROS/ROS 2のインストール</a>を参照してください。</p>
-</div>
-</div>
-</div>
-<h2 id="_2">パッケージのダウンロードとインストール</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ROS</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
 <p>次のコマンドを実行します。</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># パッケージのダウンロード</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># シミュレータパッケージのダウンロード</span>
 $ <span class="nb">cd</span> ~/catkin_ws/src
 $ git clone https://github.com/rt-net/raspimouse_sim.git
 
 <span class="c1"># 依存パッケージをインストール</span>
-$ git clone https://github.com/ryuichiueda/raspimouse_ros_2.git
+$ git clone https://github.com/rt-net/raspimouse.git
 $ git clone https://github.com/rt-net/raspimouse_description.git
 $ rosdep install -r -y -i --from-paths raspimouse*
 
@@ -1396,19 +1447,16 @@ $ rosrun raspimouse_gazebo download_gazebo_models.sh
 </div>
 </div>
 </div>
-<h2 id="_3">キーボードで操縦する</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">ROS</label></div>
+<h2 id="teleop">動作確認（キーボードで操縦）</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ROS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><a href="https://github.com/rt-net/raspimouse_ros_examples" rel="noopener" target="_blank">rt-net/raspimouse_ros_examples</a>
-を使用します。
-<a href="package-install.html">ROS パッケージのインストール</a>を参考に、パッケージを<strong>PCにインストール</strong>してください。</p>
 <p>次のコマンドを実行します。</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># シミュレータの起動</span>
 $ roslaunch raspimouse_gazebo raspimouse_with_samplemaze.launch
 
 <span class="c1"># 別のターミナルでコマンドを実行</span>
-$ roslaunch raspimouse_ros_examples teleop.launch key:<span class="o">=</span><span class="nb">true</span> mouse:<span class="o">=</span><span class="nb">false</span>
+$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py _speed:<span class="o">=</span><span class="m">0</span>.1 _turn:<span class="o">=</span><span class="m">1</span>.57
 </code></pre></div>
 <p><img alt="" src="https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_samplemaze_animation.gif" /></p>
 </div>
@@ -1459,7 +1507,7 @@ $ roslaunch raspimouse_ros_examples teleop.launch key:<span class="o">=</span><s
         
           
           <a
-            href="samples.html"
+            href="../ros/samples.html"
             class="md-footer__link md-footer__link--prev"
             aria-label="Previous: 3. ROS / ROS 2サンプルの実行"
             rel="prev"
@@ -1485,7 +1533,7 @@ $ roslaunch raspimouse_ros_examples teleop.launch key:<span class="o">=</span><s
           <a
             href="../others.html"
             class="md-footer__link md-footer__link--next"
-            aria-label="Next: 4. 関連リンク集"
+            aria-label="Next: 5. 関連リンク集"
             rel="next"
           >
             <div class="md-footer__title">
@@ -1493,7 +1541,7 @@ $ roslaunch raspimouse_ros_examples teleop.launch key:<span class="o">=</span><s
                 <span class="md-footer__direction">
                   Next
                 </span>
-                4. 関連リンク集
+                5. 関連リンク集
               </div>
             </div>
             <div class="md-footer__button md-icon">

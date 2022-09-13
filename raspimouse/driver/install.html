@@ -767,21 +767,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#os" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
+    使用機材
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#os-installation" class="md-nav__link">
     OSのインストール
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#network-setup" class="md-nav__link">
+    ネットワークへの接続
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#driver-installation" class="md-nav__link">
     ソースファイルのダウンロードとインストール
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#misc" class="md-nav__link">
     その他
   </a>
   
@@ -789,7 +803,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ubuntu-serverwi-fiip" class="md-nav__link">
+  <a href="#wifi-static-ip" class="md-nav__link">
     Ubuntu ServerでWi-Fiに接続し、IPアドレスを固定する
   </a>
   
@@ -898,14 +912,47 @@
 
             
           
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" data-md-state="indeterminate" type="checkbox" id="__nav_5_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_4">
+          4. シミュレータの実行
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="4. シミュレータの実行" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          4. シミュレータの実行
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
             
               
   
   
   
     <li class="md-nav__item">
-      <a href="../ros/simulator.html" class="md-nav__link">
-        4. シミュレータの実行
+      <a href="../simulator/install.html" class="md-nav__link">
+        1. シミュレータのインストール
       </a>
     </li>
   
@@ -926,7 +973,7 @@
   
     <li class="md-nav__item">
       <a href="../others.html" class="md-nav__link">
-        4. 関連リンク集
+        5. 関連リンク集
       </a>
     </li>
   
@@ -1349,21 +1396,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#os" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
+    使用機材
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#os-installation" class="md-nav__link">
     OSのインストール
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#network-setup" class="md-nav__link">
+    ネットワークへの接続
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#driver-installation" class="md-nav__link">
     ソースファイルのダウンロードとインストール
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#misc" class="md-nav__link">
     その他
   </a>
   
@@ -1371,7 +1432,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ubuntu-serverwi-fiip" class="md-nav__link">
+  <a href="#wifi-static-ip" class="md-nav__link">
     Ubuntu ServerでWi-Fiに接続し、IPアドレスを固定する
   </a>
   
@@ -1406,15 +1467,34 @@
 のインストール方法を説明します。</p>
 <p>Raspberry Pi MouseのLEDやモータを駆動するためには、
 デバイスドライバが必要です。</p>
-<h2 id="os">OSのインストール</h2>
-<p>Raspberry Pi Mouseのデバイスドライバは<code>Ubuntu</code>と<code>Raspberry Pi OS (旧称Raspbian)</code>に対応しています。</p>
-<p>ここではUbuntu（<code>Ubuntu Server 20.04</code>）と、Raspberry Pi OSのインストール手順を紹介します。</p>
-<p>後ほどRaspberry Pi Mouseで<strong>ROSを扱う場合はUbuntu Serverのインストールを推奨します</strong>。</p>
+<h2 id="requirements">使用機材</h2>
+<ul>
+<li>組み立て済みRaspberry Pi Mouse本体<ul>
+<li><a href="https://rt-net.jp/products/raspberrypimousev3/#downloads">製品マニュアル</a>を読んで組み立て済みの状態を前提としています</li>
+<li>OSの再インストールを行う場合はRaspberry Piを取り外すための工具も必要です</li>
+</ul>
+</li>
+<li>Raspberry Pi Mouse用電源<ul>
+<li>バッテリでも電源変換ケーブルつきACアダプタでも可</li>
+</ul>
+</li>
+<li>HDMIケーブルとHDMI入力付きのモニタ</li>
+<li>USBキーボードとマウス</li>
+<li>ノートパソコン等のPC</li>
+</ul>
+<h2 id="os-installation">OSのインストール</h2>
+<p>Raspberry Pi Mouseのデバイスドライバは"Ubuntu"と"Raspberry Pi OS"（旧称"Raspbian"）に対応しています。</p>
+<p>ここではUbuntu（Ubuntu Server 20.04）と、Raspberry Pi OSのインストール手順を紹介します。</p>
+<p>後ほどRaspberry Pi Mouseで<strong>ROSを扱う場合はUbuntu Server（64bit版）のインストールを推奨します</strong>。</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>出荷時に付属しているRaspberry Pi OSインストール済みのmicroSDカードを利用する場合は、OSインストール手順を飛ばしてそのまま<a href="#driver-installation">ソースファイルのダウンロードとインストール</a>に進むことができます。</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>SDカードの取り付けやRaspberry Piの電源操作時に、
 Raspberry PiやRaspberry Pi Mouse本体を<strong>故障させないように</strong>注意してください。
-詳細はRaspberry Pi Mouseの<strong>製品マニュアルを参照してください</strong>。</p>
+詳細はRaspberry Pi Mouseの<strong><a href="https://rt-net.jp/products/raspberrypimousev3/#downloads">製品マニュアル</a>を参照してください</strong>。</p>
 </div>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Ubuntu Server 20.04</label><label for="__tabbed_1_2">Raspberry Pi OS</label></div>
 <div class="tabbed-content">
@@ -1425,11 +1505,13 @@ Raspberry PiやRaspberry Pi Mouse本体を<strong>故障させないように</s
 <img alt="" src="../../img/raspimouse/driver/download_raspberry_pi_imager.png" /></li>
 <li>SDカードをPCに接続します</li>
 <li>Raspberry Pi Imagerを起動します</li>
-<li>書き込むOSを<code>Other general purpose OS -&gt; Ubuntu -&gt; Ubuntu Server 20.04.2 LTS</code>、書き込み先をSDカードに設定し、<code>WRITE</code>を押して書き込みを開始します
+<li>書き込むOSを"Other general-purpose OS" -&gt; "Ubuntu" -&gt; "Ubuntu Server 20.04.* LTS"、書き込み先をSDカードに設定します <strong>ROSを使う場合は64bit版</strong> を選択します<br />
+<img alt="" src="../../img/raspimouse/driver/pi_imager_settings_ubuntu_64bit.png" /></li>
+<li>"WRITE" を押して書き込みを開始します<br />
 <img alt="" src="../../img/raspimouse/driver/pi_imager_settings_ubuntu.png" /></li>
 <li>SDカードをRaspberry Piに取り付け、Raspberry Piの電源を入れます</li>
-<li><code>login:ubuntu</code>、<code>password:ubuntu</code>でログインし、パスワードを変更します</li>
-<li><code>$sudo apt update &amp;&amp; sudo apt upgrade</code>を実行します</li>
+<li>login:<code>ubuntu</code>、password:<code>ubuntu</code>でログインし、パスワードを変更します</li>
+<li><code>$ sudo apt update &amp;&amp; sudo apt upgrade</code>を実行します</li>
 </ol>
 </div>
 <div class="tabbed-block">
@@ -1439,7 +1521,7 @@ Raspberry PiやRaspberry Pi Mouse本体を<strong>故障させないように</s
 <img alt="" src="../../img/raspimouse/driver/download_raspberry_pi_imager.png" /></li>
 <li>SDカードをPCに接続します</li>
 <li>Raspberry Pi Imagerを起動します</li>
-<li>書き込むOSを<code>Raspberry Pi OS (32-bit)</code>、書き込み先をSDカードに設定し、<code>WRITE</code>を押して書き込みを開始します
+<li>書き込むOSを"Raspberry Pi OS (32-bit)"、書き込み先をSDカードに設定し、"WRITE"を押して書き込みを開始します
 <img alt="" src="../../img/raspimouse/driver/pi_imager_settings.png" /></li>
 <li>SDカードをRaspberry Piに取り付け、Raspberry Piの電源を入れます
 <img alt="" src="../../img/raspimouse/driver/raspi_os_settings.png" /></li>
@@ -1448,14 +1530,54 @@ Raspberry PiやRaspberry Pi Mouse本体を<strong>故障させないように</s
 </div>
 </div>
 </div>
-<h2 id="_2">ソースファイルのダウンロードとインストール</h2>
-<p>Raspberry Pi Mouseのデバイスドライバのソースファイルは
-<a href="https://github.com/rt-net/RaspberryPiMouse">GitHub</a>
-に公開されています。</p>
+<h2 id="network-setup">ネットワークへの接続</h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Ubuntu Server</label><label for="__tabbed_2_2">Raspberry Pi OS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
+<p>HDMIケーブルとHDMI入力付きのモニタ、USBキーボードとマウスをRaspberry Piに接続して設定する方法を紹介します。</p>
+<p><a href="https://ubuntu.com/server/docs/network-configuration">https://ubuntu.com/server/docs/network-configuration</a>
+に詳細な説明が書かれています。<br />
+IPアドレスの固定については<a href="#wifi-static-ip">Ubuntu ServerでWi-Fiに接続し、IPアドレスを固定する</a>を参照してください。</p>
 <ol>
+<li><code>$ sudo vim /etc/netplan/99_config.yaml</code>で設定ファイルを新規作成し、下記のように記述します。
+この例では、SSID：<code>raspimouse</code> パスワード：<code>rt-net</code>のネットワークに接続する場合について紹介します。
+<div class="highlight"><pre><span></span><code><span class="nt">network</span><span class="p">:</span>
+    <span class="nt">ethernets</span><span class="p">:</span>
+        <span class="nt">eth0</span><span class="p">:</span>
+            <span class="nt">dhcp4</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+            <span class="nt">optional</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">wifis</span><span class="p">:</span>
+        <span class="nt">wlan0</span><span class="p">:</span>
+            <span class="nt">access-points</span><span class="p">:</span>
+                <span class="nt">raspimouse</span><span class="p">:</span>  <span class="c1">#ここにSSIDを書く</span>
+                    <span class="nt">password</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">rt-net</span> <span class="c1">#ここにパスワードを書く</span>
+            <span class="nt">dhcp4</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+</code></pre></div></li>
+<li><code>$ sudo netplan apply</code>を実行します</li>
+<li><code>$ ip addr</code>でWi-Fiに接続し、IPアドレスを取得できているか確認します</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<p>Raspberry Pi Mouseの<a href="https://rt-net.jp/products/raspberrypimousev3/#downloads">製品マニュアル</a>を参照してください。</p>
+</div>
+</div>
+</div>
+<h2 id="driver-installation">ソースファイルのダウンロードとインストール</h2>
+<p>HDMIケーブルとHDMI入力付きのモニタ、USBキーボードとマウスをRaspberry Piに接続して設定する方法を紹介します。</p>
+<p>Raspberry Pi Mouseのデバイスドライバのソースファイルは
+<a href="https://github.com/rt-net/RaspberryPiMouse">GitHub</a>
+に公開されています。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Ubuntu Server</label><label for="__tabbed_3_2">Raspberry Pi OS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ol>
+<li>パルスカウンタの動作を安定させるためI2Cのボーレートを変更します<ol>
+<li><code>/boot/firmware/config.txt</code>を編集し、<code>dtparam=i2c_baudrate=62500</code>を追記します</li>
+<li>Raspberry Pi を再起動します</li>
+<li><code>$ printf "%d\n" 0x$(xxd -ps /sys/class/i2c-adapter/i2c-1/of_node/clock-frequency)</code>を実行し、<code>62500</code>と表示されたら設定完了です。</li>
+</ol>
+</li>
 <li>次のコマンドを実行し、デバイスドライバをインストールします
 <div class="highlight"><pre><span></span><code>$ git clone https://github.com/rt-net/RaspberryPiMouse.git
 $ <span class="nb">cd</span> RaspberryPiMouse/utils
@@ -1463,16 +1585,16 @@ $ sudo apt install linux-headers-<span class="k">$(</span>uname -r<span class="k
 $ ./build_install.bash
 </code></pre></div></li>
 <li>コマンド実行後にブザーが鳴ればインストール完了です。</li>
-<li>パルスカウンタの動作を安定させるためI2Cのボーレートを変更します<ol>
-<li><code>/boot/firmware/config.txt</code>を編集し、<code>dtparam=i2c_baudrate=62500</code>を追記します</li>
-<li>Raspberry Pi を再起動します</li>
-<li><code>$ printf "%d\n" 0x$(xxd -ps /sys/class/i2c-adapter/i2c-1/of_node/clock-frequency)</code>を実行し、<code>62500</code>と表示されたら設定完了です。</li>
-</ol>
-</li>
 </ol>
 </div>
 <div class="tabbed-block">
 <ol>
+<li>パルスカウンタの動作を安定させるためI2Cのボーレートを変更します<ol>
+<li><code>/boot/config.txt</code>を編集し、<code>dtparam=i2c_baudrate=62500</code>を追記します</li>
+<li>Raspberry Pi を再起動します</li>
+<li><code>$ printf "%d\n" 0x$(xxd -ps /sys/class/i2c-adapter/i2c-1/of_node/clock-frequency)</code>を実行し、<code>62500</code>と表示されたら設定完了です。</li>
+</ol>
+</li>
 <li><code>Raspberry Piの設定</code>を開きます
 <img alt="" src="../../img/raspimouse/driver/raspi_os_settings2.png" /></li>
 <li><code>インターフェイス</code>に進み、<code>SPI</code>と<code>I2C</code>の機能を有効にします
@@ -1486,40 +1608,40 @@ $ sudo apt install raspberrypi-kernel-headers build-essential
 $ ./build_install.bash
 </code></pre></div></li>
 <li>コマンド実行後にブザーが鳴ればインストール完了です。</li>
-<li>パルスカウンタの動作を安定させるためI2Cのボーレートを変更します<ol>
-<li><code>/boot/config.txt</code>を編集し、<code>dtparam=i2c_baudrate=62500</code>を追記します</li>
-<li>Raspberry Pi を再起動します</li>
-<li><code>$ printf "%d\n" 0x$(xxd -ps /sys/class/i2c-adapter/i2c-1/of_node/clock-frequency)</code>を実行し、<code>62500</code>と表示されたら設定完了です。</li>
-</ol>
-</li>
 </ol>
 </div>
 </div>
 </div>
-<p><strong>デバイスドライバはOSを起動するたびにインストールしてください。</strong></p>
-<h2 id="_3">その他</h2>
-<h3 id="ubuntu-serverwi-fiip">Ubuntu ServerでWi-Fiに接続し、IPアドレスを固定する</h3>
+<p><strong>デバイスドライバはOSを起動するたびにインストールしてください。</strong> 上記インストール手順で設定した場合は以下のコマンドでインストールできます。</p>
+<div class="highlight"><pre><span></span><code>$ ~/RaspberryPiMouse/utils/build_install.bash
+</code></pre></div>
+<h2 id="misc">その他</h2>
+<h3 id="wifi-static-ip">Ubuntu ServerでWi-Fiに接続し、IPアドレスを固定する</h3>
 <p><a href="https://ubuntu.com/server/docs/network-configuration">https://ubuntu.com/server/docs/network-configuration</a>
-に詳細な説明が書かれています。</p>
+に詳細な説明が書かれています。  </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>IPアドレスを固定するとネットワークに影響が出る場合があります。会社等で利用する場合はネットワーク管理者にお問い合わせください。</p>
+</div>
 <ol>
-<li><code>$ sudo vim /etc/netplan/99_config.yaml</code>で設定ファイルを新規作成し、下記のように記述します。
-この例では、IPアドレスを<code>192.168.11.89</code>に固定します。
-<div class="highlight"><pre><span></span><code>network:
-    ethernets:
-        eth0:
-            dhcp4: true
-            optional: true
-    wifis:
-        wlan0:
-            access-points:
-                ここにSSIDを書く:
-                    password: ここにパスワードを書く
-            dhcp4: false
-            addresses: [192.168.11.89/24]
-            gateway4: 192.168.11.1
-            nameservers:
-                addresses: [8.8.8.8, 192.168.11.1]
-    version: 2
+<li><code>$ sudo vim /etc/netplan/99_config.yaml</code>で設定ファイルを新規作成し、下記のように<code>dhcp4: false</code>としてIPアドレスを記述します。<br />
+この例では、IPアドレスを<code>192.168.11.89</code>に固定します。<strong>この設定値は環境によって変わりますのでご注意ください</strong>。
+<div class="highlight"><pre><span></span><code><span class="nt">network</span><span class="p">:</span>
+    <span class="nt">ethernets</span><span class="p">:</span>
+        <span class="nt">eth0</span><span class="p">:</span>
+            <span class="nt">dhcp4</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+            <span class="nt">optional</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">wifis</span><span class="p">:</span>
+        <span class="nt">wlan0</span><span class="p">:</span>
+            <span class="nt">access-points</span><span class="p">:</span>
+                <span class="nt">ここにSSIDを書く</span><span class="p">:</span>
+                    <span class="nt">password</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ここにパスワードを書く</span>
+            <span class="nt">dhcp4</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+            <span class="nt">addresses</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">192.168.11.89/24</span><span class="p p-Indicator">]</span>
+            <span class="nt">gateway4</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">192.168.11.1</span>
+            <span class="nt">nameservers</span><span class="p">:</span>
+                <span class="nt">addresses</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">8.8.8.8</span><span class="p p-Indicator">,</span> <span class="nv">192.168.11.1</span><span class="p p-Indicator">]</span>
+    <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
 </code></pre></div></li>
 <li><code>$ sudo netplan apply</code>を実行します</li>
 <li><code>$ ip addr</code>でWi-Fiに接続できているか確認します</li>
