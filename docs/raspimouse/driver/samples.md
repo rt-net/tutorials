@@ -5,8 +5,23 @@ robot: Raspberry Pi Mouse
 
 # サンプルプログラムの実行
 
-デバイスドライバをインストールしたら、
+[デバイスドライバをインストール](./install.md)したら、
 サンプルプログラムを実行しましょう。
+
+サンプルプログラムは[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)でオープンソースソフトウェアとして公開しています。  
+[https://github.com/rt-net/RaspberryPiMouse/tree/master/SampleProgram](https://github.com/rt-net/RaspberryPiMouse/tree/master/SampleProgram){target=_blank rel=noopener}
+
+## 使用機材 {: #requirements}
+
+
+* 組み立て済みRaspberry Pi Mouse本体
+    * [製品マニュアル](https://rt-net.jp/products/raspberrypimousev3/#downloads)を読んで組み立て済みの状態を前提としています
+* Raspberry Pi Mouse用電源
+    * バッテリでも電源変換ケーブルつきACアダプタでも可
+* HDMIケーブルとHDMI入力付きのモニタ
+* USBキーボードとマウス
+
+## 事前準備 {: #preparation}
 
 サンプルプログラムのディレクトリに移動します。
 
@@ -16,8 +31,6 @@ $ cd ~/RaspberryPiMouse/SampleProgram
 
 ディレクトリにあるプログラムを実行すると、LEDやブザーを動かせます。
 
-このサンプルプログラムは[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)でオープンソースソフトウェアとして公開しています。  
-[https://github.com/rt-net/RaspberryPiMouse/tree/master/SampleProgram](https://github.com/rt-net/RaspberryPiMouse/tree/master/SampleProgram){target=_blank rel=noopener}
 
 ## LED {: #step1}
 
@@ -175,4 +188,4 @@ $ bash step6.sh
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DEVr4HU9tC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Raspberry Pi 3では通信に失敗する場合（常に0が返ってくるなど）があります。I2Cのbaudrate設定を変更してください。  
-https://github.com/rt-net/RaspberryPiMouse#%E3%83%91%E3%83%AB%E3%82%B9%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6
+[https://github.com/rt-net/RaspberryPiMouse#パルスカウンタについて](https://github.com/rt-net/RaspberryPiMouse#%E3%83%91%E3%83%AB%E3%82%B9%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)

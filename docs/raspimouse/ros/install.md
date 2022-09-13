@@ -12,14 +12,18 @@ robot: Raspberry Pi Mouse
 
 なお、ROSをすでにインストール済みの場合はこのページの手順は不要です。
 
-## 前提条件 {: #requirements}
 
+## 使用機材 {: #requirements}
+
+
+* 組み立て済みRaspberry Pi Mouse本体
+    * [製品マニュアル](https://rt-net.jp/products/raspberrypimousev3/#downloads)を読んで組み立て済みの状態を前提としています
+    * OS（**Ubuntu Server 20.04**）がインストール済みであることを前提としています
+        * Raspberry Pi OSでのROSの動作は確認していません
+* Raspberry Pi Mouse用電源
+    * バッテリでも電源変換ケーブルつきACアダプタでも可
 * ノートパソコン等のPC
-    * OS（**Ubuntu Desktop 20.04**）がインストール済みであること
-
-* Raspberry Pi
-    * OS（**Ubuntu Server 20.04**）がインストール済みであること
-        * Raspberry Pi OSでのROSの動作は確認していません。
+    * OS（**Ubuntu Desktop 20.04**）がインストール済みであることを前提としています
 
 ## ROS / ROS 2のインストール（公式のドキュメントに沿って進める場合） {: #official-document}
 
@@ -55,7 +59,9 @@ robot: Raspberry Pi Mouse
     環境にもよりますが完了までは10分以上かかる場合があります。
     
     ```sh
-    $ bash -c "$(curl -SsfL u.ty0.jp/ros-noetic-desktop)"
+    $ git clone https://github.com/Tiryoh/ros_setup_scripts_ubuntu.git
+    $ cd ros_setup_scripts_ubuntu
+    $ ./ros-noetic-desktop-main.sh
     ```
     
     スクリプトが問題なく実行できれば以下のメッセージが表示されます。
@@ -117,7 +123,9 @@ robot: Raspberry Pi Mouse
     環境にもよりますが完了までは10分以上かかる場合があります。
     
     ```sh
-    $ bash -c "$(curl -SsfL u.ty0.jp/ros-noetic-ros-base)"
+    $ git clone https://github.com/Tiryoh/ros_setup_scripts_ubuntu.git
+    $ cd ros_setup_scripts_ubuntu
+    $ ./ros-noetic-ros-base-main.sh
     ```
     
     スクリプトが問題なく実行できれば以下のメッセージが表示されます。

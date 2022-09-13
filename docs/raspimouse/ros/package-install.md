@@ -7,19 +7,26 @@ robot: Raspberry Pi Mouse
 
 このページでは、Raspberry Pi MouseへのROSサンプル集のインストール方法を説明します。
 
-## 前提条件
+## 使用機材 {: #requirements}
 
-- Raspberry PiにOS（**Ubuntu Server 20.04**）がインストール済みであること
-    - Raspberry Pi OSでのROSの動作は確認していません。
-- **デバイスドライバ**がインストール済みであること
-    - [デバイスドライバのインストール手順](../driver/install.md)を参照してください
-- ROSまたはROS 2がインストール済みであること
-    - [ROS/ROS 2のインストール手順](./install.md)を参照してください
+* 組み立て済みRaspberry Pi Mouse本体
+    * [製品マニュアル](https://rt-net.jp/products/raspberrypimousev3/#downloads)を読んで組み立て済みの状態を前提としています
+    * OS（**Ubuntu Server 20.04**）がインストール済みであることを前提としています
+        * Raspberry Pi OSでのROSの動作は確認していません
+    * **デバイスドライバ**がインストール済みであることを前提としています
+        * [デバイスドライバのインストール手順](../driver/install.md)を参照してください
+    * ROSまたはROS 2がインストール済みであることを前提としています
+        * [ROS/ROS 2のインストール手順](./install.md)を参照してください
+* Raspberry Pi Mouse用電源
+    * バッテリでも電源変換ケーブルつきACアダプタでも可
+* ノートパソコン等のPC
+    * OS（**Ubuntu Desktop 20.04**）がインストール済みであることを前提としています
 
 
-## ROS / ROS 2パッケージのインストール
+## ROS / ROS 2パッケージのインストール {: #installation}
 
 === "ROS"
+    Raspberry Piとノートパソコン等のPCそれぞれで、
     制御用のパッケージである
     [ryuichiueda/raspimouse_ros_2](https://github.com/ryuichiueda/raspimouse_ros_2){target=_blank rel=noopener}
     と、サンプル集パッケージ
@@ -48,6 +55,7 @@ robot: Raspberry Pi Mouse
     ```
 
 === "ROS 2"
+    Raspberry Piとノートパソコン等のPCそれぞれで、
     サンプル集パッケージ
     [rt-net/raspimouse_ros2_examples](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
     をダウンロードしてインストールします。
@@ -67,3 +75,7 @@ robot: Raspberry Pi Mouse
     $ colcon build --symlink-install
     $ source ~/ros2_ws/install/setup.bash
     ```
+
+!!! info
+    ROS/ROS 2を同時にインストールした環境で実行する場合、`/opt/ros/*/setup.bash`を実行したいROSのバージョンにあわせて都度読み込む必要があります。  
+    `catkin_make`や`colcon build`でエラーが出た場合はご確認ください。
