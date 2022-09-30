@@ -52,7 +52,16 @@ Windowsでは[Tera Term](https://ja.osdn.net/projects/ttssh2/)、Linuxでは[scr
     1. ここで、Raspberry Pi Cat操作基板にある電源スイッチを操作し、Raspberry Pi Cat本体の電源をオンにします。電源をオンにすると電源LEDが点灯します。
     ![](../../img/raspicat/driver/windows-vcp-5.jpg){: style="width:50%"}
     1. 電源をオンにしてしばらく待つとログイン画面が表示されます。何も表示されない場合はEnterキーを押すと表示されます。
-    1. ユーザ名: `pi` パスワード: `raspberry` でログインします。パスワード入力中は画面に文字が出てきませんのでタイプミスのないように入力します。
+    1. ユーザ名: `pi` パスワード: `raspberry` でログインします。パスワード入力中は画面に文字が出てきませんのでタイプミスのないように入力します。無事にログインできていると以下のような表示になります。
+    ```
+    Linux raspberrypi 5.15.32-v8+ #1538 SMP PREEMPT Thu Mar 31 19:40:39 BST 2022 aarch64
+
+    The programs included with the Debian GNU/Linux system are free software;
+
+    中略
+
+    pi@raspberrypi: ~$
+    ```
 === "Windows"
     1. まず、USB-BケーブルをRaspberry Pi Cat制御基板に接続します。まだRaspberry Pi Cat本体の電源は入れません。  
     Windowsのデバイスマネージャを起動してRaspberry Pi Cat制御基板が認識されていることを確認します。以下のようにUSB Serial Portとして認識されます。このときのCOMポートの番号を控えておきます。今回の例ではCOM3です。
@@ -67,7 +76,7 @@ Windowsでは[Tera Term](https://ja.osdn.net/projects/ttssh2/)、Linuxでは[scr
     ![](../../img/raspicat/driver/windows-vcp-5.jpg){: style="width:50%"}
     1. 電源をオンにしてしばらく待つと以下のようにログイン画面が表示されます。何も表示されない場合はEnterキーを押すと表示されます。
     ![](../../img/raspicat/driver/windows-vcp-6.png)
-    1. ユーザ名: `pi` パスワード: `raspberry` でログインします。パスワード入力中は画面に文字が出てきませんのでタイプミスのないように入力します。
+    1. ユーザ名: `pi` パスワード: `raspberry` でログインします。パスワード入力中は画面に文字が出てきませんのでタイプミスのないように入力します。無事にログインできていると以下のような表示になります。
     ![](../../img/raspicat/driver/windows-vcp-7.png)
 
 ## ネットワークへの接続 {: #network-setup}
