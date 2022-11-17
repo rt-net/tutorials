@@ -71,7 +71,12 @@ nav:
     - 免責事項・問い合わせについて: about.md
   - CRANE+ V2:
     - 1. 製品について: cranev2/products.md
-    - 2. 関連リンク集: cranev2/others.md
+    - 2. ROS 2:
+      - 1. ROS 2のインストール: cranev2/ros/install.md
+      - 2. ROS 2パッケージのインストール: cranev2/ros/package-install.md
+      - 3. ROS 2サンプルの実行（実機）: cranev2/ros/samples.md
+      - 4. ROS 2サンプルの実行（シミュレータ） : cranev2/ros/simulator.md
+    - 3. 関連リンク集: cranev2/others.md
   - CRANE-X7:
     - 1. 製品について: crane-x7/products.md
     - 2. 関連リンク集: crane-x7/others.md
