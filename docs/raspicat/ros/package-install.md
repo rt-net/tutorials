@@ -23,7 +23,7 @@ robot: Raspberry Pi Cat
 
 ## 事前準備 {: #preparation}
 
-[デバイスドライバのインストール](./install.md)の[Raspberry Piへのログイン](./install.md#raspberry-pi-login)に沿ってRaspberry Piへログインします。
+[デバイスドライバのインストール](../driver/install.md)の[Raspberry Piへのログイン](../driver/install.md#raspberry-pi-login)に沿ってRaspberry Piへログインします。
 
 ## ROSパッケージのインストール {: #install-ros-packages}
 

@@ -30,7 +30,7 @@ Raspberry Pi Catのデバイスドライバは**Ubuntu**と**Raspberry Pi OS (�
 後ほどRaspberry Pi Catで**ROSを扱う場合はUbuntu Serverのインストールを推奨します**。
 
 === "Ubuntu Server 18.04"
-    [こちらのリンク](http://cdimage.ubuntu.com/ubuntu/releases/18.04/release/)から**Ubuntu 18.04 server**のイメージをダウンロードします。
+    [Ubuntu 18.04 LTSのリリースページ](http://cdimage.ubuntu.com/ubuntu/releases/18.04/release/)から**Ubuntu 18.04 server**のイメージファイル（`ubuntu-18.04.5-preinstalled-server-arm64+raspi4.img.xz`）をダウンロードします。
 
     ダウンロードしたイメージは[rpi-imager](https://www.raspberrypi.com/software/)等でSDカードに書き込みます。
 
@@ -46,9 +46,9 @@ Raspberry Pi Cat制御基板にはUSBシリアル変換機能が搭載されて�
 Windowsでは[Tera Term](https://ja.osdn.net/projects/ttssh2/)、Linuxでは[screen](https://wiki.archlinux.jp/index.php/GNU_Screen)などのソフトウェアを使うことでRaspberry Pi Cat制御基板経由でRaspberry Piにログインすることができます。
 
 === "Ubuntu"
-    1. まず、USB-BケーブルをRaspberry Pi Cat制御基板に接続します。まだRaspberry Pi Cat本体の電源は入れません。  
+    1. まず、USB Type-BケーブルをRaspberry Pi Cat制御基板に接続します。まだRaspberry Pi Cat本体の電源は入れません。  
     `$ ls /dev/ttyUSB*`と実行し、Raspberry Pi Cat制御基板が認識されていることを確認します。このときのデバイスファイル名を控えておきます。
-    1. screenでデバイスファイルにアクセスします。上記の手順で確認したデバイスファイル名は`/dev/ttyUSB0`だった場合は、`$ screen /dev/ttyUSB0 115200`などのように実行します。
+    1. screenでデバイスファイルにアクセスします。上記の手順で確認したデバイスファイル名が`/dev/ttyUSB0`だった場合は、`$ screen /dev/ttyUSB0 115200`などのように実行します。
     1. ここで、Raspberry Pi Cat操作基板にある電源スイッチを操作し、Raspberry Pi Cat本体の電源をオンにします。電源をオンにすると電源LEDが点灯します。
     ![](../../img/raspicat/driver/windows-vcp-5.jpg){: style="width:50%"}
     1. 電源をオンにしてしばらく待つとログイン画面が表示されます。何も表示されない場合はEnterキーを押すと表示されます。
@@ -63,10 +63,10 @@ Windowsでは[Tera Term](https://ja.osdn.net/projects/ttssh2/)、Linuxでは[scr
     pi@raspberrypi: ~$
     ```
 === "Windows"
-    1. まず、USB-BケーブルをRaspberry Pi Cat制御基板に接続します。まだRaspberry Pi Cat本体の電源は入れません。  
+    1. まず、USB Type-BケーブルをRaspberry Pi Cat制御基板に接続します。まだRaspberry Pi Cat本体の電源は入れません。  
     Windowsのデバイスマネージャを起動してRaspberry Pi Cat制御基板が認識されていることを確認します。以下のようにUSB Serial Portとして認識されます。このときのCOMポートの番号を控えておきます。今回の例ではCOM3です。
     ![](../../img/raspicat/driver/windows-vcp-1.png)
-    1. デバイスマネージャで確認したCOMポートを指定して接続します。
+    1. Tera Termを起動し、デバイスマネージャで確認したCOMポートを指定して接続します。
     ![](../../img/raspicat/driver/windows-vcp-2.png)
     1. 「設定」 - 「シリアルポート」を開きシリアルポートの設定を行います。
     ![](../../img/raspicat/driver/windows-vcp-3.png)
@@ -81,7 +81,7 @@ Windowsでは[Tera Term](https://ja.osdn.net/projects/ttssh2/)、Linuxでは[scr
 
 ## ネットワークへの接続 {: #network-setup}
 
-PCとRaspberry Pi Cat制御基板をUSB Type-Bケーブルで接続して操作する方法を説明します。
+Wi-Fiへの接続方法を説明します。
 
 
 === "Ubuntu Server"
@@ -118,6 +118,7 @@ PCとRaspberry Pi Cat制御基板をUSB Type-Bケーブルで接続して操作�
     ```
     `Wi-Fi ON`とメッセージが返ってきたらWi-Fiへの接続設定完了です
     1. `$ ip addr`を実行し、Wi-Fiに接続してIPアドレスを取得できているか確認します
+
 ## ソースファイルのダウンロードとインストール {: #driver-installation}
 
 Raspberry Pi Catのデバイスドライバのソースファイルは
@@ -206,10 +207,10 @@ network:
 
 ### 有線LANを使用し、PCのネットワークを利用する {: #pc-lan}
 
-**Raspberry Pi**と**PC**間で有線LAN接続を行い、PCのネットワークを利用する手順について説明します。
+**Raspberry Pi**と**Ubuntu PC**間で有線LAN接続を行い、PCのネットワークを利用する手順について説明します。
 
 !!! Warning
-    **PC**は**Wi-Fi**に接続している必要があります。
+    **Ubuntu PC**は**Wi-Fi**に接続している必要があります。
 
 1. PC側でEthernetの接続プロファイルを作成します  
 `PROFILE-NAME`は任意の名前、`NIC-NAME`は`ip addr`コマンド等で調べたEthernetのインターフェイス名です。

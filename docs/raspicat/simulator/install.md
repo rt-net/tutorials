@@ -37,10 +37,11 @@ $ cd ~/catkin_ws/src
 
 # Clone ROS packages
 $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspimouse.git
+$ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspimouse_description.git
 $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspicat_ros.git
 $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspicat_slam_navigation.git
-$ git clone https://github.com/rt-net/raspicat_sim.git
-$ git clone https://github.com/rt-net/raspicat_description.git
+$ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspicat_sim.git
+$ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspicat_description.git
 
 # Install dependencies
 $ rosdep update
