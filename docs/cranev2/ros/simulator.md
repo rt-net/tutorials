@@ -27,12 +27,12 @@ robot: CRANE+ V2
 次のコマンドでmove_group（`crane_plus_moveit_config`）とIgnition Gazeboを起動します。
 
 ```sh
-$ ros2 launch crane_plus_ignition crane_plus_ignition.launch.py
+ros2 launch crane_plus_ignition crane_plus_ignition.launch.py
 ```
 
 別のターミナルで次のコマンドを実行すると、シミュレータ上のCRANE+ V2のグリッパが開閉します。
 
 ```sh
-$ ros2 launch crane_plus_examples example.launch.py example:='gripper_control'
+ros2 launch crane_plus_examples example.launch.py example:='gripper_control'
 ```
 

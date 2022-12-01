@@ -25,5 +25,5 @@ ROS 2パッケージ[rt-net/crane_plus](https://github.com/rt-net/crane_plus){ta
 をインストールします。
 
 ```sh
-$ sudo apt install ros-foxy-crane-plus
+sudo apt install ros-foxy-crane-plus
 ```

@@ -27,7 +27,7 @@ robot: CRANE+ V2
 USB通信ポート`/dev/ttyUSB0`を経由してCRANE+ V2と通信する場合、以下のコマンドでアクセス権限を変更します。
 
 ```sh
-$ sudo chmod 666 /dev/ttyUSB0
+sudo chmod 666 /dev/ttyUSB0
 ```
 
 ### その他の設定
@@ -41,7 +41,7 @@ $ sudo chmod 666 /dev/ttyUSB0
 次のコマンドでmove_group（`crane_plus_moveit_config`）とcontroller（`crane_plus_control`）を起動します。
 
 ```sh
-$ ros2 launch crane_plus_examples demo.launch.py port_name:=/dev/ttyUSB0
+ros2 launch crane_plus_examples demo.launch.py port_name:=/dev/ttyUSB0
 ```
 
 別のターミナルで次のコマンドを実行すると、CRANE+ V2のグリッパが開閉します。

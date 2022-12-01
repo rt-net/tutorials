@@ -36,16 +36,16 @@ GUIを使用する場合は`Desktop`を、 使用しない場合は`ROS-Base`パ
 インストールします。
 
 ```sh
-$ sudo apt install -y curl git
+sudo apt install -y curl git
 ```
 
 以下のコマンドでROS 2インストールスクリプトを実行します。
 環境にもよりますが完了までは10分以上かかる場合があります。
 
 ```sh
-$ git clone https://github.com/Tiryoh/ros2_setup_scripts_ubuntu.git
-$ cd ros2_setup_scripts_ubuntu
-$ ./ros2-foxy-desktop-main.sh
+git clone https://github.com/Tiryoh/ros2_setup_scripts_ubuntu.git
+cd ros2_setup_scripts_ubuntu
+./ros2-foxy-desktop-main.sh
 ```
 
 スクリプトが問題なく実行できれば以下のメッセージが表示されます。
@@ -58,6 +58,6 @@ Run 'source ~/.bashrc'
 以下のコマンドでインストールした設定を読み込みます。
 
 ```sh
-$ source ~/.bashrc
+source ~/.bashrc
 ```
 
