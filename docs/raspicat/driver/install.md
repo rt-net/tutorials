@@ -204,38 +204,3 @@ network:
 ```
 2. `$ sudo netplan apply`を実行します
 3. `$ ip addr`でWi-Fiに接続できているか確認します
-
-### 有線LANを使用し、PCのネットワークを利用する {: #pc-lan}
-
-**Raspberry Pi**と**Ubuntu PC**間で有線LAN接続を行い、PCのネットワークを利用する手順について説明します。
-
-!!! Warning
-    **Ubuntu PC**は**Wi-Fi**に接続している必要があります。
-
-1. PC側でEthernetの接続プロファイルを作成します  
-`PROFILE-NAME`は任意の名前、`NIC-NAME`は`ip addr`コマンド等で調べたEthernetのインターフェイス名です。
-```sh
-$ sudo apt install net-tools
-$ nmcli connection add type ethernet con-name PROFILE-NAME ifname NIC-NAME ipv4.method shared
-```
-2. プロファイルを作成後、プロファイルの適用を行います  
-`PROFILE-NAME`には、作成したプロファイル名を入れます。
-```sh
-$ nmcli con up PROFILE-NAME ifname NIC-NAME
-```
-3. `$ ip addr`で有線LAN接続ができているか確認します  
-4. Raspberry Piにssh接続  
-Raspberry PiのIPアドレスを調べるために`arp-scan`コマンドを使用します。
-```sh
-$ sudo apt install arp-scan
-$ sudo arp-scan -l -I NIC-NAME
-```
-Raspberry PiのIPアドレスが出てきたら、そのIPを使用しssh接続を行います。  
-`Raspberry-Pi-IP`には、調べたIPアドレスを入れます。
-```sh
-$ ssh ubuntu@Raspberry-Pi-IP
-```
-5. ssh接続ができたら、Raspberry PiがPCのネットワークを利用できているか確認します  
-```sh
-$ ping '8.8.8.8'
-```
