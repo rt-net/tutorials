@@ -67,10 +67,13 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # gmappingの実行
-    $ roslaunch raspicat_slam raspicat_gmapping.launch joy:=false
-    
-    # 地図の保存
-    $ roslaunch raspicat_slam map_save.launch map_file:=map-path
+    $ roslaunch raspicat_slam raspicat_gmapping.launch
+
+    # キーボード操縦用ノードの立ち上げ
+    $ roslaunch raspicat_bringup teleop.launch joy:=false
+
+    # 地図の保存（map_fileへのパスは任意のパスを指定できます）
+    $ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps
     ```
 === "cartographer"
     ```sh
@@ -78,10 +81,13 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # cartographerの実行
-    $ roslaunch raspicat_slam raspicat_cartographer.launch joy:=false
-    
-    # 地図の保存
-    $ roslaunch raspicat_slam map_save.launch map_file:=map-path
+    $ roslaunch raspicat_slam raspicat_cartographer.launch
+
+    # キーボード操縦用ノードの立ち上げ
+    $ roslaunch raspicat_bringup teleop.launch joy:=false
+
+    # 地図の保存（map_fileへのパスは任意のパスを指定できます）
+    $ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps
     ```
 === "slam_toolbox"
     ```sh
@@ -89,10 +95,13 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # slam_toolboxの実行
-    $ roslaunch raspicat_slam raspicat_slam_toolbox.launch joy:=false
-    
-    # 地図の保存
-    $ roslaunch raspicat_slam map_save.launch map_file:=map-path
+    $ roslaunch raspicat_slam raspicat_slam_toolbox.launch
+
+    # キーボード操縦用ノードの立ち上げ
+    $ roslaunch raspicat_bringup teleop.launch joy:=false
+
+    # 地図の保存（map_fileへのパスは任意のパスを指定できます）
+    $ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps
     ```
 
 #### ジョイスティックコントローラで操縦 {: #slam-teleop-joy}
@@ -102,10 +111,13 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # gmappingの実行
-    $ roslaunch raspicat_slam raspicat_gmapping.launch joy:=true
-    
-    # 地図の保存
-    $ roslaunch raspicat_slam map_save.launch map_file:=map-path
+    $ roslaunch raspicat_slam raspicat_gmapping.launch
+
+    # ジョイスティック操縦用ノードの立ち上げ
+    $ roslaunch raspicat_bringup teleop.launch joy:=true
+
+    # 地図の保存（map_fileへのパスは任意のパスを指定できます）
+    $ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps
     ```
     <video width="100%" controls>
         <source src="https://user-images.githubusercontent.com/40545422/166213251-22115ecb-11a2-4caa-95c7-c3b8e85db3ad.mp4" type="video/mp4">
@@ -117,10 +129,13 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # cartographerの実行
-    $ roslaunch raspicat_slam raspicat_cartographer.launch joy:=true
-    
-    # 地図の保存
-    $ roslaunch raspicat_slam map_save.launch map_file:=map-path
+    $ roslaunch raspicat_slam raspicat_cartographer.launch
+
+    # ジョイスティック操縦用ノードの立ち上げ
+    $ roslaunch raspicat_bringup teleop.launch joy:=true
+
+    # 地図の保存（map_fileへのパスは任意のパスを指定できます）
+    $ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps
     ```
     <video width="100%" controls>
         <source src="https://user-images.githubusercontent.com/40545422/166214138-624d3fd0-2bf8-46d7-a722-1602007df086.mp4" type="video/mp4">
@@ -132,10 +147,13 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # slam_toolboxの実行
-    $ roslaunch raspicat_slam raspicat_slam_toolbox.launch joy:=true
+    $ roslaunch raspicat_slam raspicat_slam_toolbox.launch
 
-    # 地図の保存
-    $ roslaunch raspicat_slam map_save.launch map_file:=map-path
+    # ジョイスティック操縦用ノードの立ち上げ
+    $ roslaunch raspicat_bringup teleop.launch joy:=true
+
+    # 地図の保存（map_fileへのパスは任意のパスを指定できます）
+    $ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps
     ```
     <video width="100%" controls>
         <source src="https://user-images.githubusercontent.com/40545422/166214198-38cf95ee-57ce-45bf-82d4-447f93419560.mp4" type="video/mp4">
