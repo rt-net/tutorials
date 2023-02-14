@@ -11,6 +11,8 @@ theme:
     - navigation.expand
     - navigation.tabs
     - navigation.top
+    - navigation.instant
+    - content.tabs.link
 
 repo_url: https://github.com/rt-net/tutorials
 edit_uri: edit/main/docs/
@@ -71,7 +73,12 @@ nav:
     - 免責事項・問い合わせについて: about.md
   - CRANE+ V2:
     - 1. 製品について: cranev2/products.md
-    - 2. 関連リンク集: cranev2/others.md
+    - 2. ROS 2:
+      - 1. ROS 2のインストール: cranev2/ros/install.md
+      - 2. ROS 2パッケージのインストール: cranev2/ros/package-install.md
+      - 3. ROS 2サンプルの実行（実機）: cranev2/ros/samples.md
+      - 4. ROS 2サンプルの実行（シミュレータ） : cranev2/ros/simulator.md
+    - 3. 関連リンク集: cranev2/others.md
   - CRANE-X7:
     - 1. 製品について: crane-x7/products.md
     - 2. 関連リンク集: crane-x7/others.md
@@ -87,8 +94,9 @@ nav:
       - 1. ROS / ROS 2のインストール: raspimouse/ros/install.md
       - 2. ROS / ROS 2パッケージのインストール: raspimouse/ros/package-install.md
       - 3. ROS / ROS 2サンプルの実行: raspimouse/ros/samples.md
-      - 4. シミュレータの実行: raspimouse/ros/simulator.md
-    - 4. 関連リンク集: raspimouse/others.md
+    - 4. シミュレータの実行:
+      - 1. シミュレータのインストール: raspimouse/simulator/install.md
+    - 5. 関連リンク集: raspimouse/others.md
   - Jetson Nano Mouse:
     - 1. 製品について: jnmouse/products.md
     - 2. デバイスドライバ:
