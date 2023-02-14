@@ -11,6 +11,8 @@ theme:
     - navigation.expand
     - navigation.tabs
     - navigation.top
+    - navigation.instant
+    - content.tabs.link
 
 repo_url: https://github.com/rt-net/tutorials
 edit_uri: edit/main/docs/
