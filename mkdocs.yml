@@ -5,8 +5,6 @@ theme:
   logo: img/rt-logo-32x32.png
   favicon: https://rt-net.github.io/tutorials/img/rt-logo-32x32.png
   font: Incosolata
-  palette:
-    scheme: rt-red
   features:
     - navigation.expand
     - navigation.tabs
