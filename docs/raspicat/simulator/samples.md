@@ -61,6 +61,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 ## シミュレータ環境でSLAM {: #slam}
 
 #### キーボードで操縦 {: #slam-teleop-keyboard}
+
 === "gmapping"
     ```sh
     # シミュレータの起動
@@ -72,7 +73,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     # キーボード操縦用ノードの立ち上げ
     $ roslaunch raspicat_bringup teleop.launch joy:=false
 
-    # 地図の保存（map_fileへのパスは任意のパスを指定できます）
+    # 地図の保存（map_fileのパスは任意のディレクトリへのパスを指定できます）
     $ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps
     ```
 === "cartographer"
@@ -86,7 +87,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     # キーボード操縦用ノードの立ち上げ
     $ roslaunch raspicat_bringup teleop.launch joy:=false
 
-    # 地図の保存（map_fileへのパスは任意のパスを指定できます）
+    # 地図の保存（map_fileのパスは任意のディレクトリへのパスを指定できます）
     $ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps
     ```
 === "slam_toolbox"
@@ -100,7 +101,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     # キーボード操縦用ノードの立ち上げ
     $ roslaunch raspicat_bringup teleop.launch joy:=false
 
-    # 地図の保存（map_fileへのパスは任意のパスを指定できます）
+    # 地図の保存（map_fileのパスは任意のディレクトリへのパスを指定できます）
     $ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps
     ```
 
@@ -116,7 +117,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     # ジョイスティック操縦用ノードの立ち上げ
     $ roslaunch raspicat_bringup teleop.launch joy:=true
 
-    # 地図の保存（map_fileへのパスは任意のパスを指定できます）
+    # 地図の保存（map_fileのパスは任意のディレクトリへのパスを指定できます）
     $ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps
     ```
     <video width="100%" controls>
@@ -134,7 +135,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     # ジョイスティック操縦用ノードの立ち上げ
     $ roslaunch raspicat_bringup teleop.launch joy:=true
 
-    # 地図の保存（map_fileへのパスは任意のパスを指定できます）
+    # 地図の保存（map_fileのパスは任意のディレクトリへのパスを指定できます）
     $ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps
     ```
     <video width="100%" controls>
@@ -152,7 +153,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     # ジョイスティック操縦用ノードの立ち上げ
     $ roslaunch raspicat_bringup teleop.launch joy:=true
 
-    # 地図の保存（map_fileへのパスは任意のパスを指定できます）
+    # 地図の保存（map_fileのパスは任意のディレクトリへのパスを指定できます）
     $ roslaunch raspicat_slam map_save.launch map_file:=$(rospack find raspicat_slam)/config/maps
     ```
     <video width="100%" controls>
@@ -167,7 +168,9 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # move_baseの実行
-    $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="move_base" mcl_map_file:=map-path navigation_map_file:=map-path
+    # 任意の地図データへのパスを指定できます
+    $ $MAP_FILE=$(rospack find raspicat_slam)/config/maps/iscas_museum_map.yaml
+    $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="neonav" mcl_map_file:=$MAP_FILE navigation_map_file:=$MAP_FILE
     ```
 
     <video width="100%" controls>
@@ -180,7 +183,9 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
     $ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch rviz:=false
 
     # neonavigationの実行
-    $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="neonav" mcl_map_file:=map-path navigation_map_file:=map-path
+    # 任意の地図データへのパスを指定できます
+    $ $MAP_FILE=$(rospack find raspicat_slam)/config/maps/iscas_museum_map.yaml
+    $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="neonav" mcl_map_file:=$MAP_FILE navigation_map_file:=$MAP_FILE
     ```
 
     <video width="100%" controls>
