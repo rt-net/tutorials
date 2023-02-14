@@ -169,7 +169,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 
     # move_baseの実行
     # 任意の地図データへのパスを指定できます
-    $ $MAP_FILE=$(rospack find raspicat_slam)/config/maps/iscas_museum_map.yaml
+    $ MAP_FILE=$(rospack find raspicat_slam)/config/maps/iscas_museum_map.yaml
     $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="neonav" mcl_map_file:=$MAP_FILE navigation_map_file:=$MAP_FILE
     ```
 
@@ -184,7 +184,7 @@ $ roslaunch raspicat_bringup teleop.launch joy:=true
 
     # neonavigationの実行
     # 任意の地図データへのパスを指定できます
-    $ $MAP_FILE=$(rospack find raspicat_slam)/config/maps/iscas_museum_map.yaml
+    $ MAP_FILE=$(rospack find raspicat_slam)/config/maps/iscas_museum_map.yaml
     $ roslaunch raspicat_navigation raspicat_navigation.launch navigation:="neonav" mcl_map_file:=$MAP_FILE navigation_map_file:=$MAP_FILE
     ```
 
