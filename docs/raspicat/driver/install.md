@@ -27,10 +27,15 @@ Raspberry Pi CatのLEDやモータを駆動するためには、
 
 Raspberry Pi Catのデバイスドライバは**Ubuntu**と**Raspberry Pi OS (旧称Raspbian)**に対応しています。
 
-後ほどRaspberry Pi Catで**ROSを扱う場合はUbuntu Serverのインストールを推奨します**。
+後ほどRaspberry Pi Catで**ROS / ROS 2を扱う場合はUbuntu Serverのインストールを推奨します**。
 
 === "Ubuntu Server 18.04"
     [Ubuntu 18.04 LTSのリリースページ](http://cdimage.ubuntu.com/ubuntu/releases/18.04/release/)から**Ubuntu 18.04 server**のイメージファイル（`ubuntu-18.04.5-preinstalled-server-arm64+raspi4.img.xz`）をダウンロードします。
+
+    ダウンロードしたイメージは[rpi-imager](https://www.raspberrypi.com/software/)等でSDカードに書き込みます。
+
+=== "Ubuntu Server 22.04"
+    [Ubuntu 22.04 LTSのリリースページ](http://cdimage.ubuntu.com/ubuntu/releases/22.04/release/)から**Ubuntu 22.04 server**のイメージファイル（`ubuntu-22.04.1-preinstalled-server-arm64+raspi.img.xz`）をダウンロードします。
 
     ダウンロードしたイメージは[rpi-imager](https://www.raspberrypi.com/software/)等でSDカードに書き込みます。
 
