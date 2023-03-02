@@ -16,8 +16,8 @@ robot: Raspberry Pi Cat
 
 * セットアップ済みRaspberry Pi Cat本体
     * [製品マニュアル](https://rt-net.jp/products/raspberry-pi-cat/#downloads)を読んで組み立て済みの状態を前提としています
-    * Raspberry PiにOS（**Ubuntu Server 18.04**）がインストール済みであること
-        * Raspberry Pi OSでのROSの動作は確認していません。
+    * Raspberry PiにOS（**Ubuntu Server 18.04** or **Ubuntu Server 22.04**）がインストール済みであること
+        * Raspberry Pi OSでのROS / ROS 2の動作は確認していません。
     * **デバイスドライバ**がインストール済みであること
         * [デバイスドライバのインストール手順](../driver/install.md)を参照してください
 * USB Type-Bケーブル（Raspberry Pi Catに同梱されています）
