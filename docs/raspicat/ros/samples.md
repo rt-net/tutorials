@@ -271,5 +271,6 @@ robot: Raspberry Pi Cat
     #### PC
     ```sh
     # ジョイスティックコントローラ用のノードの立ち上げ
+    $ ros2 service call /motor_power std_srvs/SetBool '{data: true}'
     $ ros2 launch raspicat_bringup joy.launch.py
     ```
