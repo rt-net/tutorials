@@ -130,6 +130,10 @@ Raspberry Pi Catのデバイスドライバのソースファイルは
 [GitHub](https://github.com/rt-net/RaspberryPiMouse)
 に公開されています。
 
+!!! Warning 
+    **Ubuntu PC**とssh接続された状態において、**Raspberry Pi**内で  
+    `git clone`、`sudo apt install`コマンドを正常に実行するためには、それぞれ正しい時刻に設定しておく必要があります。
+
 === "Ubuntu Server"
     1. パルスカウンタの動作を安定させるためI2Cのボーレートを変更します
         1. `/boot/firmware/config.txt`を編集し、`dtparam=i2c_baudrate=62500`を追記します

@@ -120,6 +120,11 @@ GUIを使用する場合は**Desktop-Full**を、 使用しない場合は**ROS-
 
 ### Raspberry Pi
 
+!!! Warning 
+    **Ubuntu PC**とssh接続された状態において、**Raspberry Pi**内で  
+    `sudo apt install`、`git clone`コマンドを正常に実行するためには、それぞれ正しい時刻に設定しておく必要があります。
+
+
 === "ROS"
 
     このROSインストールスクリプトは`curl`を使用します。以下のコマンドでインストールします。

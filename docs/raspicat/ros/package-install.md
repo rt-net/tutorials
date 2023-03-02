@@ -55,6 +55,10 @@ robot: Raspberry Pi Cat
 
     !!! Tip
         **Raspberry Pi**と**PC**の両方にダウンロードおよびインストールを行います。
+    
+    !!! Warning 
+        **Ubuntu PC**とssh接続された状態において、**Raspberry Pi**内で  
+        `git clone`、`rosdep install`、`catkin_make`コマンドを正常に実行するためには、それぞれ正しい時刻に設定しておく必要があります。
 
     ```sh
     # Create workspace
@@ -86,6 +90,10 @@ robot: Raspberry Pi Cat
 
     !!! Tip
         **Raspberry Pi**と**PC**の両方にダウンロードおよびインストールを行います。
+
+    !!! Warning 
+        **Ubuntu PC**とssh接続された状態において、**Raspberry Pi**内で  
+        `git clone`、`rosdep install`、`colcon build`コマンドを正常に実行するためには、それぞれ正しい時刻に設定しておく必要があります。
 
     ```sh
     # Create workspace
