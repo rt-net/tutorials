@@ -99,7 +99,7 @@ robot: Raspberry Pi Cat
 
     # Install dependencies
     $ rosdep update
-    $ rosdep install -r -y -i --from-paths raspicat_bringup* raspimouse*
+    $ rosdep install -r -y -i --from-paths raspicat* raspimouse*
 
     # make & install
     $ cd ~/catkin_ws && colcon build --symlink-install
