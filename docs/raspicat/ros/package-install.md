@@ -111,6 +111,7 @@ robot: Raspberry Pi Cat
     # Install dependencies
     $ rosdep update
     $ rosdep install -r -y -i --from-paths raspicat* raspimouse*
+    $ sudo apt install xterm
 
     # make & install
     $ cd ~/catkin_ws && colcon build --symlink-install
