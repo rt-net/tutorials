@@ -104,6 +104,9 @@ robot: Raspberry Pi Cat
     # Clone ROS 2 packages
     $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspimouse2.git
     $ git clone -b ros2 https://github.com/rt-net/raspicat_ros.git
+    $ git clone -b ros2 https://github.com/rt-net/raspicat_description.git
+    $ git clone -b ros2 https://github.com/rt-net/raspicat_sim.git
+    $ git clone -b ros2 https://github.com/rt-net/raspicat_slam_navigation.git
 
     # Install dependencies
     $ rosdep update
