@@ -76,6 +76,7 @@ nav:
       - 2. ROS 2パッケージのインストール: cranev2/ros/package-install.md
       - 3. ROS 2サンプルの実行（実機）: cranev2/ros/samples.md
       - 4. ROS 2サンプルの実行（シミュレータ） : cranev2/ros/simulator.md
+      - 5. カメラのキャリブレーション: cranev2/ros/camera-calibration.md
     - 3. 関連リンク集: cranev2/others.md
   - CRANE-X7:
     - 1. 製品について: crane-x7/products.md
