@@ -16,11 +16,11 @@ robot: CRANE+ V2
         * [ROS 2のインストール手順](./install.md)を参照してください
     * ROS 2用のパッケージがインストール済みであることを前提としています
         * [ROS 2パッケージのインストール手順](./package-install.md)を参照してください
-* キャリブレーション用のチェスボード（A4サイズで印刷）
-    * [OpenCVのサンプル](https://github.com/opencv/opencv/blob/master/samples/data/chessboard.png)
+* キャリブレーション用のチェスボード
+    * [OpenCVのサンプル](https://github.com/opencv/opencv/blob/master/samples/data/chessboard.png)をA4サイズで印刷してください
 
 ## 参考ページ
-
+Nav2のチュートリアルページを参考にしました。
 [navigation.ros.org/tutorials/docks/camera_calibration](https://navigation.ros.org/tutorials/docs/camera_calibration.html)
 
 ## キャリブレーション用パッケージのインストール {: #install}
@@ -48,14 +48,14 @@ CRANE+ V2のカメラを起動します。
 ros2 launch crane_plus_examples demo.launch.py port_name:=/dev/ttyUSB0 use_camera:=true video_device:=/dev/video2
 ```
 
-## キャリブレーションを実行 {: #launch-calibration}
+## キャリブレーションの実行 {: #launch-calibration}
 カメラのキャリブレーションを実行します。
-`size`はチェスボードの交点の数を指定し、`square`はチェスボードの1マスの大きさを指定してください。
+`size`はチェスボードの交点の数を指定し、`square`はチェスボードの1マスの大きさ（単位はメートル）を指定してください。
 ```bash
 ros2 run camera_calibration cameracalibrator --size 6x9 --square 0.022 --ros-args -r image:=/image_raw
 ```
 
-キャリブレーションが実行できたら、カメラの画角内でチェスボードを遠ざけたり、近づけたり、傾けたりなど自由に動かします。
+キャリブレーションが実行できたら、カメラの画角内でチェスボードを遠ざけたり、近づけたり、傾けたり、回転させたりなど自由に動かします。
 
 CALIBRATEボタンが緑色になったら押してしばらく待ちます。
 
@@ -68,3 +68,5 @@ cd /tmp
 tar -xvf calibrationdata.tar.gz
 cp ost.yaml ~/ros2_ws/src/crane_plus/crane_plus_examples/config/camera_info.yaml
 ```
+
+以上でCRANE+ V2のカメラのキャリブレーションは完了です。
