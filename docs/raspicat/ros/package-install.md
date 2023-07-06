@@ -18,7 +18,7 @@ robot: Raspberry Pi Cat
         * **デバイスドライバ**がインストール済みであること
             * [デバイスドライバのインストール手順](../driver/install.md)を参照してください
         * ROSがインストール済みであること
-            * [ROSのインストール手順](./install.md)を参照してください
+            * [ROS / ROS 2のインストール手順](./install.md)を参照してください
     * USB Type-Bケーブル（Raspberry Pi Catに同梱されています）
     * ノートパソコン等のPC
         * OS（**Ubuntu Desktop 18.04**）がインストール済みであること
@@ -85,7 +85,11 @@ robot: Raspberry Pi Cat
 === "ROS 2"
 
     制御用のパッケージである
-    [rt-net/raspimouse2](https://github.com/rt-net/raspimouse2){target=_blank rel=noopener}、[rt-net/raspicat_ros](https://github.com/rt-net/raspicat_ros){target=_blank rel=noopener}  
+    [rt-net/raspimouse2](https://github.com/rt-net/raspimouse2){target=_blank rel=noopener}、[rt-net/raspicat_ros](https://github.com/rt-net/raspicat_ros/tree/ros2){target=_blank rel=noopener}  
+    SLAM/ナビゲーション用のパッケージである
+    [rt-net/raspicat_slam_navigation](https://github.com/rt-net/raspicat_slam_navigation/tree/ros2){target=_blank rel=noopener}  
+    RaspberryPiCat用のURDF記述マクロを含んだパッケージである
+    [rt-net/raspicat_description](https://github.com/rt-net/raspicat_description/tree/ros2){target=_blank rel=noopener}  
     をダウンロードしてインストールします。
 
     !!! Tip
