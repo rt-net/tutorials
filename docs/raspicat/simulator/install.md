@@ -5,11 +5,17 @@ robot: Raspberry Pi Cat
 
 # シミュレータのインストール
 
+=== "ROS"
 
-このページでは、
-[raspicat_sim](https://github.com/rt-net/raspicat_sim){target=_blank rel=noopener}
-パッケージを用いたシミュレーションのセットアップ方法と実行方法について説明します。
+    このページでは、
+    [raspicat_sim](https://github.com/rt-net/raspicat_sim){target=_blank rel=noopener}
+    パッケージを用いたシミュレーションのセットアップ方法と実行方法について説明します。
 
+=== "ROS 2"
+
+    このページでは、
+    [raspicat_sim](https://github.com/rt-net/raspicat_sim/tree/ros2){target=_blank rel=noopener}
+    パッケージを用いたシミュレーションのセットアップ方法と実行方法について説明します。
 
 ## 使用機材 {: #requirements}
 
