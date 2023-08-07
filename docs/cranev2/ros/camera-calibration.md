@@ -19,9 +19,8 @@ robot: CRANE+ V2
 * キャリブレーション用のチェスボード
     * [OpenCVのサンプル](https://github.com/opencv/opencv/blob/master/samples/data/chessboard.png)をA4サイズで印刷してください
 
-## 参考ページ
-Nav2のチュートリアルページを参考にしました。
-[navigation.ros.org/tutorials/docks/camera_calibration](https://navigation.ros.org/tutorials/docs/camera_calibration.html)
+## 参考
+- [navigation.ros.org/tutorials/docks/camera_calibration](https://navigation.ros.org/tutorials/docs/camera_calibration.html)
 
 ## キャリブレーション用パッケージのインストール {: #install}
 ノートパソコン等のPCに、キャリブレーションを行うためのROS 2パッケージをインストールします。
