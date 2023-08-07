@@ -54,7 +54,7 @@ ros2 launch crane_plus_examples demo.launch.py port_name:=/dev/ttyUSB0 use_camer
 ros2 run camera_calibration cameracalibrator --size 6x9 --square 0.022 --ros-args -r image:=/image_raw
 ```
 
-キャリブレーションが実行できたら、カメラの画角内でチェスボードを遠ざけたり、近づけたり、傾けたり、回転させたりなど自由に動かします。
+カメラ映像が表示されたら、カメラの画角内でチェスボードを遠ざけたり、近づけたり、傾けたり、回転させたりなど動かします。
 
 CALIBRATEボタンが緑色になったら押してしばらく待ちます。
 
