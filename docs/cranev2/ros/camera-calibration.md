@@ -23,18 +23,10 @@ robot: CRANE+ V2
 ノートパソコン等のPCに、キャリブレーションを行うためのROS 2パッケージをインストールします。
 
 ```bash
-sudo apt install ros-foxy-camera-calibration-parsers
-sudo apt install ros-foxy-camera-info-manager
-sudo apt install ros-foxy-launch-testing-ament-cmake
-```
-
-```bash
-cd ~/ros2_ws/src
-git clone – b foxy git@github.com:ros-perception/image_pipeline.git
-rosdep install -r -y --from-paths . --ignore-src
-cd ~/ros2_ws
-colcon build --symlink-install
-source ~/ros2_ws/install/setup.bash
+sudo apt install ros-humble-camera-calibration-parsers
+sudo apt install ros-humble-camera-info-manager
+sudo apt install ros-humble-launch-testing-ament-cmake
+sudo apt install ros-humble-image-pipeline
 ```
 
 ## CRANE+ V2のカメラを起動 {: #launch-camera}
