@@ -19,9 +19,6 @@ robot: CRANE+ V2
 * キャリブレーション用のチェスボード
     * [OpenCVのサンプル](https://github.com/opencv/opencv/blob/master/samples/data/chessboard.png)をA4サイズで印刷してください
 
-## 参考
-- [navigation.ros.org/tutorials/docks/camera_calibration](https://navigation.ros.org/tutorials/docs/camera_calibration.html)
-
 ## キャリブレーション用パッケージのインストール {: #install}
 ノートパソコン等のPCに、キャリブレーションを行うためのROS 2パッケージをインストールします。
 
@@ -69,3 +66,6 @@ cp ost.yaml ~/ros2_ws/src/crane_plus/crane_plus_examples/config/camera_info.yaml
 ```
 
 以上でCRANE+ V2のカメラのキャリブレーションは完了です。
+
+## 参考
+- [navigation.ros.org/tutorials/docks/camera_calibration](https://navigation.ros.org/tutorials/docs/camera_calibration.html)
