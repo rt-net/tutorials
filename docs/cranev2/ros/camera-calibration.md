@@ -44,7 +44,7 @@ source ~/ros2_ws/install/setup.bash
 CRANE+ V2のカメラを起動します。
 `port_name`はCRANE+ V2を指定し、`video_device`はCRANE+ V2のカメラを指定してください。
 ```bash
-ros2 launch crane_plus_examples demo.launch.py port_name:=/dev/ttyUSB0 use_camera:=true video_device:=/dev/video2
+ros2 launch crane_plus_examples demo.launch.py port_name:=/dev/ttyUSB0 use_camera:=true video_device:=/dev/video0
 ```
 
 ## キャリブレーションの実行 {: #launch-calibration}
