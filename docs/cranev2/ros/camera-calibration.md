@@ -61,7 +61,7 @@ CALIBRATEボタンが緑色になったら押してしばらく待ちます。
 その後、SAVEボタンを押すと、`/tmp`ディレクトリに`calibrationdata.tar.gz`ファイルができます。
 
 ## パラメータファイルの配置 {: #replace-file}
-パラメータファイル`ost.yaml`を取得して、`crane_plus/crane_plus_examples/config/camera_info.yaml`に配置します。
+パラメータファイル`ost.yaml`を`crane_plus/crane_plus_examples/config/camera_info.yaml`に配置します。
 ```bash
 cd /tmp
 tar -xvf calibrationdata.tar.gz
