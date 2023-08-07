@@ -42,7 +42,7 @@ source ~/ros2_ws/install/setup.bash
 
 ## CRANE+ V2のカメラを起動 {: #launch-camera}
 CRANE+ V2のカメラを起動します。
-`port_name`はCRANE+ V2を指定し、`video_device`はCRANE+ V2のカメラを指定してください。
+`port_name`はCRANE+ V2との通信に使用しているUSB通信ポート、`video_device`は使用するカメラのデバイス名を指定してください。
 ```bash
 ros2 launch crane_plus_examples demo.launch.py port_name:=/dev/ttyUSB0 use_camera:=true video_device:=/dev/video0
 ```
