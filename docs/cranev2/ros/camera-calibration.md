@@ -58,7 +58,7 @@ ros2 run camera_calibration cameracalibrator --size 6x9 --square 0.022 --ros-arg
 
 CALIBRATEボタンが緑色になったら押してしばらく待ちます。
 
-その後、SAVEボタンを押すと、`tmp`ディレクトリに`calibrationdata.tar.gz`ファイルができます。
+その後、SAVEボタンを押すと、`/tmp`ディレクトリに`calibrationdata.tar.gz`ファイルができます。
 
 ## パラメータファイルの配置 {: #replace-file}
 パラメータファイル`ost.yaml`を取得して、`crane_plus/crane_plus_examples/config/camera_info.yaml`に配置します。
