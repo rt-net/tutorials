@@ -62,4 +62,4 @@ cp ost.yaml ~/ros2_ws/src/crane_plus/crane_plus_examples/config/camera_info.yaml
 以上でCRANE+ V2のカメラのキャリブレーションは完了です。
 
 ## 参考
-- [navigation.ros.org/tutorials/docks/camera_calibration](https://navigation.ros.org/tutorials/docs/camera_calibration.html)
+- [Camera Calibration — Navigation 2 1.0.0 documentation](https://navigation.ros.org/tutorials/docs/camera_calibration.html)
