@@ -6,6 +6,15 @@ robot: CRANE+ V2
 # カメラのキャリブレーション
 このページではCRANE+ V2のカメラのキャリブレーション方法について説明します。
 
+カメラのキャリブレーションを行うと、カメラ画像の歪みやズレを補正することができます。
+
+キャリブレーションが必要な例として、下図のようにカメラ画像とCRANE+ V2のモデルにズレが発生している場合などがあります。
+
+![](../../img/cranev2/ros/before_calibration.png)
+
+このズレが大きい場合、対象物を正確に検出できず、ピックアンドプレースが失敗する可能性があります。
+キャリブレーションはこのようなカメラ画像のズレを小さくすることができます。
+
 ## 使用機材 {: #requirements}
 
 * 設置済みCRANE+ V2本体（Webカメラ搭載モデル）
@@ -60,6 +69,11 @@ cp ost.yaml ~/ros2_ws/src/crane_plus/crane_plus_examples/config/camera_info.yaml
 ```
 
 以上でCRANE+ V2のカメラのキャリブレーションは完了です。
+
+パラメータファイルを配置した後に再びカメラを起動すると、カメラ画像とCRANE+ V2のモデルのズレが小さくなっていることが確認できます。
+
+![](../../img/cranev2/ros/after_calibration.png)
+
 
 ## 参考
 - [Camera Calibration — Navigation 2 1.0.0 documentation](https://navigation.ros.org/tutorials/docs/camera_calibration.html)
