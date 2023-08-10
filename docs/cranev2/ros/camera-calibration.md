@@ -4,7 +4,7 @@ robot: CRANE+ V2
 ---
 
 # カメラのキャリブレーション
-このページではCRANE+ V2のカメラのキャリブレーション方法について説明します。
+このページではCRANE+ V2の[カメラサンプル](https://github.com/rt-net/crane_plus/tree/master/crane_plus_examples#camera-examples)で使用するカメラのキャリブレーション方法について説明します。
 
 カメラのキャリブレーションを行うと、カメラ画像の歪みやズレを補正することができます。
 
