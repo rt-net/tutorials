@@ -12,8 +12,8 @@ robot: CRANE+ V2
 
 ![](../../img/cranev2/ros/before_calibration.png)
 
-このズレが大きい場合、検出した物体位置もズレてしまうためピックアンドプレースが失敗する可能性があります。
-キャリブレーションはこのようなカメラ画像のズレを小さくすることができます。
+このズレが大きい場合、検出した物体位置もズレてしまうため、ピックアンドプレースが失敗する可能性があります。
+キャリブレーションを行うと、このようなカメラ画像のズレを小さくすることができます。
 
 ## 使用機材 {: #requirements}
 
@@ -52,13 +52,17 @@ ros2 launch crane_plus_examples demo.launch.py port_name:=/dev/ttyUSB0 use_camer
 ros2 run camera_calibration cameracalibrator --size 6x9 --square 0.022 --ros-args -r image:=/image_raw
 ```
 
-![](../../img/cranev2/ros/camera_calibration.png)
+![](../../img/cranev2/ros/camera_calibration_1.png)
 
 カメラ映像が表示されたら、カメラの画角内でチェスボードを遠ざけたり、近づけたり、傾けたり、回転させたりなど動かします。
 
 CALIBRATEボタンが緑色になったら押してしばらく待ちます。
 
-その後、SAVEボタンを押すと、`/tmp`ディレクトリに`calibrationdata.tar.gz`ファイルができます。
+![](../../img/cranev2/ros/camera_calibration_2.png)
+
+その後、SAVEボタンを押すと、`/tmp`ディレクトリに`calibrationdata.tar.gz`ファイルが生成されます。
+
+![](../../img/cranev2/ros/camera_calibration_3.png)
 
 ## パラメータファイルの配置 {: #replace-file}
 パラメータファイル`ost.yaml`を`crane_plus/crane_plus_examples/config/camera_info.yaml`に配置します。
