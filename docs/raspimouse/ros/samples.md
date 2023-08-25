@@ -10,14 +10,18 @@ robot: Raspberry Pi Mouse
 [ROSサンプル集(rt-net/raspimouse_ros_examples)](https://github.com/rt-net/raspimouse_ros_examples){target=_blank rel=noopener} /
 [ROS 2サンプル集(rt-net/raspimouse_ros2_examples)](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
 のサンプル実行方法を説明します。
+
 ## 使用機材 {: #requirements}
 
 * 組み立て済みRaspberry Pi Mouse本体
     * [製品マニュアル](https://rt-net.jp/products/raspberrypimousev3/#downloads)を読んで組み立て済みの状態を前提としています
-    * OS（**Ubuntu Server 20.04**）がインストール済みであることを前提としています
+    * OS（**Ubuntu Server**）がインストール済みであることを前提としています
+        * `ROS 2 Humble`を使用する場合: **Ubuntu Server 22.04**
+        * `ROS Noetic`を使用する場合: **Ubuntu Server 20.04**
         * Raspberry Pi OSでのROSの動作は確認していません
     * **デバイスドライバ**がインストール済みであることを前提としています
-        * [デバイスドライバのインストール手順](../driver/install.md)を参照してください
+        * [デバイスドライバのインストール手順](../driver/install.md)を参照してく
+ださい
     * ROSまたはROS 2がインストール済みであることを前提としています
         * [ROS/ROS 2のインストール手順](./install.md)を参照してください
     * ROSまたはROS 2用のROSパッケージがインストール済みであることを前提としています
@@ -25,10 +29,11 @@ robot: Raspberry Pi Mouse
 * Raspberry Pi Mouse用電源
     * バッテリでも電源変換ケーブルつきACアダプタでも可
 * ノートパソコン等のPC
-    * OS（**Ubuntu Desktop 20.04**）がインストール済みであることを前提としています
+    * OS（**Ubuntu Desktop**）がインストール済みであることを前提としています
+        * `ROS 2 Humble`を使用する場合: **Ubuntu Desktop 22.04**
+        * `ROS Noetic`を使用する場合: **Ubuntu Desktop 20.04**
 
 ## ROSパッケージ情報の読み込み {: #load-workspace}
-
 
 === "ROS"
 
@@ -42,7 +47,17 @@ robot: Raspberry Pi Mouse
     ```
 
 
-=== "ROS 2"
+=== "ROS 2 Humble（推奨）"
+    [ROS 2サンプル集(rt-net/raspimouse_ros2_examples)](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
+    のサンプルを実行する場合は下記コマンドを実行し、
+    ROS 2とパッケージを読み込んでください。
+
+    ```sh
+    $ source /opt/ros/humble/setup.bash
+    $ source ~/ros2_ws/install/setup.bash
+    ```
+
+=== "ROS 2 Foxy（非推奨）"
     [ROS 2サンプル集(rt-net/raspimouse_ros2_examples)](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
     のサンプルを実行する場合は下記コマンドを実行し、
     ROS 2とパッケージを読み込んでください。
