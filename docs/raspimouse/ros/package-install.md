@@ -58,14 +58,18 @@ robot: Raspberry Pi Mouse
     ```
 
 === "ROS 2 Humble（推奨）"
-    Raspberry Piとノートパソコン等のPCそれぞれで、
-    サンプル集パッケージ
-    [rt-net/raspimouse_ros2_examples](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
-    をインストールします。
+    Raspberry Piとノートパソコン等のPCそれぞれで次のコマンドを実行します。
 
     ```sh
-    $ sudo apt install ros-humble-raspimouse-ros2-examples
+    $ sudo apt install ros-humble-raspimouse-slam-navigation
     ```
+
+    これにより、以下のパッケージがインストールされます。
+
+    * [raspimouse2](https://github.com/rt-net/raspimouse2) : 制御パッケージ
+    * [raspimouse_ros2_examples](https://github.com/rt-net/raspimouse_ros2_examples) : サンプル集パッケージ
+    * [raspimouse_slam_navigation_ros2](https://github.com/rt-net/raspimouse_slam_navigation_ros2) : SLAMとナビゲーションのパッケージ 
+    * [raspimouse_description](https://github.com/rt-net/raspimouse_description) : ロボットモデルパッケージ
 
 === "ROS 2 Foxy（非推奨）"
     Raspberry Piとノートパソコン等のPCそれぞれで、
