@@ -20,8 +20,7 @@ robot: Raspberry Pi Mouse
         * `ROS Noetic`を使用する場合: **Ubuntu Server 20.04**
         * Raspberry Pi OSでのROSの動作は確認していません
     * **デバイスドライバ**がインストール済みであることを前提としています
-        * [デバイスドライバのインストール手順](../driver/install.md)を参照してく
-ださい
+        * [デバイスドライバのインストール手順](../driver/install.md)を参照してください
     * ROSまたはROS 2がインストール済みであることを前提としています
         * [ROS/ROS 2のインストール手順](./install.md)を参照してください
     * ROSまたはROS 2用のROSパッケージがインストール済みであることを前提としています
