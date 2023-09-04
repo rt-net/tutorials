@@ -77,7 +77,7 @@ robot: CRANE+ V2
     ros2 launch crane_plus_ignition crane_plus_ignition.launch.py
     ```
 
-    別のターミナルで次のコマンドを実行すると、CRANE+ V2の各関節が1度ずつ変化します。
+    別のターミナルで次のコマンドを実行すると、CRANE+ V2の各関節が一つずつ変化します。
     
     ```sh
     ros2 launch crane_plus_examples example.launch.py example:='joint_values'

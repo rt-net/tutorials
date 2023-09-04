@@ -93,7 +93,7 @@ sudo chmod 666 /dev/ttyUSB0
     ros2 launch crane_plus_examples demo.launch.py port_name:=/dev/ttyUSB0
     ```
     
-    別のターミナルで次のコマンドを実行すると、CRANE+ V2の各関節が1度ずつ変化します。
+    別のターミナルで次のコマンドを実行すると、CRANE+ V2の各関節が一つずつ変化します。
     
     ```sh
     ros2 launch crane_plus_examples example.launch.py example:='joint_values'
