@@ -1512,7 +1512,11 @@
 </ul>
 </li>
 <li>ノートパソコン等のPC<ul>
-<li>OS（<strong>Ubuntu Desktop 20.04</strong>）がインストール済みであることを前提としています</li>
+<li>OS（<strong>Ubuntu Desktop</strong>）がインストール済みであることを前提としています<ul>
+<li><code>ROS 2 Humble</code>を使用する場合（推奨）: <strong>Ubuntu Desktop 22.04</strong></li>
+<li><code>ROS 2 Foxy</code>を使用する場合（非推奨）: <strong>Ubuntu Desktop 20.04</strong></li>
+</ul>
+</li>
 <li>ROS 2がインストール済みであることを前提としています<ul>
 <li><a href="install.html">ROS 2のインストール手順</a>を参照してください</li>
 </ul>
@@ -1521,16 +1525,24 @@
 </li>
 </ul>
 <h2 id="installation-binary">ROS 2パッケージのインストール</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS 2</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS 2 Humble（推奨）</label><label for="__tabbed_1_2">ROS 2 Foxy（非推奨）</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block"></div>
+<div class="tabbed-block">
+<p>ノートパソコン等のPCに、
+ROS 2パッケージ<a href="https://github.com/rt-net/crane_plus" rel="noopener" target="_blank">rt-net/crane_plus</a>
+をインストールします。</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-humble-crane-plus
+</code></pre></div>
 </div>
-</div>
+<div class="tabbed-block">
 <p>ノートパソコン等のPCに、
 ROS 2パッケージ<a href="https://github.com/rt-net/crane_plus" rel="noopener" target="_blank">rt-net/crane_plus</a>
 をインストールします。</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-foxy-crane-plus
 </code></pre></div>
+</div>
+</div>
+</div>
 
 
   

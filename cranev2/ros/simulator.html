@@ -635,9 +635,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    シミュレータの動作確認
+  <a href="#ros-2_1" class="md-nav__link">
+    ROS 2サンプルの実行
   </a>
+  
+    <nav class="md-nav" aria-label="ROS 2サンプルの実行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gripper_control" class="md-nav__link">
+    gripper_control
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pose_groupstate" class="md-nav__link">
+    pose_groupstate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#joint_values" class="md-nav__link">
+    joint_values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pick_and_place" class="md-nav__link">
+    pick_and_place
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1477,9 +1511,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    シミュレータの動作確認
+  <a href="#ros-2_1" class="md-nav__link">
+    ROS 2サンプルの実行
   </a>
+  
+    <nav class="md-nav" aria-label="ROS 2サンプルの実行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gripper_control" class="md-nav__link">
+    gripper_control
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pose_groupstate" class="md-nav__link">
+    pose_groupstate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#joint_values" class="md-nav__link">
+    joint_values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pick_and_place" class="md-nav__link">
+    pick_and_place
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1514,7 +1582,11 @@
 </ul>
 </li>
 <li>ノートパソコン等のPC<ul>
-<li>OS（<strong>Ubuntu Desktop 20.04</strong>）がインストール済みであることを前提としています</li>
+<li>OS（<strong>Ubuntu Desktop</strong>）がインストール済みであることを前提としています<ul>
+<li><code>ROS 2 Humble</code>を使用する場合（推奨）: <strong>Ubuntu Desktop 22.04</strong></li>
+<li><code>ROS 2 Foxy</code>を使用する場合（非推奨）: <strong>Ubuntu Desktop 20.04</strong></li>
+</ul>
+</li>
 <li>ROS 2がインストール済みであることを前提としています<ul>
 <li><a href="install.html">ROS 2のインストール手順</a>を参照してください</li>
 </ul>
@@ -1526,18 +1598,117 @@
 </ul>
 </li>
 </ul>
-<h2 id="_2" simulator="simulator">シミュレータの動作確認</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS 2</label></div>
+<h2 id="ros-2_1">ROS 2サンプルの実行</h2>
+<h3 id="gripper_control">gripper_control</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS 2 Humble（推奨）</label><label for="__tabbed_1_2">ROS 2 Foxy（非推奨）</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block"></div>
+<div class="tabbed-block">
+<p>詳しい実行手順は<a href="https://github.com/rt-net/crane_plus/tree/master/crane_plus_examples#gripper_control" rel="noopener" target="_blank">サンプル集のgripper_control</a>
+を参照してください。</p>
+<p>次のコマンドでmove_group（<code>crane_plus_moveit_config</code>）とIgnition Gazeboを起動します。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_gazebo<span class="w"> </span>crane_plus_with_table.launch.py
+</code></pre></div>
+<p>別のターミナルで次のコマンドを実行すると、CRANE+ V2のグリッパが開閉します。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_examples<span class="w"> </span>example.launch.py<span class="w"> </span>example:<span class="o">=</span><span class="s1">&#39;gripper_control&#39;</span><span class="w"> </span>use_sim_time:<span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
+<p><img src="https://camo.githubusercontent.com/c7015fcb0d76eb715752f09a7a093ecbde6a0499fe96956dea038b6878684fe0/68747470733a2f2f72742d6e65742e6769746875622e696f2f696d616765732f6372616e652d706c75732f6372616e655f706c75735f69676e6974696f6e2e706e67" width="500"></p>
+<p><img src="https://rt-net.github.io/images/crane-plus/gripper_control.gif" width="500"></p>
 </div>
-</div>
+<div class="tabbed-block">
+<p>詳しい実行手順は<a href="https://github.com/rt-net/crane_plus/tree/master/crane_plus_examples#gripper_control" rel="noopener" target="_blank">サンプル集のgripper_control</a>
+を参照してください。</p>
 <p>次のコマンドでmove_group（<code>crane_plus_moveit_config</code>）とIgnition Gazeboを起動します。</p>
 <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_ignition<span class="w"> </span>crane_plus_ignition.launch.py
 </code></pre></div>
-<p>別のターミナルで次のコマンドを実行すると、シミュレータ上のCRANE+ V2のグリッパが開閉します。</p>
-<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_examples<span class="w"> </span>example.launch.py<span class="w"> </span>example:<span class="o">=</span><span class="s1">&#39;gripper_control&#39;</span>
+<p>別のターミナルで次のコマンドを実行すると、CRANE+ V2のグリッパが開閉します。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_examples<span class="w"> </span>example.launch.py<span class="w"> </span>example:<span class="o">=</span><span class="s1">&#39;gripper_control&#39;</span><span class="w"> </span>use_sim_time:<span class="o">=</span><span class="nb">true</span>
 </code></pre></div>
+<p><img src="https://camo.githubusercontent.com/c7015fcb0d76eb715752f09a7a093ecbde6a0499fe96956dea038b6878684fe0/68747470733a2f2f72742d6e65742e6769746875622e696f2f696d616765732f6372616e652d706c75732f6372616e655f706c75735f69676e6974696f6e2e706e67" width="500"></p>
+<p><img src="https://rt-net.github.io/images/crane-plus/gripper_control.gif" width="500"></p>
+</div>
+</div>
+</div>
+<h3 id="pose_groupstate">pose_groupstate</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ROS 2 Humble（推奨）</label><label for="__tabbed_2_2">ROS 2 Foxy（非推奨）</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>詳しい実行手順は<a href="https://github.com/rt-net/crane_plus/blob/master/crane_plus_examples/README.md#pose_groupstate" rel="noopener" target="_blank">サンプル集のpose_groupstate</a>
+を参照してください。</p>
+<p>次のコマンドでmove_group（<code>crane_plus_moveit_config</code>）とIgnition Gazeboを起動します。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_gazebo<span class="w"> </span>crane_plus_with_table.launch.py
+</code></pre></div>
+<p>別のターミナルで次のコマンドを実行すると、CRANE+ V2が<code>home</code>と<code>vertical</code>の姿勢へ移行します。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_examples<span class="w"> </span>example.launch.py<span class="w"> </span>example:<span class="o">=</span><span class="s1">&#39;pose_groupstate&#39;</span><span class="w"> </span>use_sim_time:<span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
+<p><img src="https://rt-net.github.io/images/crane-plus/pose_groupstate.gif" width="500"></p>
+</div>
+<div class="tabbed-block">
+<p>詳しい実行手順は<a href="https://github.com/rt-net/crane_plus/blob/master/crane_plus_examples/README.md#pose_groupstate" rel="noopener" target="_blank">サンプル集のpose_groupstate</a>
+を参照してください。</p>
+<p>次のコマンドでmove_group（<code>crane_plus_moveit_config</code>）とIgnition Gazeboを起動します。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_ignition<span class="w"> </span>crane_plus_ignition.launch.py
+</code></pre></div>
+<p>別のターミナルで次のコマンドを実行すると、CRANE+ V2が<code>home</code>と<code>vertical</code>の姿勢へ移行します。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_examples<span class="w"> </span>example.launch.py<span class="w"> </span>example:<span class="o">=</span><span class="s1">&#39;pose_groupstate&#39;</span><span class="w"> </span>use_sim_time:<span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
+<p><img src="https://rt-net.github.io/images/crane-plus/pose_groupstate.gif" width="500"></p>
+</div>
+</div>
+</div>
+<h3 id="joint_values">joint_values</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">ROS 2 Humble（推奨）</label><label for="__tabbed_3_2">ROS 2 Foxy（非推奨）</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>詳しい実行手順は<a href="https://github.com/rt-net/crane_plus/blob/master/crane_plus_examples/README.md#joint_values" rel="noopener" target="_blank">サンプル集のjoint_values</a>
+を参照してください。</p>
+<p>次のコマンドでmove_group（<code>crane_plus_moveit_config</code>）とIgnition Gazeboを起動します。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_gazebo<span class="w"> </span>crane_plus_with_table.launch.py
+</code></pre></div>
+<p>別のターミナルで次のコマンドを実行すると、CRANE+ V2の各関節が一つずつ変化します。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_examples<span class="w"> </span>example.launch.py<span class="w"> </span>example:<span class="o">=</span><span class="s1">&#39;joint_values&#39;</span><span class="w"> </span>use_sim_time:<span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
+<p><img src="https://rt-net.github.io/images/crane-plus/joint_values.gif" width="500"></p>
+</div>
+<div class="tabbed-block">
+<p>詳しい実行手順は<a href="https://github.com/rt-net/crane_plus/blob/master/crane_plus_examples/README.md#joint_values" rel="noopener" target="_blank">サンプル集のjoint_values</a>
+を参照してください。</p>
+<p>次のコマンドでmove_group（<code>crane_plus_moveit_config</code>）とIgnition Gazeboを起動します。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_ignition<span class="w"> </span>crane_plus_ignition.launch.py
+</code></pre></div>
+<p>別のターミナルで次のコマンドを実行すると、CRANE+ V2の各関節が一つずつ変化します。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_examples<span class="w"> </span>example.launch.py<span class="w"> </span>example:<span class="o">=</span><span class="s1">&#39;joint_values&#39;</span><span class="w"> </span>use_sim_time:<span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
+<p><img src="https://rt-net.github.io/images/crane-plus/joint_values.gif" width="500"></p>
+</div>
+</div>
+</div>
+<h3 id="pick_and_place">pick_and_place</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">ROS 2 Humble（推奨）</label><label for="__tabbed_4_2">ROS 2 Foxy（非推奨）</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>詳しい実行手順は<a href="https://github.com/rt-net/crane_plus/blob/master/crane_plus_examples/README.md#pick_and_place" rel="noopener" target="_blank">サンプル集のpick_and_place</a>
+を参照してください。</p>
+<p>次のコマンドでmove_group（<code>crane_plus_moveit_config</code>）とcontroller（<code>crane_plus_control</code>）を起動します。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_gazebo<span class="w"> </span>crane_plus_with_table.launch.py
+</code></pre></div>
+<p>別のターミナルで次のコマンドを実行すると、CRANE+ V2がピックアンドプレース動作を行います。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_examples<span class="w"> </span>example.launch.py<span class="w"> </span>example:<span class="o">=</span><span class="s1">&#39;pick_and_place&#39;</span><span class="w"> </span>use_sim_time:<span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
+<p><img src="https://rt-net.github.io/images/crane-plus/pick_and_place.gif" width="500"></p>
+</div>
+<div class="tabbed-block">
+<p>詳しい実行手順は<a href="https://github.com/rt-net/crane_plus/blob/master/crane_plus_examples/README.md#pick_and_place" rel="noopener" target="_blank">サンプル集のpick_and_place</a>
+を参照してください。</p>
+<p>次のコマンドでmove_group（<code>crane_plus_moveit_config</code>）とcontroller（<code>crane_plus_control</code>）を起動します。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_ignition<span class="w"> </span>crane_plus_ignition.launch.py
+</code></pre></div>
+<p>別のターミナルで次のコマンドを実行すると、CRANE+ V2がピックアンドプレース動作を行います。</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>crane_plus_examples<span class="w"> </span>example.launch.py<span class="w"> </span>example:<span class="o">=</span><span class="s1">&#39;pick_and_place&#39;</span><span class="w"> </span>use_sim_time:<span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
+<p><img src="https://rt-net.github.io/images/crane-plus/pick_and_place.gif" width="500"></p>
+</div>
+</div>
+</div>
 
 
   

@@ -1526,28 +1526,61 @@
 </ul>
 </li>
 <li>ノートパソコン等のPC<ul>
-<li>OS（<strong>Ubuntu Desktop 20.04</strong>）がインストール済みであることを前提としています</li>
+<li>OS（<strong>Ubuntu Desktop</strong>）がインストール済みであることを前提としています<ul>
+<li><code>ROS 2 Humble</code>を使用する場合（推奨）: <strong>Ubuntu Desktop 22.04</strong></li>
+<li><code>ROS 2 Foxy</code>を使用する場合（非推奨）: <strong>Ubuntu Desktop 20.04</strong></li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><code>ROS 2 Foxy</code>は2023年6月にEOL（サポート終了）を迎えたため、<code>ROS 2 Humble</code>の使用を推奨しています。</p>
+</div>
 <h2 id="official-document">ROS 2のインストール（公式のドキュメントに沿って進める場合）</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS 2</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS 2 Humble（推奨）</label><label for="__tabbed_1_2">ROS 2 Foxy（非推奨）</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block"></div>
+<div class="tabbed-block">
+<p><a href="https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html" rel="noopener" target="_blank">https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html</a>
+を参考に、<code>ROS 2 Humble</code>をインストールします。</p>
+<p>GUIを使用する場合は<code>Desktop</code>を、 使用しない場合は<code>ROS-Base</code>パッケージをインストールします。</p>
+<p><a href="https://docs.ros.org/en/humble/Tutorials/Colcon-Tutorial.html" rel="noopener" target="_blank">https://docs.ros.org/en/humble/Tutorials/Colcon-Tutorial.html</a>
+を参考に、パッケージビルドツールの<code>colcon</code>をインストールします。</p>
 </div>
-</div>
+<div class="tabbed-block">
 <p><a href="https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html" rel="noopener" target="_blank">https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html</a>
 を参考に、<code>ROS 2 Foxy</code>をインストールします。</p>
 <p>GUIを使用する場合は<code>Desktop</code>を、 使用しない場合は<code>ROS-Base</code>パッケージをインストールします。</p>
 <p><a href="https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html" rel="noopener" target="_blank">https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html</a>
 を参考に、パッケージビルドツールの<code>colcon</code>をインストールします。</p>
+</div>
+</div>
+</div>
 <h2 id="install-script">ROS 2のインストール（インストールスクリプトを使う場合）</h2>
 <p>非公式のインストールスクリプトを使うことで簡単にROS 2をインストールできます。</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ROS 2</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ROS 2 Humble（推奨）</label><label for="__tabbed_2_2">ROS 2 Foxy（非推奨）</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block"></div>
+<div class="tabbed-block">
+<p>このROS 2インストールスクリプトは<code>curl</code>と<code>git</code>を使用します。以下のコマンドで
+インストールします。</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>curl<span class="w"> </span>git
+</code></pre></div>
+<p>以下のコマンドでROS 2インストールスクリプトを実行します。
+環境にもよりますが完了までは10分以上かかる場合があります。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Tiryoh/ros2_setup_scripts_ubuntu.git
+<span class="nb">cd</span><span class="w"> </span>ros2_setup_scripts_ubuntu
+./ros2-humble-desktop-main.sh
+</code></pre></div>
+<p>スクリプトが問題なく実行できれば以下のメッセージが表示されます。</p>
+<div class="highlight"><pre><span></span><code>Success installing ROS humble
+Run &#39;source ~/.bashrc&#39;
+</code></pre></div>
+<p>以下のコマンドでインストールした設定を読み込みます。</p>
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/.bashrc
+</code></pre></div>
 </div>
-</div>
+<div class="tabbed-block">
 <p>このROS 2インストールスクリプトは<code>curl</code>と<code>git</code>を使用します。以下のコマンドで
 インストールします。</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>curl<span class="w"> </span>git
@@ -1565,6 +1598,9 @@ Run &#39;source ~/.bashrc&#39;
 <p>以下のコマンドでインストールした設定を読み込みます。</p>
 <div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/.bashrc
 </code></pre></div>
+</div>
+</div>
+</div>
 
 
   
