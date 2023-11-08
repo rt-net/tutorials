@@ -7,7 +7,7 @@ robot: Raspberry Pi Mouse
 
 Raspberry Pi Mouse SimulatorはメインボードにRaspberry Piを使った左右独立二輪方式の小型移動プラットフォームロボット、Raspberry Pi Mouseのシミュレータです。
 
-Gazebo上で動きます。ROSとGazeboがインストールされた環境で使用することができます。
+Gazebo上で動きます。ROS/ROS 2とGazeboがインストールされた環境で使用することができます。
 
 このページでは、
 [rt-net/raspimouse_sim](https://github.com/rt-net/raspimouse_sim){target=_blank rel=noopener}
@@ -19,6 +19,7 @@ Gazebo上で動きます。ROSとGazeboがインストールされた環境で�
     * OS（**Ubuntu Desktop**）がインストール済みであることを前提としています
         * `ROS 2 Humble`を使用する場合: **Ubuntu Desktop 22.04**
         * `ROS Noetic`を使用する場合: **Ubuntu Desktop 20.04**
+    * ROSまたはROS 2がインストール済みであることを前提としています
         * インストール方法については[ROS/ROS 2のインストール](../ros/install.md)を参照してください。
 
 ## パッケージのダウンロードとインストール {: #install}
