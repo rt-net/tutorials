@@ -53,7 +53,6 @@ Raspberry Pi Mouse Simulator（rt-net/raspimouse_sim）はメインボードにR
     $ git clone -b humble-devel https://github.com/rt-net/raspimouse_sim.git
 
     # 依存パッケージをインストール
-    $ git clone -b humble-devel https://github.com/rt-net/raspimouse_description.git
     $ git clone -b humble-devel https://github.com/rt-net/raspimouse_ros2_examples.git
     $ rosdep install -r -y -i --from-paths raspimouse*
 
