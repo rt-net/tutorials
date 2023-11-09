@@ -5,7 +5,7 @@ robot: Raspberry Pi Mouse
 
 # シミュレータのインストール
 
-Raspberry Pi Mouse SimulatorはメインボードにRaspberry Piを使った左右独立二輪方式の小型移動プラットフォームロボット、Raspberry Pi Mouseのシミュレータです。
+Raspberry Pi Mouse Simulator（rt-net/raspimouse_sim）はメインボードにRaspberry Piを使った左右独立二輪方式の小型移動プラットフォームロボット、Raspberry Pi Mouseのシミュレータです。
 
 
 このページでは、
