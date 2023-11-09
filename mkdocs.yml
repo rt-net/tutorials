@@ -4,7 +4,9 @@ theme:
   custom_dir: overrides
   logo: img/rt-logo-32x32.png
   favicon: https://rt-net.github.io/tutorials/img/rt-logo-32x32.png
-  font: Incosolata
+  font:
+    text: Roboto
+    code: Roboto Mono
   features:
     - navigation.expand
     - navigation.tabs
@@ -62,8 +64,8 @@ markdown_extensions:
   - pymdownx.highlight  # コードブロック用
   - pymdownx.superfences  # コードブロック用
   - pymdownx.emoji:  # アイコンが使える
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
   - footnotes  # 注釈用
 nav:
   - Home: 
