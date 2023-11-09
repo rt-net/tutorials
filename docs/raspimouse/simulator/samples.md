@@ -26,8 +26,8 @@ robot: Raspberry Pi Mouse
     ROS 2とパッケージを読み込んでください。
 
     ```sh
-    $ source /opt/ros/humble/setup.bash
-    $ source ~/ros2_ws/install/setup.bash
+    source /opt/ros/humble/setup.bash
+    source ~/ros2_ws/install/setup.bash
     ```
 
 ## ジョイスティックで操縦 {: #joystick}
@@ -35,12 +35,16 @@ robot: Raspberry Pi Mouse
 === "ROS 2"
     次のコマンドを実行します。
 
-    ```sh
-    # シミュレータの起動
-    $ ros2 launch raspimouse_gazebo raspimouse_with_emptyworld.launch.py
+    シミュレータの起動
 
-    # 別のターミナルでコマンドを実行
-    $ ros2 launch raspimouse_ros2_examples teleop_joy.launch.py joydev:="/dev/input/js0" joyconfig:=f710 mouse:=false
+    ```sh
+    ros2 launch raspimouse_gazebo raspimouse_with_emptyworld.launch.py
+    ```
+
+    別のターミナルでコマンドを実行
+
+    ```sh
+    ros2 launch raspimouse_ros2_examples teleop_joy.launch.py joydev:="/dev/input/js0" joyconfig:=f710 mouse:=false
     ```
 
     ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_joystick.gif)
@@ -50,12 +54,16 @@ robot: Raspberry Pi Mouse
 === "ROS 2"
     次のコマンドを実行します。
 
-    ```sh
-    # シミュレータの起動
-    $ ros2 launch raspimouse_gazebo raspimouse_with_color_objects.launch.py use_rgb_camera:=true
+    シミュレータの起動
 
-    # 別のターミナルでコマンドを実行
-    $ ros2 launch raspimouse_ros2_examples object_tracking.launch.py mouse:=false use_camera_node:=false
+    ```sh
+    ros2 launch raspimouse_gazebo raspimouse_with_color_objects.launch.py use_rgb_camera:=true
+    ```
+
+    別のターミナルでコマンドを実行
+
+    ```sh
+    ros2 launch raspimouse_ros2_examples object_tracking.launch.py mouse:=false use_camera_node:=false
     ```
 
     ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_object_tracking.gif)
