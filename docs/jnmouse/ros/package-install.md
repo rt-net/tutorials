@@ -39,6 +39,7 @@ Jetson Nano Mouseへのインストールは必須です。ノートパソコン
     $ git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspimouse_slam_navigation_ros 
 
     # Install dependencies
+    $ rosdep update --include-eol-distros
     $ rosdep install -r -y --from-paths . --ignore-src      
 
     # make & install
