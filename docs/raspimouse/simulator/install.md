@@ -1,4 +1,4 @@
---
+---
 title: シミュレータのインストール
 robot: Raspberry Pi Mouse
 ---
