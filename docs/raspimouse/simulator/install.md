@@ -1,4 +1,4 @@
----
+--
 title: シミュレータのインストール
 robot: Raspberry Pi Mouse
 ---
@@ -68,6 +68,7 @@ Raspberry Pi Mouse Simulator（[rt-net/raspimouse_sim](https://github.com/rt-net
 
     ```sh
     git clone -b humble-devel https://github.com/rt-net/raspimouse_ros2_examples.git
+    git clone -b humble-devel https://github.com/rt-net/raspimouse_slam_navigation_ros2.git
     rosdep install -r -y -i --from-paths raspimouse*
     ```
 
