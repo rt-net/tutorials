@@ -1963,7 +1963,11 @@ git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </spa
 </code></pre></div>
 <p>依存パッケージをインストール</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>humble-devel<span class="w"> </span>https://github.com/rt-net/raspimouse_ros2_examples.git
+git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>humble-devel<span class="w"> </span>https://github.com/rt-net/raspimouse_slam_navigation_ros2.git
 rosdep<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>-y<span class="w"> </span>-i<span class="w"> </span>--from-paths<span class="w"> </span>raspimouse*
+</code></pre></div>
+<p>キーボードで操作するためのパッケージをインストール</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>dashing<span class="w"> </span>https://github.com/ros2/teleop_twist_keyboard.git
 </code></pre></div>
 <p>パッケージをビルド</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
