@@ -72,6 +72,12 @@ Raspberry Pi Mouse Simulator（[rt-net/raspimouse_sim](https://github.com/rt-net
     rosdep install -r -y -i --from-paths raspimouse*
     ```
 
+    キーボードで操作するためのパッケージをインストール
+
+    ```sh
+    git clone -b dashing https://github.com/ros2/teleop_twist_keyboard.git
+    ```
+
     パッケージをビルド
 
     ```sh

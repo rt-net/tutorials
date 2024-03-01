@@ -114,10 +114,10 @@ robot: Raspberry Pi Mouse
 
     `lidar`は`urg`、`lds`、`rplidar`のいずれかを指定してください。
 
-    ジョイスティックコントローラで操作
+    キーボードで操作
 
     ```sh
-    ros2 launch raspimouse_ros2_examples teleop_joy.launch.py joydev:="/dev/input/js0" joyconfig:=f710 mouse:=false
+    ros2 run teleop_twist_keyboard teleop_twist_keyboard
     ```
 
     SLAMを実行
