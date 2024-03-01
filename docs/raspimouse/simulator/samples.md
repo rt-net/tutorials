@@ -159,7 +159,7 @@ robot: Raspberry Pi Mouse
     ros2 launch raspimouse_navigation pc_navigation.launch.py map:=$HOME/MAP_NAME.yaml
     ```
 
-    `map:=/path/to/MAP_NAME.yaml`はSLAMで作成した地図ファイルのパスを指定してください。
+    引数`map`にはSLAMで作成した地図ファイルのパスを指定してください。
 
     ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_navigation_short.gif)
 
