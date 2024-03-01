@@ -67,3 +67,99 @@ robot: Raspberry Pi Mouse
     ```
 
     ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_object_tracking.gif)
+
+## RGBカメラによるライントレース {: #camera_line_follower}
+
+=== "ROS 2"
+    次のコマンドを実行します。
+
+    シミュレータの起動
+
+    ```sh
+    ros2 launch raspimouse_gazebo raspimouse_with_line_follower_field.launch.py use_rgb_camera:=true camera_downward:=true
+    ```
+
+    カメラライントレースを実行
+
+    ```sh
+    ros2 launch raspimouse_ros2_examples camera_line_follower.launch.py mouse:=false use_camera_node:=false
+    ```
+
+    走行開始
+
+    ```sh
+    ros2 topic pub --once /switches raspimouse_msgs/msg/Switches "{switch0: false, switch1: false, switch2: true}"
+    ```
+
+    走行停止
+
+    ```sh
+    ros2 topic pub --once /switches raspimouse_msgs/msg/Switches "{switch0: true, switch1: false, switch2: false}"
+    ```
+
+    カメラライントレースにおけるパラメータは[こちら](https://github.com/rt-net/raspimouse_ros2_examples?tab=readme-ov-file#parameters)を参照してください。
+
+    ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_camerafollower_short.gif)
+
+## SLAM {: #slam}
+
+=== "ROS 2"
+    次のコマンドを実行します。
+
+    シミュレータの起動
+
+    ```sh
+    ros2 launch raspimouse_gazebo raspimouse_with_lakehouse.launch.py lidar:=urg
+    ```
+
+    `lidar`は`urg`、`lds`、`rplidar`のいずれかを指定してください。
+
+    キーボードで操作
+
+    ```sh
+    ros2 run teleop_twist_keyboard teleop_twist_keyboard
+    ```
+
+    SLAMを実行
+
+    ```sh
+    ros2 launch raspimouse_slam pc_slam.launch.py
+    ```
+
+    Raspberry Pi Mouseを走らせて地図を作成
+
+    ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_slam.png)
+
+    作成した地図を保存
+
+    ```sh
+    ros2 run nav2_map_server map_saver_cli -f ~/MAP_NAME
+    ```
+
+    `MAP_NAME`は任意の名前を指定できます。
+
+    ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_slam_short.gif)
+
+## Navigation {: #navigation}
+
+=== "ROS 2"
+    次のコマンドを実行します。
+
+    シミュレータの起動
+
+    ```sh
+    ros2 launch raspimouse_gazebo raspimouse_with_lakehouse.launch.py lidar:=urg
+    ```
+
+    `lidar`は`urg`、`lds`、`rplidar`のいずれかを指定してください。
+
+    Navigationを実行
+
+    ```sh
+    ros2 launch raspimouse_navigation pc_navigation.launch.py map:=$HOME/MAP_NAME.yaml
+    ```
+
+    引数`map`にはSLAMで作成した地図ファイルのパスを指定してください。
+
+    ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_navigation_short.gif)
+

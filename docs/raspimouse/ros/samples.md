@@ -160,6 +160,15 @@ robot: Raspberry Pi Mouse
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oPm0sW2V_tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## カメラによるライントレース {: #camera-line-follower}
+
+=== "ROS 2"
+    実行手順は[ROS 2サンプル集のcamera_line_follower](https://github.com/rt-net/raspimouse_ros2_examples#camera_line_follower){target=_blank rel=noopener}
+    を参照してください。
+    PCから操縦する場合はネットワークと環境変数を設定してください。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rxa1UBMUgq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## LiDARでSLAM {: #slam}
 
 === "ROS"
