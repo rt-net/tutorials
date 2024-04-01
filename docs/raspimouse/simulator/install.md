@@ -57,33 +57,22 @@ Raspberry Pi Mouse Simulator（[rt-net/raspimouse_sim](https://github.com/rt-net
 === "ROS 2"
     次のコマンドを実行します。
 
-    シミュレータパッケージのダウンロード
+    シミュレータパッケージのインストール
 
     ```sh
-    cd ~/ros2_ws/src
-    git clone -b humble-devel https://github.com/rt-net/raspimouse_sim.git
+    sudo apt install ros-humble-raspimouse-sim
     ```
 
-    依存パッケージをインストール
+    サンプルパッケージのインストール
 
     ```sh
-    git clone -b humble-devel https://github.com/rt-net/raspimouse_ros2_examples.git
-    git clone -b humble-devel https://github.com/rt-net/raspimouse_slam_navigation_ros2.git
-    rosdep install -r -y -i --from-paths raspimouse*
+    sudo apt install ros-humble-raspimouse-slam-navigation
     ```
 
     キーボードで操作するためのパッケージをインストール
 
     ```sh
-    git clone -b dashing https://github.com/ros2/teleop_twist_keyboard.git
-    ```
-
-    パッケージをビルド
-
-    ```sh
-    cd ~/ros2_ws
-    colcon build --symlink-install
-    source ~/ros2_ws/install/setup.bash
+    sudo apt install ros-humble-teleop-twist-keyboard
     ```
 
 ## 動作確認（キーボードで操縦） {: #teleop}
