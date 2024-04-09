@@ -1957,22 +1957,14 @@ rosdep<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> 
 </div>
 <div class="tabbed-block">
 <p>次のコマンドを実行します。</p>
-<p>シミュレータパッケージのダウンロード</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
-git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>humble-devel<span class="w"> </span>https://github.com/rt-net/raspimouse_sim.git
+<p>シミュレータパッケージのインストール</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-humble-raspimouse-sim
 </code></pre></div>
-<p>依存パッケージをインストール</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>humble-devel<span class="w"> </span>https://github.com/rt-net/raspimouse_ros2_examples.git
-git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>humble-devel<span class="w"> </span>https://github.com/rt-net/raspimouse_slam_navigation_ros2.git
-rosdep<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>-y<span class="w"> </span>-i<span class="w"> </span>--from-paths<span class="w"> </span>raspimouse*
+<p>サンプルパッケージのインストール</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-humble-raspimouse-slam-navigation
 </code></pre></div>
 <p>キーボードで操作するためのパッケージをインストール</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>dashing<span class="w"> </span>https://github.com/ros2/teleop_twist_keyboard.git
-</code></pre></div>
-<p>パッケージをビルド</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
-colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install
-<span class="nb">source</span><span class="w"> </span>~/ros2_ws/install/setup.bash
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-humble-teleop-twist-keyboard
 </code></pre></div>
 </div>
 </div>
