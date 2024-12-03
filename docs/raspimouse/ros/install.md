@@ -19,6 +19,7 @@ robot: Raspberry Pi Mouse
 * 組み立て済みRaspberry Pi Mouse本体
     * [製品マニュアル](https://rt-net.jp/products/raspberrypimousev3/#downloads)を読んで組み立て済みの状態を前提としています
     * OS（**Ubuntu Server**）がインストール済みであることを前提としています
+        * `ROS 2 Jazzy`を使用する場合: **Ubuntu Server 24.04**
         * `ROS 2 Humble`を使用する場合: **Ubuntu Server 22.04**
         * `ROS Noetic`を使用する場合: **Ubuntu Server 20.04**
         * Raspberry Pi OSでのROSの動作は確認していません
@@ -26,11 +27,12 @@ robot: Raspberry Pi Mouse
     * バッテリでも電源変換ケーブルつきACアダプタでも可
 * ノートパソコン等のPC
     * OS（**Ubuntu Desktop**）がインストール済みであることを前提としています
+        * `ROS 2 Jazzy`を使用する場合: **Ubuntu Desktop 24.04**
         * `ROS 2 Humble`を使用する場合: **Ubuntu Desktop 22.04**
         * `ROS Noetic`を使用する場合: **Ubuntu Desktop 20.04**
 
 !!! info
-    `ROS 2 Foxy`は2023年6月にEOL（サポート終了）を迎えたため、`ROS 2 Humble`の使用を推奨しています。
+    `ROS 2 Foxy`は2023年6月にEOL（サポート終了）を迎えたため、`ROS 2 Jazzy`、`ROS 2 Humble`の使用を推奨しています。
 
 ## ROS / ROS 2のインストール（公式のドキュメントに沿って進める場合） {: #official-document}
 
@@ -40,6 +42,15 @@ robot: Raspberry Pi Mouse
 
     GUIを使用する場合は`Desktop-Full`を、 使用しない場合は`ROS-Base`パッケージをインストールします。
 
+=== "ROS 2 Jazzy（推奨）"
+    [https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html){target=_blank rel=noopener}
+    を参考に、`ROS 2 Jazzy`をインストールします。
+
+    GUIを使用する場合は`Desktop`を、 使用しない場合は`ROS-Base`パッケージをインストールします。
+
+    [https://docs.ros.org/en/humble/Tutorials/Colcon-Tutorial.html](https://docs.ros.org/en/humble/Tutorials/Colcon-Tutorial.html){target=_blank rel=noopener}
+    を参考に、パッケージビルドツールの`colcon`をインストールします。
+    
 === "ROS 2 Humble（推奨）"
     [https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html){target=_blank rel=noopener}
     を参考に、`ROS 2 Humble`をインストールします。
