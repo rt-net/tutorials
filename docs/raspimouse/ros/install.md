@@ -31,9 +31,6 @@ robot: Raspberry Pi Mouse
         * `ROS 2 Humble`を使用する場合: **Ubuntu Desktop 22.04**
         * `ROS Noetic`を使用する場合: **Ubuntu Desktop 20.04**
 
-!!! info
-    `ROS 2 Foxy`は2023年6月にEOL（サポート終了）を迎えたため、`ROS 2 Jazzy`、`ROS 2 Humble`の使用を推奨しています。
-
 ## ROS / ROS 2のインストール（公式のドキュメントに沿って進める場合） {: #official-document}
 
 === "ROS"
