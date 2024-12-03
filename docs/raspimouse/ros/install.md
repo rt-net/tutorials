@@ -60,15 +60,6 @@ robot: Raspberry Pi Mouse
     [https://docs.ros.org/en/humble/Tutorials/Colcon-Tutorial.html](https://docs.ros.org/en/humble/Tutorials/Colcon-Tutorial.html){target=_blank rel=noopener}
     を参考に、パッケージビルドツールの`colcon`をインストールします。
 
-=== "ROS 2 Foxy（非推奨）"
-    [https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html){target=_blank rel=noopener}
-    を参考に、`ROS 2 Foxy`をインストールします。
-
-    GUIを使用する場合は`Desktop`を、 使用しない場合は`ROS-Base`パッケージをインストールします。
-
-    [https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html](https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html){target=_blank rel=noopener}
-    を参考に、パッケージビルドツールの`colcon`をインストールします。
-
 ## ROS / ROS 2のインストール（インストールスクリプトを使う場合） {: #install-script}
 
 ### ノートパソコン等のPC
@@ -135,35 +126,6 @@ robot: Raspberry Pi Mouse
     $ source ~/.bashrc
     ```
 
-=== "ROS 2 Foxy（非推奨）"
-    このROS 2インストールスクリプトは`curl`と`git`を使用します。以下のコマンドでインストールします。
-    
-    ```sh
-    $ sudo apt install -y curl git
-    ```
-    
-    以下のコマンドでROS 2インストールスクリプトを実行します。  
-    環境にもよりますが完了までは10分以上かかる場合があります。
-    
-    ```sh
-    $ git clone https://github.com/Tiryoh/ros2_setup_scripts_ubuntu.git
-    $ cd ros2_setup_scripts_ubuntu
-    $ ./ros2-foxy-desktop-main.sh
-    ```
-    
-    スクリプトが問題なく実行できれば以下のメッセージが表示されます。
-    
-    ```txt
-    Success installing ROS foxy
-    Run 'source ~/.bashrc'
-    ```
-    
-    以下のコマンドでインストールした設定を読み込みます。
-    
-    ```sh
-    $ source ~/.bashrc
-    ```
-
 ### Raspberry Pi
 
 非公式のインストールスクリプトを使うことで簡単にROS / ROS 2をインストールできます。
@@ -220,35 +182,6 @@ robot: Raspberry Pi Mouse
     
     ```txt
     Success installing ROS humble
-    Run 'source ~/.bashrc'
-    ```
-    
-    以下のコマンドでインストールした設定を読み込みます。
-    
-    ```sh
-    $ source ~/.bashrc
-    ```
-
-=== "ROS 2 Foxy（非推奨）"
-    このROS 2インストールスクリプトは`curl`と`git`を使用します。以下のコマンドでインストールします。
-    
-    ```sh
-    $ sudo apt install -y curl git
-    ```
-    
-    以下のコマンドでROS 2インストールスクリプトを実行します。  
-    環境にもよりますが完了までは10分以上かかる場合があります。
-    
-    ```sh
-    $ git clone https://github.com/Tiryoh/ros2_setup_scripts_ubuntu.git
-    $ cd ros2_setup_scripts_ubuntu
-    $ ./ros2-foxy-ros-base-main.sh
-    ```
-    
-    スクリプトが問題なく実行できれば以下のメッセージが表示されます。
-    
-    ```txt
-    Success installing ROS foxy
     Run 'source ~/.bashrc'
     ```
     
