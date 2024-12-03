@@ -70,29 +70,3 @@ robot: Raspberry Pi Mouse
     * [raspimouse_ros2_examples](https://github.com/rt-net/raspimouse_ros2_examples) : サンプル集パッケージ
     * [raspimouse_slam_navigation_ros2](https://github.com/rt-net/raspimouse_slam_navigation_ros2) : SLAMとナビゲーションのパッケージ 
     * [raspimouse_description](https://github.com/rt-net/raspimouse_description) : ロボットモデルパッケージ
-
-=== "ROS 2 Foxy（非推奨）"
-    Raspberry Piとノートパソコン等のPCそれぞれで、
-    サンプル集パッケージ
-    [rt-net/raspimouse_ros2_examples](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
-    をダウンロードしてインストールします。
-
-    ```sh
-    $ source /opt/ros/foxy/setup.bash
-    $ mkdir -p ~/ros2_ws/src
-    $ cd ~/ros2_ws/src
-    # Clone packages
-    $ git clone https://github.com/rt-net/raspimouse_ros2_examples
-
-    # Install dependencies
-    $ rosdep install -r -y --from-paths . --ignore-src
-
-    # make & install
-    $ cd ~/ros2_ws
-    $ colcon build --symlink-install
-    $ source ~/ros2_ws/install/setup.bash
-    ```
-
-!!! info
-    ROS/ROS 2を同時にインストールした環境で実行する場合、`/opt/ros/*/setup.bash`を実行したいROSのバージョンにあわせて都度読み込む必要があります。  
-    `catkin_make`や`colcon build`でエラーが出た場合はご確認ください。
