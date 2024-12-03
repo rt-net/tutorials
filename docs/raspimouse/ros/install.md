@@ -39,7 +39,7 @@ robot: Raspberry Pi Mouse
 
     GUIを使用する場合は`Desktop-Full`を、 使用しない場合は`ROS-Base`パッケージをインストールします。
 
-=== "ROS 2 Jazzy（推奨）"
+=== "ROS 2 Jazzy"
     [https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html){target=_blank rel=noopener}
     を参考に、`ROS 2 Jazzy`をインストールします。
 
@@ -48,7 +48,7 @@ robot: Raspberry Pi Mouse
     [https://docs.ros.org/en/humble/Tutorials/Colcon-Tutorial.html](https://docs.ros.org/en/humble/Tutorials/Colcon-Tutorial.html){target=_blank rel=noopener}
     を参考に、パッケージビルドツールの`colcon`をインストールします。
     
-=== "ROS 2 Humble（推奨）"
+=== "ROS 2 Humble"
     [https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html){target=_blank rel=noopener}
     を参考に、`ROS 2 Humble`をインストールします。
 
@@ -94,7 +94,7 @@ robot: Raspberry Pi Mouse
     ```sh
     $ source ~/.bashrc
     ```
-=== "ROS 2 Humble（推奨）"
+=== "ROS 2 Humble"
     このROS 2インストールスクリプトは`curl`と`git`を使用します。以下のコマンドでインストールします。
     
     ```sh
@@ -159,7 +159,7 @@ robot: Raspberry Pi Mouse
     $ source ~/.bashrc
     ```
 
-=== "ROS 2 Humble（推奨）"
+=== "ROS 2 Humble"
     このROS 2インストールスクリプトは`curl`と`git`を使用します。以下のコマンドでインストールします。
     
     ```sh
