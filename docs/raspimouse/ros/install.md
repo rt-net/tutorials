@@ -113,8 +113,8 @@ robot: Raspberry Pi Mouse
     スクリプトが問題なく実行できれば以下のメッセージが表示されます。
     
     ```txt
-    Success installing ROS humble
-    Run 'source ~/.bashrc'
+    success installing ROS2 humble
+    Run 'source /opt/ros/humble/setup.bash'
     ```
     
     以下のコマンドでインストールした設定を読み込みます。
