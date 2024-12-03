@@ -94,6 +94,7 @@ robot: Raspberry Pi Mouse
     ```sh
     $ source ~/.bashrc
     ```
+
 === "ROS 2 Humble"
     このROS 2インストールスクリプトは`curl`と`git`を使用します。以下のコマンドでインストールします。
     
@@ -115,6 +116,35 @@ robot: Raspberry Pi Mouse
     ```txt
     success installing ROS2 humble
     Run 'source /opt/ros/humble/setup.bash'
+    ```
+    
+    以下のコマンドでインストールした設定を読み込みます。
+    
+    ```sh
+    $ source ~/.bashrc
+    ```
+
+=== "ROS 2 Jazzy"
+    このROS 2インストールスクリプトは`curl`と`git`を使用します。以下のコマンドでインストールします。
+    
+    ```sh
+    $ sudo apt install -y curl git
+    ```
+    
+    以下のコマンドでROS 2インストールスクリプトを実行します。  
+    環境にもよりますが完了までは10分以上かかる場合があります。
+    
+    ```sh
+    $ git clone https://github.com/Tiryoh/ros2_setup_scripts_ubuntu.git
+    $ cd ros2_setup_scripts_ubuntu
+    $ ./ros2-jazzy-desktop-main.sh
+    ```
+    
+    スクリプトが問題なく実行できれば以下のメッセージが表示されます。
+    
+    ```txt
+    success installing ROS2 jazzy
+    Run 'source /opt/ros/jazzy/setup.bash'
     ```
     
     以下のコマンドでインストールした設定を読み込みます。
@@ -180,6 +210,35 @@ robot: Raspberry Pi Mouse
     ```txt
     success installing ROS2 humble
     Run 'source /opt/ros/humble/setup.bash'
+    ```
+    
+    以下のコマンドでインストールした設定を読み込みます。
+    
+    ```sh
+    $ source ~/.bashrc
+    ```
+
+=== "ROS 2 Jazzy"
+    このROS 2インストールスクリプトは`curl`と`git`を使用します。以下のコマンドでインストールします。
+    
+    ```sh
+    $ sudo apt install -y curl git
+    ```
+    
+    以下のコマンドでROS 2インストールスクリプトを実行します。  
+    環境にもよりますが完了までは10分以上かかる場合があります。
+    
+    ```sh
+    $ git clone https://github.com/Tiryoh/ros2_setup_scripts_ubuntu.git
+    $ cd ros2_setup_scripts_ubuntu
+    $ ./ros2-jazzy-ros-base-main.sh
+    ```
+    
+    スクリプトが問題なく実行できれば以下のメッセージが表示されます。
+    
+    ```txt
+    success installing ROS2 jazzy
+    Run 'source /opt/ros/jazzy/setup.bash'
     ```
     
     以下のコマンドでインストールした設定を読み込みます。
