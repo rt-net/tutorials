@@ -78,10 +78,8 @@ Raspberry Pi Mouse Simulator（[rt-net/raspimouse_sim](https://github.com/rt-net
 
 === "ROS 2 Jazzy"
     次のコマンドを実行します。
-
-    Raspberry Piとノートパソコン等のPCそれぞれで、次のコマンドを実行します。
-
-    1. シミュレータパッケージとサンプルパッケージのダウンロードとインストール
+    
+    シミュレータパッケージとサンプルパッケージのダウンロードとインストール
     
     ```sh
     $ source /opt/ros/jazzy/setup.bash
@@ -90,6 +88,8 @@ Raspberry Pi Mouse Simulator（[rt-net/raspimouse_sim](https://github.com/rt-net
 
     # Download packages
     $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_sim.git
+    $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse2.git
+    $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_ros2_examples.git
     $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_slam_navigation_ros2.git
 
     # Install dependencies
