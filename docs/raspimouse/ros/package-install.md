@@ -72,6 +72,7 @@ robot: Raspberry Pi Mouse
     * [raspimouse_ros2_examples](https://github.com/rt-net/raspimouse_ros2_examples) : サンプル集パッケージ
     * [raspimouse_slam_navigation_ros2](https://github.com/rt-net/raspimouse_slam_navigation_ros2) : SLAMとナビゲーションのパッケージ 
     * [raspimouse_description](https://github.com/rt-net/raspimouse_description) : ロボットモデルパッケージ
+    * [rt_usb_9axisimu_driver](https://github.com/rt-net/rt_usb_9axisimu_driver/tree/ros2-devel) : 9軸IMU制御パッケージ
 
 === "ROS 2 Jazzy"
     Raspberry Piとノートパソコン等のPCそれぞれで、次のコマンドを実行します。
