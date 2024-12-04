@@ -87,8 +87,6 @@ robot: Raspberry Pi Mouse
     $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse2.git
     $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_ros2_examples.git
     $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_slam_navigation_ros2.git
-    $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_description.git
-    $ git clone -b $ROS_DISTRO https://github.com/rt-net/rt_usb_9axisimu_driver/tree/ros2-devel
 
     # Install dependencies
     $ rosdep install -r -y --from-paths . --ignore-src
