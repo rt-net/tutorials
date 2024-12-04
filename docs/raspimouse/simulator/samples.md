@@ -142,7 +142,10 @@ robot: Raspberry Pi Mouse
 
 ## Navigation {: #navigation}
 
-=== "ROS 2"
+!!! info
+    `ROS 2 Jazzy`と`ROS 2 Humble`でコマンドが違うため、ご注意ください。
+
+=== "ROS 2 Humble"
     次のコマンドを実行します。
 
     シミュレータの起動
@@ -163,3 +166,23 @@ robot: Raspberry Pi Mouse
 
     ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_navigation_short.gif)
 
+=== "ROS 2 Jazzy"
+    次のコマンドを実行します。
+
+    シミュレータの起動
+
+    ```sh
+    ros2 launch raspimouse_gazebo raspimouse_with_lakehouse.launch.py lidar:=urg
+    ```
+
+    `lidar`は`urg`、`lds`、`rplidar`のいずれかを指定してください。
+
+    Navigationを実行
+
+    ```sh
+    ros2 launch raspimouse_navigation pc_navigation.launch.py use_sim_time:=true map:=$HOME/MAP_NAME.yaml
+    ```
+
+    引数`map`にはSLAMで作成した地図ファイルのパスを指定してください。
+
+    ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_navigation_short.gif)
