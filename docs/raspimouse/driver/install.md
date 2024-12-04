@@ -146,7 +146,10 @@ Raspberry Pi Mouseのデバイスドライバのソースファイルは
     $ cd RaspberryPiMouse/utils
     $ ./set_configs.bash
     ```
-    3. Raspberry Pi を再起動します
+    3. 次のコマンドを実行し、Raspberry Pi を再起動します
+    ```sh
+    $ sudo reboot
+    ```
     4. 次のコマンドを実行し、デバイスドライバをインストールします
     ```sh
     $ cd RaspberryPiMouse/utils
