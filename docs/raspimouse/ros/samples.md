@@ -58,6 +58,16 @@ robot: Raspberry Pi Mouse
     $ source ~/ros2_ws/install/setup.bash
     ```
 
+=== "ROS 2 Jazzy"
+    [ROS 2サンプル集(rt-net/raspimouse_ros2_examples)](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
+    のサンプルを実行する場合は下記コマンドを実行し、
+    ROS 2とパッケージを読み込んでください。
+
+    ```sh
+    $ source /opt/ros/jazzy/setup.bash
+    $ source ~/ros2_ws/install/setup.bash
+    ```
+    
 ## Raspberry PiとPC間のROSネットワークを接続する {: #network}
 
 === "ROS"
