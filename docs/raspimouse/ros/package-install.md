@@ -88,7 +88,6 @@ robot: Raspberry Pi Mouse
     $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_ros2_examples.git
     $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_slam_navigation_ros2.git
     $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_description.git
-    $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_sim.git
     $ git clone -b $ROS_DISTRO https://github.com/rt-net/rt_usb_9axisimu_driver/tree/ros2-devel
 
     # Install dependencies
@@ -121,7 +120,6 @@ robot: Raspberry Pi Mouse
     * [raspimouse_ros2_examples](https://github.com/rt-net/raspimouse_ros2_examples) : サンプル集パッケージ
     * [raspimouse_slam_navigation_ros2](https://github.com/rt-net/raspimouse_slam_navigation_ros2) : SLAMとナビゲーションのパッケージ 
     * [raspimouse_description](https://github.com/rt-net/raspimouse_description) : ロボットモデルパッケージ
-    * [raspimouse_sim](https://github.com/rt-net/raspimouse_sim) : シミュレータ制御パッケージ
     * [rt_usb_9axisimu_driver](https://github.com/rt-net/rt_usb_9axisimu_driver/tree/ros2-devel) : 9軸IMU制御パッケージ
 
 !!! info
