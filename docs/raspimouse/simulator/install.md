@@ -16,6 +16,7 @@ Raspberry Pi Mouse Simulator（[rt-net/raspimouse_sim](https://github.com/rt-net
 
 * ノートパソコン等のPC
     * OS（**Ubuntu Desktop**）がインストール済みであることを前提としています
+        * `ROS 2 Jazzy`を使用する場合: **Ubuntu Desktop 24.04**
         * `ROS 2 Humble`を使用する場合: **Ubuntu Desktop 22.04**
         * `ROS Noetic`を使用する場合: **Ubuntu Desktop 20.04**
     * ROSまたはROS 2がインストール済みであることを前提としています
@@ -54,7 +55,7 @@ Raspberry Pi Mouse Simulator（[rt-net/raspimouse_sim](https://github.com/rt-net
     rosrun raspimouse_gazebo download_gazebo_models.sh
     ```
 
-=== "ROS 2"
+=== "ROS 2 Humble"
     次のコマンドを実行します。
 
     シミュレータパッケージのインストール
@@ -73,6 +74,37 @@ Raspberry Pi Mouse Simulator（[rt-net/raspimouse_sim](https://github.com/rt-net
 
     ```sh
     sudo apt install ros-humble-teleop-twist-keyboard
+    ```
+
+=== "ROS 2 Jazzy"
+    次のコマンドを実行します。
+
+    Raspberry Piとノートパソコン等のPCそれぞれで、次のコマンドを実行します。
+
+    1. シミュレータパッケージとサンプルパッケージのダウンロードとインストール
+    
+    ```sh
+    $ source /opt/ros/jazzy/setup.bash
+    $ mkdir -p ~/ros2_ws/src
+    $ cd ~/ros2_ws/src
+
+    # Download packages
+    $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_sim.git
+    $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_slam_navigation_ros2.git
+
+    # Install dependencies
+    $ rosdep install -r -y --from-paths . --ignore-src
+
+    # make & install
+    $ cd ~/ros2_ws
+    $ colcon build --symlink-install
+    $ source ~/ros2_ws/install/setup.bash
+    ```
+
+    キーボードで操作するためのパッケージをインストール
+
+    ```sh
+    sudo apt install ros-$ROS_DISTRO-teleop-twist-keyboard
     ```
 
 ## 動作確認（キーボードで操縦） {: #teleop}
