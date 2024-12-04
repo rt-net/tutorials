@@ -84,7 +84,7 @@ robot: Raspberry Pi Mouse
     $ mkdir -p ~/ros2_ws/src
     $ cd ~/ros2_ws/src
 
-    # Clone packages
+    # Download packages
     $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse2.git
     $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_ros2_examples.git
     $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_slam_navigation_ros2.git
