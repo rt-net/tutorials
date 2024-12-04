@@ -126,7 +126,7 @@ Raspberry Pi Mouse Simulator（[rt-net/raspimouse_sim](https://github.com/rt-net
 
     ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_samplemaze_animation.gif)
 
-=== "ROS 2"
+=== "ROS 2 Humble"
     次のコマンドを実行します。
 
     シミュレータの起動
@@ -137,8 +137,25 @@ Raspberry Pi Mouse Simulator（[rt-net/raspimouse_sim](https://github.com/rt-net
 
     別のターミナルでコマンドを実行
 
-    ```
+    ```sh
     ros2 run teleop_twist_keyboard teleop_twist_keyboard
+    ```
+
+    ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_joystick.gif)
+
+=== "ROS 2 Jazzy"
+    次のコマンドを実行します。
+
+    シミュレータの起動
+
+    ```sh
+    ros2 launch raspimouse_gazebo raspimouse_with_emptyworld.launch.py
+    ```
+
+    別のターミナルでコマンドを実行
+
+    ```sh
+    ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -p stamped:=true
     ```
 
     ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_joystick.gif)
