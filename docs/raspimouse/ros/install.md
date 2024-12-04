@@ -38,19 +38,19 @@ robot: Raspberry Pi Mouse
     を参考に、`ROS Noetic`をインストールします。
 
     GUIを使用する場合は`Desktop-Full`を、 使用しない場合は`ROS-Base`パッケージをインストールします。
-
-=== "ROS 2 Jazzy"
-    [https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html){target=_blank rel=noopener}
-    を参考に、`ROS 2 Jazzy`をインストールします。
+    
+=== "ROS 2 Humble"
+    [https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html){target=_blank rel=noopener}
+    を参考に、`ROS 2 Humble`をインストールします。
 
     GUIを使用する場合は`Desktop`を、 使用しない場合は`ROS-Base`パッケージをインストールします。
 
     [https://docs.ros.org/en/humble/Tutorials/Colcon-Tutorial.html](https://docs.ros.org/en/humble/Tutorials/Colcon-Tutorial.html){target=_blank rel=noopener}
     を参考に、パッケージビルドツールの`colcon`をインストールします。
-    
-=== "ROS 2 Humble"
-    [https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html){target=_blank rel=noopener}
-    を参考に、`ROS 2 Humble`をインストールします。
+
+=== "ROS 2 Jazzy"
+    [https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html){target=_blank rel=noopener}
+    を参考に、`ROS 2 Jazzy`をインストールします。
 
     GUIを使用する場合は`Desktop`を、 使用しない場合は`ROS-Base`パッケージをインストールします。
 
