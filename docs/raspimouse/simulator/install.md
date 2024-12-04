@@ -61,19 +61,19 @@ Raspberry Pi Mouse Simulator（[rt-net/raspimouse_sim](https://github.com/rt-net
     シミュレータパッケージのインストール
 
     ```sh
-    sudo apt install ros-humble-raspimouse-sim
+    sudo apt install ros-$ROS_DISTRO-raspimouse-sim
     ```
 
     サンプルパッケージのインストール
 
     ```sh
-    sudo apt install ros-humble-raspimouse-slam-navigation
+    sudo apt install ros-$ROS_DISTRO-raspimouse-slam-navigation
     ```
 
     キーボードで操作するためのパッケージをインストール
 
     ```sh
-    sudo apt install ros-humble-teleop-twist-keyboard
+    sudo apt install ros-$ROS_DISTRO-teleop-twist-keyboard
     ```
 
 === "ROS 2 Jazzy"
