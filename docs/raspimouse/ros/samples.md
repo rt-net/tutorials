@@ -30,7 +30,7 @@ robot: Raspberry Pi Mouse
     * バッテリでも電源変換ケーブルつきACアダプタでも可
 * ノートパソコン等のPC
     * OS（**Ubuntu Desktop**）がインストール済みであることを前提としています
-        * `ROS 2 Humble`を使用する場合: **Ubuntu Desktop 24.04**
+        * `ROS 2 Jazzy`を使用する場合: **Ubuntu Desktop 24.04**
         * `ROS 2 Humble`を使用する場合: **Ubuntu Desktop 22.04**
         * `ROS Noetic`を使用する場合: **Ubuntu Desktop 20.04**
 
