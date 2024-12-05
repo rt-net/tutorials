@@ -112,7 +112,10 @@ robot: Raspberry Pi Mouse
 
 ## SLAM {: #slam}
 
-=== "ROS 2"
+!!! info
+    `ROS 2 Jazzy`と`ROS 2 Humble`でコマンドが異なるためご注意ください。
+
+=== "ROS 2 Humble"
     次のコマンドを実行します。
 
     シミュレータの起動
@@ -127,6 +130,43 @@ robot: Raspberry Pi Mouse
 
     ```sh
     ros2 run teleop_twist_keyboard teleop_twist_keyboard
+    ```
+
+    SLAMを実行
+
+    ```sh
+    ros2 launch raspimouse_slam pc_slam.launch.py
+    ```
+
+    Raspberry Pi Mouseを走らせて地図を作成
+
+    ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_slam.png)
+
+    作成した地図を保存
+
+    ```sh
+    ros2 run nav2_map_server map_saver_cli -f ~/MAP_NAME
+    ```
+
+    `MAP_NAME`は任意の名前を指定できます。
+
+    ![](https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_slam_short.gif)
+
+=== "ROS 2 Jazzy"
+    次のコマンドを実行します。
+
+    シミュレータの起動
+
+    ```sh
+    ros2 launch raspimouse_gazebo raspimouse_with_lakehouse.launch.py lidar:=urg
+    ```
+
+    `lidar`は`urg`、`lds`、`rplidar`のいずれかを指定してください。
+
+    キーボードで操作
+
+    ```sh
+    ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -p stamped:=true
     ```
 
     SLAMを実行
