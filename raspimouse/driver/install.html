@@ -1989,9 +1989,31 @@
 <li>ノートパソコン等のPC</li>
 </ul>
 <h2 id="os-installation">OSのインストール</h2>
-<p>Raspberry Pi Mouseのデバイスドライバは"Ubuntu"と"Raspberry Pi OS"（旧称"Raspbian"）に対応しています。</p>
-<p>ここではUbuntu（Ubuntu Server 22.04, Ubuntu Server 20.04）と、Raspberry Pi OSのインストール手順を紹介します。</p>
-<p>後ほどRaspberry Pi Mouseで<strong>ROSを扱う場合はUbuntu Server 20.04（64bit版）を、ROS 2を扱う場合はUbuntu Server 22.04（64bit版）のインストールを推奨します</strong>。</p>
+<p>Raspberry Pi Mouseのデバイスドライバは、"Ubuntu"と"Raspberry Pi OS"（旧称"Raspbian"）に対応しています。
+ここではUbuntuとRaspberry Pi OSのインストール手順を紹介します。</p>
+<p>後ほどRaspberry Pi MouseでROSを扱う場合は、Ubuntuのインストールを推奨します。各種ROSとUbuntuのバージョン対応表は以下の通りです。</p>
+<table>
+<thead>
+<tr>
+<th>ROS</th>
+<th>Ubuntu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROS Noetic</td>
+<td>Ubuntu Server 20.04（64bit版）</td>
+</tr>
+<tr>
+<td>ROS 2 Humble</td>
+<td>Ubuntu Server 22.04（64bit版）</td>
+</tr>
+<tr>
+<td>ROS 2 Jazzy</td>
+<td>Ubuntu Server 24.04（64bit版）</td>
+</tr>
+</tbody>
+</table>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>出荷時に付属しているRaspberry Pi OSインストール済みのmicroSDカードを利用する場合は、OSインストール手順を飛ばしてそのまま<a href="#driver-installation">ソースファイルのダウンロードとインストール</a>に進むことができます。</p>
@@ -2002,7 +2024,7 @@
 Raspberry PiやRaspberry Pi Mouse本体を<strong>故障させないように</strong>注意してください。
 詳細はRaspberry Pi Mouseの<strong><a href="https://rt-net.jp/products/raspberrypimousev3/#downloads">製品マニュアル</a>を参照してください</strong>。</p>
 </div>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Ubuntu Server 22.04</label><label for="__tabbed_1_2">Ubuntu Server 20.04</label><label for="__tabbed_1_3">Raspberry Pi OS</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Ubuntu Server 24.04</label><label for="__tabbed_1_2">Ubuntu Server 22.04</label><label for="__tabbed_1_3">Ubuntu Server 20.04</label><label for="__tabbed_1_4">Raspberry Pi OS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ol>
@@ -2011,9 +2033,25 @@ Raspberry PiやRaspberry Pi Mouse本体を<strong>故障させないように</s
 <img alt="" src="../../img/raspimouse/driver/download_raspberry_pi_imager.png" /></li>
 <li>SDカードをPCに接続します</li>
 <li>Raspberry Pi Imagerを起動します</li>
-<li>書き込むOSを"Other general-purpose OS" -&gt; "Ubuntu" -&gt; "Ubuntu Server 22.04.* LTS"、書き込み先をSDカードに設定します <strong>ROS 2を使う場合は64bit版</strong> を選択します<br />
+<li>書き込むOSを"Other general-purpose OS" -&gt; "Ubuntu" -&gt; "Ubuntu Server 24.04.* LTS"、書き込み先をSDカードに設定します <strong>ROS 2を使う場合は64bit版</strong> を選択します
+<img alt="" src="../../img/raspimouse/driver/pi_imager_settings_ubuntu_24_64bit.png" /></li>
+<li>"WRITE" を押して書き込みを開始します
+<img alt="" src="../../img/raspimouse/driver/pi_imager_settings_ubuntu_24.png" /></li>
+<li>SDカードをRaspberry Piに取り付け、Raspberry Piの電源を入れます</li>
+<li>login:<code>ubuntu</code>、password:<code>ubuntu</code>でログインし、パスワードを変更します</li>
+<li><code>$ sudo apt update &amp;&amp; sudo apt upgrade</code>を実行します</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ol>
+<li><a href="https://www.raspberrypi.org/software/" rel="noopener" target="_blank">https://www.raspberrypi.org/software/</a> にアクセスします</li>
+<li>Raspberry Pi Imagerをダウンロードします
+<img alt="" src="../../img/raspimouse/driver/download_raspberry_pi_imager.png" /></li>
+<li>SDカードをPCに接続します</li>
+<li>Raspberry Pi Imagerを起動します</li>
+<li>書き込むOSを"Other general-purpose OS" -&gt; "Ubuntu" -&gt; "Ubuntu Server 22.04.* LTS"、書き込み先をSDカードに設定します <strong>ROS 2を使う場合は64bit版</strong> を選択します
 <img alt="" src="../../img/raspimouse/driver/pi_imager_settings_ubuntu_22_64bit.png" /></li>
-<li>"書き込む" を押して書き込みを開始します<br />
+<li>"WRITE" を押して書き込みを開始します
 <img alt="" src="../../img/raspimouse/driver/pi_imager_settings_ubuntu_22.png" /></li>
 <li>SDカードをRaspberry Piに取り付け、Raspberry Piの電源を入れます</li>
 <li>login:<code>ubuntu</code>、password:<code>ubuntu</code>でログインし、パスワードを変更します</li>
@@ -2027,9 +2065,9 @@ Raspberry PiやRaspberry Pi Mouse本体を<strong>故障させないように</s
 <img alt="" src="../../img/raspimouse/driver/download_raspberry_pi_imager.png" /></li>
 <li>SDカードをPCに接続します</li>
 <li>Raspberry Pi Imagerを起動します</li>
-<li>書き込むOSを"Other general-purpose OS" -&gt; "Ubuntu" -&gt; "Ubuntu Server 20.04.* LTS"、書き込み先をSDカードに設定します <strong>ROSを使う場合は64bit版</strong> を選択します<br />
+<li>書き込むOSを"Other general-purpose OS" -&gt; "Ubuntu" -&gt; "Ubuntu Server 20.04.* LTS"、書き込み先をSDカードに設定します <strong>ROSを使う場合は64bit版</strong> を選択します
 <img alt="" src="../../img/raspimouse/driver/pi_imager_settings_ubuntu_64bit.png" /></li>
-<li>"WRITE" を押して書き込みを開始します<br />
+<li>"WRITE" を押して書き込みを開始します
 <img alt="" src="../../img/raspimouse/driver/pi_imager_settings_ubuntu.png" /></li>
 <li>SDカードをRaspberry Piに取り付け、Raspberry Piの電源を入れます</li>
 <li>login:<code>ubuntu</code>、password:<code>ubuntu</code>でログインし、パスワードを変更します</li>
@@ -2043,7 +2081,7 @@ Raspberry PiやRaspberry Pi Mouse本体を<strong>故障させないように</s
 <img alt="" src="../../img/raspimouse/driver/download_raspberry_pi_imager.png" /></li>
 <li>SDカードをPCに接続します</li>
 <li>Raspberry Pi Imagerを起動します</li>
-<li>書き込むOSを"Raspberry Pi OS (32-bit)"、書き込み先をSDカードに設定し、"WRITE"を押して書き込みを開始します
+<li>書き込むOSを"Raspberry Pi OS (32-bit)"、または"Raspberry Pi OS (64-bit)"、書き込み先をSDカードに設定し、"WRITE"を押して書き込みを開始します
 <img alt="" src="../../img/raspimouse/driver/pi_imager_settings.png" /></li>
 <li>SDカードをRaspberry Piに取り付け、Raspberry Piの電源を入れます
 <img alt="" src="../../img/raspimouse/driver/raspi_os_settings.png" /></li>
@@ -2058,7 +2096,7 @@ Raspberry PiやRaspberry Pi Mouse本体を<strong>故障させないように</s
 <div class="tabbed-block">
 <p>HDMIケーブルとHDMI入力付きのモニタ、USBキーボードとマウスをRaspberry Piに接続して設定する方法を紹介します。</p>
 <p><a href="https://ubuntu.com/server/docs/network-configuration">https://ubuntu.com/server/docs/network-configuration</a>
-に詳細な説明が書かれています。<br />
+に詳細な説明が書かれています。
 IPアドレスの固定については<a href="#wifi-static-ip">Ubuntu ServerでWi-Fiに接続し、IPアドレスを固定する</a>を参照してください。</p>
 <ol>
 <li><code>$ sudo vim /etc/netplan/99_config.yaml</code>で設定ファイルを新規作成し、下記のように記述します。
@@ -2094,42 +2132,42 @@ IPアドレスの固定については<a href="#wifi-static-ip">Ubuntu Serverで
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ol>
-<li>パルスカウンタの動作を安定させるためI2Cのボーレートを変更します<ol>
-<li><code>/boot/firmware/config.txt</code>を編集し、<code>dtparam=i2c_baudrate=62500</code>を追記します</li>
-<li>Raspberry Pi を再起動します</li>
-<li><code>$ printf "%d\n" 0x$(xxd -ps /sys/class/i2c-adapter/i2c-1/of_node/clock-frequency)</code>を実行し、<code>62500</code>と表示されたら設定完了です。</li>
-</ol>
-</li>
-<li>次のコマンドを実行し、デバイスドライバをインストールします
+<li>次のコマンドを実行し、デバイスドライバをダウンロードします
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/rt-net/RaspberryPiMouse.git
-$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>RaspberryPiMouse/utils
+</code></pre></div></li>
+<li>次のコマンドを実行し、Raspberry Pi Mouseを動かすための設定を行います
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>RaspberryPiMouse/utils
+$<span class="w"> </span>./set_configs.bash
+</code></pre></div></li>
+<li>次のコマンドを実行し、Raspberry Piを再起動します
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>reboot
+</code></pre></div></li>
+<li>次のコマンドを実行し、デバイスドライバをインストールします
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>RaspberryPiMouse/utils
 $<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>linux-headers-<span class="k">$(</span>uname<span class="w"> </span>-r<span class="k">)</span><span class="w"> </span>build-essential
 $<span class="w"> </span>./build_install.bash
 </code></pre></div></li>
-<li>コマンド実行後にブザーが鳴ればインストール完了です。</li>
+<li>コマンド実行後にブザーが鳴ればインストール完了です</li>
 </ol>
 </div>
 <div class="tabbed-block">
 <ol>
-<li>パルスカウンタの動作を安定させるためI2Cのボーレートを変更します<ol>
-<li><code>/boot/config.txt</code>を編集し、<code>dtparam=i2c_baudrate=62500</code>を追記します</li>
-<li>Raspberry Pi を再起動します</li>
-<li><code>$ printf "%d\n" 0x$(xxd -ps /sys/class/i2c-adapter/i2c-1/of_node/clock-frequency)</code>を実行し、<code>62500</code>と表示されたら設定完了です。</li>
-</ol>
-</li>
-<li><code>Raspberry Piの設定</code>を開きます
-<img alt="" src="../../img/raspimouse/driver/raspi_os_settings2.png" /></li>
-<li><code>インターフェイス</code>に進み、<code>SPI</code>と<code>I2C</code>の機能を有効にします
-<img alt="" src="../../img/raspimouse/driver/raspi_os_settings3.png" /></li>
 <li>ターミナル(<code>LXTerminal</code>)を起動します
 <img alt="" src="../../img/raspimouse/driver/open_terminal.png" /></li>
-<li>次のコマンドを実行し、デバイスドライバをインストールします
+<li>次のコマンドを実行し、デバイスドライバをダウンロードします
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/rt-net/RaspberryPiMouse.git
-$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>RaspberryPiMouse/utils
-$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>raspberrypi-kernel-headers<span class="w"> </span>build-essential
+</code></pre></div></li>
+<li>次のコマンドを実行し、Raspberry Pi Mouseを動かすための設定を行います
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>RaspberryPiMouse/utils
+$<span class="w"> </span>./set_configs.bash
+</code></pre></div></li>
+<li>Raspberry Piを再起動します</li>
+<li>次のコマンドを実行し、デバイスドライバをインストールします
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>RaspberryPiMouse/utils
+$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>linux-headers-<span class="k">$(</span>uname<span class="w"> </span>-r<span class="k">)</span><span class="w"> </span>build-essential
 $<span class="w"> </span>./build_install.bash
 </code></pre></div></li>
-<li>コマンド実行後にブザーが鳴ればインストール完了です。</li>
+<li>コマンド実行後にブザーが鳴ればインストール完了です</li>
 </ol>
 </div>
 </div>
@@ -2140,13 +2178,13 @@ $<span class="w"> </span>./build_install.bash
 <h2 id="misc">その他</h2>
 <h3 id="wifi-static-ip">Ubuntu ServerでWi-Fiに接続し、IPアドレスを固定する</h3>
 <p><a href="https://ubuntu.com/server/docs/network-configuration">https://ubuntu.com/server/docs/network-configuration</a>
-に詳細な説明が書かれています。  </p>
+に詳細な説明が書かれています。</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>IPアドレスを固定するとネットワークに影響が出る場合があります。会社等で利用する場合はネットワーク管理者にお問い合わせください。</p>
 </div>
 <ol>
-<li><code>$ sudo vim /etc/netplan/99_config.yaml</code>で設定ファイルを新規作成し、下記のように<code>dhcp4: false</code>としてIPアドレスを記述します。<br />
+<li><code>$ sudo vim /etc/netplan/99_config.yaml</code>で設定ファイルを新規作成し、下記のように<code>dhcp4: false</code>としてIPアドレスを記述します。
 この例では、IPアドレスを<code>192.168.11.89</code>に固定します。<strong>この設定値は環境によって変わりますのでご注意ください</strong>。
 <div class="highlight"><pre><span></span><code><span class="nt">network</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">ethernets</span><span class="p">:</span>

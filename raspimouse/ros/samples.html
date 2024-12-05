@@ -2035,6 +2035,7 @@
 <li>組み立て済みRaspberry Pi Mouse本体<ul>
 <li><a href="https://rt-net.jp/products/raspberrypimousev3/#downloads">製品マニュアル</a>を読んで組み立て済みの状態を前提としています</li>
 <li>OS（<strong>Ubuntu Server</strong>）がインストール済みであることを前提としています<ul>
+<li><code>ROS 2 Jazzy</code>を使用する場合: <strong>Ubuntu Server 24.04</strong></li>
 <li><code>ROS 2 Humble</code>を使用する場合: <strong>Ubuntu Server 22.04</strong></li>
 <li><code>ROS Noetic</code>を使用する場合: <strong>Ubuntu Server 20.04</strong></li>
 <li>Raspberry Pi OSでのROSの動作は確認していません</li>
@@ -2060,6 +2061,7 @@
 </li>
 <li>ノートパソコン等のPC<ul>
 <li>OS（<strong>Ubuntu Desktop</strong>）がインストール済みであることを前提としています<ul>
+<li><code>ROS 2 Jazzy</code>を使用する場合: <strong>Ubuntu Desktop 24.04</strong></li>
 <li><code>ROS 2 Humble</code>を使用する場合: <strong>Ubuntu Desktop 22.04</strong></li>
 <li><code>ROS Noetic</code>を使用する場合: <strong>Ubuntu Desktop 20.04</strong></li>
 </ul>
@@ -2068,7 +2070,7 @@
 </li>
 </ul>
 <h2 id="load-workspace">ROSパッケージ情報の読み込み</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS</label><label for="__tabbed_1_2">ROS 2 Humble（推奨）</label><label for="__tabbed_1_3">ROS 2 Foxy（非推奨）</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS</label><label for="__tabbed_1_2">ROS 2 Humble</label><label for="__tabbed_1_3">ROS 2 Jazzy</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><a href="https://github.com/rt-net/raspimouse_ros_examples" rel="noopener" target="_blank">ROSサンプル集(rt-net/raspimouse_ros_examples)</a>
@@ -2090,7 +2092,7 @@ $<span class="w"> </span><span class="nb">source</span><span class="w"> </span>~
 <p><a href="https://github.com/rt-net/raspimouse_ros2_examples" rel="noopener" target="_blank">ROS 2サンプル集(rt-net/raspimouse_ros2_examples)</a>
 のサンプルを実行する場合は下記コマンドを実行し、
 ROS 2とパッケージを読み込んでください。</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/opt/ros/foxy/setup.bash
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/opt/ros/jazzy/setup.bash
 $<span class="w"> </span><span class="nb">source</span><span class="w"> </span>~/ros2_ws/install/setup.bash
 </code></pre></div>
 </div>

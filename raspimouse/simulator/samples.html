@@ -1976,8 +1976,8 @@
 <h2 id="requirements">使用機材</h2>
 <ul>
 <li>ノートパソコン等のPC<ul>
-<li>OS（<strong>Ubuntu Desktop 22.04</strong>）がインストール済みであることを前提としています</li>
-<li>ROS 2がインストール済みであることを前提としています<ul>
+<li>OS（<strong>Ubuntu Desktop 22.04</strong> / <strong>Ubuntu Desktop 24.04</strong>）がインストール済みであることを前提としています</li>
+<li>ROS 2 (<strong>Humble</strong> / <strong>Jazzy</strong>)がインストール済みであることを前提としています<ul>
 <li>インストール方法については<a href="../ros/install.html">ROS/ROS 2のインストール</a>を参照してください。</li>
 </ul>
 </li>
@@ -1989,13 +1989,21 @@
 </li>
 </ul>
 <h2 id="load-workspace">ROS 2パッケージ情報の読み込み</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS 2</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS 2 Humble</label><label for="__tabbed_1_2">ROS 2 Jazzy</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><a href="https://github.com/rt-net/raspimouse_ros2_examples" rel="noopener" target="_blank">ROS 2サンプル集(rt-net/raspimouse_ros2_examples)</a>
 のサンプルを実行する場合は下記コマンドを実行し、
 ROS 2とパッケージを読み込んでください。</p>
 <div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>/opt/ros/humble/setup.bash
+<span class="nb">source</span><span class="w"> </span>~/ros2_ws/install/setup.bash
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p><a href="https://github.com/rt-net/raspimouse_ros2_examples" rel="noopener" target="_blank">ROS 2サンプル集(rt-net/raspimouse_ros2_examples)</a>
+のサンプルを実行する場合は下記コマンドを実行し、
+ROS 2とパッケージを読み込んでください。</p>
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>/opt/ros/jazzy/setup.bash
 <span class="nb">source</span><span class="w"> </span>~/ros2_ws/install/setup.bash
 </code></pre></div>
 </div>
@@ -2054,7 +2062,11 @@ ROS 2とパッケージを読み込んでください。</p>
 </div>
 </div>
 <h2 id="slam">SLAM</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">ROS 2</label></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><code>ROS 2 Jazzy</code>と<code>ROS 2 Humble</code>でコマンドが異なるためご注意ください。</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">ROS 2 Humble</label><label for="__tabbed_5_2">ROS 2 Jazzy</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>次のコマンドを実行します。</p>
@@ -2076,10 +2088,34 @@ ROS 2とパッケージを読み込んでください。</p>
 <p><code>MAP_NAME</code>は任意の名前を指定できます。</p>
 <p><img alt="" src="https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_slam_short.gif" /></p>
 </div>
+<div class="tabbed-block">
+<p>次のコマンドを実行します。</p>
+<p>シミュレータの起動</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>raspimouse_gazebo<span class="w"> </span>raspimouse_with_lakehouse.launch.py<span class="w"> </span>lidar:<span class="o">=</span>urg
+</code></pre></div>
+<p><code>lidar</code>は<code>urg</code>、<code>lds</code>、<code>rplidar</code>のいずれかを指定してください。</p>
+<p>キーボードで操作</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>teleop_twist_keyboard<span class="w"> </span>teleop_twist_keyboard<span class="w"> </span>--ros-args<span class="w"> </span>-p<span class="w"> </span>stamped:<span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
+<p>SLAMを実行</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>raspimouse_slam<span class="w"> </span>pc_slam.launch.py
+</code></pre></div>
+<p>Raspberry Pi Mouseを走らせて地図を作成</p>
+<p><img alt="" src="https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_slam.png" /></p>
+<p>作成した地図を保存</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>nav2_map_server<span class="w"> </span>map_saver_cli<span class="w"> </span>-f<span class="w"> </span>~/MAP_NAME
+</code></pre></div>
+<p><code>MAP_NAME</code>は任意の名前を指定できます。</p>
+<p><img alt="" src="https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_slam_short.gif" /></p>
+</div>
 </div>
 </div>
 <h2 id="navigation">Navigation</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">ROS 2</label></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><code>ROS 2 Jazzy</code>と<code>ROS 2 Humble</code>でコマンドが異なるためご注意ください。</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">ROS 2 Humble</label><label for="__tabbed_6_2">ROS 2 Jazzy</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>次のコマンドを実行します。</p>
@@ -2089,6 +2125,18 @@ ROS 2とパッケージを読み込んでください。</p>
 <p><code>lidar</code>は<code>urg</code>、<code>lds</code>、<code>rplidar</code>のいずれかを指定してください。</p>
 <p>Navigationを実行</p>
 <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>raspimouse_navigation<span class="w"> </span>pc_navigation.launch.py<span class="w"> </span>map:<span class="o">=</span><span class="nv">$HOME</span>/MAP_NAME.yaml
+</code></pre></div>
+<p>引数<code>map</code>にはSLAMで作成した地図ファイルのパスを指定してください。</p>
+<p><img alt="" src="https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_navigation_short.gif" /></p>
+</div>
+<div class="tabbed-block">
+<p>次のコマンドを実行します。</p>
+<p>シミュレータの起動</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>raspimouse_gazebo<span class="w"> </span>raspimouse_with_lakehouse.launch.py<span class="w"> </span>lidar:<span class="o">=</span>urg
+</code></pre></div>
+<p><code>lidar</code>は<code>urg</code>、<code>lds</code>、<code>rplidar</code>のいずれかを指定してください。</p>
+<p>Navigationを実行</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>raspimouse_navigation<span class="w"> </span>pc_navigation.launch.py<span class="w"> </span>use_sim_time:<span class="o">=</span><span class="nb">true</span><span class="w"> </span>map:<span class="o">=</span><span class="nv">$HOME</span>/MAP_NAME.yaml
 </code></pre></div>
 <p>引数<code>map</code>にはSLAMで作成した地図ファイルのパスを指定してください。</p>
 <p><img alt="" src="https://rt-net.github.io/images/raspberry-pi-mouse/raspimouse_sim_navigation_short.gif" /></p>
