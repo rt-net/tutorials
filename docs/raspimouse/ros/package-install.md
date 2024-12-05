@@ -98,12 +98,12 @@ robot: Raspberry Pi Mouse
     ```sh
     # make & install
     
-    # Raspberry Pi Mouseでのインストール
+    # Raspberry Pi Mouseの場合
     $ cd ~/ros2_ws
     $ MAKEFLAGS=-j1 colcon build --symlink-install
     $ source ~/ros2_ws/install/setup.bash
 
-    # PCでのインストール
+    # PCの場合
     $ cd ~/ros2_ws
     $ colcon build --symlink-install
     $ source ~/ros2_ws/install/setup.bash
