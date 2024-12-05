@@ -12,21 +12,30 @@ robot: Raspberry Pi Mouse
 ## 使用機材 {: #requirements}
 
 * ノートパソコン等のPC
-    * OS（**Ubuntu Desktop 22.04**）がインストール済みであることを前提としています
-    * ROS 2がインストール済みであることを前提としています
+    * OS（**Ubuntu Desktop 22.04** / **Ubuntu Desktop 24.04**）がインストール済みであることを前提としています
+    * ROS 2 (**Humble** / **Jazzy**)がインストール済みであることを前提としています
         * インストール方法については[ROS/ROS 2のインストール](../ros/install.md)を参照してください。
     * ROS 2のシミュレータパッケージがインストール済みであることを前提としています
         * インストール方法については[シミュレータのインストール](./install.md)を参照してください。
 
 ## ROS 2パッケージ情報の読み込み {: #load-workspace}
 
-=== "ROS 2"
+=== "ROS 2 Humble"
     [ROS 2サンプル集(rt-net/raspimouse_ros2_examples)](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
     のサンプルを実行する場合は下記コマンドを実行し、
     ROS 2とパッケージを読み込んでください。
 
     ```sh
     source /opt/ros/humble/setup.bash
+    source ~/ros2_ws/install/setup.bash
+    ```
+=== "ROS 2 Jazzy"
+    [ROS 2サンプル集(rt-net/raspimouse_ros2_examples)](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
+    のサンプルを実行する場合は下記コマンドを実行し、
+    ROS 2とパッケージを読み込んでください。
+
+    ```sh
+    source /opt/ros/jazzy/setup.bash
     source ~/ros2_ws/install/setup.bash
     ```
 
