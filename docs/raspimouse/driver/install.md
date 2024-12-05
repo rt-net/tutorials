@@ -29,7 +29,7 @@ Raspberry Pi MouseのLEDやモータを駆動するためには、
 
 Raspberry Pi Mouseのデバイスドライバは"Ubuntu"と"Raspberry Pi OS"（旧称"Raspbian"）に対応しています。
 
-ここではUbuntu（Ubuntu Server 22.04, Ubuntu Server 24.04）と、Raspberry Pi OSのインストール手順を紹介します。
+ここではUbuntuとRaspberry Pi OSのインストール手順を紹介します。
 
 後ほどRaspberry Pi Mouseで**ROSを扱う場合はUbuntu Server 20.04（64bit版）を、ROS 2を扱う場合はUbuntu Server 22.04（64bit版）・Ubuntu Server 24.04（64bit版）のインストールを推奨します**。
 
