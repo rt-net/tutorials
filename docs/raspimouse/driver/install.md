@@ -137,7 +137,7 @@ Raspberry Pi Mouseのデバイスドライバのソースファイルは
 に公開されています。
 
 === "Ubuntu Server"
-    1. 次のコマンドを実行し、デバイスドライバをダウンロードします。
+    1. 次のコマンドを実行し、デバイスドライバをダウンロードします
     ```sh
     $ git clone https://github.com/rt-net/RaspberryPiMouse.git
     ```
@@ -162,7 +162,7 @@ Raspberry Pi Mouseのデバイスドライバのソースファイルは
 === "Raspberry Pi OS"
     1. ターミナル(`LXTerminal`)を起動します
     ![](../../img/raspimouse/driver/open_terminal.png)
-    2. 次のコマンドを実行し、デバイスドライバをダウンロードします。
+    2. 次のコマンドを実行し、デバイスドライバをダウンロードします
     ```sh
     $ git clone https://github.com/rt-net/RaspberryPiMouse.git
     ```
