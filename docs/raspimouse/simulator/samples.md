@@ -143,7 +143,7 @@ robot: Raspberry Pi Mouse
 ## Navigation {: #navigation}
 
 !!! info
-    `ROS 2 Jazzy`と`ROS 2 Humble`でコマンドが違うため、ご注意ください。
+    `ROS 2 Jazzy`と`ROS 2 Humble`でコマンドが異なるためご注意ください。
 
 === "ROS 2 Humble"
     次のコマンドを実行します。
