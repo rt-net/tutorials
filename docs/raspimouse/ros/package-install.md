@@ -93,7 +93,7 @@ robot: Raspberry Pi Mouse
     $ rosdep install -r -y --from-paths . --ignore-src
     ```
 
-    パッケージをインストールします。Raspberry Pi MouseとPCでコマンドが異なります。
+    Raspberry Pi Mouseのパッケージをビルドします。Raspberry Pi MouseとPCでコマンドが異なります。
 
     ```sh
     # Raspberry Pi Mouseの場合
