@@ -96,8 +96,6 @@ robot: Raspberry Pi Mouse
     パッケージをインストールします。Raspberry Pi MouseとPCでコマンドが異なります。
 
     ```sh
-    # make & install
-    
     # Raspberry Pi Mouseの場合
     $ cd ~/ros2_ws
     $ MAKEFLAGS=-j1 colcon build --symlink-install
