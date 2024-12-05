@@ -147,12 +147,12 @@ Raspberry Pi Mouseのデバイスドライバのソースファイルは
     ```sh
     $ git clone https://github.com/rt-net/RaspberryPiMouse.git
     ```
-    2. 次のコマンドを実行し、Raspberry Piの設定をします
+    2. 次のコマンドを実行し、Raspberry Piを動かすための設定をします
     ```sh
     $ cd RaspberryPiMouse/utils
     $ ./set_configs.bash
     ```
-    3. 次のコマンドを実行し、Raspberry Pi を再起動します
+    3. 次のコマンドを実行し、Raspberry Piを再起動します
     ```sh
     $ sudo reboot
     ```
@@ -172,12 +172,12 @@ Raspberry Pi Mouseのデバイスドライバのソースファイルは
     ```sh
     $ git clone https://github.com/rt-net/RaspberryPiMouse.git
     ```
-    3. 次のコマンドを実行し、Raspberry Piの設定をします
+    3. 次のコマンドを実行し、Raspberry Piを動かすための設定をします
     ```sh
     $ cd RaspberryPiMouse/utils
     $ ./set_configs.bash
     ```
-    4. Raspberry Pi を再起動します
+    4. Raspberry Piを再起動します
     5. 次のコマンドを実行し、デバイスドライバをインストールします
     ```sh
     $ cd RaspberryPiMouse/utils
