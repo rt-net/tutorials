@@ -15,7 +15,7 @@ robot: Raspberry Pi Mouse
 
 * 組み立て済みRaspberry Pi Mouse本体
     * [製品マニュアル](https://rt-net.jp/products/raspberrypimousev3/#downloads)を読んで組み立て済みの状態を前提としています
-    * OS（**Ubuntu Server**）がインストール済みであることを前提としています」
+    * OS（**Ubuntu Server**）がインストール済みであることを前提としています
         * `ROS 2 Jazzy`を使用する場合: **Ubuntu Server 24.04**
         * `ROS 2 Humble`を使用する場合: **Ubuntu Server 22.04**
         * `ROS Noetic`を使用する場合: **Ubuntu Server 20.04**
