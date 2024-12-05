@@ -90,7 +90,7 @@ Raspberry Pi Mouseのデバイスドライバは"Ubuntu"と"Raspberry Pi OS"（�
     ![](../../img/raspimouse/driver/download_raspberry_pi_imager.png)
     1. SDカードをPCに接続します
     1. Raspberry Pi Imagerを起動します
-    1. 書き込むOSを"Raspberry Pi OS (32-bit)"（または、"Raspberry Pi OS (64-bit)"）、書き込み先をSDカードに設定し、"WRITE"を押して書き込みを開始します
+    1. 書き込むOSを"Raspberry Pi OS (32-bit)"、または"Raspberry Pi OS (64-bit)"、書き込み先をSDカードに設定し、"WRITE"を押して書き込みを開始します
     ![](../../img/raspimouse/driver/pi_imager_settings.png)
     1. SDカードをRaspberry Piに取り付け、Raspberry Piの電源を入れます
     ![](../../img/raspimouse/driver/raspi_os_settings.png)
