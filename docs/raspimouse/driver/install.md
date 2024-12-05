@@ -156,7 +156,7 @@ Raspberry Pi Mouseのデバイスドライバのソースファイルは
     $ sudo apt install linux-headers-$(uname -r) build-essential
     $ ./build_install.bash
     ```
-    5. コマンド実行後にブザーが鳴ればインストール完了です。
+    5. コマンド実行後にブザーが鳴ればインストール完了です
 
 
 === "Raspberry Pi OS"
@@ -166,19 +166,19 @@ Raspberry Pi Mouseのデバイスドライバのソースファイルは
     ```sh
     $ git clone https://github.com/rt-net/RaspberryPiMouse.git
     ```
-    2. 次のコマンドを実行し、Raspberry Piの設定をします
+    3. 次のコマンドを実行し、Raspberry Piの設定をします
     ```sh
     $ cd RaspberryPiMouse/utils
     $ ./set_configs.bash
     ```
-    3. Raspberry Pi を再起動します
-    4. 次のコマンドを実行し、デバイスドライバをインストールします
+    4. Raspberry Pi を再起動します
+    5. 次のコマンドを実行し、デバイスドライバをインストールします
     ```sh
     $ cd RaspberryPiMouse/utils
     $ sudo apt install linux-headers-$(uname -r) build-essential
     $ ./build_install.bash
     ```
-    5. コマンド実行後にブザーが鳴ればインストール完了です。
+    6. コマンド実行後にブザーが鳴ればインストール完了です
 
 **デバイスドライバはOSを起動するたびにインストールしてください。** 上記インストール手順で設定した場合は以下のコマンドでインストールできます。
 
