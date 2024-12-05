@@ -16,6 +16,7 @@ robot: Raspberry Pi Mouse
 * 組み立て済みRaspberry Pi Mouse本体
     * [製品マニュアル](https://rt-net.jp/products/raspberrypimousev3/#downloads)を読んで組み立て済みの状態を前提としています
     * OS（**Ubuntu Server**）がインストール済みであることを前提としています
+        * `ROS 2 Jazzy`を使用する場合: **Ubuntu Server 24.04**
         * `ROS 2 Humble`を使用する場合: **Ubuntu Server 22.04**
         * `ROS Noetic`を使用する場合: **Ubuntu Server 20.04**
         * Raspberry Pi OSでのROSの動作は確認していません
@@ -29,6 +30,7 @@ robot: Raspberry Pi Mouse
     * バッテリでも電源変換ケーブルつきACアダプタでも可
 * ノートパソコン等のPC
     * OS（**Ubuntu Desktop**）がインストール済みであることを前提としています
+        * `ROS 2 Jazzy`を使用する場合: **Ubuntu Desktop 24.04**
         * `ROS 2 Humble`を使用する場合: **Ubuntu Desktop 22.04**
         * `ROS Noetic`を使用する場合: **Ubuntu Desktop 20.04**
 
@@ -46,7 +48,7 @@ robot: Raspberry Pi Mouse
     ```
 
 
-=== "ROS 2 Humble（推奨）"
+=== "ROS 2 Humble"
     [ROS 2サンプル集(rt-net/raspimouse_ros2_examples)](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
     のサンプルを実行する場合は下記コマンドを実行し、
     ROS 2とパッケージを読み込んでください。
@@ -56,16 +58,16 @@ robot: Raspberry Pi Mouse
     $ source ~/ros2_ws/install/setup.bash
     ```
 
-=== "ROS 2 Foxy（非推奨）"
+=== "ROS 2 Jazzy"
     [ROS 2サンプル集(rt-net/raspimouse_ros2_examples)](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
     のサンプルを実行する場合は下記コマンドを実行し、
     ROS 2とパッケージを読み込んでください。
 
     ```sh
-    $ source /opt/ros/foxy/setup.bash
+    $ source /opt/ros/jazzy/setup.bash
     $ source ~/ros2_ws/install/setup.bash
     ```
-
+    
 ## Raspberry PiとPC間のROSネットワークを接続する {: #network}
 
 === "ROS"

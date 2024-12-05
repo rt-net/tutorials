@@ -12,6 +12,7 @@ robot: Raspberry Pi Mouse
 * 組み立て済みRaspberry Pi Mouse本体
     * [製品マニュアル](https://rt-net.jp/products/raspberrypimousev3/#downloads)を読んで組み立て済みの状態を前提としています
     * OS（**Ubuntu Server**）がインストール済みであることを前提としています
+        * `ROS 2 Jazzy`を使用する場合: **Ubuntu Server 24.04**
         * `ROS 2 Humble`を使用する場合: **Ubuntu Server 22.04**
         * `ROS Noetic`を使用する場合: **Ubuntu Server 20.04**
         * Raspberry Pi OSでのROSの動作は確認していません
@@ -23,6 +24,7 @@ robot: Raspberry Pi Mouse
     * バッテリでも電源変換ケーブルつきACアダプタでも可
 * ノートパソコン等のPC
     * OS（**Ubuntu Desktop**）がインストール済みであることを前提としています
+        * `ROS 2 Jazzy`を使用する場合: **Ubuntu Desktop 24.04**
         * `ROS 2 Humble`を使用する場合: **Ubuntu Desktop 22.04**
         * `ROS Noetic`を使用する場合: **Ubuntu Desktop 20.04**
 
@@ -57,7 +59,7 @@ robot: Raspberry Pi Mouse
     $ source ~/catkin_ws/devel/setup.bash
     ```
 
-=== "ROS 2 Humble（推奨）"
+=== "ROS 2 Humble"
     Raspberry Piとノートパソコン等のPCそれぞれで次のコマンドを実行します。
 
     ```sh
@@ -70,28 +72,48 @@ robot: Raspberry Pi Mouse
     * [raspimouse_ros2_examples](https://github.com/rt-net/raspimouse_ros2_examples) : サンプル集パッケージ
     * [raspimouse_slam_navigation_ros2](https://github.com/rt-net/raspimouse_slam_navigation_ros2) : SLAMとナビゲーションのパッケージ 
     * [raspimouse_description](https://github.com/rt-net/raspimouse_description) : ロボットモデルパッケージ
+    * [rt_usb_9axisimu_driver](https://github.com/rt-net/rt_usb_9axisimu_driver/tree/ros2-devel) : 9軸IMU制御パッケージ
 
-=== "ROS 2 Foxy（非推奨）"
-    Raspberry Piとノートパソコン等のPCそれぞれで、
-    サンプル集パッケージ
-    [rt-net/raspimouse_ros2_examples](https://github.com/rt-net/raspimouse_ros2_examples){target=_blank rel=noopener}
-    をダウンロードしてインストールします。
+=== "ROS 2 Jazzy"
+    Raspberry Piとノートパソコン等のPCそれぞれで、次のコマンドを実行します。
 
+    Raspberry Pi Mouseのパッケージをダウンロードします。
+    
     ```sh
-    $ source /opt/ros/foxy/setup.bash
+    $ source /opt/ros/jazzy/setup.bash
     $ mkdir -p ~/ros2_ws/src
     $ cd ~/ros2_ws/src
-    # Clone packages
-    $ git clone https://github.com/rt-net/raspimouse_ros2_examples
+
+    # Download packages
+    $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse2.git
+    $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_ros2_examples.git
+    $ git clone -b $ROS_DISTRO https://github.com/rt-net/raspimouse_slam_navigation_ros2.git
 
     # Install dependencies
     $ rosdep install -r -y --from-paths . --ignore-src
+    ```
 
-    # make & install
+    Raspberry Pi Mouseのパッケージをビルドします。Raspberry Pi MouseとPCでコマンドが異なります。
+
+    ```sh
+    # Raspberry Pi Mouseの場合
+    $ cd ~/ros2_ws
+    $ MAKEFLAGS=-j1 colcon build --symlink-install
+    $ source ~/ros2_ws/install/setup.bash
+
+    # PCの場合
     $ cd ~/ros2_ws
     $ colcon build --symlink-install
     $ source ~/ros2_ws/install/setup.bash
     ```
+
+    これにより、以下のパッケージがインストールされます。
+
+    * [raspimouse2](https://github.com/rt-net/raspimouse2) : 制御パッケージ
+    * [raspimouse_ros2_examples](https://github.com/rt-net/raspimouse_ros2_examples) : サンプル集パッケージ
+    * [raspimouse_slam_navigation_ros2](https://github.com/rt-net/raspimouse_slam_navigation_ros2) : SLAMとナビゲーションのパッケージ 
+    * [raspimouse_description](https://github.com/rt-net/raspimouse_description) : ロボットモデルパッケージ
+    * [rt_usb_9axisimu_driver](https://github.com/rt-net/rt_usb_9axisimu_driver/tree/ros2-devel) : 9軸IMU制御パッケージ
 
 !!! info
     ROS/ROS 2を同時にインストールした環境で実行する場合、`/opt/ros/*/setup.bash`を実行したいROSのバージョンにあわせて都度読み込む必要があります。  
