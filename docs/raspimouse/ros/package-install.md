@@ -77,7 +77,7 @@ robot: Raspberry Pi Mouse
 === "ROS 2 Jazzy"
     Raspberry Piとノートパソコン等のPCそれぞれで、次のコマンドを実行します。
 
-    ラズパイマウスのパッケージをダウンロードします。
+    Raspberry Pi Mouseのパッケージをダウンロードします。
     
     ```sh
     $ source /opt/ros/jazzy/setup.bash
@@ -93,12 +93,12 @@ robot: Raspberry Pi Mouse
     $ rosdep install -r -y --from-paths . --ignore-src
     ```
 
-    パッケージをインストールします。ラズパイマウスとPCでコマンドが異なります。
+    パッケージをインストールします。Raspberry Pi MouseとPCでコマンドが異なります。
 
     ```sh
     # make & install
     
-    # ラズパイマウスでのインストール
+    # Raspberry Pi Mouseでのインストール
     $ cd ~/ros2_ws
     $ MAKEFLAGS=-j1 colcon build --symlink-install
     $ source ~/ros2_ws/install/setup.bash
