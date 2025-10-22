@@ -47,7 +47,7 @@ Jupyter Notebookを活用した教材もあり、たとえば、千葉工業大�
 
 ## JupyterLabへのログイン {: #jupyterlab-login}
 
-Webブラウザで`http://jnmouse.local:8888`を開き、パスワード"jnmouse"を入力してログインします。
+Webブラウザで`http://jnmouse.local:8888`を開き、パスワード"jetson"を入力してログインします。
 
 ![](../../img/jnmouse/jupyter-notebook/jupyter_lab_login.gif)
 
